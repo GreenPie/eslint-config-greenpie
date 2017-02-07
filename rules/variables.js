@@ -32,8 +32,15 @@ module.exports = {
     // Disallow Use of undefined Variable
     'no-undefined': 2,
 
-    // Disallow Unused Variables
-    'no-unused-vars': 2,
+    /**
+     * Disallow Unused Variables
+     *
+     * {@link http://eslint.org/docs/rules/no-unused-vars}
+     * @since ESLint v0.0.9
+     */
+    'no-unused-vars': ['error', {
+      ignoreRestSiblings: true
+    }],
 
     // Disallow Early Use
     'no-use-before-define': 2

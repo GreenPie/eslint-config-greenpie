@@ -406,6 +406,14 @@ module.exports = {
     }],
 
     /**
+     * Require or disallow spacing between template tags and their literals
+     *
+     * {@link http://eslint.org/docs/rules/template-tag-spacing}
+     * @since ESLint v3.15.0
+     */
+    'template-tag-spacing': 'error',
+
+    /**
      * Require or disallow the Unicode Byte Order Mark (BOM)
      *
      * @since ESLint v2.11.0
