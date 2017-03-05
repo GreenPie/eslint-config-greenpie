@@ -25,8 +25,13 @@ module.exports = {
     // Require Consistent Returns
     'consistent-return': 'error',
 
-    // Require Following Curly Brace Conventions
-    curly: [2, 'all'],
+    /**
+     * Require Following Curly Brace Conventions
+     *
+     * {@link http://eslint.org/docs/rules/curly}
+     * @since ESLint v0.0.2
+     */
+    curly: ['error', 'all'],
 
     // Require Default Case in Switch Statements
     'default-case': 2,

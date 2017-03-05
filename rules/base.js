@@ -18,6 +18,14 @@ module.exports = {
     // Disallow or Enforce Dangling Commas
     'comma-dangle': [2, 'never'],
 
+    /**
+     * Disallow comparing against -0
+     *
+     * {@link http://eslint.org/docs/rules/no-compare-neg-zero}
+     * @since ESLint v3.17.0
+     */
+    'no-compare-neg-zero': 'error',
+
     // Disallow Assignment in Conditional Statements
     'no-cond-assign': [2, 'always'],
 

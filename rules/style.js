@@ -308,6 +308,14 @@ module.exports = {
     'no-whitespace-before-property': 2,
 
     /**
+     * Enforce the location of single-line statements
+     *
+     * {@link http://eslint.org/docs/rules/nonblock-statement-body-position}
+     * @since ESLint v3.17.0
+     */
+    'nonblock-statement-body-position': 'off',
+
+    /**
      * require or disallow line breaks inside braces
      *
      * @since ESLint v2.12.0
