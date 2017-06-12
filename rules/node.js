@@ -4,6 +4,14 @@ module.exports = {
   },
 
   rules: {
+    /**
+     * Disallow use of the Buffer() constructor.
+     *
+     * @since ESLint v4.0.0-alpha.0
+     * {@link http://eslint.org/docs/rules/no-buffer-constructor}
+     */
+    'no-buffer-constructor': 'error',
+
     // Disallow process.env
     'no-process-env': 2,
 

@@ -2,8 +2,24 @@
 
 module.exports = {
   rules: {
+    /**
+     * Enforce line breaks after opening and before closing array brackets.
+     *
+     * @since ESLint v4.0.0-alpha.1
+     * {@link http://eslint.org/docs/rules/array-bracket-newline}
+     */
+    'array-bracket-newline': 'off',
+
     // Disallow or enforce spaces inside of brackets
     'array-bracket-spacing': [2, 'never'],
+
+    /**
+     * Enforce line breaks between array elements
+     *
+     * @since ESLint v4.0.0-rc.0
+     * {@link http://eslint.org/docs/rules/array-element-newline}
+     */
+    'array-element-newline': 'off',
 
     // Disallow or enforce spaces inside of single line blocks
     'block-spacing': [2, 'always'],
@@ -137,17 +153,6 @@ module.exports = {
       allowObjectStart: true
     }],
 
-    /**
-     * Require or disallow newlines around directives
-     *
-     * {@link http://eslint.org/docs/rules/lines-around-directive}
-     * @since ESLint v3.5.0
-     */
-    'lines-around-directive': ['error', {
-      before: 'never',
-      after: 'always'
-    }],
-
     // Limit Maximum Depth
     'max-depth': [2, 4],
 
@@ -205,12 +210,6 @@ module.exports = {
 
     // Require Parens for Constructors
     'new-parens': 2,
-
-    // Require or disallow an empty newline after variable declarations
-    'newline-after-var': [2, 'always'],
-
-    // Require newline before return statement
-    'newline-before-return': 2,
 
     // Newline Per Chained Method Call
     'newline-per-chained-call': [0, { ignoreChainWithDepth: 3 }],
@@ -316,12 +315,14 @@ module.exports = {
     'nonblock-statement-body-position': 'off',
 
     /**
-     * require or disallow line breaks inside braces
+     * Enforce consistent line breaks inside braces.
      *
      * @since ESLint v2.12.0
      * {@link http://eslint.org/docs/rules/object-curly-newline}
      */
-    'object-curly-newline': 'off',
+    'object-curly-newline': ['error', {
+      consistent: true
+    }],
 
     // Disallow or enforce spaces inside of curly braces in objects
     'object-curly-spacing': [2, 'always'],
@@ -344,6 +345,23 @@ module.exports = {
     // Enforce padding within blocks
     'padded-blocks': [2, 'never'],
 
+    /**
+     * Require or disallow padding lines between statements
+     *
+     * @since ESLint v4.0.0-beta.0
+     * {@link http://eslint.org/docs/rules/padding-line-between-statements}
+     */
+    'padding-line-between-statements': [
+      'error',
+      { blankLine: 'always', prev: '*', next: 'return' },
+      { blankLine: 'always', prev: ['const', 'let'], next: '*' },
+      { blankLine: 'any', prev: ['const', 'let'], next: ['const', 'let'] },
+      { blankLine: 'always', prev: 'block-like', next: '*' },
+      { blankLine: 'always', prev: '*', next: 'block-like' },
+      { blankLine: 'always', prev: 'directive', next: '*' },
+      { blankLine: 'never', prev: 'directive', next: 'directive' }
+    ],
+
     // Quoting Style for Property Names
     'quote-props': [2, 'as-needed', {
       keywords: false,
@@ -365,6 +383,14 @@ module.exports = {
       before: false,
       after: true
     }],
+
+    /**
+     * Enforce location of semicolons
+     *
+     * @since ESLint v4.0.0-beta.0
+     * {@link http://eslint.org/docs/rules/semi-style}
+     */
+    'semi-style': ['error', 'last'],
 
     // Import Sorting
     'sort-imports': 0,
@@ -414,10 +440,21 @@ module.exports = {
     }],
 
     /**
+     * Enforce spacing around colons of switch statements
+     *
+     * @since ESLint v4.0.0-beta.0
+     * {@link http://eslint.org/docs/rules/switch-colon-spacing}
+     */
+    'switch-colon-spacing': ['error', {
+      after: true,
+      before: false
+    }],
+
+    /**
      * Require or disallow spacing between template tags and their literals
      *
-     * {@link http://eslint.org/docs/rules/template-tag-spacing}
      * @since ESLint v3.15.0
+     * {@link http://eslint.org/docs/rules/template-tag-spacing}
      */
     'template-tag-spacing': 'error',
 

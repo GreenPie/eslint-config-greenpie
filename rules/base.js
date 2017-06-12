@@ -8,6 +8,14 @@ module.exports = {
 
   rules: {
     /**
+     * Enforce “for” loop update clause moving the counter in the right direction.
+     *
+     * @since ESLint v4.0.0-beta.0
+     * {@link http://eslint.org/docs/rules/for-direction}
+     */
+    'for-direction': 'error',
+
+    /**
      * Disallow await inside of loops
      *
      * @since ESLint v3.12.0

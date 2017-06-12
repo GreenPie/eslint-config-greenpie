@@ -114,9 +114,6 @@ module.exports = {
      */
     'prefer-numeric-literals': 'warn',
 
-    // Suggest using Reflect methods where applicable
-    'prefer-reflect': 0,
-
     // Suggest using the rest parameters instead of arguments
     'prefer-rest-params': 1,
 

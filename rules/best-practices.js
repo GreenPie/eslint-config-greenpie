@@ -138,9 +138,6 @@ module.exports = {
     // Disallow Multiline Strings
     'no-multi-str': 2,
 
-    // Disallow Reassignment of Native Objects
-    'no-native-reassign': 2,
-
     // Disallow new For Side Effects
     'no-new': 2,
 
