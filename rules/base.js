@@ -70,7 +70,12 @@ module.exports = {
     // Disallow Extra Boolean Casts
     'no-extra-boolean-cast': 2,
 
-    // Disallow Extra Parens
+    /**
+     * Disallow unnecessary parentheses
+     *
+     * @since ESLint v0.1.4
+     * {@link http://eslint.org/docs/rules/no-extra-parens}
+     */
     'no-extra-parens': ['warn', 'all', {
       nestedBinaryExpressions: true
     }],

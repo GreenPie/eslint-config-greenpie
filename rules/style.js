@@ -287,8 +287,13 @@ module.exports = {
     // Disallow Ternary Operators
     'no-ternary': 0,
 
-    // Disallow trailing spaces at the end of lines
-    'no-trailing-spaces': 2,
+    /**
+     * Disallow trailing whitespace at the end of lines
+     *
+     * @since ESLint v0.7.1
+     * {@link http://eslint.org/docs/rules/no-trailing-spaces}
+     */
+    'no-trailing-spaces': 'error',
 
     /**
      * Disallow Dangling Underscores in Identifiers
