@@ -103,7 +103,8 @@ module.exports = {
      * @since ESLint v3.13.0
      */
     'prefer-destructuring': ['error', {
-      array: false
+      array: false,
+      object: true
     }],
 
     /**

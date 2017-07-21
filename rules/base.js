@@ -16,6 +16,14 @@ module.exports = {
     'for-direction': 'error',
 
     /**
+     * Enforces that a return statement is present in property getters
+     *
+     * @since ESLint v4.2.0
+     * {@link http://eslint.org/docs/rules/getter-return}
+     */
+    'getter-return': 'error',
+
+    /**
      * Disallow await inside of loops
      *
      * @since ESLint v3.12.0

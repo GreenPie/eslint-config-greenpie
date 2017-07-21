@@ -301,7 +301,7 @@ module.exports = {
      * @since ESLint v0.0.9
      * {@link http://eslint.org/docs/rules/no-underscore-dangle}
      */
-    'no-underscore-dangle': 'off',
+    'no-underscore-dangle': 'warn',
 
     // Disallow conditional expressions that can be expressed with simpler constructs
     'no-unneeded-ternary': [2, {

@@ -50,7 +50,12 @@ module.exports = {
      */
     'no-restricted-properties': 'off',
 
-    // Disallow Synchronous Methods
-    'no-sync': 1
+    /**
+     * Disallow Synchronous Methods
+     *
+     * @since ESLint v0.0.9
+     * {@link http://eslint.org/docs/rules/no-sync}
+     */
+    'no-sync': 'warn'
   }
 };
