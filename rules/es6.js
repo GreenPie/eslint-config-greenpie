@@ -38,8 +38,13 @@ module.exports = {
     // Verify calls of super() in constructors
     'constructor-super': 2,
 
-    // Enforce spacing around the * in generator functions
-    'generator-star-spacing': [2, 'after'],
+    /**
+     * Enforce spacing around the * in generator functions
+     *
+     * @since ESLint v0.17.0
+     * {@link https://eslint.org/docs/rules/generator-star-spacing}
+     */
+    'generator-star-spacing': ['error', 'after'],
 
     // Disallow modifying variables of class declarations
     'no-class-assign': 2,

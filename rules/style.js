@@ -95,6 +95,14 @@ module.exports = {
       allowArrowFunctions: true
     }],
 
+    /**
+     * Enforce consistent line breaks inside function parentheses
+     *
+     * @since ESLint v4.6.0
+     * {@link https://eslint.org/docs/rules/function-paren-newline}
+     */
+    'function-paren-newline': ['error', 'never'],
+
     // Blacklist certain identifiers to prevent them being used
     'id-blacklist': 0,
 
