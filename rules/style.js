@@ -219,8 +219,13 @@ module.exports = {
     // Require Parens for Constructors
     'new-parens': 2,
 
-    // Newline Per Chained Method Call
-    'newline-per-chained-call': [0, { ignoreChainWithDepth: 3 }],
+    /**
+     * require a newline after each call in a method chain
+     *
+     * @since ESLint v2.0.0-rc.0
+     * {@link https://eslint.org/docs/rules/newline-per-chained-call}
+     */
+    'newline-per-chained-call': ['warn', { ignoreChainWithDepth: 1 }],
 
     // Disallow creation of dense arrays using the Array constructor
     'no-array-constructor': 2,
