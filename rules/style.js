@@ -161,6 +161,14 @@ module.exports = {
       allowObjectStart: true
     }],
 
+    /**
+     * Require or disallow an empty line between class members
+     *
+     * @since ESLint v4.9.0
+     * {@link https://eslint.org/docs/rules/lines-between-class-members}
+     */
+    'lines-between-class-members': ['error', 'always'],
+
     // Limit Maximum Depth
     'max-depth': [2, 4],
 
@@ -204,6 +212,14 @@ module.exports = {
      * @since ESLint v2.5.0
      */
     'max-statements-per-line': 'error',
+
+    /**
+     * Enforce a particular style for multiline comments
+     *
+     * @since ESLint v4.9.0
+     * {@link https://eslint.org/docs/rules/multiline-comment-style}
+     */
+    'multiline-comment-style': ['error', 'starred-block'],
 
     /**
      * Enforce newlines between operands of ternary expressions
@@ -369,16 +385,35 @@ module.exports = {
      * @since ESLint v4.0.0-beta.0
      * {@link http://eslint.org/docs/rules/padding-line-between-statements}
      */
-    'padding-line-between-statements': [
-      'error',
-      { blankLine: 'always', prev: '*', next: 'return' },
-      { blankLine: 'always', prev: ['const', 'let'], next: '*' },
-      { blankLine: 'any', prev: ['const', 'let'], next: ['const', 'let'] },
-      { blankLine: 'always', prev: 'block-like', next: '*' },
-      { blankLine: 'always', prev: '*', next: 'block-like' },
-      { blankLine: 'always', prev: 'directive', next: '*' },
-      { blankLine: 'never', prev: 'directive', next: 'directive' }
-    ],
+    'padding-line-between-statements': ['error', {
+      blankLine: 'always',
+      prev: '*',
+      next: 'return'
+    }, {
+      blankLine: 'always',
+      prev: ['const', 'let'],
+      next: '*'
+    }, {
+      blankLine: 'any',
+      prev: ['const', 'let'],
+      next: ['const', 'let']
+    }, {
+      blankLine: 'always',
+      prev: 'block-like',
+      next: '*'
+    }, {
+      blankLine: 'always',
+      prev: '*',
+      next: 'block-like'
+    }, {
+      blankLine: 'always',
+      prev: 'directive',
+      next: '*'
+    }, {
+      blankLine: 'never',
+      prev: 'directive',
+      next: 'directive'
+    }],
 
     // Quoting Style for Property Names
     'quote-props': [2, 'as-needed', {
