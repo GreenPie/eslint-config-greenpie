@@ -241,7 +241,7 @@ module.exports = {
      * @since ESLint v2.0.0-rc.0
      * {@link https://eslint.org/docs/rules/newline-per-chained-call}
      */
-    'newline-per-chained-call': ['warn', { ignoreChainWithDepth: 1 }],
+    'newline-per-chained-call': 'off',
 
     // Disallow creation of dense arrays using the Array constructor
     'no-array-constructor': 2,
