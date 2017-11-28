@@ -113,6 +113,14 @@ module.exports = {
     'id-match': 0,
 
     /**
+     * Enforce the location of arrow function bodies with implicit returns
+     *
+     * {@link https://eslint.org/docs/rules/implicit-arrow-linebreak}
+     * @since ESLint v4.12.0
+     */
+    'implicit-arrow-linebreak': ['error', 'beside'],
+
+    /**
      * Enforce consistent indentation
      *
      * @since ESLint v0.14.0
@@ -343,8 +351,8 @@ module.exports = {
     /**
      * Enforce the location of single-line statements
      *
-     * {@link http://eslint.org/docs/rules/nonblock-statement-body-position}
      * @since ESLint v3.17.0
+     * {@link http://eslint.org/docs/rules/nonblock-statement-body-position}
      */
     'nonblock-statement-body-position': 'off',
 
@@ -355,7 +363,12 @@ module.exports = {
      * {@link http://eslint.org/docs/rules/object-curly-newline}
      */
     'object-curly-newline': ['error', {
-      consistent: true
+      ObjectExpression: {
+        minProperties: 1
+      },
+      ObjectPattern: {
+        multiline: true
+      }
     }],
 
     // Disallow or enforce spaces inside of curly braces in objects

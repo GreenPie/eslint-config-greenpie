@@ -93,7 +93,9 @@ module.exports = {
     'no-var': 2,
 
     // Require Object Literal Shorthand Syntax
-    'object-shorthand': ['error', 'always', { avoidQuotes: true }],
+    'object-shorthand': ['error', 'always', {
+      avoidQuotes: true
+    }],
 
     // Suggest using arrow functions as callbacks
     'prefer-arrow-callback': 2,

@@ -154,13 +154,17 @@ module.exports = {
     'no-octal-escape': 2,
 
     // Disallow Reassignment of Function Parameters
-    'no-param-reassign': [1, { props: true }],
+    'no-param-reassign': [1, {
+      props: true
+    }],
 
     // Disallow Use of __proto__
     'no-proto': 2,
 
     // Disallow Redeclaring Variables
-    'no-redeclare': [2, { builtinGlobals: true }],
+    'no-redeclare': [2, {
+      builtinGlobals: true
+    }],
 
     // Disallow Assignment in return Statement
     'no-return-assign': [2, 'always'],

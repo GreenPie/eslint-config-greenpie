@@ -24,7 +24,9 @@ module.exports = {
     'no-shadow-restricted-names': 2,
 
     // Disallow Undeclared Variables
-    'no-undef': [2, { typeof: true }],
+    'no-undef': [2, {
+      typeof: true
+    }],
 
     // Disallow Initializing to undefined
     'no-undef-init': 0,
