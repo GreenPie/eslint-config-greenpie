@@ -374,8 +374,15 @@ module.exports = {
     // Disallow or enforce spaces inside of curly braces in objects
     'object-curly-spacing': [2, 'always'],
 
-    // enforce placing object properties on separate lines
-    'object-property-newline': 'warn',
+    /**
+     * Enforce placing object properties on separate lines
+     *
+     * @since ESLint v2.10.0
+     * {@link https://eslint.org/docs/rules/object-property-newline}
+     */
+    'object-property-newline': ['error', {
+      allowAllPropertiesOnSameLine: true
+    }],
 
     // Require or Disallow One Variable Declaration per Scope
     'one-var': [2, 'never'],
