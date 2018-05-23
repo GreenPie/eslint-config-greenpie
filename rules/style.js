@@ -435,6 +435,14 @@ module.exports = {
       next: 'directive'
     }],
 
+    /**
+     * Prefer use of an object spread over Object.assign
+     *
+     * @since ESLint v5.0.0-alpha.3
+     * {@link https://eslint.org/docs/5.0.0/rules/prefer-object-spread}
+     */
+    'prefer-object-spread': 'error',
+
     // Quoting Style for Property Names
     'quote-props': [2, 'as-needed', {
       keywords: false,

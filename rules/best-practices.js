@@ -50,6 +50,14 @@ module.exports = {
     // Require Guarding for-in
     'guard-for-in': 2,
 
+    /**
+     * Enforce a maximum number of classes per file
+     *
+     * @since ESLint v5.0.0-alpha.3
+     * {@link https://eslint.org/docs/5.0.0/rules/max-classes-per-file}
+     */
+    'max-classes-per-file': 'error',
+
     // Disallow Use of Alert
     'no-alert': 2,
 
@@ -180,8 +188,13 @@ module.exports = {
     // Disallow Script URLs
     'no-script-url': 2,
 
-    // Disallow Self Assignment
-    'no-self-assign': 2,
+    /**
+     * Disallow Self Assignment
+     *
+     * @since ESLint v2.0.0-rc.0
+     * {@link https://eslint.org/docs/rules/no-self-assign}
+     */
+    'no-self-assign': 'error',
 
     // Disallow Self Compare
     'no-self-compare': 2,
