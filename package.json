@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-greenpie",
-  "version": "4.0.0-rc.0",
+  "version": "4.0.0-rc.1",
   "description": "GreenPie's ESLint config file",
   "main": "index.js",
   "author": "Roman (Ky6uk) Nuritdinov",
@@ -27,9 +27,9 @@
     "styleguide"
   ],
   "devDependencies": {
-    "eslint": "5.0.0-alpha.3"
+    "eslint": "5.0.0-alpha.4"
   },
   "peerDependencies": {
-    "eslint": "5.0.0-alpha.3"
+    "eslint": "5.0.0-alpha.4"
   }
 }
