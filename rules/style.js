@@ -19,7 +19,7 @@ module.exports = {
      * @since ESLint v4.0.0-rc.0
      * {@link http://eslint.org/docs/rules/array-element-newline}
      */
-    'array-element-newline': 'off',
+    'array-element-newline': ['error', 'consistent'],
 
     // Disallow or enforce spaces inside of single line blocks
     'block-spacing': [2, 'always'],
@@ -29,8 +29,13 @@ module.exports = {
       allowSingleLine: false
     }],
 
-    // Require Camelcase
-    camelcase: [2, {
+    /**
+     * Require CamelCase
+     *
+     * @since ESLint v0.0.2
+     * {@link https: //eslint.org/docs/rules/camelcase}
+     */
+    camelcase: ['error', {
       properties: 'always'
     }],
 
@@ -204,6 +209,14 @@ module.exports = {
       skipBlankLines: true,
       skipComments: true
     }],
+
+    /**
+     * Enforce a maximum function length
+     *
+     * @since ESLint v5.0.0
+     * {@link https://eslint.org/docs/rules/max-lines-per-function}
+     */
+    'max-lines-per-function': ['error', 50],
 
     // Set Maximum Depth of Nested Callbacks
     'max-nested-callbacks': [2, 3],
