@@ -5,9 +5,6 @@ module.exports = {
     // Enforce/Disallow Variable Initializations
     'init-declarations': 0,
 
-    // Disallow Shadowing of Variables Inside of catch
-    'no-catch-shadow': 0,
-
     // Disallow Variables Deletion
     'no-delete-var': 2,
 
@@ -17,8 +14,13 @@ module.exports = {
     // Disallow specific global variables
     'no-restricted-globals': 0,
 
-    // Disallow Shadowing
-    'no-shadow': 2,
+    /**
+     * Disallow variable declarations from shadowing variables declared in the outer scope
+     *
+     * @since ESLing v0.0.9
+     * {@link https://eslint.org/docs/rules/no-shadow}
+     */
+    'no-shadow': 'error',
 
     // Disallow Shadowing of Restricted Names
     'no-shadow-restricted-names': 2,
