@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-greenpie",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "GreenPie's ESLint config file",
   "main": "index.js",
   "author": "Roman (Ky6uk) Nuritdinov",
@@ -15,8 +15,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "yarn run lint",
-    "prepare": "yarn run test"
+    "test": "npm run lint",
+    "prepare": "npm run test"
   },
   "keywords": [
     "eslint",
