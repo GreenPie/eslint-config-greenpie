@@ -1,4 +1,4 @@
-# Pretty tough Extendable ESLint config
+# Pretty tough ESLint config
 
 [![npm version](https://badge.fury.io/js/eslint-config-greenpie.svg)](http://badge.fury.io/js/eslint-config-greenpie)
 
