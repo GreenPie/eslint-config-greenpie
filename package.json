@@ -3,7 +3,7 @@
   "version": "4.0.1",
   "description": "GreenPie's ESLint config file",
   "main": "index.js",
-  "author": "Roman (Ky6uk) Nuritdinov",
+  "author": "Roman Nuritdinov (Ky6uk)",
   "license": "MIT",
   "homepage": "https://github.com/GreenPie/eslint-config-greenpie",
   "repository": {
@@ -15,8 +15,8 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "yarn run lint",
-    "prepare": "yarn run test"
+    "test": "npm run lint",
+    "prepare": "npm run test"
   },
   "keywords": [
     "eslint",
@@ -24,12 +24,21 @@
     "greenpie",
     "config",
     "javascript",
-    "styleguide"
+    "styleguide",
+    "typescript",
+    "jest",
+    "react",
+    "vue"
   ],
-  "devDependencies": {
-    "eslint": "5.1.0"
-  },
   "peerDependencies": {
-    "eslint": "5.1.0"
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.21.0",
+    "eslint-plugin-jest": "^26.7.0",
+    "eslint-plugin-vue": "^9.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-formatter-gitlab": "^3.0.0"
   }
 }
