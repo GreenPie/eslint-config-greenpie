@@ -1,166 +1,350 @@
-/* eslint no-magic-numbers: 0 */
-
 module.exports = {
-  env: {
-    browser: true,
-    amd: false
-  },
+  // https://eslint.org/docs/rules
+  extends: [
+    'eslint:recommended'
+  ],
 
+  /**
+   * {@link https://eslint.org/blog/category/release-notes}
+   */
   rules: {
+
     /**
-     * Enforce “for” loop update clause moving the counter in the right direction.
+     * Possible Problems
      *
-     * @since ESLint v4.0.0-beta.0
-     * {@link http://eslint.org/docs/rules/for-direction}
+     * {@link https://eslint.org/docs/rules/#possible-problems}
      */
+
+    'array-callback-return': 'error',
+    'constructor-super': 'error',
     'for-direction': 'error',
-
-    /**
-     * Enforces that a return statement is present in property getters
-     *
-     * @since ESLint v4.2.0
-     * {@link http://eslint.org/docs/rules/getter-return}
-     */
     'getter-return': 'error',
-
-    /**
-     * Disallow await inside of loops
-     *
-     * @since ESLint v3.12.0
-     * {@link http://eslint.org/docs/rules/no-await-in-loop}
-     */
+    'no-async-promise-executor': 'error',
     'no-await-in-loop': 'error',
-
-    // Disallow or Enforce Dangling Commas
-    'comma-dangle': [2, 'never'],
-
-    /**
-     * Disallow comparing against -0
-     *
-     * {@link http://eslint.org/docs/rules/no-compare-neg-zero}
-     * @since ESLint v3.17.0
-     */
+    'no-class-assign': 'error',
     'no-compare-neg-zero': 'error',
-
-    // Disallow Assignment in Conditional Statements
-    'no-cond-assign': [2, 'always'],
-
-    // Disallow Use of console
-    'no-console': 1,
-
-    // Disallow use of constant expressions in condition
-    'no-constant-condition': 2,
-
-    // Disallow Controls Characters in Regular Expressions
-    'no-control-regex': 1,
-
-    // Disallow debugger
-    'no-debugger': 2,
-
-    // No duplicate arguments
-    'no-dupe-args': 2,
-
-    // Disallow Duplicate Keys
-    'no-dupe-keys': 2,
-
-    // Disallow a duplicate case label
-    'no-duplicate-case': 2,
-
-    // Disallow Empty Block Statements
-    'no-empty': 2,
-
-    // Disallow Empty Character Classes
-    'no-empty-character-class': 2,
-
-    // Disallow Assignment of the Exception Parameter
-    'no-ex-assign': 2,
-
-    // Disallow Extra Boolean Casts
-    'no-extra-boolean-cast': 2,
+    'no-cond-assign': 'error',
+    'no-const-assign': 'error',
+    'no-constant-binary-expression': 'error',
+    'no-constant-condition': 'error',
+    'no-constructor-return': 'error',
+    'no-control-regex': 'error',
+    'no-debugger': 'error',
+    'no-dupe-args': 'error',
+    'no-dupe-class-members': 'error',
+    'no-dupe-else-if': 'error',
+    'no-dupe-keys': 'error',
+    'no-duplicate-case': 'error',
+    'no-duplicate-imports': 'error',
+    'no-empty-character-class': 'error',
+    'no-empty-pattern': 'error',
+    'no-ex-assign': 'error',
+    'no-fallthrough': 'error',
+    'no-func-assign': 'error',
+    'no-import-assign': 'error',
+    'no-inner-declarations': 'error',
+    'no-invalid-regexp': 'error',
+    'no-irregular-whitespace': 'error',
+    'no-loss-of-precision': 'error',
+    'no-misleading-character-class': 'error',
+    'no-new-symbol': 'error',
+    'no-obj-calls': 'error',
+    'no-promise-executor-return': 'error',
+    'no-prototype-builtins': 'error',
+    'no-self-assign': 'error',
+    'no-self-compare': 'error',
+    'no-setter-return': 'error',
+    'no-sparse-arrays': 'error',
+    'no-template-curly-in-string': 'error',
+    'no-this-before-super': 'error',
+    'no-undef': 'error',
+    'no-unexpected-multiline': 'error',
+    'no-unmodified-loop-condition': 'error',
+    'no-unreachable': 'error',
+    'no-unreachable-loop': 'error',
+    'no-unsafe-finally': 'error',
+    'no-unsafe-negation': 'error',
+    'no-unsafe-optional-chaining': 'error',
+    'no-unused-private-class-members': 'error',
+    'no-unused-vars': 'error',
+    'no-use-before-define': 'error',
+    'no-useless-backreference': 'error',
+    'require-atomic-updates': 'error',
+    'use-isnan': 'error',
+    'valid-typeof': 'error',
 
     /**
-     * Disallow unnecessary parentheses
+     * Suggestions
      *
-     * @since ESLint v0.1.4
-     * {@link http://eslint.org/docs/rules/no-extra-parens}
+     * {@link https://eslint.org/docs/rules/#suggestions}
      */
-    'no-extra-parens': ['warn', 'all', {
-      nestedBinaryExpressions: true
+    'accessor-pairs': 'error',
+    'arrow-body-style': 'error',
+    'block-scoped-var': 'error',
+    'camelcase': 'error',
+
+    // Doesn't matter actually
+    'capitalized-comments': 'warn',
+
+    'class-methods-use-this': 'error',
+    'complexity': 'error',
+    'consistent-return': 'error',
+    'consistent-this': 'error',
+    'curly': 'error',
+    'default-case': 'off',
+    'default-case-last': 'error',
+    'default-param-last': 'error',
+    'dot-notation': 'error',
+    'eqeqeq': 'error',
+    'func-name-matching': 'error',
+    'func-names': 'error',
+
+    'func-style': ['error', 'declaration', {
+      'allowArrowFunctions': true
     }],
 
-    // Disallow Extra Semicolons
-    'no-extra-semi': 2,
+    'grouped-accessor-pairs': 'error',
+    'guard-for-in': 'error',
+    'id-denylist': 'error',
 
-    // Disallow Function Assignment
-    'no-func-assign': 2,
+    'id-length': ['error', {
+      /// t — for translations
+      'exceptions': ['t']
+    }],
 
-    // Declarations in Program or Function Body
-    'no-inner-declarations': [2, 'both'],
+    'id-match': 'error',
+    'init-declarations': 'error',
+    'max-classes-per-file': 'error',
+    'max-depth': 'error',
+    'max-lines': 'error',
+    'max-lines-per-function': 'off',
+    'max-nested-callbacks': 'error',
+    'max-params': 'error',
+    'max-statements': 'error',
+    'multiline-comment-style': 'error',
+    'new-cap': 'error',
+    'no-alert': 'error',
+    'no-array-constructor': 'error',
+    'no-bitwise': 'error',
+    'no-caller': 'error',
+    'no-case-declarations': 'error',
 
-    // Disallow Invalid Regular Expressions
-    'no-invalid-regexp': 2,
+    'no-confusing-arrow': ['error', {
+      onlyOneSimpleParam: true
+    }],
 
-    // No irregular whitespace
-    'no-irregular-whitespace': 2,
+    'no-console': 'error',
+    'no-continue': 'error',
+    'no-delete-var': 'error',
+    'no-div-regex': 'error',
+    'no-else-return': 'error',
+    'no-empty': 'error',
+    'no-empty-function': 'error',
+    'no-eq-null': 'error',
+    'no-eval': 'error',
+    'no-extend-native': 'error',
+    'no-extra-bind': 'error',
+    'no-extra-boolean-cast': 'error',
+    'no-extra-label': 'error',
+    'no-extra-semi': 'error',
+    'no-floating-decimal': 'error',
+    'no-global-assign': 'error',
+    'no-implicit-coercion': 'error',
+    'no-implicit-globals': 'error',
+    'no-implied-eval': 'error',
+    'no-inline-comments': 'error',
+    'no-invalid-this': 'error',
+    'no-iterator': 'error',
+    'no-label-var': 'error',
+    'no-labels': 'error',
+    'no-lone-blocks': 'error',
+    'no-lonely-if': 'error',
+    'no-loop-func': 'error',
 
-    // Disallow negated left operand of in operator
-    'no-negated-in-lhs': 2,
+    'no-magic-numbers': ['warn', {
+      enforceConst: true,
+      detectObjects: true
+    }],
 
-    // Disallow Global Object Function Calls
-    'no-obj-calls': 2,
+    'no-mixed-operators': 'error',
+    'no-multi-assign': 'error',
+    'no-multi-str': 'error',
+    'no-negated-condition': 'error',
+    'no-nested-ternary': 'error',
+    'no-new': 'error',
+    'no-new-func': 'error',
+    'no-new-object': 'error',
+    'no-new-wrappers': 'error',
+    'no-nonoctal-decimal-escape': 'error',
+    'no-octal': 'error',
+    'no-octal-escape': 'error',
+    'no-param-reassign': 'error',
+    'no-plusplus': 'error',
+    'no-proto': 'error',
+    'no-redeclare': 'error',
+    'no-regex-spaces': 'error',
+    'no-restricted-exports': 'error',
+    'no-restricted-globals': 'error',
+    'no-restricted-imports': 'error',
+    'no-restricted-properties': 'error',
+    'no-restricted-syntax': 'error',
+    'no-return-assign': 'error',
+    'no-return-await': 'error',
+    'no-script-url': 'error',
+    'no-sequences': 'error',
+    'no-shadow': 'error',
+    'no-shadow-restricted-names': 'error',
+
+    // Why not to use it in simple cases like "a ? b : c"
+    'no-ternary': 'off',
+    'no-throw-literal': 'error',
+    'no-undef-init': 'error',
+    'no-undefined': 'off',
+    'no-underscore-dangle': 'error',
+    'no-unneeded-ternary': 'error',
+    'no-unused-expressions': 'error',
+    'no-unused-labels': 'error',
+    'no-useless-call': 'error',
+    'no-useless-catch': 'error',
+    'no-useless-computed-key': 'error',
+    'no-useless-concat': 'error',
+    'no-useless-constructor': 'error',
+    'no-useless-escape': 'error',
+    'no-useless-rename': 'error',
+    'no-useless-return': 'error',
+    'no-var': 'error',
+
+    'no-void': ['error', {
+      allowAsStatement: true
+    }],
+
+    // Just notify about TODO and FIXME comments
+    'no-warning-comments': 'warn',
+
+    'no-with': 'error',
+    'object-shorthand': 'error',
+    'one-var': ['error', 'never'],
+    'one-var-declaration-per-line': 'error',
+    'operator-assignment': 'error',
+    'prefer-arrow-callback': 'error',
+    'prefer-const': 'error',
+    'prefer-destructuring': 'error',
+    'prefer-exponentiation-operator': 'error',
+    'prefer-named-capture-group': 'error',
+    'prefer-numeric-literals': 'error',
+    'prefer-object-has-own': 'error',
+    'prefer-object-spread': 'error',
+    'prefer-promise-reject-errors': 'error',
+    'prefer-regex-literals': 'error',
+    'prefer-rest-params': 'error',
+    'prefer-spread': 'error',
+    'prefer-template': 'error',
+    'quote-props': ['error', 'as-needed'],
+    'radix': 'error',
+    'require-await': 'error',
+    'require-unicode-regexp': 'error',
+    'require-yield': 'error',
+
+    'sort-imports': ['error', {
+      ignoreCase: true,
+      ignoreDeclarationSort: true,
+      ignoreMemberSort: true
+    }],
+
+    'sort-keys': 'off',
+    'sort-vars': 'error',
+
+    'spaced-comment': ['error', 'always', {
+      markers: ['/']
+    }],
+
+    'strict': 'error',
+    'symbol-description': 'error',
+    'vars-on-top': 'error',
+    'yoda': 'error',
 
     /**
-     * Disallow use of Object.prototypes builtins directly
+     * Layout & Formatting
      *
-     * @since ESLint v2.11.0
+     * {@link https://eslint.org/docs/rules/#layout-formatting}
      */
-    'no-prototype-builtins': 'error',
 
-    // Disallow Spaces in Regular Expressions
-    'no-regex-spaces': 2,
+    'array-bracket-newline': ['error', 'consistent'],
+    'array-bracket-spacing': 'error',
+    'array-element-newline': ['error', 'consistent'],
 
-    // Disallow Sparse Arrays
-    'no-sparse-arrays': 2,
+    'arrow-parens': ['error', 'as-needed', {
+      requireForBlockBody: true
+    }],
 
-    /**
-     * Disallow template literal placeholder syntax in regular strings
-     *
-     * @since ESLint v3.3.0
-     * {@link http://eslint.org/docs/rules/no-template-curly-in-string}
-     */
-    'no-template-curly-in-string': 'error',
+    'arrow-spacing': 'error',
+    'block-spacing': 'error',
+    'brace-style': 'error',
+    'comma-dangle': 'error',
+    'comma-spacing': 'error',
+    'comma-style': 'error',
+    'computed-property-spacing': 'error',
+    'dot-location': ['error', 'property'],
+    'eol-last': 'error',
+    'func-call-spacing': 'error',
+    'function-call-argument-newline': ['error', 'consistent'],
+    'function-paren-newline': ['error', 'consistent'],
+    'generator-star-spacing': 'error',
+    'implicit-arrow-linebreak': 'error',
+    'indent': ['error', 2],
+    'jsx-quotes': 'error',
+    'key-spacing': 'error',
+    'keyword-spacing': 'error',
+    'line-comment-position': 'error',
+    'linebreak-style': 'error',
 
-    // Avoid unexpected multiline expressions
-    'no-unexpected-multiline': 2,
+    'lines-around-comment': ['error', {
+      allowBlockStart: true
+    }],
 
-    // disallow control flow statements in finally blocks
-    'no-unsafe-finally': 'error',
+    'lines-between-class-members': 'error',
 
-    /**
-     * Disallow negating the left operand of relational operators
-     *
-     * @since ESLint v3.3.0
-     * {@link http://eslint.org/docs/rules/no-unsafe-negation}
-     */
-    'no-unsafe-negation': 'error',
+    'max-len': ['error', 120, {
+      ignoreUrls: true
+    }],
 
-    // Disallow Unreachable Code
-    'no-unreachable': 2,
+    'max-statements-per-line': 'error',
 
-    // Require isNaN()
-    'use-isnan': 2,
+    // If it requires multilines, so it's probably better to use "if-else" instead
+    'multiline-ternary': ['error', 'never'],
 
-    // Validates JSDoc comments are syntactically correct
-    'valid-jsdoc': 0,
-
-    /**
-     * Enforce comparing typeof expressions against valid strings
-     *
-     * {@link http://eslint.org/docs/rules/valid-typeof}
-     * @since ESLint v0.5.0
-     */
-    'valid-typeof': ['error', {
-      requireStringLiterals: true
-    }]
+    'new-parens': 'error',
+    'newline-per-chained-call': 'error',
+    'no-extra-parens': 'error',
+    'no-mixed-spaces-and-tabs': 'error',
+    'no-multi-spaces': 'error',
+    'no-multiple-empty-lines': 'error',
+    'no-tabs': 'error',
+    'no-trailing-spaces': 'error',
+    'no-whitespace-before-property': 'error',
+    'nonblock-statement-body-position': 'error',
+    'object-curly-newline': 'error',
+    'object-curly-spacing': ['error', 'always'],
+    'object-property-newline': 'error',
+    'operator-linebreak': 'error',
+    'padded-blocks': ['error', 'never'],
+    'padding-line-between-statements': 'error',
+    'quotes': ['error', 'single'],
+    'rest-spread-spacing': 'error',
+    'semi': 'error',
+    'semi-spacing': 'error',
+    'semi-style': 'error',
+    'space-before-blocks': 'error',
+    'space-before-function-paren': ['error', 'never'],
+    'space-in-parens': 'error',
+    'space-infix-ops': 'error',
+    'space-unary-ops': 'error',
+    'switch-colon-spacing': 'error',
+    'template-curly-spacing': 'error',
+    'template-tag-spacing': 'error',
+    'unicode-bom': 'error',
+    'wrap-iife': 'error',
+    'wrap-regex': 'error',
+    'yield-star-spacing': 'error'
   }
 };

@@ -1,4 +1,4 @@
-# eslint-config-greenpie
+# Extendable ESLint config
 
 [![npm version](https://badge.fury.io/js/eslint-config-greenpie.svg)](http://badge.fury.io/js/eslint-config-greenpie)
 
@@ -6,5 +6,61 @@ This package provides GreenPie's `.eslintrc` as an extensible shared config.
 
 ## Usage
 
-1. `npm install --save-dev eslint-config-greenpie eslint`
-2. add `"extends": "greenpie"` to your .eslintrc
+Install configurations
+
+* `npm install eslint-config-greenpie --save-dev`
+
+And then extend your local eslint config by this one
+
+```json
+{
+  "extends": ["eslint-config-greenpie"]
+}
+```
+
+### Rulesets
+
+Currently, here are four rulesets to extend
+
+| Extension                           | Description                        |
+|-------------------------------------|------------------------------------|
+| `eslint-config-greenpie`            | Includes base and typescript rules |
+| `eslint-config-greenpie/base`       | Common ESLint rules                |
+| `eslint-config-greenpie/typescript` | TypeScript-related rules           |
+| `eslint-config-greenpie/vue`        | Rules for Vue projects             |
+| `eslint-config-greenpie/jest`       | Rules for test files using Jest    |
+
+### Base rules
+
+For using base rules, it requires `eslint` plugin installed
+
+* `npm install eslint --save-dev`
+
+### TypeScript
+
+For TypeScript related rules, it requires a plugin and parser installed
+
+* `npm install @typescript-eslint/eslint-plugin --save-dev`
+* `npm install @typescript-eslint/parser --save-dev`
+
+### Vue
+
+For Vue-related rules, it requires a plugin installed
+
+* `npm install eslint-plugin-vue --save-dev`
+
+Also, if you're planning to use TypeScript alongside Vue, you will probably need to [configure another parser](https://github.com/vuejs/vue-eslint-parser#parseroptionsparser) for the `<script>` tag.
+
+### Jest (or a similar tool like Vitest)
+
+Additional configuration for Jest requires `eslint-plugin-jest` plugin
+
+* `npm install eslint-plugin-jest --save-dev`
+
+### Links
+
+* [Registry](https://www.npmjs.com/package/eslint-config-greenpie)
+* [Basic ESLint rules](https://eslint.org/docs/rules/)
+* [TypeScript rules](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin#supported-rules)
+* [Vue rules](https://eslint.vuejs.org)
+* [Jest rules](https://github.com/jest-community/eslint-plugin-jest#rules)

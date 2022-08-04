@@ -1,0 +1,22 @@
+{
+  "root": true,
+
+  "parserOptions": {
+    "sourceType": "module"
+  },
+
+  "env": {
+    "es6": true,
+    "commonjs": true
+  },
+
+  "extends": [
+    "./base"
+  ],
+
+  "rules": {
+    "max-lines": "off",
+    "no-magic-numbers": "off",
+    "quote-props": "off"
+  }
+}
