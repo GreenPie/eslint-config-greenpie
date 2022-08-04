@@ -1,4 +1,4 @@
-# Extendable ESLint config
+# Pretty tough Extendable ESLint config
 
 [![npm version](https://badge.fury.io/js/eslint-config-greenpie.svg)](http://badge.fury.io/js/eslint-config-greenpie)
 
@@ -61,6 +61,6 @@ Additional configuration for Jest requires `eslint-plugin-jest` plugin
 
 * [Registry](https://www.npmjs.com/package/eslint-config-greenpie)
 * [Basic ESLint rules](https://eslint.org/docs/rules/)
-* [TypeScript rules](https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin#supported-rules)
+* [TypeScript rules](https://typescript-eslint.io/rules/)
 * [Vue rules](https://eslint.vuejs.org)
 * [Jest rules](https://github.com/jest-community/eslint-plugin-jest#rules)
