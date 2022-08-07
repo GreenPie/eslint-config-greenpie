@@ -38,7 +38,6 @@
     "eslint-plugin-vue": "^9.3.0"
   },
   "devDependencies": {
-    "eslint": "^8.21.0",
-    "eslint-formatter-gitlab": "^3.0.0"
+    "eslint": "^8.21.0"
   }
 }
