@@ -30,10 +30,14 @@ module.exports = {
     'jest/no-identical-title': 'error',
     'jest/no-interpolation-in-snapshots': 'error',
     'jest/no-jasmine-globals': 'error',
-    'jest/no-jest-import': 'error',
     'jest/no-large-snapshots': 'error',
     'jest/no-mocks-import': 'error',
-    'jest/no-restricted-matchers': 'error',
+
+    /**
+     * This rule should be used with exact list of matchers
+     * {@link https://github.com/jest-community/eslint-plugin-jest/blob/main/docs/rules/no-restricted-matchers.md}
+     */
+    'jest/no-restricted-matchers': 'off',
 
     'jest/no-standalone-expect': ['error', {
       additionalTestBlockFunctions: ['it']
@@ -43,6 +47,7 @@ module.exports = {
     'jest/no-test-return-statement': 'error',
     'jest/prefer-called-with': 'error',
     'jest/prefer-comparison-matcher': 'error',
+    'jest/prefer-each': 'error',
     'jest/prefer-equality-matcher': 'error',
     'jest/prefer-expect-assertions': 'error',
     'jest/prefer-expect-resolves': 'error',

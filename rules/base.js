@@ -116,7 +116,13 @@ module.exports = {
     'init-declarations': 'error',
     'max-classes-per-file': 'error',
     'max-depth': 'error',
-    'max-lines': 'error',
+
+    'max-lines': ['error', {
+      max: 300,
+      skipComments: true,
+      skipBlankLines: true
+    }],
+
     'max-lines-per-function': 'off',
     'max-nested-callbacks': 'error',
     'max-params': 'error',
