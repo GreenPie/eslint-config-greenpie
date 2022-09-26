@@ -114,6 +114,7 @@ module.exports = {
 
     'id-match': 'error',
     'init-declarations': 'error',
+    'logical-assignment-operators': 'error',
     'max-classes-per-file': 'error',
     'max-depth': 'error',
 
