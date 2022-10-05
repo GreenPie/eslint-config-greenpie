@@ -32,6 +32,7 @@ module.exports = {
     'jest/no-jasmine-globals': 'error',
     'jest/no-large-snapshots': 'error',
     'jest/no-mocks-import': 'error',
+    'jest/no-restricted-jest-methods': 'off',
 
     /**
      * This rule should be used with exact list of matchers

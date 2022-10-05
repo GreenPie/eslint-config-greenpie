@@ -123,7 +123,12 @@ module.exports = {
 
     'vue/attribute-hyphenation': 'error',
     'vue/component-definition-name-casing': 'error',
-    'vue/first-attribute-linebreak': 'error',
+
+    'vue/first-attribute-linebreak': ['error', {
+      singleline: 'beside',
+      multiline: 'below'
+    }],
+
     'vue/html-closing-bracket-newline': 'error',
     'vue/html-closing-bracket-spacing': 'error',
     'vue/html-end-tags': 'error',
@@ -199,6 +204,7 @@ module.exports = {
     'vue/no-multiple-objects-in-class': 'error',
     'vue/no-potential-component-option-typo': 'error',
     'vue/no-ref-object-destructure': 'error',
+    'vue/no-required-prop-with-default': 'error',
     'vue/no-restricted-block': 'error',
     'vue/no-restricted-call-after-await': 'error',
     'vue/no-restricted-class': 'error',
