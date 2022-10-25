@@ -9,7 +9,10 @@ module.exports = {
     '@typescript-eslint'
   ],
 
-  // https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md
+  /*
+   * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md
+   * https://typescript-eslint.io/rules/
+   */
   rules: {
     // TypeScript specific Rules
 
