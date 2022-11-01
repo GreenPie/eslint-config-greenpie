@@ -244,7 +244,7 @@ module.exports = {
     'vue/sort-keys': 'off',
     'vue/static-class-names-order': 'error',
     'vue/v-for-delimiter-style': 'error',
-    'vue/v-on-handler-style': 'error',
+    'vue/v-on-handler-style': ['error', ['method', 'inline']],
 
     /**
      * Extension Rules

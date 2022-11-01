@@ -15,7 +15,9 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "npm run lint",
+    "test": "npm run test:self && npm run test:vue",
+    "test:self": "npm run lint",
+    "test:vue": "eslint --config tests/vue/.eslintrc.json tests/vue/*.vue",
     "prepare": "npm run test"
   },
   "keywords": [
