@@ -2,6 +2,7 @@
   "root": true,
 
   "parserOptions": {
+    "parser": "@typescript-eslint/parser",
     "sourceType": "module"
   },
 
@@ -11,12 +12,33 @@
   },
 
   "extends": [
-    "./base"
+    "./base",
+    "./typescript",
+    "./vue",
+    "./jest"
   ],
+
+  "settings": {
+    "jest": {
+      "version": 29
+    }
+  },
 
   "rules": {
     "max-lines": "off",
     "no-magic-numbers": "off",
     "quote-props": "off"
-  }
+  },
+
+  "overrides": [{
+    "files": ["*.js"],
+
+    "rules": {
+      "@typescript-eslint/naming-convention": "off",
+      "@typescript-eslint/no-magic-numbers": "off",
+      "@typescript-eslint/no-unsafe-assignment": "off",
+      "@typescript-eslint/no-unsafe-call": "off",
+      "@typescript-eslint/no-unsafe-member-access": "off"
+    }
+  }]
 }
