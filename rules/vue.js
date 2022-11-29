@@ -234,6 +234,7 @@ module.exports = {
     'vue/require-emit-validator': 'error',
     'vue/require-expose': 'error',
     'vue/require-name-property': 'error',
+    'vue/require-prop-comment': 'off',
 
     'vue/script-indent': ['error', 2, {
       baseIndent: 1,
