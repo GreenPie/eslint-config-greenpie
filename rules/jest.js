@@ -72,6 +72,7 @@ module.exports = {
     'jest/valid-title': 'error',
 
     // TypeScript rules
-    'jest/unbound-method': 'error'
+    'jest/unbound-method': 'error',
+    'jest/no-untyped-mock-factory': 'error'
   }
 };

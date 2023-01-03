@@ -209,7 +209,12 @@ module.exports = {
     'no-throw-literal': 'error',
     'no-undef-init': 'error',
     'no-undefined': 'off',
-    'no-underscore-dangle': 'error',
+
+    'no-underscore-dangle': ['error', {
+      allowInArrayDestructuring: false,
+      allowInObjectDestructuring: false
+    }],
+
     'no-unneeded-ternary': 'error',
     'no-unused-expressions': 'error',
     'no-unused-labels': 'error',
