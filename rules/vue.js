@@ -227,6 +227,7 @@ module.exports = {
     'vue/no-v-text': 'error',
     'vue/padding-line-between-blocks': 'error',
     'vue/padding-line-between-tags': 'off',
+    'vue/padding-lines-in-component-definition': 'error',
     'vue/prefer-prop-type-boolean-first': 'error',
     'vue/prefer-separate-static-class': 'error',
     'vue/prefer-true-attribute-shorthand': 'error',
@@ -255,6 +256,7 @@ module.exports = {
 
     'vue/array-bracket-newline': ['error', 'consistent'],
     'vue/array-bracket-spacing': 'error',
+    'vue/array-element-newline': ['error', 'consistent'],
     'vue/arrow-spacing': 'error',
     'vue/block-spacing': 'error',
     'vue/brace-style': 'error',
