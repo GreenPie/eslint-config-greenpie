@@ -180,6 +180,7 @@ module.exports = {
     'indent': 'off',
     'init-declarations': 'off',
     'keyword-spacing': 'off',
+    'key-spacing': 'off',
     'lines-between-class-members': 'off',
     'no-array-constructor': 'off',
     'no-dupe-class-members': 'off',
@@ -219,6 +220,7 @@ module.exports = {
     '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/init-declarations': 'error',
     '@typescript-eslint/keyword-spacing': 'error',
+    '@typescript-eslint/key-spacing': 'error',
 
     // Lack of configuration. Can it be replaced by `padding-line-between-statements`?
     '@typescript-eslint/lines-between-class-members': 'off',
