@@ -14,6 +14,13 @@ module.exports = {
    * https://typescript-eslint.io/rules/
    */
   rules: {
+    // TODO: regroup rules by new categories
+
+    // Formatting Rules
+
+    'block-spacing': 'off',
+    '@typescript-eslint/block-spacing': 'error',
+
     // TypeScript specific Rules
 
     '@typescript-eslint/adjacent-overload-signatures': 'error',
@@ -86,6 +93,7 @@ module.exports = {
     '@typescript-eslint/no-extra-non-null-assertion': 'error',
     '@typescript-eslint/no-extraneous-class': 'error',
     '@typescript-eslint/no-floating-promises': 'error',
+    '@typescript-eslint/no-import-type-side-effects': 'off',
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-inferrable-types': 'error',
     '@typescript-eslint/no-invalid-void-type': 'error',
