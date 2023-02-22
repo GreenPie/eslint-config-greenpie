@@ -16,13 +16,7 @@ module.exports = {
   rules: {
     // TODO: regroup rules by new categories
 
-    // Formatting Rules
-
-    'block-spacing': 'off',
-    '@typescript-eslint/block-spacing': 'error',
-
-    // TypeScript specific Rules
-
+    // TypeScript Rules
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/await-thenable': 'error',
@@ -46,7 +40,6 @@ module.exports = {
     }],
 
     '@typescript-eslint/explicit-module-boundary-types': 'error',
-    '@typescript-eslint/member-delimiter-style': 'error',
 
     '@typescript-eslint/member-ordering': ['error', {
       default: [
@@ -80,8 +73,20 @@ module.exports = {
       modifiers: ['requiresQuotes']
     }, {
       selector: 'enumMember',
-      format: ['UPPER_CASE']
+      format: ['StrictPascalCase']
     }],
+
+    '@typescript-eslint/no-mixed-enums': 'error',
+
+    // Formatting Rules
+
+    'block-spacing': 'off',
+    '@typescript-eslint/block-spacing': 'error',
+    '@typescript-eslint/member-delimiter-style': 'error',
+
+    // TODO: Not grouped yet below
+
+    // TypeScript specific Rules
 
     '@typescript-eslint/no-base-to-string': 'error',
     '@typescript-eslint/no-confusing-non-null-assertion': 'error',
