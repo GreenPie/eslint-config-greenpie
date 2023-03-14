@@ -82,6 +82,12 @@ module.exports = {
 
     'block-spacing': 'off',
     '@typescript-eslint/block-spacing': 'error',
+
+    'lines-around-comment': 'off',
+    '@typescript-eslint/lines-around-comment': ['error', {
+      allowBlockStart: true
+    }],
+
     '@typescript-eslint/member-delimiter-style': 'error',
 
     // TODO: Not grouped yet below
