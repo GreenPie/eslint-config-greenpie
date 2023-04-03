@@ -76,6 +76,7 @@ module.exports = {
       format: ['StrictPascalCase']
     }],
 
+    '@typescript-eslint/no-duplicate-type-constituents': 'error',
     '@typescript-eslint/no-mixed-enums': 'error',
 
     // Formatting Rules
