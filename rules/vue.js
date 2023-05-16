@@ -214,12 +214,17 @@ module.exports = {
     'vue/no-restricted-props': 'error',
     'vue/no-restricted-static-attribute': 'error',
     'vue/no-restricted-v-bind': 'error',
+    'vue/no-root-v-if': 'error',
     'vue/no-static-inline-styles': 'error',
     'vue/no-template-target-blank': 'error',
     'vue/no-this-in-before-route-enter': 'error',
     'vue/no-undef-components': 'error',
     'vue/no-undef-properties': 'error',
-    'vue/no-unsupported-features': 'error',
+
+    'vue/no-unsupported-features': ['error', {
+      version: '^3.3.0'
+    }],
+
     'vue/no-unused-properties': 'error',
     'vue/no-unused-refs': 'error',
     'vue/no-useless-mustaches': 'error',
@@ -228,6 +233,7 @@ module.exports = {
     'vue/padding-line-between-blocks': 'error',
     'vue/padding-line-between-tags': 'off',
     'vue/padding-lines-in-component-definition': 'error',
+    'vue/prefer-define-options': 'error',
     'vue/prefer-prop-type-boolean-first': 'error',
     'vue/prefer-separate-static-class': 'error',
     'vue/prefer-true-attribute-shorthand': 'error',
@@ -247,6 +253,7 @@ module.exports = {
     'vue/static-class-names-order': 'error',
     'vue/v-for-delimiter-style': 'error',
     'vue/v-on-handler-style': ['error', ['method', 'inline']],
+    'vue/valid-define-options': 'error',
 
     /**
      * Extension Rules
