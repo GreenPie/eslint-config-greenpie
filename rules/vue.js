@@ -195,6 +195,14 @@ module.exports = {
     'vue/html-comment-indent': 'error',
     'vue/match-component-file-name': 'error',
     'vue/match-component-import-name': 'error',
+
+    'vue/max-lines-per-block': ['error', {
+      script: 500,
+      template: 500,
+      style: 500,
+      skipBlankLines: true
+    }],
+
     'vue/new-line-between-multi-line-property': 'error',
     'vue/next-tick-style': 'error',
     'vue/no-bare-strings-in-template': 'error',
@@ -208,6 +216,7 @@ module.exports = {
     'vue/no-restricted-block': 'error',
     'vue/no-restricted-call-after-await': 'error',
     'vue/no-restricted-class': 'error',
+    'vue/no-restricted-component-names': 'error',
     'vue/no-restricted-component-options': 'error',
     'vue/no-restricted-custom-event': 'error',
     'vue/no-restricted-html-elements': 'error',
@@ -240,8 +249,10 @@ module.exports = {
     'vue/require-direct-export': 'error',
     'vue/require-emit-validator': 'error',
     'vue/require-expose': 'error',
+    'vue/require-macro-variable-name': 'error',
     'vue/require-name-property': 'error',
     'vue/require-prop-comment': 'off',
+    'vue/require-typed-ref': 'error',
 
     'vue/script-indent': ['error', 2, {
       baseIndent: 1,
@@ -284,6 +295,7 @@ module.exports = {
     }],
 
     'vue/multiline-ternary': ['error', 'never'],
+    'vue/no-console': 'error',
     'vue/no-constant-condition': 'error',
     'vue/no-empty-pattern': 'error',
     'vue/no-extra-parens': 'error',
