@@ -127,13 +127,6 @@ module.exports = {
     '@typescript-eslint/no-require-imports': 'error',
     '@typescript-eslint/no-this-alias': 'error',
 
-    '@typescript-eslint/no-type-alias': ['error', {
-      allowAliases: 'always',
-      allowCallbacks: 'always',
-      allowConstructors: 'always',
-      allowGenerics: 'always'
-    }],
-
     // (variable === false) is OK
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
 
@@ -175,7 +168,6 @@ module.exports = {
     '@typescript-eslint/require-array-sort-compare': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/restrict-template-expressions': 'error',
-    '@typescript-eslint/sort-type-union-intersection-members': 'error',
     '@typescript-eslint/strict-boolean-expressions': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
     '@typescript-eslint/triple-slash-reference': 'error',
