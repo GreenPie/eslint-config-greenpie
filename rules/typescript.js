@@ -185,6 +185,7 @@ module.exports = {
      */
 
     // Disable original ESLint rules in favour to extension rules
+    'class-methods-use-this': 'off',
     'brace-style': 'off',
     'comma-dangle': 'off',
     'comma-spacing': 'off',
@@ -225,6 +226,7 @@ module.exports = {
     'space-infix-ops': 'off',
 
     // Extension Rules
+    '@typescript-eslint/class-methods-use-this': 'error',
     '@typescript-eslint/brace-style': 'error',
     '@typescript-eslint/comma-dangle': 'error',
     '@typescript-eslint/comma-spacing': 'error',
