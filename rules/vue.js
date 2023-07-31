@@ -162,7 +162,6 @@ module.exports = {
      */
 
     'vue/attributes-order': 'error',
-    'vue/component-tags-order': 'error',
     'vue/no-lone-template': 'error',
     'vue/no-multiple-slot-args': 'error',
     'vue/no-v-html': 'error',
@@ -178,7 +177,21 @@ module.exports = {
     'vue/block-lang': ['error', {
       script: {
         lang: 'ts'
+      },
+
+      style: {
+        lang: 'scss'
       }
+    }],
+
+    'vue/block-order': ['error', {
+      order: [
+        'template',
+        'script:not([setup])',
+        'script[setup]',
+        'style:not([module])',
+        'style[module]'
+      ]
     }],
 
     'vue/block-tag-newline': 'error',
@@ -207,6 +220,7 @@ module.exports = {
     'vue/next-tick-style': 'error',
     'vue/no-bare-strings-in-template': 'error',
     'vue/no-boolean-default': 'error',
+    'vue/no-deprecated-model-definition': 'error',
     'vue/no-duplicate-attr-inheritance': 'error',
     'vue/no-empty-component-block': 'error',
     'vue/no-multiple-objects-in-class': 'error',
@@ -236,6 +250,7 @@ module.exports = {
 
     'vue/no-unused-properties': 'error',
     'vue/no-unused-refs': 'error',
+    'vue/no-use-v-else-with-v-for': 'error',
     'vue/no-useless-mustaches': 'error',
     'vue/no-useless-v-bind': 'error',
     'vue/no-v-text': 'error',
@@ -252,6 +267,7 @@ module.exports = {
     'vue/require-macro-variable-name': 'error',
     'vue/require-name-property': 'error',
     'vue/require-prop-comment': 'off',
+    'vue/require-typed-object-prop': 'error',
     'vue/require-typed-ref': 'error',
 
     'vue/script-indent': ['error', 2, {
