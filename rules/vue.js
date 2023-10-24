@@ -236,7 +236,7 @@ module.exports = {
     'vue/no-restricted-props': 'error',
     'vue/no-restricted-static-attribute': 'error',
     'vue/no-restricted-v-bind': 'error',
-    'vue/no-root-v-if': 'error',
+    'vue/no-root-v-if': 'off',
     'vue/no-setup-props-reactivity-loss': 'error',
     'vue/no-static-inline-styles': 'error',
     'vue/no-template-target-blank': 'error',

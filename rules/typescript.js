@@ -140,6 +140,7 @@ module.exports = {
     '@typescript-eslint/non-nullable-type-assertion-style': 'error',
     '@typescript-eslint/parameter-properties': 'error',
     '@typescript-eslint/prefer-as-const': 'error',
+    '@typescript-eslint/prefer-destructuring': 'error',
 
     // Don't see any reasons to enforce this rule 🤔
     '@typescript-eslint/prefer-enum-initializers': 'off',
@@ -185,8 +186,8 @@ module.exports = {
      */
 
     // Disable original ESLint rules in favour to extension rules
-    'class-methods-use-this': 'off',
     'brace-style': 'off',
+    'class-methods-use-this': 'off',
     'comma-dangle': 'off',
     'comma-spacing': 'off',
     'default-param-last': 'off',
@@ -194,8 +195,8 @@ module.exports = {
     'func-call-spacing': 'off',
     'indent': 'off',
     'init-declarations': 'off',
-    'keyword-spacing': 'off',
     'key-spacing': 'off',
+    'keyword-spacing': 'off',
     'lines-between-class-members': 'off',
     'no-array-constructor': 'off',
     'no-dupe-class-members': 'off',
@@ -217,6 +218,7 @@ module.exports = {
     'no-useless-constructor': 'off',
     'object-curly-spacing': 'off',
     'padding-line-between-statements': 'off',
+    'prefer-destructuring': 'off',
     'quotes': 'off',
     'require-await': 'off',
     'return-await': 'off',
