@@ -74,6 +74,9 @@ module.exports = {
     }, {
       selector: 'enumMember',
       format: ['StrictPascalCase']
+    }, {
+      selector: 'import',
+      format: null
     }],
 
     '@typescript-eslint/no-duplicate-type-constituents': 'error',
