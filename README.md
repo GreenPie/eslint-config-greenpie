@@ -27,6 +27,7 @@ Currently, here are four rulesets to extend
 | `eslint-config-greenpie`              | Includes base, formatting and typescript rules |
 | `eslint-config-greenpie/base`         | Common ESLint rules                            |
 | `eslint-config-greenpie/stylistic/js` | Stylistic JS rules                             |
+| `eslint-config-greenpie/stylistic/ts` | Stylistic TS rules                             |
 | `eslint-config-greenpie/typescript`   | TypeScript-related rules                       |
 | `eslint-config-greenpie/vue`          | Rules for Vue projects                         |
 | `eslint-config-greenpie/jest`         | Rules for test files using Jest                |
@@ -43,12 +44,19 @@ For using formatting rules for JS, it requires `@stylistic/eslint-plugin-js` plu
 
 * `npm install @stylistic/eslint-plugin-js --save-dev`
 
+
 ### TypeScript
 
 For TypeScript related rules, it requires a plugin and parser installed
 
 * `npm install @typescript-eslint/eslint-plugin --save-dev`
 * `npm install @typescript-eslint/parser --save-dev`
+
+### Formatting rules (TypeScript)
+
+For using formatting rules for TS, it requires `@stylistic/eslint-plugin-ts` plugin installed
+
+* `npm install @stylistic/eslint-plugin-ts --save-dev`
 
 ### Vue
 

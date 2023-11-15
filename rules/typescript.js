@@ -91,16 +91,6 @@ module.exports = {
 
     // Formatting Rules
 
-    'block-spacing': 'off',
-    '@typescript-eslint/block-spacing': 'error',
-
-    'lines-around-comment': 'off',
-    '@typescript-eslint/lines-around-comment': ['error', {
-      allowBlockStart: true
-    }],
-
-    '@typescript-eslint/member-delimiter-style': 'error',
-
     // TODO: Not grouped yet below
 
     // TypeScript specific Rules
@@ -175,10 +165,6 @@ module.exports = {
     '@typescript-eslint/strict-boolean-expressions': 'error',
     '@typescript-eslint/switch-exhaustiveness-check': 'error',
     '@typescript-eslint/triple-slash-reference': 'error',
-
-    // This rule should be more granular
-    '@typescript-eslint/type-annotation-spacing': 'off',
-
     '@typescript-eslint/typedef': 'error',
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'error',
@@ -189,23 +175,13 @@ module.exports = {
      */
 
     // Disable original ESLint rules in favour to extension rules
-    'brace-style': 'off',
     'class-methods-use-this': 'off',
-    'comma-dangle': 'off',
-    'comma-spacing': 'off',
     'default-param-last': 'off',
     'dot-notation': 'off',
-    'func-call-spacing': 'off',
-    'indent': 'off',
     'init-declarations': 'off',
-    'key-spacing': 'off',
-    'keyword-spacing': 'off',
-    'lines-between-class-members': 'off',
     'no-array-constructor': 'off',
     'no-dupe-class-members': 'off',
     'no-empty-function': 'off',
-    'no-extra-parens': 'off',
-    'no-extra-semi': 'off',
     'no-implied-eval': 'off',
     'no-invalid-this': 'off',
     'no-loop-func': 'off',
@@ -219,38 +195,20 @@ module.exports = {
     'no-unused-vars': 'off',
     'no-use-before-define': 'off',
     'no-useless-constructor': 'off',
-    'object-curly-spacing': 'off',
-    'padding-line-between-statements': 'off',
     'prefer-destructuring': 'off',
-    'quotes': 'off',
     'require-await': 'off',
     'return-await': 'off',
-    'semi': 'off',
-    'space-before-blocks': 'off',
-    'space-before-function-paren': 'off',
-    'space-infix-ops': 'off',
 
     // Extension Rules
     '@typescript-eslint/class-methods-use-this': 'error',
-    '@typescript-eslint/brace-style': 'error',
-    '@typescript-eslint/comma-dangle': 'error',
-    '@typescript-eslint/comma-spacing': 'error',
+
     '@typescript-eslint/default-param-last': 'error',
     '@typescript-eslint/dot-notation': 'error',
-    '@typescript-eslint/func-call-spacing': 'error',
-    '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/init-declarations': 'error',
-    '@typescript-eslint/keyword-spacing': 'error',
-    '@typescript-eslint/key-spacing': 'error',
-
-    // Lack of configuration. Can it be replaced by `padding-line-between-statements`?
-    '@typescript-eslint/lines-between-class-members': 'off',
 
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-dupe-class-members': 'error',
     '@typescript-eslint/no-empty-function': 'error',
-    '@typescript-eslint/no-extra-parens': 'error',
-    '@typescript-eslint/no-extra-semi': 'error',
     '@typescript-eslint/no-implied-eval': 'error',
     '@typescript-eslint/no-invalid-this': 'error',
     '@typescript-eslint/no-loop-func': 'error',
@@ -268,45 +226,8 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'error',
     '@typescript-eslint/no-use-before-define': 'error',
     '@typescript-eslint/no-useless-constructor': 'error',
-    '@typescript-eslint/object-curly-spacing': ['error', 'always'],
-
-    '@typescript-eslint/padding-line-between-statements': ['error', {
-      blankLine: 'always',
-      prev: ['const', 'let', 'block-like', 'directive'],
-      next: '*'
-    }, {
-      blankLine: 'always',
-      prev: '*',
-      next: ['const', 'let', 'return', 'block-like']
-    }, {
-      blankLine: 'never',
-      prev: ['singleline-const', 'singleline-let'],
-      next: ['singleline-const', 'singleline-let']
-    }, {
-      blankLine: 'never',
-      prev: 'directive',
-      next: 'directive'
-    }, {
-      blankLine: 'never',
-      prev: 'case',
-      next: ['case', 'default']
-    }, {
-      blankLine: 'always',
-      prev: 'block-like',
-      next: ['case', 'default']
-    }],
-
-    '@typescript-eslint/quotes': ['error', 'single'],
     '@typescript-eslint/require-await': 'error',
-    '@typescript-eslint/return-await': 'error',
-    '@typescript-eslint/semi': 'error',
-    '@typescript-eslint/space-before-blocks': 'error',
-
-    '@typescript-eslint/space-before-function-paren': ['error', {
-      named: 'never'
-    }],
-
-    '@typescript-eslint/space-infix-ops': 'error'
+    '@typescript-eslint/return-await': 'error'
   },
 
   overrides: [{

@@ -1,11 +1,13 @@
 const baseRules = require.resolve('./rules/base');
 const stylisticJsRules = require.resolve('./rules/stylistic-js');
 const typescriptRules = require.resolve('./rules/typescript');
+const stylisticTsRules = require.resolve('./rules/stylistic-ts');
 
 module.exports = {
   extends: [
     baseRules,
     stylisticJsRules,
-    typescriptRules
+    typescriptRules,
+    stylisticTsRules
   ]
 };
