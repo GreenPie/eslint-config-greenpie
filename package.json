@@ -33,6 +33,8 @@
     "vue"
   ],
   "peerDependencies": {
+    "@stylistic/eslint-plugin-js": "^1.2.0",
+    "@stylistic/eslint-plugin-ts": "^1.2.0",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "eslint": "^8.53.0",

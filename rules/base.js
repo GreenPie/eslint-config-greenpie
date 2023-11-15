@@ -136,11 +136,6 @@ module.exports = {
     'no-bitwise': 'error',
     'no-caller': 'error',
     'no-case-declarations': 'error',
-
-    'no-confusing-arrow': ['error', {
-      onlyOneSimpleParam: true
-    }],
-
     'no-console': 'error',
     'no-continue': 'error',
     'no-delete-var': 'error',
@@ -155,8 +150,6 @@ module.exports = {
     'no-extra-bind': 'error',
     'no-extra-boolean-cast': 'error',
     'no-extra-label': 'error',
-    'no-extra-semi': 'error',
-    'no-floating-decimal': 'error',
     'no-global-assign': 'error',
     'no-implicit-coercion': 'error',
     'no-implicit-globals': 'error',
@@ -175,7 +168,6 @@ module.exports = {
       detectObjects: true
     }],
 
-    'no-mixed-operators': 'error',
     'no-multi-assign': 'error',
     'no-multi-str': 'error',
     'no-negated-condition': 'error',
@@ -237,7 +229,6 @@ module.exports = {
     'no-with': 'error',
     'object-shorthand': 'error',
     'one-var': ['error', 'never'],
-    'one-var-declaration-per-line': 'error',
     'operator-assignment': 'error',
     'prefer-arrow-callback': 'error',
     'prefer-const': 'error',
@@ -252,7 +243,6 @@ module.exports = {
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',
-    'quote-props': ['error', 'as-needed'],
     'radix': 'error',
     'require-await': 'error',
     'require-unicode-regexp': 'error',
@@ -266,11 +256,6 @@ module.exports = {
 
     'sort-keys': 'off',
     'sort-vars': 'error',
-
-    'spaced-comment': ['error', 'always', {
-      markers: ['/']
-    }],
-
     'strict': 'error',
     'symbol-description': 'error',
     'vars-on-top': 'error',
@@ -282,88 +267,7 @@ module.exports = {
      * {@link https://eslint.org/docs/rules/#layout-formatting}
      */
 
-    'array-bracket-newline': ['error', 'consistent'],
-    'array-bracket-spacing': 'error',
-    'array-element-newline': ['error', 'consistent'],
-
-    'arrow-parens': ['error', 'as-needed', {
-      requireForBlockBody: true
-    }],
-
-    'arrow-spacing': 'error',
-    'block-spacing': 'error',
-    'brace-style': 'error',
-    'comma-dangle': 'error',
-    'comma-spacing': 'error',
-    'comma-style': 'error',
-    'computed-property-spacing': 'error',
-    'dot-location': ['error', 'property'],
-    'eol-last': 'error',
-    'func-call-spacing': 'error',
-    'function-call-argument-newline': ['error', 'consistent'],
-    'function-paren-newline': ['error', 'consistent'],
-    'generator-star-spacing': 'error',
-    'implicit-arrow-linebreak': 'error',
-    'indent': ['error', 2],
-    'jsx-quotes': 'error',
-    'key-spacing': 'error',
-    'keyword-spacing': 'error',
     'line-comment-position': 'error',
-    'linebreak-style': 'error',
-
-    'lines-around-comment': ['error', {
-      allowBlockStart: true
-    }],
-
-    'lines-between-class-members': 'error',
-
-    'max-len': ['error', 120, {
-      ignoreUrls: true
-    }],
-
-    'max-statements-per-line': 'error',
-
-    // If it requires multilines, so it's probably better to use "if-else" instead
-    'multiline-ternary': ['error', 'never'],
-
-    'new-parens': 'error',
-    'newline-per-chained-call': 'error',
-    'no-extra-parens': 'error',
-    'no-mixed-spaces-and-tabs': 'error',
-    'no-multi-spaces': 'error',
-
-    'no-multiple-empty-lines': ['error', {
-      max: 1,
-      maxBOF: 0,
-      maxEOF: 0
-    }],
-
-    'no-tabs': 'error',
-    'no-trailing-spaces': 'error',
-    'no-whitespace-before-property': 'error',
-    'nonblock-statement-body-position': 'error',
-    'object-curly-newline': 'error',
-    'object-curly-spacing': ['error', 'always'],
-    'object-property-newline': 'error',
-    'operator-linebreak': 'error',
-    'padded-blocks': ['error', 'never'],
-    'padding-line-between-statements': 'error',
-    'quotes': ['error', 'single'],
-    'rest-spread-spacing': 'error',
-    'semi': 'error',
-    'semi-spacing': 'error',
-    'semi-style': 'error',
-    'space-before-blocks': 'error',
-    'space-before-function-paren': ['error', 'never'],
-    'space-in-parens': 'error',
-    'space-infix-ops': 'error',
-    'space-unary-ops': 'error',
-    'switch-colon-spacing': 'error',
-    'template-curly-spacing': 'error',
-    'template-tag-spacing': 'error',
-    'unicode-bom': 'error',
-    'wrap-iife': 'error',
-    'wrap-regex': 'error',
-    'yield-star-spacing': 'error'
+    'unicode-bom': 'error'
   }
 };

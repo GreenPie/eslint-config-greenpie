@@ -14,6 +14,7 @@
 
   "extends": [
     "./base",
+    "./stylistic/js",
     "./typescript",
     "./vue",
     "./jest"
@@ -28,7 +29,7 @@
   "rules": {
     "max-lines": "off",
     "no-magic-numbers": "off",
-    "quote-props": "off"
+    "@stylistic/js/quote-props": "off"
   },
 
   "overrides": [{
