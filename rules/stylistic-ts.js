@@ -8,6 +8,30 @@ module.exports = {
    * {@link https://github.com/eslint-stylistic/eslint-stylistic/releases}
    */
   rules: {
+    // Disable original JavaScript rules
+
+    '@stylistic/js/block-spacing': 'off',
+    '@stylistic/js/brace-style': 'off',
+    '@stylistic/js/comma-dangle': 'off',
+    '@stylistic/js/comma-spacing': 'off',
+    '@stylistic/js/function-call-spacing': 'off',
+    '@stylistic/js/indent': 'off',
+    '@stylistic/js/key-spacing': 'off',
+    '@stylistic/js/keyword-spacing': 'off',
+    '@stylistic/js/lines-around-comment': 'off',
+    '@stylistic/js/lines-between-class-members': 'off',
+    '@stylistic/js/no-extra-parens': 'off',
+    '@stylistic/js/no-extra-semi': 'off',
+    '@stylistic/js/object-curly-spacing': 'off',
+    '@stylistic/js/padding-line-between-statements': 'off',
+    '@stylistic/js/quotes': 'off',
+    '@stylistic/js/semi': 'off',
+    '@stylistic/js/space-before-blocks': 'off',
+    '@stylistic/js/space-before-function-paren': 'off',
+    '@stylistic/js/space-infix-ops': 'off',
+
+    // TypeScript rules
+
     '@stylistic/ts/block-spacing': 'error',
     '@stylistic/ts/brace-style': 'error',
     '@stylistic/ts/comma-dangle': 'error',
@@ -25,7 +49,11 @@ module.exports = {
     // TODO: Lack of configuration. Can it be replaced by `padding-line-between-statements`?
     '@stylistic/ts/lines-between-class-members': 'off',
     '@stylistic/ts/member-delimiter-style': 'error',
-    '@stylistic/ts/no-extra-parens': 'error',
+
+    '@stylistic/ts/no-extra-parens': ['error', 'all', {
+      nestedBinaryExpressions: false
+    }],
+
     '@stylistic/ts/no-extra-semi': 'error',
     '@stylistic/ts/object-curly-spacing': ['error', 'always'],
 
