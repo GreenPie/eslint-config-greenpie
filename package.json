@@ -33,11 +33,11 @@
     "vue"
   ],
   "peerDependencies": {
-    "@stylistic/eslint-plugin-js": "^1.2.0",
-    "@stylistic/eslint-plugin-ts": "^1.2.0",
-    "@typescript-eslint/eslint-plugin": "^6.10.0",
-    "@typescript-eslint/parser": "^6.10.0",
-    "eslint": "^8.53.0",
+    "@stylistic/eslint-plugin-js": "^1.4.0",
+    "@stylistic/eslint-plugin-ts": "^1.4.0",
+    "@typescript-eslint/eslint-plugin": "^6.12.0",
+    "@typescript-eslint/parser": "^6.12.0",
+    "eslint": "^8.54.0",
     "eslint-plugin-jest": "^27.6.0",
     "eslint-plugin-vue": "^9.18.1"
   },
