@@ -248,6 +248,7 @@ module.exports = {
       version: '^3.3.0'
     }],
 
+    'vue/no-unused-emit-declarations': 'error',
     'vue/no-unused-properties': 'error',
     'vue/no-unused-refs': 'error',
     'vue/no-use-v-else-with-v-for': 'error',
@@ -279,6 +280,10 @@ module.exports = {
     'vue/sort-keys': 'off',
     'vue/static-class-names-order': 'error',
     'vue/v-for-delimiter-style': 'error',
+
+    // In Vue 3 the key is automatically assigned to the elements.
+    'vue/v-if-else-key': 'off',
+
     'vue/v-on-handler-style': ['error', ['method', 'inline']],
     'vue/valid-define-options': 'error',
 
