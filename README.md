@@ -22,15 +22,16 @@ And then extend your local eslint config by this one
 
 Currently, here are four rulesets to extend
 
-| Extension                             | Description                                    |
-|---------------------------------------|------------------------------------------------|
-| `eslint-config-greenpie`              | Includes base, formatting and typescript rules |
-| `eslint-config-greenpie/base`         | Common ESLint rules                            |
-| `eslint-config-greenpie/stylistic/js` | Stylistic JS rules                             |
-| `eslint-config-greenpie/stylistic/ts` | Stylistic TS rules                             |
-| `eslint-config-greenpie/typescript`   | TypeScript-related rules                       |
-| `eslint-config-greenpie/vue`          | Rules for Vue projects                         |
-| `eslint-config-greenpie/jest`         | Rules for test files using Jest                |
+| Extension                               | Description                                    |
+|-----------------------------------------|------------------------------------------------|
+| `eslint-config-greenpie`                | Includes base, formatting and typescript rules |
+| `eslint-config-greenpie/base`           | Common ESLint rules                            |
+| `eslint-config-greenpie/stylistic/js`   | Stylistic JS rules                             |
+| `eslint-config-greenpie/stylistic/ts`   | Stylistic TS rules                             |
+| `eslint-config-greenpie/stylistic/plus` | Stylistic Plus rules                           |
+| `eslint-config-greenpie/typescript`     | TypeScript-related rules                       |
+| `eslint-config-greenpie/vue`            | Rules for Vue projects                         |
+| `eslint-config-greenpie/jest`           | Rules for test files using Jest                |
 
 ### Base rules
 
