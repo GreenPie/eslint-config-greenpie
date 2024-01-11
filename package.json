@@ -33,14 +33,14 @@
     "vue"
   ],
   "peerDependencies": {
-    "@stylistic/eslint-plugin-js": "^1.5.1",
-    "@stylistic/eslint-plugin-plus": "^1.5.1",
-    "@stylistic/eslint-plugin-ts": "^1.5.1",
-    "@typescript-eslint/eslint-plugin": "^6.17.0",
-    "@typescript-eslint/parser": "^6.17.0",
+    "@stylistic/eslint-plugin-js": "^1.5.3",
+    "@stylistic/eslint-plugin-plus": "^1.5.3",
+    "@stylistic/eslint-plugin-ts": "^1.5.3",
+    "@typescript-eslint/eslint-plugin": "^6.18.1",
+    "@typescript-eslint/parser": "^6.18.1",
     "eslint": "^8.56.0",
-    "eslint-plugin-jest": "^27.6.1",
-    "eslint-plugin-vue": "^9.19.2"
+    "eslint-plugin-jest": "^27.6.2",
+    "eslint-plugin-vue": "^9.20.0"
   },
   "devDependencies": {
     "eslint": "^8.29.0"

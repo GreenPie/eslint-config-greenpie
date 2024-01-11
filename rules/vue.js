@@ -15,8 +15,6 @@ module.exports = {
      * {@link https://eslint.vuejs.org/rules/#priority-a-essential-error-prevention}
      */
 
-    // Vue 3, Vue 2
-
     'vue/multi-word-component-names': 'error',
     'vue/no-arrow-functions-in-watch': 'error',
     'vue/no-async-in-computed-properties': 'error',
@@ -69,9 +67,6 @@ module.exports = {
     'vue/valid-v-show': 'error',
     'vue/valid-v-slot': 'error',
     'vue/valid-v-text': 'error',
-
-    // Vue 3
-
     'vue/no-deprecated-data-object-declaration': 'error',
     'vue/no-deprecated-destroyed-lifecycle': 'error',
     'vue/no-deprecated-dollar-listeners-api': 'error',
@@ -101,24 +96,11 @@ module.exports = {
     'vue/valid-v-is': 'error',
     'vue/valid-v-memo': 'error',
 
-    // Vue 2
-
-    /*
-     * 'vue/no-custom-modifiers-on-v-model': 'error',
-     * 'vue/no-multiple-template-root': 'error',
-     * 'vue/no-v-for-template-key': 'error',
-     * 'vue/no-v-model-argument': 'error',
-     * 'vue/valid-model-definition': 'error',
-     * 'vue/valid-v-bind-sync': 'error',
-     */
-
     /**
      * Priority B: Strongly Recommended (Improving Readability)
      *
      * {@link https://eslint.vuejs.org/rules/#priority-b-strongly-recommended-improving-readability}
      */
-
-    // Vue 3, Vue 2
 
     'vue/attribute-hyphenation': 'error',
     'vue/component-definition-name-casing': 'error',
@@ -148,9 +130,6 @@ module.exports = {
     'vue/v-bind-style': 'error',
     'vue/v-on-style': 'error',
     'vue/v-slot-style': 'error',
-
-    // Vue 3
-
     'vue/require-explicit-emits': 'error',
     'vue/v-on-event-hyphenation': 'error',
 
@@ -201,6 +180,11 @@ module.exports = {
     'vue/define-emits-declaration': 'error',
     'vue/define-macros-order': 'error',
     'vue/define-props-declaration': 'error',
+
+    'vue/enforce-style-attribute': ['error', {
+      allow: ['module', 'plain']
+    }],
+
     'vue/html-button-has-type': 'error',
     'vue/html-comment-content-newline': 'error',
     'vue/html-comment-content-spacing': 'error',
@@ -245,7 +229,7 @@ module.exports = {
     'vue/no-undef-properties': 'error',
 
     'vue/no-unsupported-features': ['error', {
-      version: '^3.3.0'
+      version: '^3.4.0'
     }],
 
     'vue/no-unused-emit-declarations': 'error',
