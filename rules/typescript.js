@@ -147,6 +147,7 @@ module.exports = {
     '@typescript-eslint/prefer-namespace-keyword': 'error',
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
     '@typescript-eslint/prefer-optional-chain': 'error',
+    '@typescript-eslint/prefer-promise-reject-errors': 'error',
     '@typescript-eslint/prefer-readonly': 'error',
 
     /*
@@ -198,17 +199,17 @@ module.exports = {
     'no-use-before-define': 'off',
     'no-useless-constructor': 'off',
     'prefer-destructuring': 'off',
+    'prefer-promise-reject-errors': 'off',
     'require-await': 'off',
     'return-await': 'off',
 
     // Extension Rules
     '@typescript-eslint/class-methods-use-this': 'error',
-
     '@typescript-eslint/default-param-last': 'error',
     '@typescript-eslint/dot-notation': 'error',
     '@typescript-eslint/init-declarations': 'error',
-
     '@typescript-eslint/no-array-constructor': 'error',
+    '@typescript-eslint/no-array-delete': 'error',
     '@typescript-eslint/no-dupe-class-members': 'error',
     '@typescript-eslint/no-empty-function': 'error',
     '@typescript-eslint/no-implied-eval': 'error',
