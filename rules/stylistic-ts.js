@@ -8,6 +8,8 @@ module.exports = {
    * {@link https://github.com/eslint-stylistic/eslint-stylistic/releases}
    */
   rules: {
+    // TODO: do we need this disabling?
+
     // Disable original JavaScript rules
 
     '@stylistic/js/block-spacing': 'off',
@@ -24,6 +26,7 @@ module.exports = {
     '@stylistic/js/no-extra-semi': 'off',
     '@stylistic/js/object-curly-spacing': 'off',
     '@stylistic/js/padding-line-between-statements': 'off',
+    '@stylistic/js/quote-props': 'off',
     '@stylistic/js/quotes': 'off',
     '@stylistic/js/semi': 'off',
     '@stylistic/js/space-before-blocks': 'off',
@@ -83,6 +86,7 @@ module.exports = {
       next: ['case', 'default']
     }],
 
+    '@stylistic/ts/quote-props': ['error', 'as-needed'],
     '@stylistic/ts/quotes': ['error', 'single'],
     '@stylistic/ts/semi': 'error',
     '@stylistic/ts/space-before-blocks': 'error',

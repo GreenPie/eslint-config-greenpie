@@ -140,6 +140,7 @@ module.exports = {
     // Don't see any reasons to enforce this rule 🤔
     '@typescript-eslint/prefer-enum-initializers': 'off',
 
+    '@typescript-eslint/prefer-find': 'error',
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-function-type': 'error',
     '@typescript-eslint/prefer-includes': 'error',

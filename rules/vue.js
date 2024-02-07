@@ -127,7 +127,11 @@ module.exports = {
     'vue/require-default-prop': 'error',
     'vue/require-prop-types': 'error',
     'vue/singleline-html-element-content-newline': 'error',
-    'vue/v-bind-style': 'error',
+
+    'vue/v-bind-style': ['error', 'shorthand', {
+      sameNameShorthand: 'always'
+    }],
+
     'vue/v-on-style': 'error',
     'vue/v-slot-style': 'error',
     'vue/require-explicit-emits': 'error',
@@ -220,6 +224,7 @@ module.exports = {
     'vue/no-restricted-props': 'error',
     'vue/no-restricted-static-attribute': 'error',
     'vue/no-restricted-v-bind': 'error',
+    'vue/no-restricted-v-on': 'off',
     'vue/no-root-v-if': 'off',
     'vue/no-setup-props-reactivity-loss': 'error',
     'vue/no-static-inline-styles': 'error',
@@ -248,6 +253,7 @@ module.exports = {
     'vue/prefer-true-attribute-shorthand': 'error',
     'vue/require-direct-export': 'error',
     'vue/require-emit-validator': 'error',
+    'vue/require-explicit-slots': 'error',
     'vue/require-expose': 'error',
     'vue/require-macro-variable-name': 'error',
     'vue/require-name-property': 'error',
