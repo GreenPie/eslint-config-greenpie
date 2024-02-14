@@ -1,8 +1,10 @@
+import stylisticTsPlugin from '@stylistic/eslint-plugin-ts';
+
 // https://eslint.style/packages/ts
-module.exports = {
-  plugins: [
-    '@stylistic/ts'
-  ],
+export default [{
+  plugins: {
+    '@stylistic/ts': stylisticTsPlugin
+  },
 
   /**
    * {@link https://github.com/eslint-stylistic/eslint-stylistic/releases}
@@ -100,4 +102,4 @@ module.exports = {
     // TODO: This rule should be more granular
     '@stylistic/ts/type-annotation-spacing': 'off'
   }
-};
+}];

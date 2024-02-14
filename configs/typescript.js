@@ -1,22 +1,28 @@
-module.exports = {
-  parser: '@typescript-eslint/parser',
+import tsEslint from 'typescript-eslint';
 
-  parserOptions: {
-    project: ['./tsconfig.json']
+export default [{
+  plugins: {
+    '@typescript-eslint': tsEslint.plugin
   },
 
-  plugins: [
-    '@typescript-eslint'
-  ],
+  languageOptions: {
+    parser: tsEslint.parser,
+
+    parserOptions: {
+      project: true
+    }
+  },
 
   /*
    * https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/CHANGELOG.md
    * https://typescript-eslint.io/rules/
    */
+
   rules: {
     // TODO: regroup rules by new categories
 
     // TypeScript Rules
+
     '@typescript-eslint/adjacent-overload-signatures': 'error',
     '@typescript-eslint/array-type': 'error',
     '@typescript-eslint/await-thenable': 'error',
@@ -235,21 +241,23 @@ module.exports = {
     '@typescript-eslint/no-useless-constructor': 'error',
     '@typescript-eslint/require-await': 'error',
     '@typescript-eslint/return-await': 'error'
-  },
+  }
+},
 
-  overrides: [{
-    files: ['*.ts', '*.mts', '*.cts', '*.tsx'],
+{
+  files: ['*.test.ts'],
 
-    rules: {
-      // https://typescript-eslint.io/docs/linting/troubleshooting/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
-      'no-undef': 'off'
-    }
-  }, {
-    files: ['*.test.ts'],
+  rules: {
+    // Basically, we might have lot of magic numbers in tests
+    '@typescript-eslint/no-magic-numbers': 'off'
+  }
+},
 
-    rules: {
-      // Basically, we might have lot of magic numbers in tests
-      '@typescript-eslint/no-magic-numbers': 'off'
-    }
-  }]
-};
+{
+  files: ['*.ts', '*.mts', '*.cts', '*.tsx'],
+
+  rules: {
+    // https://typescript-eslint.io/docs/linting/troubleshooting/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
+    'no-undef': 'off'
+  }
+}];
