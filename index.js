@@ -1,15 +1,62 @@
-const baseRules = require.resolve('./rules/base');
-const stylisticJsRules = require.resolve('./rules/stylistic-js');
-const typescriptRules = require.resolve('./rules/typescript');
-const stylisticTsRules = require.resolve('./rules/stylistic-ts');
-const stylisticPlusRules = require.resolve('./rules/stylistic-plus');
+import tsEslint from 'typescript-eslint';
+import baseConfig from './configs/base.js';
+import stylisticJs from './configs/stylistic/js.js';
+import stylisticPlus from './configs/stylistic/plus.js';
+import stylisticTs from './configs/stylistic/ts.js';
+import typeScript from './configs/typescript.js';
+import vue from './configs/vue.js';
 
-module.exports = {
+const jsConfig = tsEslint.config({
+  files: [
+    '**/*.{js,mjs,cjs}'
+  ],
+
   extends: [
-    baseRules,
-    stylisticJsRules,
-    typescriptRules,
-    stylisticTsRules,
-    stylisticPlusRules
+    ...baseConfig,
+    ...stylisticJs,
+    ...stylisticPlus
   ]
+});
+
+const tsConfig = tsEslint.config({
+  files: [
+    '**/*.{ts,mts,cts}'
+  ],
+
+  extends: [
+    ...baseConfig,
+    ...stylisticJs,
+    ...stylisticPlus,
+    ...stylisticTs,
+    ...typeScript
+  ]
+});
+
+const vueConfig = tsEslint.config({
+  files: [
+    '**/*.vue'
+  ],
+
+  extends: [
+    ...baseConfig,
+    ...stylisticJs,
+    ...stylisticPlus,
+    ...stylisticTs,
+    ...typeScript,
+    ...vue
+  ]
+});
+
+const defaultConfig = tsEslint.config(
+  ...jsConfig,
+  ...tsConfig
+);
+
+export default {
+  configs: {
+    default: defaultConfig,
+    js: jsConfig,
+    ts: tsConfig,
+    vue: vueConfig,
+  }
 };

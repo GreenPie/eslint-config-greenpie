@@ -1,8 +1,11 @@
+import tsEslint from 'typescript-eslint';
+import stylisticTsPlugin from '@stylistic/eslint-plugin-ts';
+
 // https://eslint.style/packages/ts
-module.exports = {
-  plugins: [
-    '@stylistic/ts'
-  ],
+export default tsEslint.config({
+  plugins: {
+    '@stylistic/ts': stylisticTsPlugin
+  },
 
   /**
    * {@link https://github.com/eslint-stylistic/eslint-stylistic/releases}
@@ -58,7 +61,20 @@ module.exports = {
     }],
 
     '@stylistic/ts/no-extra-semi': 'error',
+
+    '@stylistic/ts/object-curly-newline': ['error', {
+      /**
+       * TSTypeLiteral
+       * TSInterfaceBody
+       */
+      TSInterfaceBody: {
+        multiline: true,
+        minProperties: 1
+      }
+    }],
+
     '@stylistic/ts/object-curly-spacing': ['error', 'always'],
+    '@stylistic/ts/object-property-newline': 'error',
 
     '@stylistic/ts/padding-line-between-statements': ['error', {
       blankLine: 'always',
@@ -100,4 +116,4 @@ module.exports = {
     // TODO: This rule should be more granular
     '@stylistic/ts/type-annotation-spacing': 'off'
   }
-};
+});
