@@ -2,13 +2,11 @@ import typeScriptParser from '@typescript-eslint/parser';
 import baseConfig from './configs/base.js';
 import stylisticJsConfig from './configs/stylistic/js.js';
 import stylisticPlusConfig from './configs/stylistic/plus.js';
-import vueConfig from './configs/vue.js';
 
 export default [
   ...baseConfig,
   ...stylisticJsConfig,
   ...stylisticPlusConfig,
-  ...vueConfig,
 
   {
     linterOptions: {
