@@ -1,8 +1,11 @@
+import stylisticJsPlugin from '@stylistic/eslint-plugin-js';
+import tsEslint from 'typescript-eslint';
+
 // https://eslint.style/packages/js
-module.exports = {
-  plugins: [
-    '@stylistic/js'
-  ],
+export default tsEslint.config({
+  plugins: {
+    '@stylistic/js': stylisticJsPlugin
+  },
 
   /**
    * {@link https://github.com/eslint-stylistic/eslint-stylistic/releases}
@@ -35,6 +38,7 @@ module.exports = {
     '@stylistic/js/jsx-quotes': 'error',
     '@stylistic/js/key-spacing': 'error',
     '@stylistic/js/keyword-spacing': 'error',
+    '@stylistic/js/line-comment-position': 'error',
     '@stylistic/js/linebreak-style': 'error',
 
     '@stylistic/js/lines-around-comment': ['error', {
@@ -48,6 +52,7 @@ module.exports = {
     }],
 
     '@stylistic/js/max-statements-per-line': 'error',
+    '@stylistic/js/multiline-comment-style': 'error',
 
     // If it requires multilines, so it's probably better to use "if-else" instead
     '@stylistic/js/multiline-ternary': ['error', 'never'],
@@ -76,7 +81,28 @@ module.exports = {
     '@stylistic/js/no-trailing-spaces': 'error',
     '@stylistic/js/no-whitespace-before-property': 'error',
     '@stylistic/js/nonblock-statement-body-position': 'error',
-    '@stylistic/js/object-curly-newline': 'error',
+
+    '@stylistic/js/object-curly-newline': ['error', {
+
+      /**
+       * ObjectExpression
+       * ObjectPattern
+       * ImportDeclaration
+       * ExportDeclaration
+       */
+
+      ObjectExpression: {
+        consistent: true,
+        multiline: true,
+        minProperties: 2
+      },
+
+      ExportDeclaration: {
+        multiline: true,
+        minProperties: 1
+      }
+    }],
+
     '@stylistic/js/object-curly-spacing': ['error', 'always'],
     '@stylistic/js/object-property-newline': 'error',
     '@stylistic/js/one-var-declaration-per-line': 'error',
@@ -106,4 +132,4 @@ module.exports = {
     '@stylistic/js/wrap-regex': 'error',
     '@stylistic/js/yield-star-spacing': 'error'
   }
-};
+});

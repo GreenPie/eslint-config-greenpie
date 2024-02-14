@@ -1,10 +1,11 @@
 {
   "name": "eslint-config-greenpie",
-  "version": "7.12.0",
+  "version": "8.0.3-0",
   "description": "GreenPie's ESLint config file",
   "main": "index.js",
   "author": "Roman Nuritdinov (Ky6uk)",
   "license": "MIT",
+  "type": "module",
   "homepage": "https://github.com/GreenPie/eslint-config-greenpie",
   "repository": {
     "type": "git",
@@ -15,10 +16,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "test": "npm run test:self && npm run test:vue",
-    "test:self": "npm run lint",
-    "test:vue": "eslint --config tests/vue/.eslintrc.json tests/vue/*.vue",
-    "prepare": "npm run test"
+    "prepare": "npm run lint"
   },
   "keywords": [
     "eslint",
@@ -28,21 +26,14 @@
     "javascript",
     "styleguide",
     "typescript",
-    "jest",
-    "react",
     "vue"
   ],
   "peerDependencies": {
-    "@stylistic/eslint-plugin-js": "^1.7.2",
-    "@stylistic/eslint-plugin-plus": "^1.7.2",
-    "@stylistic/eslint-plugin-ts": "^1.7.2",
-    "@typescript-eslint/eslint-plugin": "^7.7.0",
-    "@typescript-eslint/parser": "^7.7.0",
-    "eslint": "^9.0.0",
-    "eslint-plugin-jest": "^28.2.0",
-    "eslint-plugin-vue": "^9.25.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.29.0"
+    "@stylistic/eslint-plugin-js": "^2.6.4",
+    "@stylistic/eslint-plugin-plus": "^2.6.4",
+    "@stylistic/eslint-plugin-ts": "^2.6.4",
+    "eslint": "^9.9.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "typescript-eslint": "^8.2.0"
   }
 }
