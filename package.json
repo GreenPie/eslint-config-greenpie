@@ -5,6 +5,7 @@
   "main": "index.js",
   "author": "Roman Nuritdinov (Ky6uk)",
   "license": "MIT",
+  "type": "module",
   "homepage": "https://github.com/GreenPie/eslint-config-greenpie",
   "repository": {
     "type": "git",
@@ -17,7 +18,7 @@
     "lint": "eslint .",
     "test": "npm run test:self && npm run test:vue",
     "test:self": "npm run lint",
-    "test:vue": "eslint --config tests/vue/.eslintrc.json tests/vue/*.vue",
+    "test:vue": "eslint --config tests/vue/eslint.config.js tests/vue",
     "prepare": "npm run test"
   },
   "keywords": [
@@ -28,8 +29,6 @@
     "javascript",
     "styleguide",
     "typescript",
-    "jest",
-    "react",
     "vue"
   ],
   "peerDependencies": {
@@ -39,10 +38,12 @@
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.56.0",
-    "eslint-plugin-jest": "^27.6.3",
     "eslint-plugin-vue": "^9.21.1"
   },
   "devDependencies": {
     "eslint": "^8.29.0"
+  },
+  "dependencies": {
+    "@eslint/js": "^8.56.0"
   }
 }
