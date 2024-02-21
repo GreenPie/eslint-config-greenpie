@@ -35,10 +35,9 @@
     "@stylistic/eslint-plugin-js": "^1.6.0",
     "@stylistic/eslint-plugin-plus": "^1.6.0",
     "@stylistic/eslint-plugin-ts": "^1.6.0",
-    "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
     "eslint": "^8.56.0",
-    "eslint-plugin-vue": "^9.21.1"
+    "eslint-plugin-vue": "^9.21.1",
+    "typescript-eslint": "^7.0.2"
   },
   "devDependencies": {
     "eslint": "^8.29.0"

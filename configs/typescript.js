@@ -1,17 +1,16 @@
-import typeScriptParser from '@typescript-eslint/parser';
-import typeScriptPlugin from '@typescript-eslint/eslint-plugin';
+import tsEslint from 'typescript-eslint';
 
 export default [{
-  languageOptions: {
-    parser: typeScriptParser,
-
-    parserOptions: {
-      project: ['./tsconfig.json']
-    }
+  plugins: {
+    '@typescript-eslint': tsEslint.plugin
   },
 
-  plugins: {
-    '@typescript-eslint': typeScriptPlugin
+  languageOptions: {
+    parser: tsEslint.parser,
+
+    parserOptions: {
+      project: true
+    }
   },
 
   /*
