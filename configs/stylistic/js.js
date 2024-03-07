@@ -1,8 +1,10 @@
+import stylisticJsPlugin from '@stylistic/eslint-plugin-js';
+
 // https://eslint.style/packages/js
-module.exports = {
-  plugins: [
-    '@stylistic/js'
-  ],
+export default [{
+  plugins: {
+    '@stylistic/js': stylisticJsPlugin
+  },
 
   /**
    * {@link https://github.com/eslint-stylistic/eslint-stylistic/releases}
@@ -106,4 +108,4 @@ module.exports = {
     '@stylistic/js/wrap-regex': 'error',
     '@stylistic/js/yield-star-spacing': 'error'
   }
-};
+}];
