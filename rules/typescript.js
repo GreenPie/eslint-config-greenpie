@@ -26,6 +26,7 @@ module.exports = {
     '@typescript-eslint/class-literal-property-style': 'error',
     '@typescript-eslint/consistent-generic-constructors': 'error',
     '@typescript-eslint/consistent-indexed-object-style': 'error',
+    '@typescript-eslint/consistent-return': 'error',
     '@typescript-eslint/consistent-type-assertions': 'error',
     '@typescript-eslint/consistent-type-definitions': 'error',
     '@typescript-eslint/consistent-type-exports': 'error',
@@ -172,6 +173,7 @@ module.exports = {
     '@typescript-eslint/typedef': 'error',
     '@typescript-eslint/unbound-method': 'error',
     '@typescript-eslint/unified-signatures': 'error',
+    '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
 
     /*
      * Extension Rules
@@ -180,6 +182,7 @@ module.exports = {
 
     // Disable original ESLint rules in favour to extension rules
     'class-methods-use-this': 'off',
+    'consistent-return': 'off',
     'default-param-last': 'off',
     'dot-notation': 'off',
     'init-declarations': 'off',
