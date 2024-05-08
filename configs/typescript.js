@@ -1,6 +1,6 @@
 import tsEslint from 'typescript-eslint';
 
-export default [{
+export default tsEslint.config({
   plugins: {
     '@typescript-eslint': tsEslint.plugin
   },
@@ -260,4 +260,4 @@ export default [{
     // https://typescript-eslint.io/docs/linting/troubleshooting/#i-get-errors-from-the-no-undef-rule-about-global-variables-not-being-defined-even-though-there-are-no-typescript-errors
     'no-undef': 'off'
   }
-}];
+});

@@ -1,4 +1,3 @@
-/* eslint-disable multiline-comment-style,capitalized-comments,no-unused-vars */
 import tseslint from 'typescript-eslint';
 import vuePlugin from 'eslint-plugin-vue';
 

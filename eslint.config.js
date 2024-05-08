@@ -2,9 +2,11 @@ import tseslint from 'typescript-eslint';
 import baseConfig from './configs/base.js';
 import stylisticJsConfig from './configs/stylistic/js.js';
 import stylisticPlusConfig from './configs/stylistic/plus.js';
+import typescriptConfig from './configs/typescript.js';
 
 export default tseslint.config(
   ...baseConfig,
+  ...typescriptConfig,
   ...stylisticJsConfig,
   ...stylisticPlusConfig,
 
