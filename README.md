@@ -31,7 +31,6 @@ Currently, here are four rulesets to extend
 | `eslint-config-greenpie/stylistic/plus` | Stylistic Plus rules                           |
 | `eslint-config-greenpie/typescript`     | TypeScript-related rules                       |
 | `eslint-config-greenpie/vue`            | Rules for Vue projects                         |
-| `eslint-config-greenpie/jest`           | Rules for test files using Jest                |
 
 ### Base rules
 
@@ -67,16 +66,9 @@ For Vue-related rules, it requires a plugin installed
 
 Also, if you're planning to use TypeScript alongside Vue, you will probably need to [configure another parser](https://github.com/vuejs/vue-eslint-parser#parseroptionsparser) for the `<script>` tag.
 
-### Jest (or a similar tool like Vitest)
-
-Additional configuration for Jest requires `eslint-plugin-jest` plugin
-
-* `npm install eslint-plugin-jest --save-dev`
-
 ### Links
 
 * [Registry](https://www.npmjs.com/package/eslint-config-greenpie)
 * [Basic ESLint rules](https://eslint.org/docs/rules/)
 * [TypeScript rules](https://typescript-eslint.io/rules/)
 * [Vue rules](https://eslint.vuejs.org)
-* [Jest rules](https://github.com/jest-community/eslint-plugin-jest#rules)
