@@ -21,6 +21,6 @@
   const items = [1, 2, 3];
 
   function handleClick() {
-    console.log('click');
+    // No-op
   }
 </script>
