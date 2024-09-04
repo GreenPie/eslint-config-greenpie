@@ -227,6 +227,8 @@ export default tsEslint.config(
         skipBlankLines: true
       }],
 
+      'vue/max-props': 'off',
+      'vue/max-template-depth': 'off',
       'vue/new-line-between-multi-line-property': 'error',
       'vue/next-tick-style': 'error',
       'vue/no-bare-strings-in-template': 'error',
@@ -275,6 +277,7 @@ export default tsEslint.config(
       'vue/prefer-prop-type-boolean-first': 'error',
       'vue/prefer-separate-static-class': 'error',
       'vue/prefer-true-attribute-shorthand': 'error',
+      'vue/require-default-export': 'off',
       'vue/require-direct-export': 'error',
       'vue/require-emit-validator': 'error',
 

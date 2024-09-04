@@ -235,6 +235,7 @@ export default tsEslint.config({
     '@typescript-eslint/init-declarations': 'error',
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-array-delete': 'error',
+    '@typescript-eslint/no-deprecated': 'error',
     '@typescript-eslint/no-dupe-class-members': 'error',
     '@typescript-eslint/no-empty-function': 'error',
     '@typescript-eslint/no-implied-eval': 'error',
