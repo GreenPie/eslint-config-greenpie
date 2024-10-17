@@ -233,6 +233,7 @@ export default tsEslint.config(
       'vue/next-tick-style': 'error',
       'vue/no-bare-strings-in-template': 'error',
       'vue/no-boolean-default': 'error',
+      'vue/no-deprecated-delete-set': 'error',
       'vue/no-deprecated-model-definition': 'error',
       'vue/no-duplicate-attr-inheritance': 'error',
       'vue/no-empty-component-block': 'error',

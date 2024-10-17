@@ -11,6 +11,11 @@ export default tsEslint.config({
    * {@link https://github.com/eslint-stylistic/eslint-stylistic/releases}
    */
   rules: {
+
+    /**
+     * @see {@link https://eslint.style/rules/plus/curly-newline}
+     */
+    '@stylistic/plus/curly-newline': 'error',
     '@stylistic/plus/indent-binary-ops': ['error', 2],
     '@stylistic/plus/type-generic-spacing': 'error',
     '@stylistic/plus/type-named-tuple-spacing': 'error'
