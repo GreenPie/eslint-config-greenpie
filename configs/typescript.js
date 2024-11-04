@@ -192,7 +192,11 @@ export default tsEslint.config({
     '@typescript-eslint/restrict-template-expressions': 'error',
     '@typescript-eslint/return-await': 'error',
     '@typescript-eslint/strict-boolean-expressions': 'error',
-    '@typescript-eslint/switch-exhaustiveness-check': 'error',
+
+    '@typescript-eslint/switch-exhaustiveness-check': ['error', {
+      considerDefaultExhaustiveForUnions: true
+    }],
+
     '@typescript-eslint/triple-slash-reference': 'error',
     '@typescript-eslint/typedef': 'error',
     '@typescript-eslint/unbound-method': 'error',
