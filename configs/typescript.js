@@ -110,6 +110,7 @@ export default tsEslint.config({
     '@typescript-eslint/no-unsafe-function-type': 'error',
     '@typescript-eslint/no-unsafe-member-access': 'error',
     '@typescript-eslint/no-unsafe-return': 'error',
+    '@typescript-eslint/no-unsafe-type-assertion': 'error',
     '@typescript-eslint/no-unsafe-unary-minus': 'error',
 
     // Formatting Rules
@@ -187,6 +188,7 @@ export default tsEslint.config({
     '@typescript-eslint/prefer-return-this-type': 'error',
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     '@typescript-eslint/promise-function-async': 'error',
+    '@typescript-eslint/related-getter-setter-pairs': 'error',
     '@typescript-eslint/require-array-sort-compare': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/restrict-template-expressions': 'error',
