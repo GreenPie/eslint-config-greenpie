@@ -282,10 +282,7 @@ export default tsEslint.config(
       'vue/require-default-export': 'off',
       'vue/require-direct-export': 'error',
       'vue/require-emit-validator': 'error',
-
-      // TODO: https://github.com/vuejs/eslint-plugin-vue/issues/2398
-      'vue/require-explicit-slots': 'off',
-
+      'vue/require-explicit-slots': 'error',
       'vue/require-expose': 'error',
       'vue/require-macro-variable-name': 'error',
       'vue/require-name-property': 'error',
@@ -299,6 +296,7 @@ export default tsEslint.config(
         ignores: []
       }],
 
+      'vue/slot-name-casing': ['error', 'kebab-case'],
       'vue/sort-keys': 'off',
       'vue/static-class-names-order': 'error',
       'vue/v-for-delimiter-style': 'error',

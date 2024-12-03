@@ -47,6 +47,8 @@ export default tsEslint.config({
     }],
 
     '@typescript-eslint/explicit-module-boundary-types': 'error',
+    '@typescript-eslint/init-declarations': 'error',
+    '@typescript-eslint/max-params': 'error',
 
     '@typescript-eslint/member-ordering': ['error', {
       default: [
@@ -216,6 +218,7 @@ export default tsEslint.config({
     'default-param-last': 'off',
     'dot-notation': 'off',
     'init-declarations': 'off',
+    'max-params': 'off',
     'no-array-constructor': 'off',
     'no-dupe-class-members': 'off',
     'no-empty-function': 'off',
@@ -238,7 +241,6 @@ export default tsEslint.config({
     '@typescript-eslint/class-methods-use-this': 'error',
     '@typescript-eslint/default-param-last': 'error',
     '@typescript-eslint/dot-notation': 'error',
-    '@typescript-eslint/init-declarations': 'error',
     '@typescript-eslint/no-array-constructor': 'error',
     '@typescript-eslint/no-array-delete': 'error',
     '@typescript-eslint/no-deprecated': 'error',
