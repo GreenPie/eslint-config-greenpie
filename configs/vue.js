@@ -282,7 +282,7 @@ export default tsEslint.config(
       'vue/require-default-export': 'off',
       'vue/require-direct-export': 'error',
       'vue/require-emit-validator': 'error',
-      'vue/require-explicit-slots': 'error',
+      'vue/require-explicit-slots': 'off',
       'vue/require-expose': 'error',
       'vue/require-macro-variable-name': 'error',
       'vue/require-name-property': 'error',
