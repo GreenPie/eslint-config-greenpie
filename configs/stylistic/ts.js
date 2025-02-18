@@ -32,6 +32,7 @@ export default tsEslint.config({
     '@stylistic/js/quote-props': 'off',
     '@stylistic/js/quotes': 'off',
     '@stylistic/js/semi': 'off',
+    '@stylistic/js/semi-spacing': 'off',
     '@stylistic/js/space-before-blocks': 'off',
     '@stylistic/js/space-before-function-paren': 'off',
     '@stylistic/js/space-infix-ops': 'off',
@@ -107,6 +108,7 @@ export default tsEslint.config({
     '@stylistic/ts/quote-props': ['error', 'as-needed'],
     '@stylistic/ts/quotes': ['error', 'single'],
     '@stylistic/ts/semi': 'error',
+    '@stylistic/ts/semi-spacing': 'error',
     '@stylistic/ts/space-before-blocks': 'error',
 
     '@stylistic/ts/space-before-function-paren': ['error', {
