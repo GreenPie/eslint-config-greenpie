@@ -50,7 +50,14 @@ export default tsEslint.config({
     '@stylistic/ts/keyword-spacing': 'error',
 
     '@stylistic/ts/lines-around-comment': ['error', {
-      allowBlockStart: true
+      allowBlockStart: true,
+      allowObjectStart: true,
+      allowArrayStart: true,
+      allowClassStart: true,
+      allowInterfaceStart: true,
+      allowModuleStart: true,
+      allowTypeStart: true,
+      allowEnumStart: true
     }],
 
     // TODO: Lack of configuration. Can it be replaced by `padding-line-between-statements`?

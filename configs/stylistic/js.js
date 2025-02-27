@@ -42,7 +42,10 @@ export default tsEslint.config({
     '@stylistic/js/linebreak-style': 'error',
 
     '@stylistic/js/lines-around-comment': ['error', {
-      allowBlockStart: true
+      allowBlockStart: true,
+      allowObjectStart: true,
+      allowArrayStart: true,
+      allowClassStart: true
     }],
 
     '@stylistic/js/lines-between-class-members': 'error',
