@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-greenpie",
-  "version": "10.2.0",
+  "version": "10.3.0",
   "description": "GreenPie's ESLint config file",
   "main": "index.js",
   "author": "Roman Nuritdinov (Ky6uk)",
