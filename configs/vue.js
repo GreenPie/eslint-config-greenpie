@@ -237,6 +237,7 @@ export default tsEslint.config(
       'vue/no-deprecated-model-definition': 'error',
       'vue/no-duplicate-attr-inheritance': 'error',
       'vue/no-empty-component-block': 'error',
+      'vue/no-import-compiler-macros': 'error',
       'vue/no-multiple-objects-in-class': 'error',
       'vue/no-potential-component-option-typo': 'error',
       'vue/no-ref-object-reactivity-loss': 'error',
