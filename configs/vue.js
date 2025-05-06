@@ -208,6 +208,7 @@ export default tsEslint.config(
       }],
 
       'vue/define-props-declaration': 'error',
+      'vue/define-props-destructuring': 'error',
 
       'vue/enforce-style-attribute': ['error', {
         allow: ['module', 'plain']

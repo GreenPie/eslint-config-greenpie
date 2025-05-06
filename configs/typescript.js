@@ -156,6 +156,7 @@ export default tsEslint.config({
     '@typescript-eslint/no-unnecessary-type-arguments': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     '@typescript-eslint/no-unnecessary-type-constraint': 'error',
+    '@typescript-eslint/no-unnecessary-type-conversion': 'error',
     '@typescript-eslint/no-unnecessary-type-parameters': 'error',
     '@typescript-eslint/no-useless-empty-export': 'error',
     '@typescript-eslint/no-var-requires': 'error',
