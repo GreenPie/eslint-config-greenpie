@@ -29,11 +29,11 @@
     "vue"
   ],
   "peerDependencies": {
-    "@stylistic/eslint-plugin-js": "^4.4.0",
-    "@stylistic/eslint-plugin-plus": "^4.4.0",
-    "@stylistic/eslint-plugin-ts": "^4.4.0",
-    "eslint": "^9.27.0",
-    "eslint-plugin-vue": "^10.1.0",
-    "typescript-eslint": "^8.33.0"
+    "@stylistic/eslint-plugin-js": "^4.4.1",
+    "@stylistic/eslint-plugin-plus": "^4.4.1",
+    "@stylistic/eslint-plugin-ts": "^4.4.1",
+    "eslint": "^9.28.0",
+    "eslint-plugin-vue": "^10.2.0",
+    "typescript-eslint": "^8.34.0"
   }
 }
