@@ -1,8 +1,6 @@
 import tsEslint from 'typescript-eslint';
 import baseConfig from './configs/base.js';
-import stylisticJs from './configs/stylistic/js.js';
-import stylisticPlus from './configs/stylistic/plus.js';
-import stylisticTs from './configs/stylistic/ts.js';
+import stylistic from './configs/stylistic.js';
 import typeScript from './configs/typescript.js';
 import vue from './configs/vue.js';
 
@@ -13,8 +11,7 @@ const jsConfig = tsEslint.config({
 
   extends: [
     ...baseConfig,
-    ...stylisticJs,
-    ...stylisticPlus
+    ...stylistic
   ]
 });
 
@@ -25,9 +22,7 @@ const tsConfig = tsEslint.config({
 
   extends: [
     ...baseConfig,
-    ...stylisticJs,
-    ...stylisticPlus,
-    ...stylisticTs,
+    ...stylistic,
     ...typeScript
   ]
 });
@@ -39,9 +34,7 @@ const vueConfig = tsEslint.config({
 
   extends: [
     ...baseConfig,
-    ...stylisticJs,
-    ...stylisticPlus,
-    ...stylisticTs,
+    ...stylistic,
     ...typeScript,
     ...vue
   ]

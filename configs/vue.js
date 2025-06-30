@@ -20,11 +20,11 @@ export default tsEslint.config(
     rules: {
       // Disable some rules from other configs
 
+      'consistent-return': 'off',
       'max-len': 'off',
       'no-useless-assignment': 'off',
-      '@stylistic/ts/indent': 'off',
-      'consistent-return': 'off',
-      '@stylistic/js/max-len': 'off',
+      '@stylistic/indent': 'off',
+      '@stylistic/max-len': 'off',
 
       /**
        * Priority A: Essential (Error Prevention)
