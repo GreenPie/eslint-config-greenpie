@@ -74,7 +74,5 @@ export default [
 * [Registry](https://www.npmjs.com/package/eslint-config-greenpie)
 * [Basic ESLint rules](https://eslint.org/docs/rules/)
 * [TypeScript rules](https://typescript-eslint.io/rules/)
-* [Stylistic JavaScript rules](https://eslint.style/packages/js)
-* [Stylistic TypeScript rules](https://eslint.style/packages/ts)
-* [Stylistic additional rules](https://eslint.style/packages/plus)
+* [Stylistic rules](https://eslint.style/rules)
 * [Vue rules](https://eslint.vuejs.org/rules/)
