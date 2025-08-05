@@ -46,7 +46,6 @@ export default tsEslint.config({
     '@stylistic/jsx-equals-spacing': 'error',
     '@stylistic/jsx-first-prop-new-line': 'error',
     '@stylistic/jsx-function-call-newline': 'error',
-    '@stylistic/jsx-indent': ['error', 2],
     '@stylistic/jsx-indent-props': ['error', 2],
     '@stylistic/jsx-max-props-per-line': 'error',
     '@stylistic/jsx-newline': 'error',
