@@ -12,7 +12,7 @@ Install required packages:
 
 Then add the following code to your local `.oxlintrc.json` file:
 
-```jsonc
+```json
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
 
@@ -55,7 +55,7 @@ Related ESLint rules are disabled by default if supported by oxlint.
 
 ### Oxlint
 
-```jsonc
+```json
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
 
