@@ -68,6 +68,7 @@ export default tsEslint.config({
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-wrapper-object-types': 'off',
     '@typescript-eslint/prefer-as-const': 'off',
+    '@typescript-eslint/prefer-destructuring': 'off',
     '@typescript-eslint/prefer-enum-initializers': 'off',
     '@typescript-eslint/prefer-for-of': 'off',
     '@typescript-eslint/prefer-function-type': 'off',
@@ -185,10 +186,6 @@ export default tsEslint.config({
     '@typescript-eslint/non-nullable-type-assertion-style': 'error',
     '@typescript-eslint/only-throw-error': 'error',
     '@typescript-eslint/parameter-properties': 'error',
-
-    'prefer-destructuring': 'off',
-    '@typescript-eslint/prefer-destructuring': 'error',
-
     '@typescript-eslint/prefer-find': 'error',
     '@typescript-eslint/prefer-includes': 'error',
     '@typescript-eslint/prefer-nullish-coalescing': 'error',

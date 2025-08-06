@@ -69,6 +69,7 @@
     "eslint/no-shadow-restricted-names": "error",
     "eslint/no-sparse-arrays": "error",
     "eslint/no-this-before-super": "error",
+    "eslint/no-unassigned-vars": "error",
     "eslint/no-unsafe-finally": "error",
     "eslint/no-unsafe-negation": "error",
     "eslint/no-unsafe-optional-chaining": "error",
@@ -468,6 +469,7 @@
     "eslint/no-template-curly-in-string": "error",
     "eslint/no-ternary": "off", // Why not to use it in simple cases like "a ? b : c"
     "eslint/operator-assignment": "error",
+    "eslint/prefer-destructuring": "error",
     "eslint/prefer-exponentiation-operator": "error",
     "eslint/prefer-numeric-literals": "error",
     "eslint/prefer-object-has-own": "error",
