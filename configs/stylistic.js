@@ -2,6 +2,8 @@ import stylisticPlugin from '@stylistic/eslint-plugin';
 import tsEslint from 'typescript-eslint';
 
 // https://eslint.style/packages/js
+
+// oxlint-disable-next-line no-default-export
 export default tsEslint.config({
   plugins: {
     '@stylistic': stylisticPlugin

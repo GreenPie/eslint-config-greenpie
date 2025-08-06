@@ -1,6 +1,9 @@
+/* eslint-disable @stylistic/line-comment-position */
+/* eslint-disable no-inline-comments */
 import eslintJs from '@eslint/js';
 import tsEslint from 'typescript-eslint';
 
+// oxlint-disable-next-line no-default-export
 export default tsEslint.config(
   eslintJs.configs.recommended,
 
@@ -11,6 +14,157 @@ export default tsEslint.config(
      */
 
     rules: {
+      /**
+       * Off in favor of oxlint
+       */
+
+      'array-callback-return': 'off',
+      'arrow-body-style': 'off',
+      'block-scoped-var': 'off',
+      'default-case-last': 'off',
+      'default-case': 'off',
+      'default-param-last': 'off',
+      'for-direction': 'off',
+      'func-names': 'off',
+      'func-style': 'off',
+      'getter-return': 'off',
+      'grouped-accessor-pairs': 'off',
+      'guard-for-in': 'off',
+      'id-length': 'off',
+      'init-declarations': 'off',
+      'max-classes-per-file': 'off',
+      'max-depth': 'off',
+      'max-lines-per-function': 'off',
+      'max-lines': 'off',
+      'max-nested-callbacks': 'off',
+      'max-params': 'off',
+      'new-cap': 'off',
+      'no-alert': 'off',
+      'no-array-constructor': 'off',
+      'no-async-promise-executor': 'off',
+      'no-await-in-loop': 'off',
+      'no-bitwise': 'off',
+      'no-caller': 'off',
+      'no-case-declarations': 'off',
+      'no-class-assign': 'off',
+      'no-compare-neg-zero': 'off',
+      'no-cond-assign': 'off',
+      'no-console': 'off',
+      'no-const-assign': 'off',
+      'no-constant-binary-expression': 'off',
+      'no-constant-condition': 'off',
+      'no-constructor-return': 'off',
+      'no-continue': 'off',
+      'no-control-regex': 'off',
+      'no-debugger': 'off',
+      'no-delete-var': 'off',
+      'no-div-regex': 'off',
+      'no-dupe-args': 'off', // Superseded by strict mode
+      'no-dupe-class-members': 'off',
+      'no-dupe-else-if': 'off',
+      'no-dupe-keys': 'off',
+      'no-duplicate-case': 'off',
+      'no-duplicate-imports': 'off',
+      'no-else-return': 'off',
+      'no-empty-character-class': 'off',
+      'no-empty-function': 'off',
+      'no-empty-pattern': 'off',
+      'no-empty-static-block': 'off',
+      'no-empty': 'off',
+      'no-eq-null': 'off',
+      'no-eval': 'off',
+      'no-ex-assign': 'off',
+      'no-extend-native': 'off',
+      'no-extra-bind': 'off',
+      'no-extra-boolean-cast': 'off',
+      'no-extra-label': 'off',
+      'no-fallthrough': 'off',
+      'no-func-assign': 'off',
+      'no-global-assign': 'off',
+      'no-import-assign': 'off',
+      'no-inner-declarations': 'off',
+      'no-invalid-regexp': 'off',
+      'no-irregular-whitespace': 'off',
+      'no-iterator': 'off',
+      'no-label-var': 'off',
+      'no-labels': 'off',
+      'no-lone-blocks': 'off',
+      'no-lonely-if': 'off',
+      'no-loss-of-precision': 'off',
+      'no-magic-numbers': 'off',
+      'no-multi-assign': 'off',
+      'no-multi-str': 'off',
+      'no-negated-condition': 'off',
+      'no-nested-ternary': 'off',
+      'no-new-func': 'off',
+      'no-new-native-nonconstructor': 'off',
+      'no-new-symbol': 'off', // Deprecated in ESLint v9
+      'no-new-wrappers': 'off',
+      'no-new': 'off',
+      'no-nonoctal-decimal-escape': 'off',
+      'no-obj-calls': 'off',
+      'no-object-constructor': 'off',
+      'no-octal': 'off', // Superseded by strict mode
+      'no-plusplus': 'off',
+      'no-proto': 'off',
+      'no-prototype-builtins': 'off',
+      'no-regex-spaces': 'off',
+      'no-restricted-globals': 'off',
+      'no-restricted-imports': 'off',
+      'no-return-assign': 'off',
+      'no-script-url': 'off',
+      'no-self-assign': 'off',
+      'no-self-compare': 'off',
+      'no-setter-return': 'off',
+      'no-shadow-restricted-names': 'off',
+      'no-sparse-arrays': 'off',
+      'no-template-curly-in-string': 'off',
+      'no-ternary': 'off',
+      'no-this-before-super': 'off',
+      'no-undef-init': 'off',
+      'no-undef': 'off',
+      'no-undefined': 'off',
+      'no-unexpected-multiline': 'off',
+      'no-unneeded-ternary': 'off',
+      'no-unreachable': 'off',
+      'no-unsafe-finally': 'off',
+      'no-unsafe-negation': 'off',
+      'no-unsafe-optional-chaining': 'off',
+      'no-unused-expressions': 'off',
+      'no-unused-labels': 'off',
+      'no-unused-private-class-members': 'off',
+      'no-unused-vars': 'off',
+      'no-useless-backreference': 'off',
+      'no-useless-call': 'off',
+      'no-useless-catch': 'off',
+      'no-useless-concat': 'off',
+      'no-useless-constructor': 'off',
+      'no-useless-escape': 'off',
+      'no-useless-rename': 'off',
+      'no-var': 'off',
+      'no-void': 'off',
+      'no-with': 'off', // Superseded by strict mode
+      'operator-assignment': 'off',
+      'prefer-exponentiation-operator': 'off',
+      'prefer-numeric-literals': 'off',
+      'prefer-object-has-own': 'off',
+      'prefer-object-spread': 'off',
+      'prefer-promise-reject-errors': 'off',
+      'prefer-rest-params': 'off',
+      'prefer-spread': 'off',
+      'require-await': 'off',
+      'require-yield': 'off',
+      'sort-imports': 'off',
+      'sort-keys': 'off',
+      'symbol-description': 'off',
+      'unicode-bom': 'off',
+      'use-isnan': 'off',
+      'valid-typeof': 'off',
+      'vars-on-top': 'off',
+      curly: 'off',
+      eqeqeq: 'off',
+      radix: 'off',
+      yoda: 'off',
 
       /**
        * Possible Problems
@@ -18,66 +172,18 @@ export default tsEslint.config(
        * {@link https://eslint.org/docs/rules/#possible-problems}
        */
 
-      'array-callback-return': 'error',
       'constructor-super': 'error',
-      'for-direction': 'error',
-      'getter-return': 'error',
-      'no-async-promise-executor': 'error',
-      'no-await-in-loop': 'error',
-      'no-class-assign': 'error',
-      'no-compare-neg-zero': 'error',
-      'no-cond-assign': 'error',
-      'no-const-assign': 'error',
-      'no-constant-binary-expression': 'error',
-      'no-constant-condition': 'error',
-      'no-constructor-return': 'error',
-      'no-control-regex': 'error',
-      'no-debugger': 'error',
-      'no-dupe-args': 'error',
-      'no-dupe-class-members': 'error',
-      'no-dupe-else-if': 'error',
-      'no-dupe-keys': 'error',
-      'no-duplicate-case': 'error',
-      'no-duplicate-imports': 'error',
-      'no-empty-character-class': 'error',
-      'no-empty-pattern': 'error',
-      'no-ex-assign': 'error',
-      'no-fallthrough': 'error',
-      'no-func-assign': 'error',
-      'no-import-assign': 'error',
-      'no-inner-declarations': 'error',
-      'no-invalid-regexp': 'error',
-      'no-irregular-whitespace': 'error',
-      'no-loss-of-precision': 'error',
       'no-misleading-character-class': 'error',
-      'no-new-native-nonconstructor': 'error',
-      'no-new-symbol': 'error',
-      'no-obj-calls': 'error',
       'no-promise-executor-return': 'error',
-      'no-prototype-builtins': 'error',
-      'no-self-assign': 'error',
-      'no-self-compare': 'error',
-      'no-setter-return': 'error',
-      'no-sparse-arrays': 'error',
-      'no-template-curly-in-string': 'error',
-      'no-this-before-super': 'error',
       'no-unassigned-vars': 'error',
-      'no-undef': 'error',
-      'no-unexpected-multiline': 'error',
       'no-unmodified-loop-condition': 'error',
-      'no-unreachable': 'error',
       'no-unreachable-loop': 'error',
-      'no-unsafe-finally': 'error',
-      'no-unsafe-negation': 'error',
-      'no-unsafe-optional-chaining': 'error',
-      'no-unused-private-class-members': 'error',
-      'no-unused-vars': 'error',
       'no-use-before-define': 'error',
       'no-useless-assignment': 'error',
-      'no-useless-backreference': 'error',
       'require-atomic-updates': 'error',
-      'use-isnan': 'error',
-      'valid-typeof': 'error',
+      'no-redeclare': 'error',
+      'no-throw-literal': 'error',
+      'sort-vars': 'error',
 
       /**
        * Suggestions
@@ -85,113 +191,31 @@ export default tsEslint.config(
        * {@link https://eslint.org/docs/rules/#suggestions}
        */
       'accessor-pairs': 'error',
-      'arrow-body-style': 'error',
-      'block-scoped-var': 'error',
       camelcase: 'error',
 
       // Doesn't matter actually
-      'capitalized-comments': 'warn',
+      'capitalized-comments': ['warn', 'always', {
+        ignorePattern: 'oxlint'
+      }],
 
       'class-methods-use-this': 'error',
       complexity: 'error',
       'consistent-return': 'error',
       'consistent-this': 'error',
-      curly: 'error',
-      'default-case': 'off',
-      'default-case-last': 'error',
-      'default-param-last': 'error',
       'dot-notation': 'error',
-      eqeqeq: 'error',
       'func-name-matching': 'error',
-      'func-names': 'error',
-
-      'func-style': ['error', 'declaration', {
-        allowArrowFunctions: true
-      }],
-
-      'grouped-accessor-pairs': 'error',
-      'guard-for-in': 'error',
       'id-denylist': 'error',
-
-      'id-length': ['error', {
-        /// t — for translations
-        exceptions: ['t']
-      }],
-
       'id-match': 'error',
-      'init-declarations': 'error',
       'logical-assignment-operators': 'error',
-      'max-classes-per-file': 'error',
-      'max-depth': 'error',
-
-      'max-lines': ['error', {
-        max: 300,
-        skipComments: true,
-        skipBlankLines: true
-      }],
-
-      'max-lines-per-function': 'off',
-      'max-nested-callbacks': 'error',
-      'max-params': 'error',
       'max-statements': 'off',
-      'new-cap': 'error',
-      'no-alert': 'error',
-      'no-array-constructor': 'error',
-      'no-bitwise': 'error',
-      'no-caller': 'error',
-      'no-case-declarations': 'error',
-      'no-console': 'error',
-      'no-continue': 'error',
-      'no-delete-var': 'error',
-      'no-div-regex': 'error',
-      'no-else-return': 'error',
-      'no-empty': 'error',
-      'no-empty-function': 'error',
-      'no-empty-static-block': 'error',
-      'no-eq-null': 'error',
-      'no-eval': 'error',
-      'no-extend-native': 'error',
-      'no-extra-bind': 'error',
-
-      'no-extra-boolean-cast': ['error', {
-        enforceForInnerExpressions: true
-      }],
-
-      'no-extra-label': 'error',
-      'no-global-assign': 'error',
       'no-implicit-coercion': 'error',
       'no-implicit-globals': 'error',
       'no-implied-eval': 'error',
       'no-inline-comments': 'error',
       'no-invalid-this': 'error',
-      'no-iterator': 'error',
-      'no-label-var': 'error',
-      'no-labels': 'error',
-      'no-lone-blocks': 'error',
-      'no-lonely-if': 'error',
       'no-loop-func': 'error',
-
-      'no-magic-numbers': ['warn', {
-        enforceConst: true,
-        detectObjects: true
-      }],
-
-      'no-multi-assign': 'error',
-      'no-multi-str': 'error',
-      'no-negated-condition': 'error',
-      'no-nested-ternary': 'error',
-      'no-new': 'error',
-      'no-new-func': 'error',
-      'no-new-wrappers': 'error',
-      'no-nonoctal-decimal-escape': 'error',
-      'no-object-constructor': 'error',
-      'no-octal': 'error',
       'no-octal-escape': 'error',
       'no-param-reassign': 'error',
-      'no-plusplus': 'error',
-      'no-proto': 'error',
-      'no-redeclare': 'error',
-      'no-regex-spaces': 'error',
 
       'no-restricted-exports': ['error', {
         restrictDefaultExports: {
@@ -202,89 +226,32 @@ export default tsEslint.config(
         }
       }],
 
-      'no-restricted-globals': 'error',
-      'no-restricted-imports': 'error',
       'no-restricted-properties': 'error',
       'no-restricted-syntax': 'error',
-      'no-return-assign': 'error',
-      'no-script-url': 'error',
       'no-sequences': 'error',
       'no-shadow': 'error',
-      'no-shadow-restricted-names': 'error',
-
-      // Why not to use it in simple cases like "a ? b : c"
-      'no-ternary': 'off',
-      'no-throw-literal': 'error',
-      'no-undef-init': 'error',
-      'no-undefined': 'off',
 
       'no-underscore-dangle': ['error', {
         allowInArrayDestructuring: false,
         allowInObjectDestructuring: false
       }],
 
-      'no-unneeded-ternary': 'error',
-      'no-unused-expressions': 'error',
-      'no-unused-labels': 'error',
-      'no-useless-call': 'error',
-      'no-useless-catch': 'error',
       'no-useless-computed-key': 'error',
-      'no-useless-concat': 'error',
-      'no-useless-constructor': 'error',
-      'no-useless-escape': 'error',
-      'no-useless-rename': 'error',
       'no-useless-return': 'error',
-      'no-var': 'error',
-
-      'no-void': ['error', {
-        allowAsStatement: true
-      }],
 
       // Just notify about TODO and FIXME comments
       'no-warning-comments': 'warn',
 
-      'no-with': 'error',
       'object-shorthand': 'error',
       'one-var': ['error', 'never'],
-      'operator-assignment': 'error',
       'prefer-arrow-callback': 'error',
       'prefer-const': 'error',
       'prefer-destructuring': 'error',
-      'prefer-exponentiation-operator': 'error',
       'prefer-named-capture-group': 'error',
-      'prefer-numeric-literals': 'error',
-      'prefer-object-has-own': 'error',
-      'prefer-object-spread': 'error',
-      'prefer-promise-reject-errors': 'error',
       'prefer-regex-literals': 'error',
-      'prefer-rest-params': 'error',
-      'prefer-spread': 'error',
       'prefer-template': 'error',
-      radix: 'error',
-      'require-await': 'error',
       'require-unicode-regexp': 'error',
-      'require-yield': 'error',
-
-      'sort-imports': ['error', {
-        ignoreCase: true,
-        ignoreDeclarationSort: true,
-        ignoreMemberSort: true
-      }],
-
-      'sort-keys': 'off',
-      'sort-vars': 'error',
-      strict: 'error',
-      'symbol-description': 'error',
-      'vars-on-top': 'error',
-      yoda: 'error',
-
-      /**
-       * Layout & Formatting
-       *
-       * {@link https://eslint.org/docs/rules/#layout-formatting}
-       */
-
-      'unicode-bom': 'error'
+      strict: 'error'
     }
   }
 );

@@ -6,6 +6,7 @@ import vuePlugin from 'eslint-plugin-vue';
  * https://github.com/vuejs/eslint-plugin-vue/releases
  */
 
+// oxlint-disable-next-line no-default-export
 export default tsEslint.config(
   ...vuePlugin.configs['flat/base'],
 
