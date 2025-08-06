@@ -26,7 +26,8 @@
     "javascript",
     "styleguide",
     "typescript",
-    "vue"
+    "vue",
+    "oxlint"
   ],
   "devDependencies": {
     "oxlint": "^1.10.0"
