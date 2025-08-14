@@ -26,7 +26,7 @@ And the following code to `eslint.config.js` file:
 
 ```js
 import tsEslint from 'typescript-eslint';
-import eslintGreenPie from 'eslint-config-greenpie';
+import { configs } from 'eslint-config-greenpie';
 
 export default tsEslint.config(
   ...configs.default,
