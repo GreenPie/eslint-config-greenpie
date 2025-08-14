@@ -45,11 +45,9 @@ const defaultConfig = tsEslint.config(
   ...tsConfig
 );
 
-export default {
-  configs: {
-    default: defaultConfig,
-    js: jsConfig,
-    ts: tsConfig,
-    vue: vueConfig
-  }
+export const configs = {
+  default: defaultConfig,
+  js: jsConfig,
+  ts: tsConfig,
+  vue: vueConfig
 };

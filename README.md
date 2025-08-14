@@ -29,8 +29,8 @@ import tsEslint from 'typescript-eslint';
 import eslintGreenPie from 'eslint-config-greenpie';
 
 export default tsEslint.config(
-  ...eslintGreenPie.configs.default,
-  ...eslintGreenPie.configs.vue
+  ...configs.default,
+  ...configs.vue
 );
 ```
 
@@ -86,21 +86,21 @@ Related ESLint rules are disabled by default if supported by oxlint.
 ### JS/TS rules
 
 ```js
-import eslintGreenPie from 'eslint-config-greenpie';
+import { configs } from 'eslint-config-greenpie';
 
 export default [
-  ...eslintGreenPie.configs.js
+  ...configs.js
 ];
 ```
 
 ### JS + Vue
 
 ```js
-import eslintGreenPie from 'eslint-config-greenpie';
+import { configs } from 'eslint-config-greenpie';
 
 export default [
-  ...eslintGreenPie.configs.js,
-  ...eslintGreenPie.configs.vue
+  ...configs.js,
+  ...configs.vue
 ];
 ```
 
@@ -109,11 +109,11 @@ export default [
 You will probably need to [configure another parser](https://github.com/vuejs/vue-eslint-parser#parseroptionsparser) for the `<script>` tag.
 
 ```js
-import eslintGreenPie from 'eslint-config-greenpie';
+import { configs } from 'eslint-config-greenpie';
 
 export default [
-  ...eslintGreenPie.configs.default,
-  ...eslintGreenPie.configs.vue
+  ...configs.default,
+  ...configs.vue
 ];
 ```
 

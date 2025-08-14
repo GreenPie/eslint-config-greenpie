@@ -3,5 +3,9 @@
 
   "extends": [
     "./configs/oxlintrc.jsonc"
-  ]
+  ],
+
+  "rules": {
+    "eslint/no-magic-numbers": "off"
+  }
 }
