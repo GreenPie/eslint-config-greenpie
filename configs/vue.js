@@ -300,7 +300,7 @@ export default tsEslint.config(
         ignores: []
       }],
 
-      'vue/slot-name-casing': ['error', 'kebab-case'],
+      'vue/slot-name-casing': ['error', 'camelCase'],
       'vue/sort-keys': 'off',
       'vue/static-class-names-order': 'error',
       'vue/v-for-delimiter-style': 'error',
