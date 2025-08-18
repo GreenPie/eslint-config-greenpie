@@ -30,7 +30,7 @@
     "oxlint"
   ],
   "devDependencies": {
-    "oxlint": "^1.11.2"
+    "oxlint": "^1.12.0"
   },
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^5.2.2",
