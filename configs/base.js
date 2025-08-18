@@ -171,6 +171,8 @@ export default defineConfig(
       eqeqeq: 'off',
       radix: 'off',
       yoda: 'off',
+      'prefer-template': 'off',
+      'no-implied-eval': 'off',
 
       /**
        * Possible Problems
@@ -214,7 +216,6 @@ export default defineConfig(
       'max-statements': 'off',
       'no-implicit-coercion': 'error',
       'no-implicit-globals': 'error',
-      'no-implied-eval': 'error',
       'no-inline-comments': 'error',
       'no-invalid-this': 'error',
       'no-loop-func': 'error',
