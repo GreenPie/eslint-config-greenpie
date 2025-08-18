@@ -167,6 +167,8 @@ export default tsEslint.config(
       eqeqeq: 'off',
       radix: 'off',
       yoda: 'off',
+      'prefer-template': 'off',
+      'no-implied-eval': 'off',
 
       /**
        * Possible Problems
@@ -211,7 +213,6 @@ export default tsEslint.config(
       'max-statements': 'off',
       'no-implicit-coercion': 'error',
       'no-implicit-globals': 'error',
-      'no-implied-eval': 'error',
       'no-inline-comments': 'error',
       'no-invalid-this': 'error',
       'no-loop-func': 'error',
@@ -249,7 +250,6 @@ export default tsEslint.config(
       'prefer-const': 'error',
       'prefer-named-capture-group': 'error',
       'prefer-regex-literals': 'error',
-      'prefer-template': 'error',
       'require-unicode-regexp': 'error',
       strict: 'error'
     }
