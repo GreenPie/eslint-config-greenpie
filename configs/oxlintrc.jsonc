@@ -9,7 +9,8 @@
     "promise",
     "typescript",
     "unicorn",
-    "vitest"
+    "vitest",
+    "vue"
   ],
 
   "categories": {
@@ -22,6 +23,8 @@
     "suspicious": "off"
   },
 
+  // Releases: https://github.com/oxc-project/oxc/releases
+  // Rules: https://oxc.rs/docs/guide/usage/linter/rules.html
   "rules": {
     /**
      * Correctness rules
@@ -158,6 +161,10 @@
 
     "vitest/no-conditional-tests": "error",
     "vitest/require-local-test-context-for-concurrent-snapshots": "error",
+
+    // Vue
+
+    "vue/valid-define-emits": "error",
 
     /**
      * Perf rules
@@ -299,6 +306,7 @@
 
     // Promise
 
+    "promise/always-return": "error",
     "promise/no-promise-in-callback": "error",
 
     // TypeScript
@@ -436,7 +444,10 @@
       "allowArrowFunctions": true
     }],
 
-    "eslint/grouped-accessor-pairs": "error",
+    "eslint/grouped-accessor-pairs": ["error", {
+      "enforceForTSTypes": true
+    }],
+
     "eslint/guard-for-in": "error",
 
     "eslint/id-length": ["error", {
@@ -477,6 +488,7 @@
     "eslint/prefer-promise-reject-errors": "error",
     "eslint/prefer-rest-params": "error",
     "eslint/prefer-spread": "error",
+    "eslint/prefer-template": "error",
 
     "eslint/sort-imports": ["error", {
       "ignoreDeclarationSort": true,

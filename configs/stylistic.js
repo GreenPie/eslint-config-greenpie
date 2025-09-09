@@ -1,10 +1,10 @@
 import stylisticPlugin from '@stylistic/eslint-plugin';
-import tsEslint from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
 
 // https://eslint.style/packages/js
 
 // oxlint-disable-next-line no-default-export
-export default tsEslint.config({
+export default defineConfig({
   plugins: {
     '@stylistic': stylisticPlugin
   },
@@ -39,26 +39,6 @@ export default tsEslint.config({
     '@stylistic/implicit-arrow-linebreak': 'error',
     '@stylistic/indent': ['error', 2],
     '@stylistic/indent-binary-ops': ['error', 2],
-    '@stylistic/jsx-child-element-spacing': 'error',
-    '@stylistic/jsx-closing-bracket-location': 'error',
-    '@stylistic/jsx-closing-tag-location': 'error',
-    '@stylistic/jsx-curly-brace-presence': 'error',
-    '@stylistic/jsx-curly-newline': 'error',
-    '@stylistic/jsx-curly-spacing': 'error',
-    '@stylistic/jsx-equals-spacing': 'error',
-    '@stylistic/jsx-first-prop-new-line': 'error',
-    '@stylistic/jsx-function-call-newline': 'error',
-    '@stylistic/jsx-indent-props': ['error', 2],
-    '@stylistic/jsx-max-props-per-line': 'error',
-    '@stylistic/jsx-newline': 'error',
-    '@stylistic/jsx-one-expression-per-line': 'error',
-    '@stylistic/jsx-pascal-case': 'error',
-    '@stylistic/jsx-props-no-multi-spaces': 'error',
-    '@stylistic/jsx-quotes': 'error',
-    '@stylistic/jsx-self-closing-comp': 'error',
-    '@stylistic/jsx-sort-props': 'error',
-    '@stylistic/jsx-tag-spacing': 'error',
-    '@stylistic/jsx-wrap-multilines': 'error',
     '@stylistic/key-spacing': 'error',
     '@stylistic/keyword-spacing': 'error',
     '@stylistic/line-comment-position': 'error',
