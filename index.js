@@ -1,10 +1,10 @@
-import tsEslint from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
 import baseConfig from './configs/base.js';
 import stylistic from './configs/stylistic.js';
 import typeScript from './configs/typescript.js';
 import vue from './configs/vue.js';
 
-const jsConfig = tsEslint.config({
+const jsConfig = defineConfig({
   files: [
     '**/*.{js,mjs,cjs}'
   ],
@@ -15,7 +15,7 @@ const jsConfig = tsEslint.config({
   ]
 });
 
-const tsConfig = tsEslint.config({
+const tsConfig = defineConfig({
   files: [
     '**/*.{ts,mts,cts}'
   ],
@@ -27,7 +27,7 @@ const tsConfig = tsEslint.config({
   ]
 });
 
-const vueConfig = tsEslint.config({
+const vueConfig = defineConfig({
   files: [
     '**/*.vue'
   ],
@@ -40,7 +40,7 @@ const vueConfig = tsEslint.config({
   ]
 });
 
-const defaultConfig = tsEslint.config(
+const defaultConfig = defineConfig(
   ...jsConfig,
   ...tsConfig
 );

@@ -25,10 +25,10 @@ Then add the following code to your local `.oxlintrc.json` file:
 And the following code to `eslint.config.js` file:
 
 ```js
-import tsEslint from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
 import { configs } from 'eslint-config-greenpie';
 
-export default tsEslint.config(
+export default defineConfig(
   ...configs.default,
   ...configs.vue
 );

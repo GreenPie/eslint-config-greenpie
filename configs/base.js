@@ -1,10 +1,10 @@
 /* eslint-disable @stylistic/line-comment-position */
 /* eslint-disable no-inline-comments */
 import eslintJs from '@eslint/js';
-import tsEslint from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
 
 // oxlint-disable-next-line no-default-export
-export default tsEslint.config(
+export default defineConfig(
   eslintJs.configs.recommended,
 
   {
@@ -154,6 +154,7 @@ export default tsEslint.config(
       'prefer-promise-reject-errors': 'off',
       'prefer-rest-params': 'off',
       'prefer-spread': 'off',
+      'prefer-template': 'off',
       'require-await': 'off',
       'require-yield': 'off',
       'sort-imports': 'off',
@@ -249,7 +250,6 @@ export default tsEslint.config(
       'prefer-const': 'error',
       'prefer-named-capture-group': 'error',
       'prefer-regex-literals': 'error',
-      'prefer-template': 'error',
       'require-unicode-regexp': 'error',
       strict: 'error'
     }

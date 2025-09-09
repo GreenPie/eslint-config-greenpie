@@ -1,8 +1,8 @@
-import tsEslint from 'typescript-eslint';
 import { configs } from './index.js';
+import { defineConfig } from 'eslint/config';
 
 // oxlint-disable-next-line no-default-export
-export default tsEslint.config(
+export default defineConfig(
   ...configs.default,
   ...configs.vue
 );

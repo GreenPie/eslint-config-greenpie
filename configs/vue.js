@@ -1,5 +1,5 @@
-import tsEslint from 'typescript-eslint';
 import vuePlugin from 'eslint-plugin-vue';
+import { defineConfig } from 'eslint/config';
 
 /*
  * https://eslint.vuejs.org/
@@ -7,7 +7,7 @@ import vuePlugin from 'eslint-plugin-vue';
  */
 
 // oxlint-disable-next-line no-default-export
-export default tsEslint.config(
+export default defineConfig(
   ...vuePlugin.configs['flat/base'],
 
   {
@@ -19,6 +19,9 @@ export default tsEslint.config(
     },
 
     rules: {
+      // Disabled in favor of oxlint rules
+      'vue/valid-define-emits': 'off',
+
       // Disable some rules from other configs
 
       'consistent-return': 'off',
@@ -70,7 +73,6 @@ export default tsEslint.config(
       'vue/return-in-emits-validator': 'error',
       'vue/use-v-on-exact': 'error',
       'vue/valid-attribute-name': 'error',
-      'vue/valid-define-emits': 'error',
       'vue/valid-define-props': 'error',
       'vue/valid-next-tick': 'error',
       'vue/valid-template-root': 'error',

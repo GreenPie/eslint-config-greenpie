@@ -1,7 +1,8 @@
 import tsEslint from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
 
 // oxlint-disable-next-line no-default-export
-export default tsEslint.config({
+export default defineConfig({
   plugins: {
     '@typescript-eslint': tsEslint.plugin
   },
