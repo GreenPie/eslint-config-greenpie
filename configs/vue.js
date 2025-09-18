@@ -20,7 +20,11 @@ export default defineConfig(
 
     rules: {
       // Disabled in favor of oxlint rules
+      'vue/define-emits-declaration': 'off',
+      'vue/define-props-declaration': 'off',
+      'vue/no-multiple-slot-args': 'off',
       'vue/valid-define-emits': 'off',
+      'vue/valid-define-props': 'off',
 
       // Disable some rules from other configs
 
@@ -73,7 +77,6 @@ export default defineConfig(
       'vue/return-in-emits-validator': 'error',
       'vue/use-v-on-exact': 'error',
       'vue/valid-attribute-name': 'error',
-      'vue/valid-define-props': 'error',
       'vue/valid-next-tick': 'error',
       'vue/valid-template-root': 'error',
       'vue/valid-v-bind': 'error',
@@ -168,7 +171,6 @@ export default defineConfig(
 
       'vue/attributes-order': 'error',
       'vue/no-lone-template': 'error',
-      'vue/no-multiple-slot-args': 'error',
       'vue/no-v-html': 'error',
       'vue/order-in-components': 'error',
       'vue/this-in-template': 'error',
@@ -204,13 +206,11 @@ export default defineConfig(
       'vue/component-name-in-template-casing': 'error',
       'vue/component-options-name-casing': 'error',
       'vue/custom-event-name-casing': 'error',
-      'vue/define-emits-declaration': 'error',
 
       'vue/define-macros-order': ['error', {
         defineExposeLast: true
       }],
 
-      'vue/define-props-declaration': 'error',
       'vue/define-props-destructuring': 'error',
 
       'vue/enforce-style-attribute': ['error', {

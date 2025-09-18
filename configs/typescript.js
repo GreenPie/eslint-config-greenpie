@@ -29,6 +29,7 @@ export default defineConfig({
     '@typescript-eslint/array-type': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/ban-tslint-comment': 'off',
+    '@typescript-eslint/class-methods-use-this': 'off',
     '@typescript-eslint/consistent-generic-constructors': 'off',
     '@typescript-eslint/consistent-indexed-object-style': 'off',
     '@typescript-eslint/consistent-type-definitions': 'off',
@@ -225,9 +226,6 @@ export default defineConfig({
      * Extension Rules
      * https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin#extension-rules
      */
-
-    'class-methods-use-this': 'off',
-    '@typescript-eslint/class-methods-use-this': 'error',
 
     'dot-notation': 'off',
     '@typescript-eslint/dot-notation': 'error',
