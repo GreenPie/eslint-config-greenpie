@@ -15,9 +15,11 @@
     "url": "https://github.com/GreenPie/eslint-config-greenpie/issues"
   },
   "scripts": {
+    "lint:eslint": "eslint .",
+    "lint:oxlint": "oxlint --type-aware",
     "lint": "eslint .",
-    "update:all": "taze -I -l --peer",
-    "prepare": "npm run lint"
+    "prepare": "npm run lint:eslint && npm run lint:oxlint",
+    "update:all": "taze -I -l --peer"
   },
   "keywords": [
     "eslint",
@@ -39,6 +41,8 @@
     "eslint": "^9.39.2",
     "eslint-plugin-vue": "^10.6.2",
     "oxlint": "^1.32.0",
+    "oxlint-tsgolint": "^0.9.0",
+    "taze": "^19.9.2",
     "typescript-eslint": "^8.49.0"
   }
 }

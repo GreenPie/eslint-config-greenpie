@@ -685,5 +685,18 @@
     // Promise
 
     "promise/no-return-in-finally": "error"
-  }
+  },
+
+  "overrides": [{
+    "files": ["**/*.vue"],
+
+    "globals": {
+      "defineProps": "readonly",
+      "withDefaults": "readonly",
+      "defineEmits": "readonly",
+      "defineModel": "readonly",
+      "defineExpose": "readonly",
+      "defineSlots": "readonly"
+    }
+  }]
 }
