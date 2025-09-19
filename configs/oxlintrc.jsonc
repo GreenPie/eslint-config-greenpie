@@ -165,6 +165,7 @@
     // Vue
 
     "vue/valid-define-emits": "error",
+    "vue/valid-define-props": "error",
 
     /**
      * Perf rules
@@ -191,6 +192,7 @@
 
     // ESLint
 
+    "eslint/class-methods-use-this": "error",
     "eslint/default-case": "off", // TypeScript can be even more restrictive
     "eslint/no-alert": "error",
     "eslint/no-bitwise": "error",
@@ -274,6 +276,9 @@
     "unicorn/prefer-node-protocol": "error",
     "unicorn/prefer-number-properties": "error",
 
+    // Vue
+    "vue/no-multiple-slot-args": "error",
+
     /**
      * Suspicious rules
      */
@@ -288,6 +293,7 @@
     "eslint/no-unneeded-ternary": "error",
     "eslint/no-useless-concat": "error",
     "eslint/no-useless-constructor": "error",
+    "eslint/preserve-caught-error": "error",
 
     // Import
 
@@ -319,6 +325,7 @@
 
     "unicorn/consistent-function-scoping": "error",
     "unicorn/no-accessor-recursion": "error",
+    "unicorn/no-array-reverse": "error",
     "unicorn/no-instanceof-builtins": "error",
     "unicorn/prefer-add-event-listener": "error",
     "unicorn/require-post-message-target-origin": "error",
@@ -478,6 +485,7 @@
     "eslint/no-return-assign": "error",
     "eslint/no-script-url": "error",
     "eslint/no-template-curly-in-string": "error",
+    "eslint/no-useless-computed-key": "error",
     "eslint/no-ternary": "off", // Why not to use it in simple cases like "a ? b : c"
     "eslint/operator-assignment": "error",
     "eslint/prefer-destructuring": "error",
@@ -579,6 +587,10 @@
     "vitest/prefer-to-be-falsy": "error",
     "vitest/prefer-to-be-object": "error",
     "vitest/prefer-to-be-truthy": "error",
+
+    // Vue
+    "vue/define-emits-declaration": "error",
+    "vue/define-props-declaration": "error",
 
     /**
      * Nursery rules

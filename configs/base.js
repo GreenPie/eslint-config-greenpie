@@ -21,6 +21,7 @@ export default defineConfig(
       'array-callback-return': 'off',
       'arrow-body-style': 'off',
       'block-scoped-var': 'off',
+      'class-methods-use-this': 'off',
       'default-case-last': 'off',
       'default-case': 'off',
       'default-param-last': 'off',
@@ -138,6 +139,7 @@ export default defineConfig(
       'no-useless-backreference': 'off',
       'no-useless-call': 'off',
       'no-useless-catch': 'off',
+      'no-useless-computed-key': 'off',
       'no-useless-concat': 'off',
       'no-useless-constructor': 'off',
       'no-useless-escape': 'off',
@@ -155,6 +157,7 @@ export default defineConfig(
       'prefer-rest-params': 'off',
       'prefer-spread': 'off',
       'prefer-template': 'off',
+      'preserve-caught-error': 'off',
       'require-await': 'off',
       'require-yield': 'off',
       'sort-imports': 'off',
@@ -200,7 +203,6 @@ export default defineConfig(
         ignorePattern: 'oxlint'
       }],
 
-      'class-methods-use-this': 'error',
       complexity: 'error',
       'consistent-return': 'error',
       'consistent-this': 'error',
@@ -238,7 +240,6 @@ export default defineConfig(
         allowInObjectDestructuring: false
       }],
 
-      'no-useless-computed-key': 'error',
       'no-useless-return': 'error',
 
       // Just notify about TODO and FIXME comments
