@@ -82,6 +82,7 @@ export default defineConfig(
       'no-fallthrough': 'off',
       'no-func-assign': 'off',
       'no-global-assign': 'off',
+      'no-implied-eval': 'off',
       'no-import-assign': 'off',
       'no-inner-declarations': 'off',
       'no-invalid-regexp': 'off',
@@ -171,8 +172,6 @@ export default defineConfig(
       eqeqeq: 'off',
       radix: 'off',
       yoda: 'off',
-      'prefer-template': 'off',
-      'no-implied-eval': 'off',
 
       /**
        * Possible Problems
