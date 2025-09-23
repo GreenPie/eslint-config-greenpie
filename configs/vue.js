@@ -23,6 +23,8 @@ export default defineConfig(
       'vue/define-emits-declaration': 'off',
       'vue/define-props-declaration': 'off',
       'vue/no-multiple-slot-args': 'off',
+      'vue/no-required-prop-with-default': 'off',
+      'vue/require-typed-ref': 'off',
       'vue/valid-define-emits': 'off',
       'vue/valid-define-props': 'off',
 
@@ -246,7 +248,6 @@ export default defineConfig(
       'vue/no-negated-v-if-condition': 'error',
       'vue/no-potential-component-option-typo': 'error',
       'vue/no-ref-object-reactivity-loss': 'error',
-      'vue/no-required-prop-with-default': 'error',
       'vue/no-restricted-block': 'error',
       'vue/no-restricted-call-after-await': 'error',
       'vue/no-restricted-class': 'error',
@@ -294,7 +295,6 @@ export default defineConfig(
       'vue/require-name-property': 'error',
       'vue/require-prop-comment': 'off',
       'vue/require-typed-object-prop': 'error',
-      'vue/require-typed-ref': 'error',
 
       'vue/script-indent': ['error', 2, {
         baseIndent: 1,

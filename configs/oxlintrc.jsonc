@@ -330,6 +330,9 @@
     "unicorn/prefer-add-event-listener": "error",
     "unicorn/require-post-message-target-origin": "error",
 
+    // Vue
+    "vue/no-required-prop-with-default": "error",
+
     /**
      * Pedantic rules
      */
@@ -591,6 +594,7 @@
     // Vue
     "vue/define-emits-declaration": "error",
     "vue/define-props-declaration": "error",
+    "vue/require-typed-ref": "error",
 
     /**
      * Nursery rules
@@ -599,6 +603,7 @@
     // ESLint
 
     "eslint/getter-return": "error",
+    "eslint/no-misleading-character-class": "error",
     "eslint/no-undef": "error",
     "eslint/no-unreachable": "error",
 

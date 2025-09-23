@@ -93,6 +93,7 @@ export default defineConfig(
       'no-lonely-if': 'off',
       'no-loss-of-precision': 'off',
       'no-magic-numbers': 'off',
+      'no-misleading-character-class': 'off',
       'no-multi-assign': 'off',
       'no-multi-str': 'off',
       'no-negated-condition': 'off',
@@ -179,7 +180,6 @@ export default defineConfig(
        */
 
       'constructor-super': 'error',
-      'no-misleading-character-class': 'error',
       'no-promise-executor-return': 'error',
       'no-unmodified-loop-condition': 'error',
       'no-unreachable-loop': 'error',
