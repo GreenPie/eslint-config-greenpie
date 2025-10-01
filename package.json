@@ -31,14 +31,14 @@
     "oxlint"
   ],
   "devDependencies": {
-    "oxlint": "^1.18.0",
+    "oxlint": "^1.19.0",
     "taze": "^19.7.0"
   },
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^5.4.0",
     "eslint": "^9.36.0",
     "eslint-plugin-vue": "^10.5.0",
-    "oxlint": "^1.18.0",
-    "typescript-eslint": "^8.44.1"
+    "oxlint": "^1.19.0",
+    "typescript-eslint": "^8.45.0"
   }
 }
