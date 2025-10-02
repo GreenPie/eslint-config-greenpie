@@ -76,6 +76,7 @@
     "eslint/no-unsafe-finally": "error",
     "eslint/no-unsafe-negation": "error",
     "eslint/no-unsafe-optional-chaining": "error",
+    "eslint/no-unused-expressions": "error",
     "eslint/no-unused-labels": "error",
     "eslint/no-unused-private-class-members": "error",
     "eslint/no-unused-vars": "error",
@@ -208,7 +209,6 @@
     "eslint/no-restricted-globals": "error",
     "eslint/no-restricted-imports": "error",
     "eslint/no-undefined": "off", // undefined should be handled in TypeScript
-    "eslint/no-unused-expressions": "error",
     "eslint/no-var": "error",
 
     "eslint/no-void": ["error", {
@@ -275,6 +275,7 @@
     "unicorn/prefer-modern-math-apis": "error",
     "unicorn/prefer-node-protocol": "error",
     "unicorn/prefer-number-properties": "error",
+    "vue/max-props": "off", // It's okay to have many props in components
 
     // Vue
     "vue/no-multiple-slot-args": "error",
@@ -313,6 +314,7 @@
     // Promise
 
     "promise/always-return": "error",
+    "promise/no-multiple-resolved": "error",
     "promise/no-promise-in-callback": "error",
 
     // TypeScript
@@ -326,6 +328,7 @@
     "unicorn/consistent-function-scoping": "error",
     "unicorn/no-accessor-recursion": "error",
     "unicorn/no-array-reverse": "error",
+    "unicorn/no-array-sort": "error",
     "unicorn/no-instanceof-builtins": "error",
     "unicorn/prefer-add-event-listener": "error",
     "unicorn/require-post-message-target-origin": "error",
@@ -403,6 +406,7 @@
     "unicorn/escape-case": "error",
     "unicorn/explicit-length-check": "error",
     "unicorn/new-for-builtins": "error",
+    "unicorn/no-array-callback-reference": "error",
     "unicorn/no-hex-escape": "error",
     "unicorn/no-instanceof-array": "error",
     "unicorn/no-lonely-if": "error",
@@ -520,6 +524,7 @@
     "import/no-duplicates": "error",
     "import/no-mutable-exports": "error",
     "import/no-named-default": "error",
+    "import/no-named-export": "off", // named exports are often useful
     "import/no-namespace": "error",
     "import/prefer-default-export": "off", // no-default-export is already enabled
 

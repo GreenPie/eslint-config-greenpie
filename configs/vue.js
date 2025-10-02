@@ -22,6 +22,7 @@ export default defineConfig(
       // Disabled in favor of oxlint rules
       'vue/define-emits-declaration': 'off',
       'vue/define-props-declaration': 'off',
+      'vue/max-props': 'off',
       'vue/no-multiple-slot-args': 'off',
       'vue/no-required-prop-with-default': 'off',
       'vue/require-typed-ref': 'off',
@@ -233,7 +234,6 @@ export default defineConfig(
         skipBlankLines: true
       }],
 
-      'vue/max-props': 'off',
       'vue/max-template-depth': 'off',
       'vue/new-line-between-multi-line-property': 'error',
       'vue/next-tick-style': 'error',
