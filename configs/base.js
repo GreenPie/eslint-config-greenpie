@@ -107,6 +107,7 @@ export default defineConfig(
       'no-obj-calls': 'off',
       'no-object-constructor': 'off',
       'no-octal': 'off', // Superseded by strict mode
+      'no-param-reassign': 'error',
       'no-plusplus': 'off',
       'no-proto': 'off',
       'no-prototype-builtins': 'off',
@@ -219,7 +220,6 @@ export default defineConfig(
       'no-invalid-this': 'error',
       'no-loop-func': 'error',
       'no-octal-escape': 'error',
-      'no-param-reassign': 'error',
 
       'no-restricted-exports': ['error', {
         restrictDefaultExports: {
