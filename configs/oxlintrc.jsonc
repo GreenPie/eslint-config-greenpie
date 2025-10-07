@@ -165,6 +165,8 @@
 
     // Vue
 
+    "vue/no-export-in-script-setup": "error",
+    "vue/prefer-import-from-vue": "error",
     "vue/valid-define-emits": "error",
     "vue/valid-define-props": "error",
 
@@ -203,6 +205,7 @@
     "eslint/no-empty-function": "error",
     "eslint/no-eq-null": "error",
     "eslint/no-iterator": "error",
+    "eslint/no-param-reassign": "error",
     "eslint/no-plusplus": "error",
     "eslint/no-proto": "error",
     "eslint/no-regex-spaces": "error",
@@ -272,6 +275,7 @@
     "unicorn/no-length-as-slice-end": "error",
     "unicorn/no-magic-array-flat-depth": "error",
     "unicorn/no-process-exit": "error",
+    "unicorn/no-useless-error-capture-stack-trace": "error",
     "unicorn/prefer-modern-math-apis": "error",
     "unicorn/prefer-node-protocol": "error",
     "unicorn/prefer-number-properties": "error",
@@ -331,6 +335,7 @@
     "unicorn/no-array-sort": "error",
     "unicorn/no-instanceof-builtins": "error",
     "unicorn/prefer-add-event-listener": "error",
+    "unicorn/require-module-specifiers": "error",
     "unicorn/require-post-message-target-origin": "error",
 
     // Vue
@@ -417,6 +422,7 @@
     "unicorn/no-this-assignment": "error",
     "unicorn/no-typeof-undefined": "error",
     "unicorn/no-unnecessary-array-flat-depth": "error",
+    "unicorn/no-unnecessary-array-splice-count": "error",
     "unicorn/no-unnecessary-slice-end": "error",
     "unicorn/no-unreadable-iife": "error",
     "unicorn/no-useless-promise-resolve-reject": "error",
@@ -424,6 +430,7 @@
     "unicorn/no-useless-undefined": "error",
     "unicorn/prefer-array-flat": "error",
     "unicorn/prefer-array-some": "error",
+    "unicorn/prefer-at": "error",
     "unicorn/prefer-blob-reading-methods": "error",
     "unicorn/prefer-code-point": "error",
     "unicorn/prefer-date-now": "error",
@@ -439,6 +446,7 @@
     "unicorn/prefer-regexp-test": "error",
     "unicorn/prefer-string-replace-all": "error",
     "unicorn/prefer-string-slice": "error",
+    "unicorn/prefer-top-level-await": "error",
     "unicorn/prefer-type-error": "error",
     "unicorn/require-number-to-fixed-digits-argument": "error",
 
@@ -571,6 +579,8 @@
     "unicorn/number-literal-case": "error",
     "unicorn/numeric-separators-style": "error",
     "unicorn/prefer-array-index-of": "error",
+    "unicorn/prefer-class-fields": "error",
+    "unicorn/prefer-classlist-toggle": "error",
     "unicorn/prefer-dom-node-text-content": "error",
     "unicorn/prefer-global-this": "error",
     "unicorn/prefer-includes": "error",
@@ -599,6 +609,7 @@
     // Vue
     "vue/define-emits-declaration": "error",
     "vue/define-props-declaration": "error",
+    "vue/define-props-destructuring": "error",
     "vue/require-typed-ref": "error",
 
     /**

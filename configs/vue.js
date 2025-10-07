@@ -20,11 +20,15 @@ export default defineConfig(
 
     rules: {
       // Disabled in favor of oxlint rules
+
       'vue/define-emits-declaration': 'off',
       'vue/define-props-declaration': 'off',
+      'vue/define-props-destructuring': 'off',
       'vue/max-props': 'off',
+      'vue/no-export-in-script-setup': 'off',
       'vue/no-multiple-slot-args': 'off',
       'vue/no-required-prop-with-default': 'off',
+      'vue/prefer-import-from-vue': 'off',
       'vue/require-typed-ref': 'off',
       'vue/valid-define-emits': 'off',
       'vue/valid-define-props': 'off',
@@ -51,7 +55,6 @@ export default defineConfig(
       'vue/no-dupe-keys': 'error',
       'vue/no-dupe-v-else-if': 'error',
       'vue/no-duplicate-attributes': 'error',
-      'vue/no-export-in-script-setup': 'error',
       'vue/no-mutating-props': 'error',
       'vue/no-parsing-error': 'error',
       'vue/no-ref-as-operand': 'error',
@@ -119,7 +122,6 @@ export default defineConfig(
       'vue/no-lifecycle-after-await': 'error',
       'vue/no-v-for-template-key-on-child': 'error',
       'vue/no-watch-after-await': 'error',
-      'vue/prefer-import-from-vue': 'error',
       'vue/require-slots-as-functions': 'error',
       'vue/require-toggle-inside-transition': 'error',
       'vue/valid-v-is': 'error',
@@ -213,8 +215,6 @@ export default defineConfig(
       'vue/define-macros-order': ['error', {
         defineExposeLast: true
       }],
-
-      'vue/define-props-destructuring': 'error',
 
       'vue/enforce-style-attribute': ['error', {
         allow: ['module', 'plain']
