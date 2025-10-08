@@ -280,6 +280,7 @@
     "unicorn/prefer-node-protocol": "error",
     "unicorn/prefer-number-properties": "error",
     "vue/max-props": "off", // It's okay to have many props in components
+    "vue/no-import-compiler-macros": "error",
 
     // Vue
     "vue/no-multiple-slot-args": "error",
@@ -340,6 +341,7 @@
 
     // Vue
     "vue/no-required-prop-with-default": "error",
+    "vue/require-default-export": "off", // Both default and named exports are good
 
     /**
      * Pedantic rules
