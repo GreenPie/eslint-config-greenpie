@@ -376,6 +376,7 @@
     "eslint/no-redeclare": "error",
     "eslint/no-self-compare": "error",
     "eslint/no-throw-literal": "error",
+    "eslint/no-warning-comments": "warn", // Just notify about TODO and FIXME comments
     "eslint/radix": "error",
     "eslint/require-await": "off", // @typescript-eslint already checks for this (promise-function-async / require-await)
     "eslint/sort-vars": "error",
@@ -620,6 +621,7 @@
 
     // ESLint
 
+    "eslint/constructor-super": "error",
     "eslint/getter-return": "error",
     "eslint/no-misleading-character-class": "error",
     "eslint/no-undef": "error",

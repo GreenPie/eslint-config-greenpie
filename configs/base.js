@@ -22,6 +22,7 @@ export default defineConfig(
       'arrow-body-style': 'off',
       'block-scoped-var': 'off',
       'class-methods-use-this': 'off',
+      'constructor-super': 'off',
       'default-case-last': 'off',
       'default-case': 'off',
       'default-param-last': 'off',
@@ -148,6 +149,7 @@ export default defineConfig(
       'no-useless-rename': 'off',
       'no-var': 'off',
       'no-void': 'off',
+      'no-warning-comments': 'off',
       'no-with': 'off', // Superseded by strict mode
       'operator-assignment': 'off',
       'prefer-destructuring': 'off',
@@ -180,7 +182,6 @@ export default defineConfig(
        * {@link https://eslint.org/docs/rules/#possible-problems}
        */
 
-      'constructor-super': 'error',
       'no-promise-executor-return': 'error',
       'no-unmodified-loop-condition': 'error',
       'no-unreachable-loop': 'error',
@@ -241,10 +242,6 @@ export default defineConfig(
       }],
 
       'no-useless-return': 'error',
-
-      // Just notify about TODO and FIXME comments
-      'no-warning-comments': 'warn',
-
       'object-shorthand': 'error',
       'one-var': ['error', 'never'],
       'prefer-arrow-callback': 'error',
