@@ -113,6 +113,7 @@ export default defineConfig({
     '@typescript-eslint/restrict-plus-operands': 'off',
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/return-await': 'off',
+    '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/switch-exhaustiveness-check': 'off',
     '@typescript-eslint/triple-slash-reference': 'off',
     '@typescript-eslint/unbound-method': 'off',
@@ -214,7 +215,6 @@ export default defineConfig({
 
     '@typescript-eslint/prefer-regexp-exec': 'error',
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
-    '@typescript-eslint/strict-boolean-expressions': 'error',
     '@typescript-eslint/typedef': 'error',
     '@typescript-eslint/unified-signatures': 'error',
 

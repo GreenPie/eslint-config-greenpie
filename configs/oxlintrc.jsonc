@@ -443,6 +443,7 @@
     "typescript/require-await": "error",
     "typescript/restrict-plus-operands": "error",
     "typescript/return-await": "error",
+    "typescript/strict-boolean-expressions": "error",
     "typescript/switch-exhaustiveness-check": "error",
 
     // Unicorn
