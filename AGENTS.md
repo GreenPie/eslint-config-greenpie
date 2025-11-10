@@ -29,3 +29,5 @@ When writing commit messages, follow these guidelines:
 ## Pull request instructions
 
 - Use English for pull request titles and descriptions.
+- Create a concise and clear pull request title summarizing the overall changes.
+- Write a detailed pull request description that explains the purpose of the changes, the problem being solved or feature being added, and any relevant context.

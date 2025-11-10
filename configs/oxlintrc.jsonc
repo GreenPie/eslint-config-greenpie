@@ -428,6 +428,7 @@
     "unicorn/no-unnecessary-array-splice-count": "error",
     "unicorn/no-unnecessary-slice-end": "error",
     "unicorn/no-unreadable-iife": "error",
+    "unicorn/no-useless-collection-argument": "error",
     "unicorn/no-useless-promise-resolve-reject": "error",
     "unicorn/no-useless-switch-case": "error",
     "unicorn/no-useless-undefined": "error",
