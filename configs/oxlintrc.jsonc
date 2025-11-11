@@ -134,6 +134,7 @@
     "typescript/no-array-delete": "error",
     "typescript/no-base-to-string": "error",
     "typescript/no-confusing-void-expression": "error",
+    "typescript/no-deprecated": "error",
     "typescript/no-duplicate-enum-values": "error",
     "typescript/no-duplicate-type-constituents": "error",
     "typescript/no-extra-non-null-assertion": "error",
@@ -443,6 +444,7 @@
     "typescript/require-await": "error",
     "typescript/restrict-plus-operands": "error",
     "typescript/return-await": "error",
+    "typescript/strict-boolean-expressions": "error",
     "typescript/switch-exhaustiveness-check": "error",
 
     // Unicorn
