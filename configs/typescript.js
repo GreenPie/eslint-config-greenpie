@@ -119,16 +119,6 @@ export default defineConfig({
       modifiers: ['const'],
       format: ['strictCamelCase', 'UPPER_CASE']
     }, {
-      selector: 'variable',
-      types: ['boolean'],
-      format: ['StrictPascalCase'],
-      prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
-
-      filter: {
-        regex: '^result$',
-        match: false
-      }
-    }, {
       selector: 'typeLike',
       format: ['StrictPascalCase']
     }, {
