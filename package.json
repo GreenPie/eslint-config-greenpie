@@ -32,16 +32,17 @@
     "oxlint"
   ],
   "devDependencies": {
-    "oxlint-tsgolint": "^0.5.1",
-    "oxlint": "^1.28.0",
+    "oxlint": "^1.29.0",
+    "oxlint-tsgolint": "^0.8.0",
     "taze": "^19.9.0"
   },
   "peerDependencies": {
-    "@stylistic/eslint-plugin": "^5.5.0",
-    "eslint-plugin-vue": "^10.5.1",
+    "@stylistic/eslint-plugin": "^5.6.1",
     "eslint": "^9.39.1",
-    "oxlint-tsgolint": "^0.5.1",
-    "oxlint": "^1.28.0",
-    "typescript-eslint": "^8.46.4"
+    "eslint-plugin-vue": "^10.5.1",
+    "oxlint": "^1.29.0",
+    "oxlint-tsgolint": "^0.8.0",
+    "taze": "^19.9.0",
+    "typescript-eslint": "^8.47.0"
   }
 }

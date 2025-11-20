@@ -90,6 +90,7 @@ export default defineConfig({
     '@typescript-eslint/no-unsafe-type-assertion': 'off',
     '@typescript-eslint/no-unsafe-unary-minus': 'off',
     '@typescript-eslint/no-unused-expressions': 'off',
+    '@typescript-eslint/no-unused-private-class-members': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-empty-export': 'off',
@@ -158,16 +159,6 @@ export default defineConfig({
       selector: 'variable',
       modifiers: ['const'],
       format: ['strictCamelCase', 'UPPER_CASE']
-    }, {
-      selector: 'variable',
-      types: ['boolean'],
-      format: ['StrictPascalCase'],
-      prefix: ['is', 'should', 'has', 'can', 'did', 'will'],
-
-      filter: {
-        regex: '^result$',
-        match: false
-      }
     }, {
       selector: 'typeLike',
       format: ['StrictPascalCase']

@@ -636,6 +636,7 @@
     "unicorn/prefer-object-from-entries": "error",
     "unicorn/prefer-optional-catch-binding": "error",
     "unicorn/prefer-reflect-apply": "error",
+    "unicorn/prefer-response-static-json": "error",
     "unicorn/prefer-spread": "error",
     "unicorn/prefer-string-raw": "error",
     "unicorn/prefer-string-trim-start-end": "error",
