@@ -64,6 +64,7 @@ export default defineConfig({
     '@typescript-eslint/no-unsafe-declaration-merging': 'off',
     '@typescript-eslint/no-unsafe-function-type': 'off',
     '@typescript-eslint/no-unused-expressions': 'off',
+    '@typescript-eslint/no-unused-private-class-members': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-empty-export': 'off',
