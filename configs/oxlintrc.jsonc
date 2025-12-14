@@ -440,6 +440,7 @@
     "typescript/no-unsafe-return": "error",
     "typescript/only-throw-error": "error",
     "typescript/prefer-enum-initializers": "error",
+    "typescript/prefer-includes": "error",
     "typescript/prefer-promise-reject-errors": "error",
     "typescript/prefer-ts-expect-error": "error", // TODO: deprecated in @typescript-eslint
     "typescript/related-getter-setter-pairs": "error",
