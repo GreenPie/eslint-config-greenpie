@@ -125,6 +125,7 @@ export default defineConfig(
       'no-template-curly-in-string': 'off',
       'no-ternary': 'off',
       'no-this-before-super': 'off',
+      'no-throw-literal': 'off',
       'no-unassigned-vars': 'off',
       'no-undef-init': 'off',
       'no-undef': 'off',
@@ -147,6 +148,7 @@ export default defineConfig(
       'no-useless-constructor': 'off',
       'no-useless-escape': 'off',
       'no-useless-rename': 'off',
+      'no-useless-return': 'off',
       'no-var': 'off',
       'no-void': 'off',
       'no-warning-comments': 'off',
@@ -189,7 +191,6 @@ export default defineConfig(
       'no-useless-assignment': 'error',
       'require-atomic-updates': 'error',
       'no-redeclare': 'error',
-      'no-throw-literal': 'error',
       'sort-vars': 'error',
 
       /**
@@ -241,7 +242,6 @@ export default defineConfig(
         allowInObjectDestructuring: false
       }],
 
-      'no-useless-return': 'error',
       'object-shorthand': 'error',
       'one-var': ['error', 'never'],
       'prefer-arrow-callback': 'error',

@@ -2,7 +2,7 @@ import vuePlugin from 'eslint-plugin-vue';
 import { defineConfig } from 'eslint/config';
 
 /*
- * https://eslint.vuejs.org/
+ * https://eslint.vuejs.org/rules/
  * https://github.com/vuejs/eslint-plugin-vue/releases
  */
 
@@ -244,6 +244,7 @@ export default defineConfig(
       'vue/no-deprecated-delete-set': 'error',
       'vue/no-deprecated-model-definition': 'error',
       'vue/no-duplicate-attr-inheritance': 'error',
+      'vue/no-duplicate-class-names': 'error',
       'vue/no-empty-component-block': 'error',
       'vue/no-multiple-objects-in-class': 'error',
       'vue/no-negated-v-if-condition': 'error',
