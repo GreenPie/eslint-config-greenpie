@@ -59,6 +59,7 @@ export default defineConfig({
     '@typescript-eslint/no-redeclare': 'off',
     '@typescript-eslint/no-require-imports': 'off',
     '@typescript-eslint/no-restricted-imports': 'off',
+    '@typescript-eslint/no-restricted-types': 'off',
     '@typescript-eslint/no-this-alias': 'off',
     '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'off',
     '@typescript-eslint/no-unsafe-declaration-merging': 'off',
@@ -238,7 +239,6 @@ export default defineConfig({
 
     '@typescript-eslint/require-await': 'error',
     '@typescript-eslint/no-array-delete': 'error',
-    '@typescript-eslint/no-deprecated': 'error',
-    '@typescript-eslint/no-restricted-types': 'error'
+    '@typescript-eslint/no-deprecated': 'error'
   }
 });
