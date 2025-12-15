@@ -237,6 +237,7 @@ export default defineConfig({
     'no-use-before-define': 'off',
     '@typescript-eslint/no-use-before-define': 'error',
 
+    '@typescript-eslint/no-useless-default-assignment': 'error',
     '@typescript-eslint/require-await': 'error',
     '@typescript-eslint/no-array-delete': 'error',
     '@typescript-eslint/no-deprecated': 'error'
