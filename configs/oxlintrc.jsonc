@@ -227,6 +227,7 @@
     "eslint/no-regex-spaces": "error",
     "eslint/no-restricted-globals": "error",
     "eslint/no-restricted-imports": "error",
+    "eslint/no-sequences": "error",
     "eslint/no-undefined": "off", // undefined should be handled in TypeScript
     "eslint/no-var": "error",
 
@@ -375,6 +376,7 @@
 
     // ESLint
 
+    "eslint/accessor-pairs": "error",
     "eslint/array-callback-return": "error",
     "eslint/eqeqeq": "error",
     "eslint/max-classes-per-file": "error",
@@ -395,9 +397,11 @@
     "eslint/no-fallthrough": "error",
     "eslint/no-inner-declarations": "error",
     "eslint/no-lonely-if": "error",
+    "eslint/no-loop-func": "error",
     "eslint/no-negated-condition": "error",
     "eslint/no-new-wrappers": "error",
     "eslint/no-object-constructor": "error",
+    "eslint/no-promise-executor-return": "error",
     "eslint/no-prototype-builtins": "error",
     "eslint/no-redeclare": "error",
     "eslint/no-self-compare": "error",
@@ -531,6 +535,7 @@
     "eslint/no-continue": "error",
     "eslint/no-duplicate-imports": "error",
     "eslint/no-extra-label": "error",
+    "eslint/no-implicit-coercion": "error",
     "eslint/no-label-var": "error",
     "eslint/no-labels": "error",
     "eslint/no-lone-blocks": "error",
@@ -631,9 +636,11 @@
     "unicorn/prefer-bigint-literals": "error",
     "unicorn/prefer-class-fields": "error",
     "unicorn/prefer-classlist-toggle": "error",
+    "unicorn/prefer-default-parameters": "error",
     "unicorn/prefer-dom-node-text-content": "error",
     "unicorn/prefer-global-this": "error",
     "unicorn/prefer-includes": "error",
+    "unicorn/prefer-keyboard-event-key": "error",
     "unicorn/prefer-logical-operator-over-ternary": "error",
     "unicorn/prefer-modern-dom-apis": "error",
     "unicorn/prefer-negative-index": "error",

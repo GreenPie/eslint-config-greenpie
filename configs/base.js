@@ -18,6 +18,7 @@ export default defineConfig(
        * Off in favor of oxlint
        */
 
+      'accessor-pairs': 'off',
       'array-callback-return': 'off',
       'arrow-body-style': 'off',
       'block-scoped-var': 'off',
@@ -83,6 +84,7 @@ export default defineConfig(
       'no-fallthrough': 'off',
       'no-func-assign': 'off',
       'no-global-assign': 'off',
+      'no-implicit-coercion': 'off',
       'no-implied-eval': 'off',
       'no-import-assign': 'off',
       'no-inner-declarations': 'off',
@@ -93,6 +95,7 @@ export default defineConfig(
       'no-labels': 'off',
       'no-lone-blocks': 'off',
       'no-lonely-if': 'off',
+      'no-loop-func': 'off',
       'no-loss-of-precision': 'off',
       'no-magic-numbers': 'off',
       'no-misleading-character-class': 'off',
@@ -111,6 +114,7 @@ export default defineConfig(
       'no-octal': 'off', // Superseded by strict mode
       'no-param-reassign': 'error',
       'no-plusplus': 'off',
+      'no-promise-executor-return': 'off',
       'no-proto': 'off',
       'no-prototype-builtins': 'off',
       'no-regex-spaces': 'off',
@@ -120,6 +124,7 @@ export default defineConfig(
       'no-script-url': 'off',
       'no-self-assign': 'off',
       'no-self-compare': 'off',
+      'no-sequences': 'off',
       'no-setter-return': 'off',
       'no-shadow-restricted-names': 'off',
       'no-sparse-arrays': 'off',
@@ -185,7 +190,6 @@ export default defineConfig(
        * {@link https://eslint.org/docs/rules/#possible-problems}
        */
 
-      'no-promise-executor-return': 'error',
       'no-unmodified-loop-condition': 'error',
       'no-unreachable-loop': 'error',
       'no-use-before-define': 'error',
@@ -199,7 +203,6 @@ export default defineConfig(
        *
        * {@link https://eslint.org/docs/rules/#suggestions}
        */
-      'accessor-pairs': 'error',
       camelcase: 'error',
 
       // Doesn't matter actually
@@ -216,11 +219,9 @@ export default defineConfig(
       'id-match': 'error',
       'logical-assignment-operators': 'error',
       'max-statements': 'off',
-      'no-implicit-coercion': 'error',
       'no-implicit-globals': 'error',
       'no-inline-comments': 'error',
       'no-invalid-this': 'error',
-      'no-loop-func': 'error',
       'no-octal-escape': 'error',
 
       'no-restricted-exports': ['error', {
@@ -234,7 +235,6 @@ export default defineConfig(
 
       'no-restricted-properties': 'error',
       'no-restricted-syntax': 'error',
-      'no-sequences': 'error',
       'no-shadow': 'error',
 
       'no-underscore-dangle': ['error', {
