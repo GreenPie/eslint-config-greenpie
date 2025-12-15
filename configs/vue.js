@@ -157,7 +157,16 @@ export default defineConfig(
       'vue/no-template-shadow': 'error',
       'vue/one-component-per-file': 'error',
       'vue/prop-name-casing': 'error',
-      'vue/require-default-prop': 'error',
+
+      /**
+       * Conflicts with
+       * - `unicorn/no-useless-undefined`
+       * - `@typescript-eslint/no-useless-default-assignment`
+       *
+       * {@link https://github.com/vuejs/eslint-plugin-vue/issues/2475}
+       */
+      'vue/require-default-prop': 'off',
+
       'vue/require-prop-types': 'error',
       'vue/singleline-html-element-content-newline': 'error',
 
