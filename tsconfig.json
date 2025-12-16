@@ -2,6 +2,7 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "checkJs": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "noEmit": true
   }
 }
