@@ -6,23 +6,33 @@ This package provides ESLint's shared config that designed to be strict as hell.
 
 ## Usage
 
-Install required packages:
+Install the base package with required dependencies:
 
-- `npm install eslint-config-greenpie oxlint typescript-eslint --save-dev`
-
-Then add the following code to your local `.oxlintrc.json` file:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-
-  "extends": [
-    "./node_modules/eslint-config-greenpie/configs/oxlintrc.jsonc"
-  ]
-}
+```bash
+npm install eslint-config-greenpie eslint @stylistic/eslint-plugin --save-dev
 ```
 
-And the following code to `eslint.config.js` file:
+Then install additional dependencies depending on your use case:
+
+**For TypeScript projects:**
+
+```bash
+npm install typescript-eslint --save-dev
+```
+
+**For Vue.js projects:**
+
+```bash
+npm install eslint-plugin-vue --save-dev
+```
+
+**For oxlint users:**
+
+```bash
+npm install oxlint --save-dev
+```
+
+### ESLint configuration
 
 ```js
 import { defineConfig } from 'eslint/config';
@@ -34,7 +44,21 @@ export default defineConfig(
 );
 ```
 
-or see more [examples](#examples) below.
+### Oxlint configuration
+
+If using oxlint, add the following to your `.oxlintrc.json` file:
+
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+
+  "extends": [
+    "./node_modules/eslint-config-greenpie/configs/oxlintrc.jsonc"
+  ]
+}
+```
+
+See more [examples](#configuration-examples) below.
 
 ## Configs (ESLint)
 
