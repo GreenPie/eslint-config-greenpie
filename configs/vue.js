@@ -25,6 +25,7 @@ export default defineConfig(
       'vue/define-props-declaration': 'off',
       'vue/define-props-destructuring': 'off',
       'vue/max-props': 'off',
+      'vue/no-deprecated-destroyed-lifecycle': 'off',
       'vue/no-export-in-script-setup': 'off',
       'vue/no-import-compiler-macros': 'off',
       'vue/no-multiple-slot-args': 'off',
@@ -102,7 +103,6 @@ export default defineConfig(
       'vue/valid-v-slot': 'error',
       'vue/valid-v-text': 'error',
       'vue/no-deprecated-data-object-declaration': 'error',
-      'vue/no-deprecated-destroyed-lifecycle': 'error',
       'vue/no-deprecated-dollar-listeners-api': 'error',
       'vue/no-deprecated-dollar-scopedslots-api': 'error',
       'vue/no-deprecated-events-api': 'error',
@@ -157,7 +157,16 @@ export default defineConfig(
       'vue/no-template-shadow': 'error',
       'vue/one-component-per-file': 'error',
       'vue/prop-name-casing': 'error',
-      'vue/require-default-prop': 'error',
+
+      /**
+       * Conflicts with
+       * - `unicorn/no-useless-undefined`
+       * - `@typescript-eslint/no-useless-default-assignment`
+       *
+       * {@link https://github.com/vuejs/eslint-plugin-vue/issues/2475}
+       */
+      'vue/require-default-prop': 'off',
+
       'vue/require-prop-types': 'error',
       'vue/singleline-html-element-content-newline': 'error',
 

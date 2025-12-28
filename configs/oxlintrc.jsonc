@@ -181,6 +181,7 @@
 
     // Vue
 
+    "vue/no-deprecated-destroyed-lifecycle": "error",
     "vue/no-export-in-script-setup": "error",
     "vue/prefer-import-from-vue": "error",
     "vue/valid-define-emits": "error",
@@ -395,6 +396,7 @@
     "eslint/no-constructor-return": "error",
     "eslint/no-else-return": "error",
     "eslint/no-fallthrough": "error",
+    "eslint/no-inline-comments": "error",
     "eslint/no-inner-declarations": "error",
     "eslint/no-lonely-if": "error",
     "eslint/no-loop-func": "error",
@@ -464,6 +466,7 @@
     "unicorn/new-for-builtins": "error",
     "unicorn/no-array-callback-reference": "error",
     "unicorn/no-hex-escape": "error",
+    "unicorn/no-immediate-mutation": "error",
     "unicorn/no-instanceof-array": "error",
     "unicorn/no-lonely-if": "error",
     "unicorn/no-negation-in-equality-check": "error",
@@ -509,6 +512,11 @@
     // ESLint
 
     "eslint/arrow-body-style": "error",
+
+    "eslint/capitalized-comments": ["warn", "always", {
+      "ignorePattern": "oxlint"
+    }],
+
     "eslint/curly": "error",
     "eslint/default-case-last": "error",
     "eslint/default-param-last": "error",
@@ -532,6 +540,7 @@
 
     "eslint/init-declarations": "error",
     "eslint/max-params": "error",
+    "eslint/max-statements": "off", // Doesn't look useful
     "eslint/new-cap": "error",
     "eslint/no-continue": "error",
     "eslint/no-duplicate-imports": "error",
@@ -654,6 +663,7 @@
     "unicorn/prefer-string-trim-start-end": "error",
     "unicorn/prefer-structured-clone": "error",
     "unicorn/require-array-join-separator": "error",
+    "unicorn/require-module-attributes": "error",
     "unicorn/switch-case-braces": "error",
     "unicorn/text-encoding-identifier-case": "error",
     "unicorn/throw-new-error": "error",
@@ -661,6 +671,7 @@
     // Vitest
 
     "vitest/no-import-node-test": "error",
+    "vitest/prefer-called-times": "error",
     "vitest/prefer-to-be-falsy": "error",
     "vitest/prefer-to-be-object": "error",
     "vitest/prefer-to-be-truthy": "error",

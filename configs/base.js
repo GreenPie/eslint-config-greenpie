@@ -1,5 +1,5 @@
+// oxlint-disable no-inline-comments
 /* eslint-disable @stylistic/line-comment-position */
-/* eslint-disable no-inline-comments */
 import eslintJs from '@eslint/js';
 import { defineConfig } from 'eslint/config';
 
@@ -22,6 +22,7 @@ export default defineConfig(
       'array-callback-return': 'off',
       'arrow-body-style': 'off',
       'block-scoped-var': 'off',
+      'capitalized-comments': 'off',
       'class-methods-use-this': 'off',
       'constructor-super': 'off',
       'default-case-last': 'off',
@@ -41,6 +42,7 @@ export default defineConfig(
       'max-lines': 'off',
       'max-nested-callbacks': 'off',
       'max-params': 'off',
+      'max-statements': 'off',
       'new-cap': 'off',
       'no-alert': 'off',
       'no-array-constructor': 'off',
@@ -87,6 +89,7 @@ export default defineConfig(
       'no-implicit-coercion': 'off',
       'no-implied-eval': 'off',
       'no-import-assign': 'off',
+      'no-inline-comments': 'off',
       'no-inner-declarations': 'off',
       'no-invalid-regexp': 'off',
       'no-irregular-whitespace': 'off',
@@ -205,11 +208,6 @@ export default defineConfig(
        */
       camelcase: 'error',
 
-      // Doesn't matter actually
-      'capitalized-comments': ['warn', 'always', {
-        ignorePattern: 'oxlint'
-      }],
-
       complexity: 'error',
       'consistent-return': 'error',
       'consistent-this': 'error',
@@ -218,9 +216,7 @@ export default defineConfig(
       'id-denylist': 'error',
       'id-match': 'error',
       'logical-assignment-operators': 'error',
-      'max-statements': 'off',
       'no-implicit-globals': 'error',
-      'no-inline-comments': 'error',
       'no-invalid-this': 'error',
       'no-octal-escape': 'error',
 
