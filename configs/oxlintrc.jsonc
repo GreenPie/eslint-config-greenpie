@@ -713,12 +713,13 @@
     "files": ["**/*.vue"],
 
     "globals": {
-      "defineProps": "readonly",
-      "withDefaults": "readonly",
       "defineEmits": "readonly",
-      "defineModel": "readonly",
       "defineExpose": "readonly",
-      "defineSlots": "readonly"
+      "defineModel": "readonly",
+      "defineOptions": "readonly",
+      "defineProps": "readonly",
+      "defineSlots": "readonly",
+      "withDefaults": "readonly"
     }
   }]
 }
