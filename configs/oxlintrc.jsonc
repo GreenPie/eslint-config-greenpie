@@ -512,9 +512,8 @@
     // ESLint
 
     "eslint/arrow-body-style": "error",
-
     "eslint/capitalized-comments": ["warn", "always", {
-      "ignorePattern": "oxlint"
+      "ignorePattern": "^\\s+?https"
     }],
 
     "eslint/curly": "error",
@@ -669,6 +668,11 @@
     "unicorn/throw-new-error": "error",
 
     // Vitest
+
+    "vitest/consistent-test-filename": ["error", {
+      "allTestPattern": "__tests__",
+      "pattern": ".*\\.test\\.ts"
+    }],
 
     "vitest/no-import-node-test": "error",
     "vitest/prefer-called-times": "error",
