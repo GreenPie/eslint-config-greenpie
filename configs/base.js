@@ -182,6 +182,7 @@ export default defineConfig(
       'use-isnan': 'off',
       'valid-typeof': 'off',
       'vars-on-top': 'off',
+      complexity: 'off',
       curly: 'off',
       eqeqeq: 'off',
       radix: 'off',
@@ -207,8 +208,6 @@ export default defineConfig(
        * {@link https://eslint.org/docs/rules/#suggestions}
        */
       camelcase: 'error',
-
-      complexity: 'error',
       'consistent-return': 'error',
       'consistent-this': 'error',
       'dot-notation': 'error',

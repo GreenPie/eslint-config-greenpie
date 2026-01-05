@@ -178,11 +178,13 @@
 
     "vitest/no-conditional-tests": "error",
     "vitest/require-local-test-context-for-concurrent-snapshots": "error",
+    "vitest/warn-todo": "warn",
 
     // Vue
 
     "vue/no-deprecated-destroyed-lifecycle": "error",
     "vue/no-export-in-script-setup": "error",
+    "vue/no-this-in-before-route-enter": "error",
     "vue/prefer-import-from-vue": "error",
     "vue/valid-define-emits": "error",
     "vue/valid-define-props": "error",
@@ -213,6 +215,7 @@
     // ESLint
 
     "eslint/class-methods-use-this": "error",
+    "eslint/complexity": "error",
     "eslint/default-case": "off", // TypeScript can be even more restrictive
     "eslint/no-alert": "error",
     "eslint/no-bitwise": "error",
@@ -512,10 +515,7 @@
     // ESLint
 
     "eslint/arrow-body-style": "error",
-    "eslint/capitalized-comments": ["warn", "always", {
-      "ignorePattern": "^\\s+?https"
-    }],
-
+    "eslint/capitalized-comments": "warn", // Just notify about non-capitalized comments
     "eslint/curly": "error",
     "eslint/default-case-last": "error",
     "eslint/default-param-last": "error",
@@ -674,6 +674,7 @@
       "pattern": ".*\\.test\\.ts"
     }],
 
+    "vitest/consistent-vitest-vi": "error",
     "vitest/no-import-node-test": "error",
     "vitest/prefer-called-times": "error",
     "vitest/prefer-to-be-falsy": "error",
