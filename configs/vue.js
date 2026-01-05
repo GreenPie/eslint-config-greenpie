@@ -30,6 +30,7 @@ export default defineConfig(
       'vue/no-import-compiler-macros': 'off',
       'vue/no-multiple-slot-args': 'off',
       'vue/no-required-prop-with-default': 'off',
+      'vue/no-this-in-before-route-enter': 'off',
       'vue/prefer-import-from-vue': 'off',
       'vue/require-default-export': 'off',
       'vue/require-typed-ref': 'off',
@@ -274,7 +275,6 @@ export default defineConfig(
       'vue/no-setup-props-reactivity-loss': 'error',
       'vue/no-static-inline-styles': 'error',
       'vue/no-template-target-blank': 'error',
-      'vue/no-this-in-before-route-enter': 'error',
       'vue/no-undef-components': 'error',
       'vue/no-undef-properties': 'error',
 
