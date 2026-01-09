@@ -684,7 +684,7 @@
     // Vue
     "vue/define-emits-declaration": "error",
     "vue/define-props-declaration": "error",
-    "vue/define-props-destructuring": "off", // It requires destructuring, event when not needed
+    "vue/define-props-destructuring": "off", // It requires destructuring, even when not needed
     "vue/require-typed-ref": "error",
 
     /**
