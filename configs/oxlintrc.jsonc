@@ -684,7 +684,7 @@
     // Vue
     "vue/define-emits-declaration": "error",
     "vue/define-props-declaration": "error",
-    "vue/define-props-destructuring": "error",
+    "vue/define-props-destructuring": "off", // It requires destructuring, event when not needed
     "vue/require-typed-ref": "error",
 
     /**
@@ -725,6 +725,12 @@
       "defineProps": "readonly",
       "defineSlots": "readonly",
       "withDefaults": "readonly"
+    },
+
+    "rules": {
+      "unicorn/filename-case": ["error", {
+        "case": "pascalCase"
+      }]
     }
   }]
 }
