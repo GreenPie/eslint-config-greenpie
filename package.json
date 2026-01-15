@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-greenpie",
-  "version": "14.19.0",
+  "version": "15.0.1-13",
   "description": "GreenPie's ESLint config file",
   "main": "index.js",
   "author": "Roman Nuritdinov (Ky6uk)",
@@ -17,10 +17,10 @@
   },
   "scripts": {
     "lint:eslint": "eslint",
-    "lint:oxlint": "oxlint",
+    "lint:oxlint": "oxlint --type-aware",
     "lint": "npm run lint:oxlint && npm run lint:eslint",
-    "update:all": "taze -I -l --peer",
-    "prepare": "husky"
+    "prepare": "husky",
+    "update:all": "taze -I -l --peer"
   },
   "keywords": [
     "eslint",
@@ -42,9 +42,10 @@
   },
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^5.7.0",
-    "eslint-plugin-vue": "^10.6.2",
     "eslint": "^9.39.2",
+    "eslint-plugin-vue": "^10.6.2",
     "oxlint": "^1.39.0",
+    "oxlint-tsgolint": "^0.11.1",
     "typescript-eslint": "^8.53.0"
   }
 }
