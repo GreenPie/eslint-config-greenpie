@@ -25,9 +25,11 @@ export default defineConfig(
       'vue/define-props-declaration': 'off',
       'vue/define-props-destructuring': 'off',
       'vue/max-props': 'off',
+      'vue/no-arrow-functions-in-watch': 'off',
       'vue/no-deprecated-destroyed-lifecycle': 'off',
       'vue/no-export-in-script-setup': 'off',
       'vue/no-import-compiler-macros': 'off',
+      'vue/no-lifecycle-after-await': 'off',
       'vue/no-multiple-slot-args': 'off',
       'vue/no-required-prop-with-default': 'off',
       'vue/no-this-in-before-route-enter': 'off',
@@ -52,7 +54,6 @@ export default defineConfig(
        */
 
       'vue/multi-word-component-names': 'error',
-      'vue/no-arrow-functions-in-watch': 'error',
       'vue/no-async-in-computed-properties': 'error',
       'vue/no-child-content': 'error',
       'vue/no-computed-properties-in-data': 'error',
@@ -122,7 +123,6 @@ export default defineConfig(
       'vue/no-deprecated-v-on-number-modifiers': 'error',
       'vue/no-deprecated-vue-config-keycodes': 'error',
       'vue/no-expose-after-await': 'error',
-      'vue/no-lifecycle-after-await': 'error',
       'vue/no-v-for-template-key-on-child': 'error',
       'vue/no-watch-after-await': 'error',
       'vue/require-slots-as-functions': 'error',
