@@ -208,6 +208,7 @@ export default defineConfig({
 
     '@typescript-eslint/prefer-regexp-exec': 'error',
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
+    '@typescript-eslint/strict-void-return': 'error',
     '@typescript-eslint/typedef': 'error',
     '@typescript-eslint/unified-signatures': 'error',
 
