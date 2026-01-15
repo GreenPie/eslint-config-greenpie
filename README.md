@@ -79,8 +79,6 @@ Related ESLint rules are disabled by default if supported by oxlint.
 
 For type-aware linting capabilities (like `no-floating-promises`, `no-unsafe-*` rules, etc.), you need to install an additional package and use the `--type-aware` flag:
 
-Then run oxlint with the type-aware flag:
-
 ```bash
 npx oxlint --type-aware
 ```

@@ -42,10 +42,10 @@
   },
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^5.7.0",
-    "eslint-plugin-vue": "^10.6.2",
     "eslint": "^9.39.2",
-    "oxlint-tsgolint": "^0.10.1",
+    "eslint-plugin-vue": "^10.6.2",
     "oxlint": "^1.39.0",
+    "oxlint-tsgolint": "^0.11.1",
     "typescript-eslint": "^8.53.0"
   }
 }

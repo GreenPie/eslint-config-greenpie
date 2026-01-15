@@ -631,6 +631,7 @@
     "typescript/prefer-for-of": "error",
     "typescript/prefer-function-type": "error",
     "typescript/prefer-namespace-keyword": "error",
+    "typescript/prefer-optional-chain": "error",
     "typescript/prefer-reduce-type-parameter": "error",
     "typescript/prefer-return-this-type": "error",
 

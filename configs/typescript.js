@@ -108,6 +108,7 @@ export default defineConfig({
     '@typescript-eslint/prefer-literal-enum-member': 'off',
     '@typescript-eslint/prefer-namespace-keyword': 'off',
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
+    '@typescript-eslint/prefer-optional-chain': 'off',
     '@typescript-eslint/prefer-promise-reject-errors': 'off',
     '@typescript-eslint/prefer-reduce-type-parameter': 'off',
     '@typescript-eslint/prefer-return-this-type': 'off',
@@ -197,7 +198,6 @@ export default defineConfig({
     '@typescript-eslint/no-unnecessary-type-parameters': 'error',
     '@typescript-eslint/parameter-properties': 'error',
     '@typescript-eslint/prefer-find': 'error',
-    '@typescript-eslint/prefer-optional-chain': 'error',
     '@typescript-eslint/prefer-readonly': 'error',
 
     /*
