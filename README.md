@@ -32,6 +32,12 @@ npm install eslint-plugin-vue --save-dev
 npm install oxlint --save-dev
 ```
 
+**For oxlint with type-aware rules:**
+
+```bash
+npm install oxlint-tsgolint --save-dev
+```
+
 ### ESLint configuration
 
 ```js
