@@ -2,8 +2,8 @@ import vuePlugin from 'eslint-plugin-vue';
 import { defineConfig } from 'eslint/config';
 
 /*
- * https://eslint.vuejs.org/rules/
  * https://github.com/vuejs/eslint-plugin-vue/releases
+ * https://eslint.vuejs.org/rules/
  */
 
 // oxlint-disable-next-line no-default-export
@@ -256,6 +256,7 @@ export default defineConfig(
       'vue/no-duplicate-attr-inheritance': 'error',
       'vue/no-duplicate-class-names': 'error',
       'vue/no-empty-component-block': 'error',
+      'vue/no-literals-in-template': 'error',
       'vue/no-multiple-objects-in-class': 'error',
       'vue/no-negated-v-if-condition': 'error',
       'vue/no-potential-component-option-typo': 'error',
@@ -276,6 +277,7 @@ export default defineConfig(
       'vue/no-static-inline-styles': 'error',
       'vue/no-template-target-blank': 'error',
       'vue/no-undef-components': 'error',
+      'vue/no-undef-directives': 'error',
       'vue/no-undef-properties': 'error',
 
       'vue/no-unsupported-features': ['error', {

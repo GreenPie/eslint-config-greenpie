@@ -493,7 +493,7 @@
       "allowArrowFunctions": true
     }],
 
-    "eslint/grouped-accessor-pairs": ["error", {
+    "eslint/grouped-accessor-pairs": ["error", "getBeforeSet", {
       "enforceForTSTypes": true
     }],
 
