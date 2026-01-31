@@ -87,6 +87,7 @@ export default defineConfig(
       'no-func-assign': 'off',
       'no-global-assign': 'off',
       'no-implicit-coercion': 'off',
+      'no-implied-eval': 'off',
       'no-import-assign': 'off',
       'no-inline-comments': 'off',
       'no-inner-declarations': 'off',
@@ -215,7 +216,6 @@ export default defineConfig(
       'id-match': 'error',
       'logical-assignment-operators': 'error',
       'no-implicit-globals': 'error',
-      'no-implied-eval': 'error',
       'no-invalid-this': 'error',
       'no-octal-escape': 'error',
 
