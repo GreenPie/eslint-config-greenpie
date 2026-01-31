@@ -361,7 +361,7 @@
 
     "typescript/no-confusing-non-null-assertion": "error",
     "typescript/no-extraneous-class": "error",
-    "typescript/no-unnecessary-boolean-literal-compare": "error",
+    "typescript/no-unnecessary-boolean-literal-compare": "off", // isBoolean === false is sometimes useful
     "typescript/no-unnecessary-template-expression": "error",
     "typescript/no-unnecessary-type-arguments": "error",
     "typescript/no-unnecessary-type-assertion": "error",
