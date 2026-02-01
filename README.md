@@ -20,6 +20,12 @@ Then install additional dependencies depending on your use case:
 npm install oxlint --save-dev
 ```
 
+**For oxlint with type-aware rules:**
+
+```bash
+npm install oxlint-tsgolint --save-dev
+```
+
 **For ESLint users:**
 
 ```bash
