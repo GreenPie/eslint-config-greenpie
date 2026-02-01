@@ -9,10 +9,22 @@ This package provides ESLint's shared config that designed to be strict as hell.
 Install the base package with required dependencies:
 
 ```bash
-npm install eslint-config-greenpie eslint @stylistic/eslint-plugin --save-dev
+npm install eslint-config-greenpie eslint --save-dev
 ```
 
 Then install additional dependencies depending on your use case:
+
+**For oxlint users:**
+
+```bash
+npm install oxlint --save-dev
+```
+
+**For ESLint users:**
+
+```bash
+npm install @stylistic/eslint-plugin --save-dev
+```
 
 **For TypeScript projects:**
 
@@ -26,17 +38,29 @@ npm install typescript-eslint --save-dev
 npm install eslint-plugin-vue --save-dev
 ```
 
-**For oxlint users:**
+### Oxlint configuration
 
-```bash
-npm install oxlint --save-dev
+If using oxlint, create a `.oxlintrc.json` file in the root of your project with the following content:
+
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+
+  "extends": [
+    "./node_modules/eslint-config-greenpie/configs/oxlintrc.jsonc"
+  ]
+}
 ```
 
-**For oxlint with type-aware rules:**
+### Oxlint CLI
+
+Run oxlint with the following command:
 
 ```bash
-npm install oxlint-tsgolint --save-dev
+oxlint --report-unused-disable-directives-severity error
 ```
+
+> **Note:** The `--report-unused-disable-directives-severity error` flag helps prevent cluttering your project with unnecessary disable directives.
 
 ### ESLint configuration
 
@@ -50,21 +74,13 @@ export default defineConfig(
 );
 ```
 
-### Oxlint configuration
-
-If using oxlint, add the following to your `.oxlintrc.json` file:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-
-  "extends": [
-    "./node_modules/eslint-config-greenpie/configs/oxlintrc.jsonc"
-  ]
-}
-```
-
 See more [examples](#configuration-examples) below.
+
+## Config (oxlint)
+
+Oxlint has one unified configuration for all supported languages (`.js`, `.ts`, `.vue`). You can granularly configure it in your local `.oxlintrc.json` file.
+
+Related ESLint rules are disabled by default if supported by oxlint.
 
 ## Configs (ESLint)
 

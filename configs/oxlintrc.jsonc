@@ -524,7 +524,10 @@
 
     // ESLint
 
-    "eslint/arrow-body-style": "error",
+    "eslint/arrow-body-style": ["error", "as-needed", {
+      "requireReturnForObjectLiteral": true
+    }],
+
     "eslint/capitalized-comments": "warn", // Just notify about non-capitalized comments
     "eslint/curly": "error",
     "eslint/default-case-last": "error",
@@ -542,8 +545,11 @@
     "eslint/guard-for-in": "error",
 
     "eslint/id-length": ["error", {
-      // t — for translations
-      "exceptions": ["t"],
+      "exceptions": [
+        "t", // translations (e.g.: vue-i18n)
+        "v"  // Valibot
+      ],
+
       "max": 40
     }],
 
