@@ -63,7 +63,9 @@
     "eslint/no-import-assign": "error",
     "eslint/no-invalid-regexp": "error",
     "eslint/no-irregular-whitespace": "error",
+    "eslint/no-iterator": "error",
     "eslint/no-loss-of-precision": "error",
+    "eslint/no-misleading-character-class": "error",
     "eslint/no-new-native-nonconstructor": "error",
     "eslint/no-nonoctal-decimal-escape": "error",
     "eslint/no-obj-calls": "error",
@@ -140,6 +142,7 @@
     "typescript/no-useless-empty-export": "error",
     "typescript/no-wrapper-object-types": "error",
     "typescript/prefer-as-const": "error",
+    "typescript/prefer-namespace-keyword": "error",
     "typescript/triple-slash-reference": "error",
 
     // Unicorn
@@ -218,7 +221,6 @@
     "eslint/no-empty": "error",
     "eslint/no-empty-function": "error",
     "eslint/no-eq-null": "error",
-    "eslint/no-iterator": "error",
     "eslint/no-param-reassign": "error",
     "eslint/no-plusplus": "error",
     "eslint/no-proto": "error",
@@ -243,6 +245,7 @@
     "import/no-cycle": "error",
     "import/no-default-export": "error",
     "import/no-dynamic-require": "error",
+    "import/no-relative-parent-imports": "error",
     "import/no-webpack-loader-syntax": "error",
     "import/unambiguous": "off", // Seems useless
 
@@ -423,7 +426,6 @@
       "minimumDescriptionLength": 10
     }],
 
-    "typescript/ban-types": "error", // TODO: deprecated in @typescript-eslint
     "typescript/no-unsafe-function-type": "error",
     "typescript/prefer-enum-initializers": "error",
     "typescript/prefer-ts-expect-error": "error", // TODO: deprecated in @typescript-eslint
@@ -538,6 +540,7 @@
     "eslint/no-useless-computed-key": "error",
     "eslint/no-ternary": "off", // Why not to use it in simple cases like "a ? b : c"
     "eslint/operator-assignment": "error",
+    "eslint/prefer-const": "error",
     "eslint/prefer-destructuring": "error",
     "eslint/prefer-exponentiation-operator": "error",
     "eslint/prefer-numeric-literals": "error",
@@ -564,11 +567,16 @@
     "import/first": "error",
     "import/group-exports": "error",
     "import/no-anonymous-default-export": "error",
-    "import/no-duplicates": "error",
+
+    "import/no-duplicates": ["error", {
+      "preferInline": true
+    }],
+
     "import/no-mutable-exports": "error",
     "import/no-named-default": "error",
     "import/no-named-export": "off", // named exports are often useful
     "import/no-namespace": "error",
+    "import/no-nodejs-modules": "off", // Node.js modules are useful in most cases
     "import/prefer-default-export": "off", // no-default-export is already enabled
 
     // Promise
@@ -588,13 +596,13 @@
     "typescript/ban-tslint-comment": "error",
     "typescript/consistent-generic-constructors": "error",
     "typescript/consistent-indexed-object-style": "error",
+    "typescript/consistent-type-assertions": "error",
     "typescript/consistent-type-definitions": "error",
     "typescript/consistent-type-imports": "error",
     "typescript/no-empty-interface": "error",
     "typescript/no-inferrable-types": "error",
     "typescript/prefer-for-of": "error",
     "typescript/prefer-function-type": "error",
-    "typescript/prefer-namespace-keyword": "error",
 
     // Unicorn
 
@@ -633,6 +641,7 @@
     "unicorn/prefer-string-raw": "error",
     "unicorn/prefer-string-trim-start-end": "error",
     "unicorn/prefer-structured-clone": "error",
+    "unicorn/relative-url-style": "error",
     "unicorn/require-array-join-separator": "error",
     "unicorn/require-module-attributes": "error",
     "unicorn/switch-case-braces": "error",
@@ -652,6 +661,7 @@
     "vitest/prefer-called-once": "off", // Conflicts with prefer-called-times
     "vitest/prefer-called-times": "error",
     "vitest/prefer-describe-function-title": "error",
+    "vitest/prefer-expect-type-of": "error",
     "vitest/prefer-to-be-falsy": "error",
     "vitest/prefer-to-be-object": "error",
     "vitest/prefer-to-be-truthy": "error",
@@ -670,7 +680,6 @@
 
     "eslint/constructor-super": "error",
     "eslint/getter-return": "error",
-    "eslint/no-misleading-character-class": "error",
     "eslint/no-undef": "error",
     "eslint/no-unreachable": "error",
 
