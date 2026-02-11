@@ -1,5 +1,4 @@
 // oxlint-disable no-inline-comments
-/* eslint-disable @stylistic/line-comment-position */
 import eslintJs from '@eslint/js';
 import { defineConfig } from 'eslint/config';
 
@@ -163,6 +162,7 @@ export default defineConfig(
       'no-warning-comments': 'off',
       'no-with': 'off', // Superseded by strict mode
       'operator-assignment': 'off',
+      'prefer-const': 'off',
       'prefer-destructuring': 'off',
       'prefer-exponentiation-operator': 'off',
       'prefer-numeric-literals': 'off',
@@ -240,7 +240,6 @@ export default defineConfig(
       'object-shorthand': 'error',
       'one-var': ['error', 'never'],
       'prefer-arrow-callback': 'error',
-      'prefer-const': 'error',
       'prefer-named-capture-group': 'error',
       'prefer-regex-literals': 'error',
       'require-unicode-regexp': 'error',
