@@ -32,6 +32,7 @@ export default defineConfig({
     '@typescript-eslint/class-methods-use-this': 'off',
     '@typescript-eslint/consistent-generic-constructors': 'off',
     '@typescript-eslint/consistent-indexed-object-style': 'off',
+    '@typescript-eslint/consistent-type-assertions': 'off',
     '@typescript-eslint/consistent-type-definitions': 'off',
     '@typescript-eslint/consistent-type-imports': 'off',
     '@typescript-eslint/default-param-last': 'off',
@@ -90,7 +91,6 @@ export default defineConfig({
     'consistent-return': 'off',
     '@typescript-eslint/consistent-return': 'off',
 
-    '@typescript-eslint/consistent-type-assertions': 'error',
     '@typescript-eslint/consistent-type-exports': 'error',
 
     '@typescript-eslint/explicit-member-accessibility': ['error', {
