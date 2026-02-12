@@ -30,6 +30,7 @@ export default defineConfig({
     '@typescript-eslint/await-thenable': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/ban-tslint-comment': 'off',
+    '@typescript-eslint/class-literal-property-style': 'off',
     '@typescript-eslint/class-methods-use-this': 'off',
     '@typescript-eslint/consistent-generic-constructors': 'off',
     '@typescript-eslint/consistent-indexed-object-style': 'off',
@@ -60,6 +61,7 @@ export default defineConfig({
     '@typescript-eslint/no-implied-eval': 'off',
     '@typescript-eslint/no-import-type-side-effects': 'off',
     '@typescript-eslint/no-inferrable-types': 'off',
+    '@typescript-eslint/no-invalid-void-type': 'off',
     '@typescript-eslint/no-magic-numbers': 'off',
     '@typescript-eslint/no-meaningless-void-operator': 'off',
     '@typescript-eslint/no-misused-new': 'off',
@@ -129,8 +131,6 @@ export default defineConfig({
     // TODO: regroup rules by new categories
 
     // TypeScript Rules
-    '@typescript-eslint/class-literal-property-style': 'error',
-
     'consistent-return': 'off',
     '@typescript-eslint/consistent-return': 'off',
 
@@ -190,7 +190,8 @@ export default defineConfig({
 
     '@typescript-eslint/no-confusing-non-null-assertion': 'error',
     '@typescript-eslint/no-extraneous-class': 'error',
-    '@typescript-eslint/no-invalid-void-type': 'error',
+
+    // (variable === false) is OK
     '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-constraint': 'error',
