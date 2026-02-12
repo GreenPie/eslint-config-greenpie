@@ -29,6 +29,7 @@ export default defineConfig({
     '@typescript-eslint/array-type': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/ban-tslint-comment': 'off',
+    '@typescript-eslint/class-literal-property-style': 'off',
     '@typescript-eslint/class-methods-use-this': 'off',
     '@typescript-eslint/consistent-generic-constructors': 'off',
     '@typescript-eslint/consistent-indexed-object-style': 'off',
@@ -51,6 +52,7 @@ export default defineConfig({
     '@typescript-eslint/no-extra-non-null-assertion': 'off',
     '@typescript-eslint/no-import-type-side-effects': 'off',
     '@typescript-eslint/no-inferrable-types': 'off',
+    '@typescript-eslint/no-invalid-void-type': 'off',
     '@typescript-eslint/no-magic-numbers': 'off',
     '@typescript-eslint/no-misused-new': 'off',
     '@typescript-eslint/no-namespace': 'off',
@@ -86,7 +88,6 @@ export default defineConfig({
     // TypeScript Rules
 
     '@typescript-eslint/await-thenable': 'error',
-    '@typescript-eslint/class-literal-property-style': 'error',
 
     'consistent-return': 'off',
     '@typescript-eslint/consistent-return': 'off',
@@ -162,7 +163,6 @@ export default defineConfig({
     '@typescript-eslint/no-extraneous-class': 'error',
     '@typescript-eslint/no-floating-promises': 'error',
     '@typescript-eslint/no-for-in-array': 'error',
-    '@typescript-eslint/no-invalid-void-type': 'error',
     '@typescript-eslint/no-meaningless-void-operator': 'error',
     '@typescript-eslint/no-misused-promises': 'error',
     '@typescript-eslint/no-misused-spread': 'error',
