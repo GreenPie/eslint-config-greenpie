@@ -63,6 +63,7 @@ export default defineConfig({
     '@typescript-eslint/no-require-imports': 'off',
     '@typescript-eslint/no-restricted-imports': 'off',
     '@typescript-eslint/no-restricted-types': 'off',
+    '@typescript-eslint/no-shadow': 'off',
     '@typescript-eslint/no-this-alias': 'off',
     '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'off',
     '@typescript-eslint/no-unsafe-declaration-merging': 'off',
@@ -70,10 +71,12 @@ export default defineConfig({
     '@typescript-eslint/no-unused-expressions': 'off',
     '@typescript-eslint/no-unused-private-class-members': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-empty-export': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-wrapper-object-types': 'off',
+    '@typescript-eslint/parameter-properties': 'off',
     '@typescript-eslint/prefer-as-const': 'off',
     '@typescript-eslint/prefer-destructuring': 'off',
     '@typescript-eslint/prefer-enum-initializers': 'off',
@@ -82,6 +85,7 @@ export default defineConfig({
     '@typescript-eslint/prefer-literal-enum-member': 'off',
     '@typescript-eslint/prefer-namespace-keyword': 'off',
     '@typescript-eslint/triple-slash-reference': 'off',
+    '@typescript-eslint/unified-signatures': 'off',
 
     // TODO: regroup rules by new categories
 
@@ -179,7 +183,6 @@ export default defineConfig({
     '@typescript-eslint/no-unnecessary-type-parameters': 'error',
     '@typescript-eslint/non-nullable-type-assertion-style': 'error',
     '@typescript-eslint/only-throw-error': 'error',
-    '@typescript-eslint/parameter-properties': 'error',
     '@typescript-eslint/prefer-find': 'error',
     '@typescript-eslint/prefer-includes': 'error',
     '@typescript-eslint/prefer-nullish-coalescing': 'error',
@@ -212,7 +215,6 @@ export default defineConfig({
 
     '@typescript-eslint/typedef': 'error',
     '@typescript-eslint/unbound-method': 'error',
-    '@typescript-eslint/unified-signatures': 'error',
     '@typescript-eslint/use-unknown-in-catch-callback-variable': 'error',
 
     /*
@@ -231,12 +233,6 @@ export default defineConfig({
 
     'no-loop-func': 'off',
     '@typescript-eslint/no-loop-func': 'error',
-
-    'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': 'error',
-
-    'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': 'error',
 
     '@typescript-eslint/no-useless-default-assignment': 'error',
     '@typescript-eslint/require-await': 'error',

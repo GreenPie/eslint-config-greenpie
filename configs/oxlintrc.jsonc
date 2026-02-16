@@ -282,6 +282,7 @@
     "typescript/no-non-null-assertion": "error",
     "typescript/no-require-imports": "error",
     "typescript/no-restricted-types": "error",
+    "typescript/no-use-before-define": "error",
     "typescript/no-var-requires": "error",
     "typescript/prefer-literal-enum-member": "error",
 
@@ -315,7 +316,9 @@
     "eslint/no-extend-native": "error",
     "eslint/no-extra-bind": "error",
     "eslint/no-new": "error",
+    "eslint/no-shadow": "error",
     "eslint/no-unexpected-multiline": "error",
+    "eslint/no-unmodified-loop-condition": "error",
     "eslint/no-unneeded-ternary": "error",
     "eslint/no-useless-concat": "error",
     "eslint/no-useless-constructor": "error",
@@ -603,8 +606,10 @@
     "typescript/consistent-type-imports": "error",
     "typescript/no-empty-interface": "error",
     "typescript/no-inferrable-types": "error",
+    "typescript/parameter-properties": "error",
     "typescript/prefer-for-of": "error",
     "typescript/prefer-function-type": "error",
+    "typescript/unified-signatures": "error",
 
     // Unicorn
 
@@ -663,7 +668,7 @@
     "vitest/prefer-called-once": "off", // Conflicts with prefer-called-times
     "vitest/prefer-called-times": "error",
     "vitest/prefer-describe-function-title": "error",
-    "vitest/prefer-expect-type-of": "error",
+    "vitest/prefer-expect-type-of": "off", // It works weirdly: https://vitest.dev/guide/testing-types.html#reading-errors
     "vitest/prefer-to-be-falsy": "error",
     "vitest/prefer-to-be-object": "error",
     "vitest/prefer-to-be-truthy": "error",
