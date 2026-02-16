@@ -128,6 +128,7 @@ export default defineConfig(
       'no-sequences': 'off',
       'no-setter-return': 'off',
       'no-shadow-restricted-names': 'off',
+      'no-shadow': 'off',
       'no-sparse-arrays': 'off',
       'no-template-curly-in-string': 'off',
       'no-ternary': 'off',
@@ -138,6 +139,7 @@ export default defineConfig(
       'no-undef': 'off',
       'no-undefined': 'off',
       'no-unexpected-multiline': 'off',
+      'no-unmodified-loop-condition': 'off',
       'no-unneeded-ternary': 'off',
       'no-unreachable': 'off',
       'no-unsafe-finally': 'off',
@@ -147,6 +149,7 @@ export default defineConfig(
       'no-unused-labels': 'off',
       'no-unused-private-class-members': 'off',
       'no-unused-vars': 'off',
+      'no-use-before-define': 'off',
       'no-useless-backreference': 'off',
       'no-useless-call': 'off',
       'no-useless-catch': 'off',
@@ -193,9 +196,7 @@ export default defineConfig(
        * {@link https://eslint.org/docs/rules/#possible-problems}
        */
 
-      'no-unmodified-loop-condition': 'error',
       'no-unreachable-loop': 'error',
-      'no-use-before-define': 'error',
       'no-useless-assignment': 'error',
       'require-atomic-updates': 'error',
       'no-redeclare': 'error',
@@ -230,7 +231,6 @@ export default defineConfig(
 
       'no-restricted-properties': 'error',
       'no-restricted-syntax': 'error',
-      'no-shadow': 'error',
 
       'no-underscore-dangle': ['error', {
         allowInArrayDestructuring: false,
