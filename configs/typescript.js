@@ -80,6 +80,7 @@ export default defineConfig({
     '@typescript-eslint/no-shadow': 'off',
     '@typescript-eslint/no-this-alias': 'off',
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
+    '@typescript-eslint/no-unnecessary-condition': 'off',
     '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'off',
     '@typescript-eslint/no-unnecessary-template-expression': 'off',
     '@typescript-eslint/no-unnecessary-type-arguments': 'off',
@@ -129,8 +130,8 @@ export default defineConfig({
     '@typescript-eslint/switch-exhaustiveness-check': 'off',
     '@typescript-eslint/triple-slash-reference': 'off',
     '@typescript-eslint/unbound-method': 'off',
-    '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off',
     '@typescript-eslint/unified-signatures': 'off',
+    '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off',
 
     // TODO: regroup rules by new categories
 
@@ -194,9 +195,6 @@ export default defineConfig({
 
     '@typescript-eslint/no-confusing-non-null-assertion': 'error',
     '@typescript-eslint/no-extraneous-class': 'error',
-
-    // (variable === false) is OK
-    '@typescript-eslint/no-unnecessary-condition': 'error',
     '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-constraint': 'error',
     '@typescript-eslint/no-unnecessary-type-conversion': 'error',

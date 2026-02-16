@@ -652,7 +652,6 @@
     "typescript/parameter-properties": "error",
     "typescript/prefer-for-of": "error",
     "typescript/prefer-function-type": "error",
-    "typescript/prefer-optional-chain": "error",
     "typescript/prefer-reduce-type-parameter": "error",
     "typescript/prefer-return-this-type": "error",
     "typescript/unified-signatures": "error",
@@ -748,7 +747,12 @@
 
     // Promise
 
-    "promise/no-return-in-finally": "error"
+    "promise/no-return-in-finally": "error",
+
+    // TypeScript
+
+    "typescript/no-unnecessary-condition": "error",
+    "typescript/prefer-optional-chain": "error"
   },
 
   "overrides": [{
