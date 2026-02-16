@@ -77,6 +77,7 @@ export default defineConfig({
     '@typescript-eslint/no-require-imports': 'off',
     '@typescript-eslint/no-restricted-imports': 'off',
     '@typescript-eslint/no-restricted-types': 'off',
+    '@typescript-eslint/no-shadow': 'off',
     '@typescript-eslint/no-this-alias': 'off',
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
     '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'off',
@@ -96,12 +97,14 @@ export default defineConfig({
     '@typescript-eslint/no-unused-expressions': 'off',
     '@typescript-eslint/no-unused-private-class-members': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-useless-constructor': 'off',
     '@typescript-eslint/no-useless-empty-export': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-wrapper-object-types': 'off',
     '@typescript-eslint/non-nullable-type-assertion-style': 'off',
     '@typescript-eslint/only-throw-error': 'off',
+    '@typescript-eslint/parameter-properties': 'off',
     '@typescript-eslint/prefer-as-const': 'off',
     '@typescript-eslint/prefer-destructuring': 'off',
     '@typescript-eslint/prefer-enum-initializers': 'off',
@@ -127,6 +130,7 @@ export default defineConfig({
     '@typescript-eslint/triple-slash-reference': 'off',
     '@typescript-eslint/unbound-method': 'off',
     '@typescript-eslint/use-unknown-in-catch-callback-variable': 'off',
+    '@typescript-eslint/unified-signatures': 'off',
 
     // TODO: regroup rules by new categories
 
@@ -197,7 +201,6 @@ export default defineConfig({
     '@typescript-eslint/no-unnecessary-type-constraint': 'error',
     '@typescript-eslint/no-unnecessary-type-conversion': 'error',
     '@typescript-eslint/no-unnecessary-type-parameters': 'error',
-    '@typescript-eslint/parameter-properties': 'error',
     '@typescript-eslint/prefer-find': 'error',
     '@typescript-eslint/prefer-readonly': 'error',
 
@@ -211,7 +214,6 @@ export default defineConfig({
     '@typescript-eslint/prefer-string-starts-ends-with': 'error',
     '@typescript-eslint/strict-void-return': 'error',
     '@typescript-eslint/typedef': 'error',
-    '@typescript-eslint/unified-signatures': 'error',
 
     /*
      * Extension Rules
@@ -227,10 +229,6 @@ export default defineConfig({
     'no-loop-func': 'off',
     '@typescript-eslint/no-loop-func': 'error',
 
-    'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': 'error',
-
-    'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': 'error'
+    '@typescript-eslint/no-useless-default-assignment': 'error'
   }
 });

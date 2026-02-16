@@ -35,7 +35,7 @@
   ],
   "devDependencies": {
     "husky": "^9.1.7",
-    "oxlint": "^1.47.0",
+    "oxlint": "^1.48.0",
     "taze": "^19.9.2",
     "vitest": "^4.0.18",
     "vue": "^3.5.28"
@@ -43,9 +43,9 @@
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^5.8.0",
     "eslint": "^9.39.2",
-    "eslint-plugin-vue": "^10.7.0",
-    "oxlint": "^1.47.0",
+    "eslint-plugin-vue": "^10.8.0",
+    "oxlint": "^1.48.0",
     "oxlint-tsgolint": "^0.12.1",
-    "typescript-eslint": "^8.55.0"
+    "typescript-eslint": "^8.56.0"
   }
 }
