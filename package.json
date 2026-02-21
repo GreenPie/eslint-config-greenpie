@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-greenpie",
-  "version": "16.0.0-0",
+  "version": "16.0.0-1",
   "description": "GreenPie's ESLint and oxlint configs",
   "main": "index.js",
   "author": "Roman Nuritdinov (Ky6uk)",
