@@ -136,6 +136,7 @@ export default defineConfig({
     '@stylistic/operator-linebreak': 'error',
     '@stylistic/padded-blocks': ['error', 'never'],
 
+    // TODO: it supports custom ESLint selectors since v5.9.0: https://eslint.org/docs/latest/extend/selectors
     '@stylistic/padding-line-between-statements': ['error', {
       blankLine: 'always',
       prev: ['const', 'let', 'block-like', 'directive'],

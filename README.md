@@ -157,6 +157,26 @@ export default [
 ];
 ```
 
+## Tips
+
+### Allow namespace imports for specific packages
+
+The `import/no-namespace` rule disallows `import * as` syntax. If you need to use namespace imports for a specific package (e.g. `valibot`), you can override the rule in your local `.oxlintrc.json`:
+
+```json
+{
+  "extends": [
+    "./node_modules/eslint-config-greenpie/configs/oxlintrc.jsonc"
+  ],
+
+  "rules": {
+    "import/no-namespace": ["error", {
+      "ignore": ["valibot"]
+    }]
+  }
+}
+```
+
 ## Links
 
 * [Registry](https://www.npmjs.com/package/eslint-config-greenpie)
@@ -165,3 +185,13 @@ export default [
 * [Stylistic rules](https://eslint.style/rules)
 * [Vue rules](https://eslint.vuejs.org/rules/)
 * [Oxlint documentation](https://oxc.rs/docs/guide/usage/linter.html)
+
+## Development
+
+### Running tests
+
+```bash
+npm run test
+```
+
+Tests use [Vitest](https://vitest.dev/) and the [ESLint programmatic API](https://eslint.org/docs/developer-guide/nodejs-api) to lint code snippets directly against the configs defined in this repository.

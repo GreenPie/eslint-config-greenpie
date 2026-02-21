@@ -580,6 +580,7 @@
     "import/no-named-default": "error",
     "import/no-named-export": "off", // named exports are often useful
     "import/no-namespace": "error",
+
     "import/no-nodejs-modules": "off", // Node.js modules are useful in most cases
     "import/prefer-default-export": "off", // no-default-export is already enabled
 
@@ -664,11 +665,13 @@
 
     "vitest/consistent-vitest-vi": "error",
     "vitest/no-import-node-test": "error",
+    "vitest/no-importing-vitest-globals": "off", // Only useful when vitest globals mode is enabled; projects that import from vitest explicitly should keep it off
     "vitest/no-unneeded-async-expect-function": "error",
     "vitest/prefer-called-once": "off", // Conflicts with prefer-called-times
     "vitest/prefer-called-times": "error",
     "vitest/prefer-describe-function-title": "error",
     "vitest/prefer-expect-type-of": "off", // It works weirdly: https://vitest.dev/guide/testing-types.html#reading-errors
+    "vitest/prefer-import-in-mock": "error",
     "vitest/prefer-to-be-falsy": "error",
     "vitest/prefer-to-be-object": "error",
     "vitest/prefer-to-be-truthy": "error",

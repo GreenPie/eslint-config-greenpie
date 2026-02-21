@@ -2,6 +2,14 @@
   "compilerOptions": {
     "strictNullChecks": true,
     "checkJs": true,
-    "esModuleInterop": true
-  }
+    "esModuleInterop": true,
+    "module": "nodenext",
+    "target": "esnext",
+    "moduleResolution": "nodenext"
+  },
+
+  "exclude": [
+    "**/__tests__/*.valid.ts",
+    "**/__tests__/*.invalid.ts"
+  ]
 }
