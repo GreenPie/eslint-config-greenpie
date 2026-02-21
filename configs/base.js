@@ -1,11 +1,8 @@
 // oxlint-disable no-inline-comments
-import eslintJs from '@eslint/js';
 import { defineConfig } from 'eslint/config';
 
 // oxlint-disable-next-line no-default-export
 export default defineConfig(
-  eslintJs.configs.recommended,
-
   {
 
     /**

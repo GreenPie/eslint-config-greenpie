@@ -5,6 +5,13 @@
     "./configs/oxlintrc.jsonc"
   ],
 
+  "ignorePatterns": [
+    "tests/oxlint/__tests__/*.valid.ts",
+    "tests/oxlint/__tests__/*.invalid.ts",
+    "tests/oxlint/__tests__/valid-filename.ts",
+    "tests/oxlint/__tests__/InvalidFilename.ts"
+  ],
+
   "rules": {
     "eslint/no-magic-numbers": "off"
   },
@@ -14,6 +21,22 @@
 
     "rules": {
       "import/extensions": "off"
+    }
+  },
+  {
+    "files": ["**/__tests__/*.test.ts"],
+
+    "rules": {
+      "import/no-relative-parent-imports": "off"
+    }
+  },
+  {
+    "files": ["tests/oxlint/helper.ts"],
+
+    "rules": {
+      "import/no-namespace": ["error", {
+        "ignore": ["valibot"]
+      }]
     }
   }]
 }
