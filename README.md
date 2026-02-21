@@ -20,6 +20,12 @@ Then install additional dependencies depending on your use case:
 npm install oxlint --save-dev
 ```
 
+**For oxlint with type-aware rules:**
+
+```bash
+npm install oxlint-tsgolint --save-dev
+```
+
 **For ESLint users:**
 
 ```bash
@@ -90,6 +96,20 @@ Related ESLint rules are disabled by default if supported by oxlint.
 | `js`      | Includes JavaScript rules      |
 | `ts`      | Includes TypeScript rules      |
 | `vue`     | Includes rules for Vue.js      |
+
+## Config (oxlint)
+
+Oxlint has one unified configuration for all supported languages (`.js`, `.ts`, `.vue`). You can granually configure it in your local `.oxlintrc.json` file.
+
+Related ESLint rules are disabled by default if supported by oxlint.
+
+## Type-aware linting (oxlint)
+
+For type-aware linting capabilities (like `no-floating-promises`, `no-unsafe-*` rules, etc.), you need to install an additional package and use the `--type-aware` flag:
+
+```bash
+npx oxlint --type-aware
+```
 
 ## Configuration examples
 
