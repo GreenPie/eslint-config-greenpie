@@ -15,6 +15,5 @@
     readonly mySpecialSlot: unknown;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-call
   defineSlots<Slots>();
 </script>
