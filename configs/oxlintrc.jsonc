@@ -754,8 +754,20 @@
 
     // TypeScript
 
+    "typescript/consistent-return": "error",
+    "typescript/consistent-type-exports": "error",
+    "typescript/dot-notation": "error",
     "typescript/no-unnecessary-condition": "error",
-    "typescript/prefer-optional-chain": "error"
+    "typescript/no-unnecessary-qualifier": "error",
+    "typescript/no-unnecessary-type-parameters": "error",
+    "typescript/no-useless-default-assignment": "error",
+    "typescript/prefer-find": "error",
+    "typescript/prefer-optional-chain": "error",
+    "typescript/prefer-readonly": "error",
+    "typescript/prefer-readonly-parameter-types": "off", // potentially problematic https://github.com/typescript-eslint/typescript-eslint/issues/2079
+    "typescript/prefer-regexp-exec": "error",
+    "typescript/prefer-string-starts-ends-with": "error",
+    "typescript/strict-void-return": "error"
   },
 
   "overrides": [{

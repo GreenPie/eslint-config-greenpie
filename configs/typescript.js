@@ -34,10 +34,13 @@ export default defineConfig({
     '@typescript-eslint/class-methods-use-this': 'off',
     '@typescript-eslint/consistent-generic-constructors': 'off',
     '@typescript-eslint/consistent-indexed-object-style': 'off',
+    '@typescript-eslint/consistent-return': 'off',
     '@typescript-eslint/consistent-type-assertions': 'off',
     '@typescript-eslint/consistent-type-definitions': 'off',
+    '@typescript-eslint/consistent-type-exports': 'off',
     '@typescript-eslint/consistent-type-imports': 'off',
     '@typescript-eslint/default-param-last': 'off',
+    '@typescript-eslint/dot-notation': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/init-declarations': 'off',
@@ -82,9 +85,11 @@ export default defineConfig({
     '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'off',
     '@typescript-eslint/no-unnecessary-condition': 'off',
     '@typescript-eslint/no-unnecessary-parameter-property-assignment': 'off',
+    '@typescript-eslint/no-unnecessary-qualifier': 'off',
     '@typescript-eslint/no-unnecessary-template-expression': 'off',
     '@typescript-eslint/no-unnecessary-type-arguments': 'off',
     '@typescript-eslint/no-unnecessary-type-assertion': 'off',
+    '@typescript-eslint/no-unnecessary-type-parameters': 'off',
     '@typescript-eslint/no-unsafe-argument': 'off',
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-call': 'off',
@@ -100,6 +105,7 @@ export default defineConfig({
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/no-use-before-define': 'off',
     '@typescript-eslint/no-useless-constructor': 'off',
+    '@typescript-eslint/no-useless-default-assignment': 'off',
     '@typescript-eslint/no-useless-empty-export': 'off',
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/no-wrapper-object-types': 'off',
@@ -109,6 +115,7 @@ export default defineConfig({
     '@typescript-eslint/prefer-as-const': 'off',
     '@typescript-eslint/prefer-destructuring': 'off',
     '@typescript-eslint/prefer-enum-initializers': 'off',
+    '@typescript-eslint/prefer-find': 'off',
     '@typescript-eslint/prefer-for-of': 'off',
     '@typescript-eslint/prefer-function-type': 'off',
     '@typescript-eslint/prefer-includes': 'off',
@@ -117,8 +124,12 @@ export default defineConfig({
     '@typescript-eslint/prefer-nullish-coalescing': 'off',
     '@typescript-eslint/prefer-optional-chain': 'off',
     '@typescript-eslint/prefer-promise-reject-errors': 'off',
+    '@typescript-eslint/prefer-readonly': 'off',
+    '@typescript-eslint/prefer-readonly-parameter-types': 'off',
     '@typescript-eslint/prefer-reduce-type-parameter': 'off',
+    '@typescript-eslint/prefer-regexp-exec': 'off',
     '@typescript-eslint/prefer-return-this-type': 'off',
+    '@typescript-eslint/prefer-string-starts-ends-with': 'off',
     '@typescript-eslint/promise-function-async': 'off',
     '@typescript-eslint/related-getter-setter-pairs': 'off',
     '@typescript-eslint/require-array-sort-compare': 'off',
@@ -127,6 +138,7 @@ export default defineConfig({
     '@typescript-eslint/restrict-template-expressions': 'off',
     '@typescript-eslint/return-await': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
+    '@typescript-eslint/strict-void-return': 'off',
     '@typescript-eslint/switch-exhaustiveness-check': 'off',
     '@typescript-eslint/triple-slash-reference': 'off',
     '@typescript-eslint/unbound-method': 'off',
@@ -136,10 +148,6 @@ export default defineConfig({
     // TODO: regroup rules by new categories
 
     // TypeScript Rules
-    'consistent-return': 'off',
-    '@typescript-eslint/consistent-return': 'off',
-
-    '@typescript-eslint/consistent-type-exports': 'error',
 
     '@typescript-eslint/explicit-member-accessibility': ['error', {
       accessibility: 'no-public'
@@ -195,22 +203,8 @@ export default defineConfig({
 
     '@typescript-eslint/no-confusing-non-null-assertion': 'error',
     '@typescript-eslint/no-extraneous-class': 'error',
-    '@typescript-eslint/no-unnecessary-qualifier': 'error',
     '@typescript-eslint/no-unnecessary-type-constraint': 'error',
     '@typescript-eslint/no-unnecessary-type-conversion': 'error',
-    '@typescript-eslint/no-unnecessary-type-parameters': 'error',
-    '@typescript-eslint/prefer-find': 'error',
-    '@typescript-eslint/prefer-readonly': 'error',
-
-    /*
-     * Problematic rule
-     * Ex.: https://github.com/typescript-eslint/typescript-eslint/issues/2079
-     */
-    '@typescript-eslint/prefer-readonly-parameter-types': 'off',
-
-    '@typescript-eslint/prefer-regexp-exec': 'error',
-    '@typescript-eslint/prefer-string-starts-ends-with': 'error',
-    '@typescript-eslint/strict-void-return': 'error',
     '@typescript-eslint/typedef': 'error',
 
     /*
@@ -218,15 +212,10 @@ export default defineConfig({
      * https://github.com/typescript-eslint/typescript-eslint/tree/main/packages/eslint-plugin#extension-rules
      */
 
-    'dot-notation': 'off',
-    '@typescript-eslint/dot-notation': 'error',
-
     'no-invalid-this': 'off',
     '@typescript-eslint/no-invalid-this': 'error',
 
     'no-loop-func': 'off',
-    '@typescript-eslint/no-loop-func': 'error',
-
-    '@typescript-eslint/no-useless-default-assignment': 'error'
+    '@typescript-eslint/no-loop-func': 'error'
   }
 });

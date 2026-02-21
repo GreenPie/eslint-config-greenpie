@@ -24,6 +24,7 @@ This is a repository for ESLint/oxlint shared configurations.
 - `npm run lint:oxlint` - Run oxlint (faster linter) to check code
 - `npm run lint` - Run both linters sequentially (oxlint first, then ESLint)
 - `npm run test` - Run unit tests with Vitest
+- `npm run test:agent` - Run unit tests with Vitest and output results in JSON format (helpful for LLM Agents)
 - `npm run update:all` - Update all dependencies using taze with interactive mode
 
 For linting, prefer using `npm run lint` which runs both linters in proper order.
@@ -34,7 +35,7 @@ After making any changes to the codebase, always run both commands to verify cor
 
 ```sh
 npm run lint
-npm run test
+npm run test:agent
 ```
 
 Both must pass before considering the change complete.

@@ -20,10 +20,12 @@ export default defineConfig(
       'block-scoped-var': 'off',
       'capitalized-comments': 'off',
       'class-methods-use-this': 'off',
+      'consistent-return': 'off',
       'constructor-super': 'off',
       'default-case-last': 'off',
       'default-case': 'off',
       'default-param-last': 'off',
+      'dot-notation': 'off',
       'for-direction': 'off',
       'func-names': 'off',
       'func-style': 'off',
@@ -206,9 +208,7 @@ export default defineConfig(
        * {@link https://eslint.org/docs/rules/#suggestions}
        */
       camelcase: 'error',
-      'consistent-return': 'error',
       'consistent-this': 'error',
-      'dot-notation': 'error',
       'func-name-matching': 'error',
       'id-denylist': 'error',
       'id-match': 'error',

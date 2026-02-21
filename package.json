@@ -21,6 +21,7 @@
     "lint": "npm run lint:oxlint && npm run lint:eslint",
     "prepare": "husky",
     "test": "vitest run",
+    "test:agent": "vitest run --reporter=json",
     "update:all": "taze -I -l --peer"
   },
   "keywords": [
