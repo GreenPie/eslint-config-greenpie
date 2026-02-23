@@ -19,9 +19,10 @@
     "lint:eslint": "eslint",
     "lint:oxlint": "oxlint",
     "lint": "npm run lint:oxlint && npm run lint:eslint",
+    "prepare": "husky",
+    "test:agent": "vitest run --reporter=json",
     "test": "vitest run",
-    "update:all": "taze -I -l --peer",
-    "prepare": "husky"
+    "update:all": "taze -I -l --peer"
   },
   "keywords": [
     "eslint",
@@ -38,7 +39,7 @@
     "@types/node": "^25.3.0",
     "execa": "^9.6.1",
     "husky": "^9.1.7",
-    "oxlint": "^1.49.0",
+    "oxlint": "^1.50.0",
     "taze": "^19.9.2",
     "valibot": "1.2.0",
     "vitest": "^4.0.18",
@@ -48,7 +49,7 @@
     "@stylistic/eslint-plugin": "^5.9.0",
     "eslint": "^10.0.1",
     "eslint-plugin-vue": "^10.8.0",
-    "oxlint": "^1.49.0",
+    "oxlint": "^1.50.0",
     "typescript-eslint": "^8.56.0"
   }
 }

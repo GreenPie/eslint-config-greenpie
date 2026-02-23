@@ -55,6 +55,7 @@ describe(RULE_ID, () => {
     const diagnostics = await runOxlint([
       path.join(import.meta.dirname, 'rule-name.valid.ts')
     ]);
+
     expect(violationsOf(diagnostics, RULE_ID)).toHaveLength(0);
   });
 
@@ -62,10 +63,24 @@ describe(RULE_ID, () => {
     const diagnostics = await runOxlint([
       path.join(import.meta.dirname, 'rule-name.invalid.ts')
     ]);
+
     expect(violationsOf(diagnostics, RULE_ID).length).toBeGreaterThan(0);
   });
 });
 ```
+
+### Type-aware rules (`typescript/` prefix)
+
+Type-aware oxlint rules (powered by tsgolint) require `{ typeAware: true }` option:
+
+```typescript
+const diagnostics = await runOxlint(
+  [path.join(import.meta.dirname, 'rule-name.valid.ts')],
+  { typeAware: true }
+);
+```
+
+Type-aware rules also require a `tsconfig.json` in `tests/oxlint/__tests__/` for tsgolint auto-discovery. This file already exists — do **not** create a new one per rule.
 
 ### Fixture filenames
 
@@ -79,12 +94,13 @@ Must match the ignore patterns in `configs/oxlintrc.jsonc` so `npm run lint` ski
 `violationsOf(diagnostics, ruleId)` converts:
 - `plugin/rule-name` → `eslint-plugin-plugin(rule-name)`
 - `rule-name` → `eslint(rule-name)`
+- `typescript/rule-name` → also matches `typescript-eslint(rule-name)` (tsgolint's diagnostic code format for type-aware rules)
 
 ## After writing tests
 
 ```sh
 npm run lint
-npm run test
+npm run test:agent
 ```
 
 Both must pass.
