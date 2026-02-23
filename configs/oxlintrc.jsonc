@@ -317,6 +317,7 @@
     "unicorn/no-process-exit": "error",
     "unicorn/no-useless-error-capture-stack-trace": "error",
     "unicorn/prefer-modern-math-apis": "error",
+    "unicorn/prefer-module": "error",
     "unicorn/prefer-node-protocol": "error",
     "unicorn/prefer-number-properties": "error",
     "vue/max-props": "off", // It's okay to have many props in components
@@ -694,6 +695,7 @@
     "unicorn/prefer-string-raw": "error",
     "unicorn/prefer-string-trim-start-end": "error",
     "unicorn/prefer-structured-clone": "error",
+    "unicorn/prefer-ternary": "error",
     "unicorn/relative-url-style": "error",
     "unicorn/require-array-join-separator": "error",
     "unicorn/require-module-attributes": "error",
