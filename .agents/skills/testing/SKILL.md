@@ -84,7 +84,7 @@ Type-aware rules also require a `tsconfig.json` in `tests/oxlint/__tests__/` for
 
 ### Fixture filenames
 
-Must match the ignore patterns in `configs/oxlintrc.jsonc` so `npm run lint` skips them:
+Must match the ignore patterns in `configs/oxlintrc.jsonc` so `npm run lint:oxlint` and `npm run lint:eslint` skip them:
 
 - `rule-name.valid.ts`
 - `rule-name.invalid.ts`
@@ -99,8 +99,9 @@ Must match the ignore patterns in `configs/oxlintrc.jsonc` so `npm run lint` ski
 ## After writing tests
 
 ```sh
-npm run lint
+npm run lint:oxlint
+npm run lint:eslint
 npm run test:agent
 ```
 
-Both must pass.
+All must pass.

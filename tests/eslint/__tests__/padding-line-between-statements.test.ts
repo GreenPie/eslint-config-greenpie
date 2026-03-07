@@ -67,6 +67,30 @@ describe(RULE_ID, () => {
       expect(violations).toHaveLength(0);
     });
 
+    it('blank line between singleline and multiline import', async () => {
+      const violations = await getViolations(
+        'import foo from \'foo\';\n\nimport {\n  bar,\n  baz\n} from \'bar\';\n'
+      );
+
+      expect(violations).toHaveLength(0);
+    });
+
+    it('blank line between multiline and singleline import', async () => {
+      const violations = await getViolations(
+        'import {\n  bar,\n  baz\n} from \'bar\';\n\nimport foo from \'foo\';\n'
+      );
+
+      expect(violations).toHaveLength(0);
+    });
+
+    it('no blank line between consecutive singleline imports', async () => {
+      const violations = await getViolations(
+        'import foo from \'foo\';\nimport bar from \'bar\';\n'
+      );
+
+      expect(violations).toHaveLength(0);
+    });
+
     /**
      * One-line cases that refer to same block shouldn't require blank lines between them
      *
@@ -116,6 +140,30 @@ describe(RULE_ID, () => {
     it('missing blank line after block-like case before next case', async () => {
       const violations = await getViolations(
         'switch (x) {\ncase 1: {\nbreak;\n}\ncase 2:\nbreak;\n}\n'
+      );
+
+      expect(violations.length).toBeGreaterThan(0);
+    });
+
+    it('missing blank line between singleline and multiline import', async () => {
+      const violations = await getViolations(
+        'import foo from \'foo\';\nimport {\n  bar,\n  baz\n} from \'bar\';\n'
+      );
+
+      expect(violations.length).toBeGreaterThan(0);
+    });
+
+    it('missing blank line between multiline and singleline import', async () => {
+      const violations = await getViolations(
+        'import {\n  bar,\n  baz\n} from \'bar\';\nimport foo from \'foo\';\n'
+      );
+
+      expect(violations.length).toBeGreaterThan(0);
+    });
+
+    it('extra blank line between consecutive singleline imports', async () => {
+      const violations = await getViolations(
+        'import foo from \'foo\';\n\nimport bar from \'bar\';\n'
       );
 
       expect(violations.length).toBeGreaterThan(0);

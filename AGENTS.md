@@ -22,7 +22,6 @@ This is a repository for ESLint/oxlint shared configurations.
 
 - `npm run lint:eslint` - Run ESLint to check code quality and style
 - `npm run lint:oxlint` - Run oxlint (faster linter) to check code
-- `npm run lint` - Run both linters sequentially (oxlint first, then ESLint)
 - `npm run test` - Run unit tests with Vitest
 - `npm run update:all` - Update all dependencies using taze with interactive mode
 
@@ -33,7 +32,8 @@ For linting, prefer using `npm run lint` which runs both linters in proper order
 After making any changes to the codebase, always run both commands to verify correctness:
 
 ```sh
-npm run lint
+npm run lint:oxlint
+npm run lint:eslint
 npm run test
 ```
 
