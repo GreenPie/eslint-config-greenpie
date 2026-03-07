@@ -1,2 +1,3 @@
-npm run lint
+npm run lint:oxlint
+npm run lint:eslint
 npm run test

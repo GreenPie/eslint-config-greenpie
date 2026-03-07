@@ -25,7 +25,9 @@ Two scenarios:
 Add to `configs/oxlintrc.jsonc` in the correct **category section** and **plugin subsection**, alphabetically among sibling rules.
 
 ```sh
-npm run lint && npm run test
+npm run lint:oxlint
+npm run lint:eslint
+npm run test
 ```
 
 ## Scenario B: Migrating ESLint rule → oxlint
@@ -111,7 +113,9 @@ Check the rule's category in the [oxlint rules list](https://oxc.rs/docs/guide/u
 ## After every change
 
 ```sh
-npm run lint && npm run test
+npm run lint:oxlint
+npm run lint:eslint
+npm run test
 ```
 
-Both must pass.
+All must pass.

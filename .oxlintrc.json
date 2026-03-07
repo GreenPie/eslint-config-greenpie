@@ -13,7 +13,13 @@
   ],
 
   "rules": {
-    "eslint/no-magic-numbers": "off"
+    "eslint/no-magic-numbers": "off",
+
+    "eslint/id-length": ["error", {
+      "exceptions": [
+        "v" // Used for valibot schema validation
+      ]
+    }]
   },
 
   "overrides": [{

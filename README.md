@@ -179,6 +179,29 @@ export default [
 
 ## Tips
 
+### Allow short identifiers for id-length
+
+The `eslint/id-length` rule enforces minimum identifier length (default: 2). If your project has legitimate short identifiers, add only those in your local `.oxlintrc.json`.
+
+```json
+{
+  "extends": [
+    "./node_modules/eslint-config-greenpie/configs/oxlintrc.jsonc"
+  ],
+
+  "rules": {
+    "eslint/id-length": ["error", {
+      "max": 40,
+
+      "exceptions": [
+        "t", // translation function, e.g. from vue-i18n
+        "v"  // valibot schema builder, e.g. `v.string()`, `v.object({...})`, etc.
+      ]
+    }]
+  }
+}
+```
+
 ### Allow namespace imports for specific packages
 
 The `import/no-namespace` rule disallows `import * as` syntax. If you need to use namespace imports for a specific package (e.g. `valibot`), you can override the rule in your local `.oxlintrc.json`:
