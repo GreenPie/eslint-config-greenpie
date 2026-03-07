@@ -91,6 +91,22 @@ describe(RULE_ID, () => {
       expect(violations).toHaveLength(0);
     });
 
+    it('blank line after multiline import before code', async () => {
+      const violations = await getViolations(
+        'import {\n  bar,\n  baz\n} from \'bar\';\n\nconst foo = 1;\n'
+      );
+
+      expect(violations).toHaveLength(0);
+    });
+
+    it('blank line before multiline import after code', async () => {
+      const violations = await getViolations(
+        'const foo = 1;\n\nimport {\n  bar,\n  baz\n} from \'bar\';\n'
+      );
+
+      expect(violations).toHaveLength(0);
+    });
+
     /**
      * One-line cases that refer to same block shouldn't require blank lines between them
      *
@@ -164,6 +180,22 @@ describe(RULE_ID, () => {
     it('extra blank line between consecutive singleline imports', async () => {
       const violations = await getViolations(
         'import foo from \'foo\';\n\nimport bar from \'bar\';\n'
+      );
+
+      expect(violations.length).toBeGreaterThan(0);
+    });
+
+    it('missing blank line after multiline import before code', async () => {
+      const violations = await getViolations(
+        'import {\n  bar,\n  baz\n} from \'bar\';\nconst foo = 1;\n'
+      );
+
+      expect(violations.length).toBeGreaterThan(0);
+    });
+
+    it('missing blank line before multiline import after code', async () => {
+      const violations = await getViolations(
+        'const foo = 1;\nimport {\n  bar,\n  baz\n} from \'bar\';\n'
       );
 
       expect(violations.length).toBeGreaterThan(0);

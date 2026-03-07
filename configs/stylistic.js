@@ -166,16 +166,10 @@ export default defineConfig({
         selector: 'ImportDeclaration',
         lineMode: 'multiline'
       },
-      next: {
-        selector: 'ImportDeclaration',
-        lineMode: 'singleline'
-      }
+      next: '*'
     }, {
       blankLine: 'always',
-      prev: {
-        selector: 'ImportDeclaration',
-        lineMode: 'singleline'
-      },
+      prev: '*',
       next: {
         selector: 'ImportDeclaration',
         lineMode: 'multiline'
