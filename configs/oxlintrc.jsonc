@@ -510,11 +510,6 @@
     "eslint/guard-for-in": "error",
 
     "eslint/id-length": ["error", {
-      "exceptions": [
-        "t", // translations (e.g.: vue-i18n)
-        "v"  // Valibot
-      ],
-
       "max": 40
     }],
 
