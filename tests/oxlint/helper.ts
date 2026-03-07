@@ -53,9 +53,17 @@ async function runOxlint(filePaths: string[]): Promise<Diagnostic[]> {
 
 function violationsOf(diagnostics: Diagnostic[], ruleId: string): Diagnostic[] {
   const parts = ruleId.split('/');
-  const codePattern = parts.length === 1 ? `eslint(${ruleId})` : `eslint-plugin-${parts[0]}(${parts[1]})`;
 
-  return diagnostics.filter(diag => diag.code === codePattern);
+  if (parts.length === 1) {
+    return diagnostics.filter(diag => diag.code === `eslint(${ruleId})`);
+  }
+
+  const [plugin, rule] = parts;
+  const eslintPluginCode = `eslint-plugin-${plugin}(${rule})`;
+  // Tsgolint reports typescript type-aware rules as typescript-eslint(rule-name)
+  const tsgolintCode = plugin === 'typescript' ? `typescript-eslint(${rule})` : undefined;
+
+  return diagnostics.filter(diag => diag.code === eslintPluginCode || diag.code === tsgolintCode);
 }
 
 export {

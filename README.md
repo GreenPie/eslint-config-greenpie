@@ -91,6 +91,24 @@ Related ESLint rules are disabled by default if supported by oxlint.
 | `ts`      | Includes TypeScript rules      |
 | `vue`     | Includes rules for Vue.js      |
 
+## Config (oxlint)
+
+Oxlint has one unified configuration for all supported languages (`.js`, `.ts`, `.vue`). You can granually configure it in your local `.oxlintrc.json` file.
+
+Related ESLint rules are disabled by default if supported by oxlint.
+
+## Type-aware linting (oxlint)
+
+Type-aware linting is enabled by default in this config via `options.typeAware: true`. This enables powerful type-checking rules like:
+
+- `no-floating-promises` — ensures promises are properly handled
+- `no-unsafe-*` — prevents unsafe type operations (`no-unsafe-argument`, `no-unsafe-assignment`, `no-unsafe-call`, `no-unsafe-member-access`, `no-unsafe-return`)
+- `await-thenable` — only await thenable values
+- `no-misused-promises` — prevents incorrect promise usage
+- And many more type-aware rules
+
+Type-aware linting requires a `tsconfig.json` file in your project root. Oxlint will automatically discover and use it for type checking.
+
 ## Configuration examples
 
 ### Oxlint
