@@ -6,19 +6,17 @@ const RULE_ID = 'typescript/prefer-readonly';
 
 describe(RULE_ID, () => {
   it('valid', async () => {
-    const diagnostics = await runOxlint(
-      [path.join(import.meta.dirname, 'prefer-readonly.valid.ts')],
-      { typeAware: true }
-    );
+    const diagnostics = await runOxlint([
+      path.join(import.meta.dirname, 'prefer-readonly.valid.ts')
+    ]);
 
     expect(violationsOf(diagnostics, RULE_ID)).toHaveLength(0);
   });
 
   it('invalid', async () => {
-    const diagnostics = await runOxlint(
-      [path.join(import.meta.dirname, 'prefer-readonly.invalid.ts')],
-      { typeAware: true }
-    );
+    const diagnostics = await runOxlint([
+      path.join(import.meta.dirname, 'prefer-readonly.invalid.ts')
+    ]);
 
     expect(violationsOf(diagnostics, RULE_ID).length).toBeGreaterThan(0);
   });

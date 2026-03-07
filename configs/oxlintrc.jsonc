@@ -23,6 +23,11 @@
     "suspicious": "off"
   },
 
+  "options": {
+    "typeAware": true,
+    "typeCheck": true
+  },
+
   // Releases: https://github.com/oxc-project/oxc/releases
   // Rules: https://oxc.rs/docs/guide/usage/linter/rules.html
   "rules": {

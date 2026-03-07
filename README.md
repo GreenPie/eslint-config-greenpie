@@ -20,12 +20,6 @@ Then install additional dependencies depending on your use case:
 npm install oxlint --save-dev
 ```
 
-**For oxlint with type-aware rules:**
-
-```bash
-npm install oxlint-tsgolint --save-dev
-```
-
 **For ESLint users:**
 
 ```bash
@@ -105,11 +99,15 @@ Related ESLint rules are disabled by default if supported by oxlint.
 
 ## Type-aware linting (oxlint)
 
-For type-aware linting capabilities (like `no-floating-promises`, `no-unsafe-*` rules, etc.), you need to install an additional package and use the `--type-aware` flag:
+Type-aware linting is enabled by default in this config via `options.typeAware: true`. This enables powerful type-checking rules like:
 
-```bash
-npx oxlint --type-aware
-```
+- `no-floating-promises` — ensures promises are properly handled
+- `no-unsafe-*` — prevents unsafe type operations (`no-unsafe-argument`, `no-unsafe-assignment`, `no-unsafe-call`, `no-unsafe-member-access`, `no-unsafe-return`)
+- `await-thenable` — only await thenable values
+- `no-misused-promises` — prevents incorrect promise usage
+- And many more type-aware rules
+
+Type-aware linting requires a `tsconfig.json` file in your project root. Oxlint will automatically discover and use it for type checking.
 
 ## Configuration examples
 

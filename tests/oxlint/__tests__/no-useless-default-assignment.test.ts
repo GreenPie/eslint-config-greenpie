@@ -6,19 +6,17 @@ const RULE_ID = 'typescript/no-useless-default-assignment';
 
 describe(RULE_ID, () => {
   it('valid', async () => {
-    const diagnostics = await runOxlint(
-      [path.join(import.meta.dirname, 'no-useless-default-assignment.valid.ts')],
-      { typeAware: true }
-    );
+    const diagnostics = await runOxlint([
+      path.join(import.meta.dirname, 'no-useless-default-assignment.valid.ts')
+    ]);
 
     expect(violationsOf(diagnostics, RULE_ID)).toHaveLength(0);
   });
 
   it('invalid', async () => {
-    const diagnostics = await runOxlint(
-      [path.join(import.meta.dirname, 'no-useless-default-assignment.invalid.ts')],
-      { typeAware: true }
-    );
+    const diagnostics = await runOxlint([
+      path.join(import.meta.dirname, 'no-useless-default-assignment.invalid.ts')
+    ]);
 
     expect(violationsOf(diagnostics, RULE_ID).length).toBeGreaterThan(0);
   });

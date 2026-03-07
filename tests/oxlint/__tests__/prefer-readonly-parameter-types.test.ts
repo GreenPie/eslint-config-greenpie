@@ -10,19 +10,17 @@ const RULE_ID = 'typescript/prefer-readonly-parameter-types';
  */
 describe(RULE_ID, () => {
   it('valid', async () => {
-    const diagnostics = await runOxlint(
-      [path.join(import.meta.dirname, 'prefer-readonly-parameter-types.valid.ts')],
-      { typeAware: true }
-    );
+    const diagnostics = await runOxlint([
+      path.join(import.meta.dirname, 'prefer-readonly-parameter-types.valid.ts')
+    ]);
 
     expect(violationsOf(diagnostics, RULE_ID)).toHaveLength(0);
   });
 
   it('invalid (rule is off — no violations expected)', async () => {
-    const diagnostics = await runOxlint(
-      [path.join(import.meta.dirname, 'prefer-readonly-parameter-types.invalid.ts')],
-      { typeAware: true }
-    );
+    const diagnostics = await runOxlint([
+      path.join(import.meta.dirname, 'prefer-readonly-parameter-types.invalid.ts')
+    ]);
 
     expect(violationsOf(diagnostics, RULE_ID)).toHaveLength(0);
   });

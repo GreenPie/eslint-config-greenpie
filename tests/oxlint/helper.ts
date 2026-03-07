@@ -24,13 +24,7 @@ const oxlintOutputSchema = v.pipe(
 
 type Diagnostic = v.InferOutput<typeof diagnosticSchema>;
 
-interface RunOxlintOptions {
-  typeAware?: boolean;
-}
-
-async function runOxlint(filePaths: string[], options: RunOxlintOptions = {}): Promise<Diagnostic[]> {
-  const typeAwareArgs = options.typeAware === true ? ['--type-aware'] : [];
-
+async function runOxlint(filePaths: string[]): Promise<Diagnostic[]> {
   const result = await execa(
     'oxlint',
     [
@@ -39,7 +33,6 @@ async function runOxlint(filePaths: string[], options: RunOxlintOptions = {}): P
       '--no-ignore',
       '--format',
       'json',
-      ...typeAwareArgs,
       ...filePaths
     ],
     {
@@ -75,7 +68,6 @@ function violationsOf(diagnostics: Diagnostic[], ruleId: string): Diagnostic[] {
 
 export {
   type Diagnostic,
-  type RunOxlintOptions,
   runOxlint,
   violationsOf
 };

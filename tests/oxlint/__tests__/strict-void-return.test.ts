@@ -6,19 +6,17 @@ const RULE_ID = 'typescript/strict-void-return';
 
 describe(RULE_ID, () => {
   it('valid', async () => {
-    const diagnostics = await runOxlint(
-      [path.join(import.meta.dirname, 'strict-void-return.valid.ts')],
-      { typeAware: true }
-    );
+    const diagnostics = await runOxlint([
+      path.join(import.meta.dirname, 'strict-void-return.valid.ts')
+    ]);
 
     expect(violationsOf(diagnostics, RULE_ID)).toHaveLength(0);
   });
 
   it('invalid', async () => {
-    const diagnostics = await runOxlint(
-      [path.join(import.meta.dirname, 'strict-void-return.invalid.ts')],
-      { typeAware: true }
-    );
+    const diagnostics = await runOxlint([
+      path.join(import.meta.dirname, 'strict-void-return.invalid.ts')
+    ]);
 
     expect(violationsOf(diagnostics, RULE_ID).length).toBeGreaterThan(0);
   });
