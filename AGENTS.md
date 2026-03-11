@@ -16,7 +16,7 @@ This is a repository for ESLint/oxlint shared configurations.
 ## oxlint config files
 
 - `configs/oxlintrc.jsonc` — the **shared** config that is published and extended by end users of this package. It must only contain rules that apply universally. Never add project-local overrides here (e.g. ignoring rules for test helpers or fixture files).
-- `.oxlintrc.json` — the **local** config used only when linting this repository itself. It extends `configs/oxlintrc.jsonc` and is the correct place for any project-specific overrides: ignoring fixture files, relaxing rules for test files, etc.
+- `.oxlintrc.jsonc` — the **local** config used only when linting this repository itself. It extends `configs/oxlintrc.jsonc` and is the correct place for any project-specific overrides: ignoring fixture files, relaxing rules for test files, etc.
 
 ## Available commands
 
