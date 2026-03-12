@@ -35,20 +35,20 @@
     "oxlint"
   ],
   "devDependencies": {
-    "@types/node": "^25.3.5",
+    "@types/node": "^25.4.0",
     "execa": "^9.6.1",
     "husky": "^9.1.7",
-    "oxlint": "^1.51.0",
+    "oxlint": "^1.53.0",
     "taze": "^19.10.0",
     "valibot": "1.2.0",
     "vitest": "^4.0.18",
-    "vue": "^3.5.29"
+    "vue": "^3.5.30"
   },
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^5.10.0",
     "eslint": "^10.0.3",
     "eslint-plugin-vue": "^10.8.0",
-    "oxlint": "^1.51.0",
-    "typescript-eslint": "^8.56.1"
+    "oxlint": "^1.53.0",
+    "typescript-eslint": "^8.57.0"
   }
 }
