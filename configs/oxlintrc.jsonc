@@ -25,7 +25,8 @@
 
   "options": {
     "typeAware": true,
-    "typeCheck": true
+    "typeCheck": true,
+    "reportUnusedDisableDirectives": "error"
   },
 
   // Releases: https://github.com/oxc-project/oxc/releases
@@ -663,6 +664,7 @@
     "unicorn/catch-error-name": "error",
     "unicorn/consistent-date-clone": "error",
     "unicorn/consistent-existence-index-check": "error",
+    "unicorn/custom-error-definition": "error",
     "unicorn/empty-brace-spaces": "error",
     "unicorn/error-message": "error",
     "unicorn/filename-case": "error",
@@ -719,9 +721,10 @@
     "vitest/prefer-describe-function-title": "error",
     "vitest/prefer-expect-type-of": "off", // It works weirdly: https://vitest.dev/guide/testing-types.html#reading-errors
     "vitest/prefer-import-in-mock": "error",
-    "vitest/prefer-to-be-falsy": "error",
+    "vitest/prefer-strict-boolean-matchers": "error",
+    "vitest/prefer-to-be-falsy": "off", // less type safe that toBe(false)
     "vitest/prefer-to-be-object": "error",
-    "vitest/prefer-to-be-truthy": "error",
+    "vitest/prefer-to-be-truthy": "off", // less type safe that toBe(true)
 
     // Vue
     "vue/define-emits-declaration": "error",

@@ -5,6 +5,6 @@ test('foo', () => {
 
   mock('foo');
 
-  expect(mock).toBeCalledTimes(1);
+  expect(mock).toHaveBeenCalledTimes(1);
   expect(mock).toHaveBeenCalledTimes(1);
 });

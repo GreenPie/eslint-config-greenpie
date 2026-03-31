@@ -40,9 +40,9 @@ npm install eslint-plugin-vue --save-dev
 
 ### Oxlint configuration
 
-If using oxlint, create a `.oxlintrc.json` file in the root of your project with the following content:
+If using oxlint, create a `.oxlintrc.jsonc` file in the root of your project with the following content:
 
-```json
+```jsonc
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
 
@@ -57,10 +57,14 @@ If using oxlint, create a `.oxlintrc.json` file in the root of your project with
 Run oxlint with the following command:
 
 ```bash
-oxlint --report-unused-disable-directives-severity error
+oxlint
 ```
 
-> **Note:** The `--report-unused-disable-directives-severity error` flag helps prevent cluttering your project with unnecessary disable directives.
+> **Note:** The shared config has `reportUnusedDisableDirectives` enabled by default to prevent cluttering your project with unnecessary disable directives. If needed, you can override this in your local `.oxlintrc.jsonc`:
+>
+> ```jsonc
+> { "options": { "reportUnusedDisableDirectives": "off" } }
+> ```
 
 ### ESLint configuration
 
@@ -78,7 +82,7 @@ See more [examples](#configuration-examples) below.
 
 ## Config (oxlint)
 
-Oxlint has one unified configuration for all supported languages (`.js`, `.ts`, `.vue`). You can granularly configure it in your local `.oxlintrc.json` file.
+Oxlint has one unified configuration for all supported languages (`.js`, `.ts`, `.vue`). You can granularly configure it in your local `.oxlintrc.jsonc` file.
 
 Related ESLint rules are disabled by default if supported by oxlint.
 
@@ -113,7 +117,7 @@ Type-aware linting requires a `tsconfig.json` file in your project root. Oxlint 
 
 ### Oxlint
 
-```json
+```jsonc
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
 
@@ -179,9 +183,9 @@ export default [
 
 ### Allow short identifiers for id-length
 
-The `eslint/id-length` rule enforces minimum identifier length (default: 2). If your project has legitimate short identifiers, add only those in your local `.oxlintrc.json`.
+The `eslint/id-length` rule enforces minimum identifier length (default: 2). If your project has legitimate short identifiers, add only those in your local `.oxlintrc.jsonc`.
 
-```json
+```jsonc
 {
   "extends": [
     "./node_modules/eslint-config-greenpie/configs/oxlintrc.jsonc"
@@ -202,9 +206,9 @@ The `eslint/id-length` rule enforces minimum identifier length (default: 2). If 
 
 ### Allow namespace imports for specific packages
 
-The `import/no-namespace` rule disallows `import * as` syntax. If you need to use namespace imports for a specific package (e.g. `valibot`), you can override the rule in your local `.oxlintrc.json`:
+The `import/no-namespace` rule disallows `import * as` syntax. If you need to use namespace imports for a specific package (e.g. `valibot`), you can override the rule in your local `.oxlintrc.jsonc`:
 
-```json
+```jsonc
 {
   "extends": [
     "./node_modules/eslint-config-greenpie/configs/oxlintrc.jsonc"
