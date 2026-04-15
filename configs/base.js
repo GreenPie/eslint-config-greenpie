@@ -116,6 +116,7 @@ export default defineConfig(
       'no-proto': 'off',
       'no-prototype-builtins': 'off',
       'no-regex-spaces': 'off',
+      'no-restricted-exports': 'off',
       'no-restricted-globals': 'off',
       'no-restricted-imports': 'off',
       'no-return-assign': 'off',
@@ -147,6 +148,7 @@ export default defineConfig(
       'no-unused-private-class-members': 'off',
       'no-unused-vars': 'off',
       'no-use-before-define': 'off',
+      'no-useless-assignment': 'off',
       'no-useless-backreference': 'off',
       'no-useless-call': 'off',
       'no-useless-catch': 'off',
@@ -160,6 +162,7 @@ export default defineConfig(
       'no-void': 'off',
       'no-warning-comments': 'off',
       'no-with': 'off', // Superseded by strict mode
+      'object-shorthand': 'off',
       'operator-assignment': 'off',
       'prefer-const': 'off',
       'prefer-destructuring': 'off',
@@ -194,7 +197,6 @@ export default defineConfig(
        */
 
       'no-unreachable-loop': 'error',
-      'no-useless-assignment': 'error',
       'require-atomic-updates': 'error',
       'no-redeclare': 'error',
       'sort-vars': 'error',
@@ -217,15 +219,6 @@ export default defineConfig(
       'no-invalid-this': 'error',
       'no-octal-escape': 'error',
 
-      'no-restricted-exports': ['error', {
-        restrictDefaultExports: {
-          named: true,
-          defaultFrom: true,
-          namedFrom: true,
-          namespaceFrom: true
-        }
-      }],
-
       'no-restricted-properties': 'error',
       'no-restricted-syntax': 'error',
 
@@ -234,7 +227,6 @@ export default defineConfig(
         allowInObjectDestructuring: false
       }],
 
-      'object-shorthand': 'error',
       'one-var': ['error', 'never'],
       'prefer-arrow-callback': 'error',
       'prefer-named-capture-group': 'error',
