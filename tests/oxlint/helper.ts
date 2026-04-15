@@ -1,9 +1,8 @@
 import { execa } from 'execa';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
 import * as v from 'valibot';
 
-const ROOT = path.resolve(fileURLToPath(import.meta.url), '../../..');
+const ROOT = path.resolve(import.meta.filename, '../../..');
 const CONFIG = path.join(ROOT, 'configs/oxlintrc.jsonc');
 
 const diagnosticSchema = v.object({

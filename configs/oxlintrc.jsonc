@@ -32,6 +32,7 @@
   // Releases: https://github.com/oxc-project/oxc/releases
   // Rules: https://oxc.rs/docs/guide/usage/linter/rules.html
   "rules": {
+
     /**
      * Correctness rules
      */
@@ -194,7 +195,13 @@
 
     "vitest/hoisted-apis-on-top": "error",
     "vitest/no-conditional-tests": "error",
+    "vitest/require-awaited-expect-poll": "error",
     "vitest/require-local-test-context-for-concurrent-snapshots": "error",
+
+    "vitest/require-mock-type-parameters": ["error", {
+      "checkImportFunctions": false // TODO: can be too strict if `true`
+    }],
+
     "vitest/warn-todo": "warn",
 
     // Vue
@@ -248,6 +255,17 @@
     "eslint/no-proto": "error",
     "eslint/no-regex-spaces": "error",
     "eslint/no-restricted-globals": "error",
+
+    "eslint/no-restricted-exports": ["error", {
+      "restrictDefaultExports": {
+        "defaultFrom": true,
+        "direct": false,
+        "named": true,
+        "namedFrom": true,
+        "namespaceFrom": true
+      }
+    }],
+
     "eslint/no-restricted-imports": "error",
     "eslint/no-sequences": "error",
     "eslint/no-undefined": "off", // undefined should be handled in TypeScript
@@ -330,7 +348,12 @@
     "vue/no-import-compiler-macros": "error",
 
     // Vue
+
     "vue/no-multiple-slot-args": "error",
+
+    // Vitest
+
+    "vitest/require-test-timeout": "off", // It sounds annoying to set timeout for every test
 
     /**
      * Suspicious rules
@@ -520,6 +543,7 @@
     "unicorn/prefer-dom-node-dataset": "error",
     "unicorn/prefer-dom-node-remove": "error",
     "unicorn/prefer-event-target": "error",
+    "unicorn/prefer-import-meta-properties": "error",
     "unicorn/prefer-math-min-max": "error",
     "unicorn/prefer-math-trunc": "error",
     "unicorn/prefer-native-coercion-functions": "error",
@@ -588,6 +612,7 @@
     "eslint/no-template-curly-in-string": "error",
     "eslint/no-useless-computed-key": "error",
     "eslint/no-ternary": "off", // Why not to use it in simple cases like "a ? b : c"
+    "eslint/object-shorthand": "error",
     "eslint/operator-assignment": "error",
     "eslint/prefer-const": "error",
     "eslint/prefer-destructuring": "error",
@@ -664,6 +689,7 @@
     "unicorn/catch-error-name": "error",
     "unicorn/consistent-date-clone": "error",
     "unicorn/consistent-existence-index-check": "error",
+    "unicorn/consistent-template-literal-escape": "error",
     "unicorn/custom-error-definition": "error",
     "unicorn/empty-brace-spaces": "error",
     "unicorn/error-message": "error",
@@ -702,6 +728,7 @@
     "unicorn/require-array-join-separator": "error",
     "unicorn/require-module-attributes": "error",
     "unicorn/switch-case-braces": "error",
+    "unicorn/switch-case-break-position": "error",
     "unicorn/text-encoding-identifier-case": "error",
     "unicorn/throw-new-error": "error",
 
@@ -716,11 +743,13 @@
     "vitest/no-import-node-test": "error",
     "vitest/no-importing-vitest-globals": "off", // Only useful when vitest globals mode is enabled; projects that import from vitest explicitly should keep it off
     "vitest/no-unneeded-async-expect-function": "error",
+    "vitest/prefer-called-exactly-once-with": "error",
     "vitest/prefer-called-once": "off", // Conflicts with prefer-called-times
     "vitest/prefer-called-times": "error",
     "vitest/prefer-describe-function-title": "error",
     "vitest/prefer-expect-type-of": "off", // It works weirdly: https://vitest.dev/guide/testing-types.html#reading-errors
     "vitest/prefer-import-in-mock": "error",
+    "vitest/prefer-importing-vitest-globals": "error",
     "vitest/prefer-strict-boolean-matchers": "error",
     "vitest/prefer-to-be-falsy": "off", // less type safe that toBe(false)
     "vitest/prefer-to-be-object": "error",
@@ -742,6 +771,7 @@
     "eslint/getter-return": "error",
     "eslint/no-undef": "error",
     "eslint/no-unreachable": "error",
+    "eslint/no-useless-assignment": "error",
 
     // Import
 
@@ -772,7 +802,11 @@
     "typescript/prefer-readonly-parameter-types": "off", // potentially problematic https://github.com/typescript-eslint/typescript-eslint/issues/2079
     "typescript/prefer-regexp-exec": "error",
     "typescript/prefer-string-starts-ends-with": "error",
-    "typescript/strict-void-return": "error"
+    "typescript/strict-void-return": "error",
+
+    // Unicorn
+
+    "unicorn/no-useless-iterator-to-array": "error"
   },
 
   "overrides": [{
