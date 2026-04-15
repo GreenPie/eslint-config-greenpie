@@ -1,4 +1,3 @@
-// oxlint-disable no-inline-comments
 import { defineConfig } from 'eslint/config';
 
 // oxlint-disable-next-line no-default-export
@@ -62,7 +61,7 @@ export default defineConfig(
       'no-debugger': 'off',
       'no-delete-var': 'off',
       'no-div-regex': 'off',
-      'no-dupe-args': 'off', // Superseded by strict mode
+      'no-dupe-args': 'off',
       'no-dupe-class-members': 'off',
       'no-dupe-else-if': 'off',
       'no-dupe-keys': 'off',
@@ -106,18 +105,19 @@ export default defineConfig(
       'no-nested-ternary': 'off',
       'no-new-func': 'off',
       'no-new-native-nonconstructor': 'off',
-      'no-new-symbol': 'off', // Deprecated in ESLint v9
+      'no-new-symbol': 'off',
       'no-new-wrappers': 'off',
       'no-new': 'off',
       'no-nonoctal-decimal-escape': 'off',
       'no-obj-calls': 'off',
       'no-object-constructor': 'off',
-      'no-octal': 'off', // Superseded by strict mode
-      'no-param-reassign': 'error',
+      'no-octal': 'off',
+      'no-param-reassign': 'off',
       'no-plusplus': 'off',
       'no-promise-executor-return': 'off',
       'no-proto': 'off',
       'no-prototype-builtins': 'off',
+      'no-redeclare': 'off',
       'no-regex-spaces': 'off',
       'no-restricted-exports': 'off',
       'no-restricted-globals': 'off',
@@ -164,7 +164,7 @@ export default defineConfig(
       'no-var': 'off',
       'no-void': 'off',
       'no-warning-comments': 'off',
-      'no-with': 'off', // Superseded by strict mode
+      'no-with': 'off',
       'object-shorthand': 'off',
       'operator-assignment': 'off',
       'prefer-const': 'off',
@@ -182,6 +182,7 @@ export default defineConfig(
       'require-yield': 'off',
       'sort-imports': 'off',
       'sort-keys': 'off',
+      'sort-vars': 'off',
       'symbol-description': 'off',
       'unicode-bom': 'off',
       'use-isnan': 'off',
@@ -201,8 +202,6 @@ export default defineConfig(
 
       'no-unreachable-loop': 'error',
       'require-atomic-updates': 'error',
-      'no-redeclare': 'error',
-      'sort-vars': 'error',
 
       /**
        * Suggestions
