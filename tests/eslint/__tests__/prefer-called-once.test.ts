@@ -1,7 +1,7 @@
 import { vi, test, expect } from 'vitest';
 
 test('foo', () => {
-  const mock = vi.fn();
+  const mock = vi.fn<(arg: string) => void>();
 
   mock('foo');
 
