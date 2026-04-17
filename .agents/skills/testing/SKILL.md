@@ -71,16 +71,15 @@ describe(RULE_ID, () => {
 
 ### Type-aware rules (`typescript/` prefix)
 
-Type-aware oxlint rules (powered by tsgolint) require `{ typeAware: true }` option:
+Type-aware oxlint rules are enabled by default via `options.typeAware: true` in the shared config. No special options needed:
 
 ```typescript
-const diagnostics = await runOxlint(
-  [path.join(import.meta.dirname, 'rule-name.valid.ts')],
-  { typeAware: true }
-);
+const diagnostics = await runOxlint([
+  path.join(import.meta.dirname, 'dot-notation.valid.ts')
+]);
 ```
 
-Type-aware rules also require a `tsconfig.json` in `tests/oxlint/__tests__/` for tsgolint auto-discovery. This file already exists — do **not** create a new one per rule.
+Type-aware rules require a `tsconfig.json` in `tests/oxlint/__tests__/` for tsgolint auto-discovery. This file already exists — do **not** create a new one per rule.
 
 ### Fixture filenames
 

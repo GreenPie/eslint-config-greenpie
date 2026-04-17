@@ -22,22 +22,27 @@
     }]
   },
 
-  "overrides": [
-    {
-      "files": ["**/__tests__/*.test.ts"],
+  "overrides": [{
+    "files": ["**/*.js"],
 
-      "rules": {
-        "import/no-relative-parent-imports": "off"
-      }
-    },
-    {
-      "files": ["tests/oxlint/helper.ts"],
-
-      "rules": {
-        "import/no-namespace": ["error", {
-          "ignore": ["valibot"]
-        }]
-      }
+    "rules": {
+      "import/extensions": "off"
     }
-  ]
+  },
+  {
+    "files": ["**/__tests__/*.test.ts"],
+
+    "rules": {
+      "import/no-relative-parent-imports": "off"
+    }
+  },
+  {
+    "files": ["tests/oxlint/helper.ts"],
+
+    "rules": {
+      "import/no-namespace": ["error", {
+        "ignore": ["valibot"]
+      }]
+    }
+  }]
 }
