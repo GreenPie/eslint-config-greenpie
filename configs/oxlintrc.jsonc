@@ -196,11 +196,7 @@
     "vitest/no-conditional-tests": "error",
     "vitest/require-awaited-expect-poll": "error",
     "vitest/require-local-test-context-for-concurrent-snapshots": "error",
-
-    "vitest/require-mock-type-parameters": ["error", {
-      "checkImportFunctions": false // TODO: can be too strict if `true`
-    }],
-
+    "vitest/require-mock-type-parameters": "off", // It seems to be too strict and not very useful
     "vitest/warn-todo": "warn",
 
     // Vue
@@ -312,6 +308,11 @@
     // TypeScript
 
     "typescript/explicit-function-return-type": "off", // TODO: Inferred return types are often better
+
+    "typescript/explicit-member-accessibility": ["error", {
+      "accessibility": "no-public"
+    }],
+
     "typescript/explicit-module-boundary-types": "off", // TODO: Inferred types are often better
     "typescript/no-dynamic-delete": "error",
     "typescript/no-empty-object-type": "error",

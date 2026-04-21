@@ -41,6 +41,7 @@ export default defineConfig({
     '@typescript-eslint/consistent-type-imports': 'off',
     '@typescript-eslint/default-param-last': 'off',
     '@typescript-eslint/dot-notation': 'off',
+    '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/init-declarations': 'off',
@@ -149,10 +150,6 @@ export default defineConfig({
     // TODO: regroup rules by new categories
 
     // TypeScript Rules
-
-    '@typescript-eslint/explicit-member-accessibility': ['error', {
-      accessibility: 'no-public'
-    }],
 
     '@typescript-eslint/member-ordering': ['error', {
       default: [
