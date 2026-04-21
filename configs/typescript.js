@@ -37,6 +37,7 @@ export default defineConfig({
     '@typescript-eslint/consistent-type-definitions': 'off',
     '@typescript-eslint/consistent-type-imports': 'off',
     '@typescript-eslint/default-param-last': 'off',
+    '@typescript-eslint/explicit-member-accessibility': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/init-declarations': 'off',
@@ -97,10 +98,6 @@ export default defineConfig({
     '@typescript-eslint/consistent-return': 'off',
 
     '@typescript-eslint/consistent-type-exports': 'error',
-
-    '@typescript-eslint/explicit-member-accessibility': ['error', {
-      accessibility: 'no-public'
-    }],
 
     '@typescript-eslint/member-ordering': ['error', {
       default: [
