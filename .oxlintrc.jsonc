@@ -38,6 +38,13 @@
           "ignore": ["valibot"]
         }]
       }
+    },
+    {
+      "files": ["configs/*.js"],
+
+      "rules": {
+        "eslint/max-lines": "off"
+      }
     }
   ]
 }
