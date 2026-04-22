@@ -22,27 +22,37 @@
     }]
   },
 
-  "overrides": [{
-    "files": ["**/*.js"],
+  "overrides": [
+    {
+      "files": ["**/*.js"],
 
-    "rules": {
-      "import/extensions": "off"
-    }
-  },
-  {
-    "files": ["**/__tests__/*.test.ts"],
+      "rules": {
+        "import/extensions": "off",
+        "import/no-relative-parent-imports": "off"
+      }
+    },
+    {
+      "files": ["**/__tests__/*.test.ts"],
 
-    "rules": {
-      "import/no-relative-parent-imports": "off"
-    }
-  },
-  {
-    "files": ["tests/oxlint/helper.ts"],
+      "rules": {
+        "import/no-relative-parent-imports": "off"
+      }
+    },
+    {
+      "files": ["tests/oxlint/helper.ts"],
 
-    "rules": {
-      "import/no-namespace": ["error", {
-        "ignore": ["valibot"]
-      }]
+      "rules": {
+        "import/no-namespace": ["error", {
+          "ignore": ["valibot"]
+        }]
+      }
+    },
+    {
+      "files": ["configs/*.js"],
+
+      "rules": {
+        "eslint/max-lines": "off"
+      }
     }
-  }]
+  ]
 }

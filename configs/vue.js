@@ -291,13 +291,38 @@ export default defineConfig(
       'vue/no-useless-v-bind': 'error',
       'vue/no-v-text': 'error',
       'vue/padding-line-between-blocks': 'error',
-      'vue/padding-line-between-tags': 'off',
+
+      'vue/padding-line-between-tags': ['error', [
+        {
+          blankLine: 'always',
+          prev: '*:single-line',
+          next: '*:multi-line'
+        },
+        {
+          blankLine: 'always',
+          prev: '*:multi-line',
+          next: '*:single-line'
+        },
+        {
+          blankLine: 'always',
+          prev: '*:multi-line',
+          next: '*:multi-line'
+        },
+        {
+          blankLine: 'never',
+          prev: '*:single-line',
+          next: '*:single-line'
+        }
+      ]],
+
       'vue/padding-lines-in-component-definition': 'error',
       'vue/prefer-define-options': 'error',
       'vue/prefer-prop-type-boolean-first': 'error',
       'vue/prefer-separate-static-class': 'error',
+      'vue/prefer-single-event-payload': 'error',
       'vue/prefer-true-attribute-shorthand': 'error',
       'vue/prefer-use-template-ref': 'error',
+      'vue/prefer-v-model': 'error',
       'vue/require-direct-export': 'error',
       'vue/require-emit-validator': 'error',
       'vue/require-explicit-slots': 'off',
