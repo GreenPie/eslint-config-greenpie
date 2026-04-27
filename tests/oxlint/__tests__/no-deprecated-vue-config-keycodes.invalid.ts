@@ -1,0 +1,1 @@
+Vue.config.keyCodes = { enter: 13 };
