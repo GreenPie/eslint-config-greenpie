@@ -24,7 +24,8 @@
   },
 
   "options": {
-    "reportUnusedDisableDirectives": "error"
+    "reportUnusedDisableDirectives": "error",
+    "respectEslintDisableDirectives": false
   },
 
   // Releases: https://github.com/oxc-project/oxc/releases
@@ -38,6 +39,7 @@
     // ESLint
 
     "eslint/for-direction": "error",
+    "eslint/getter-return": "error",
     "eslint/no-async-promise-executor": "error",
     "eslint/no-caller": "error",
     "eslint/no-class-assign": "error",
@@ -80,6 +82,7 @@
     "eslint/no-sparse-arrays": "error",
     "eslint/no-this-before-super": "error",
     "eslint/no-unassigned-vars": "error",
+    "eslint/no-unreachable": "error",
     "eslint/no-unsafe-finally": "error",
     "eslint/no-unsafe-negation": "error",
     "eslint/no-unsafe-optional-chaining": "error",
@@ -176,7 +179,10 @@
     }],
 
     "vitest/hoisted-apis-on-top": "error",
+    "vitest/no-conditional-expect": "error",
     "vitest/no-conditional-tests": "error",
+    "vitest/no-disabled-tests": "error",
+    "vitest/no-focused-tests": "error",
     "vitest/require-awaited-expect-poll": "error",
     "vitest/require-local-test-context-for-concurrent-snapshots": "error",
     "vitest/require-mock-type-parameters": "off", // It seems to be too strict and not very useful
@@ -185,10 +191,14 @@
     // Vue
 
     "vue/no-arrow-functions-in-watch": "error",
+    "vue/no-deprecated-data-object-declaration": "error",
+    "vue/no-deprecated-delete-set": "error",
     "vue/no-deprecated-destroyed-lifecycle": "error",
+    "vue/no-deprecated-events-api": "error",
     "vue/no-export-in-script-setup": "error",
     "vue/no-lifecycle-after-await": "error",
     "vue/no-this-in-before-route-enter": "error",
+    "vue/no-deprecated-vue-config-keycodes": "error",
     "vue/prefer-import-from-vue": "error",
     "vue/valid-define-emits": "error",
     "vue/valid-define-props": "error",
@@ -346,6 +356,12 @@
     "eslint/no-extra-bind": "error",
     "eslint/no-new": "error",
     "eslint/no-shadow": "error",
+
+    "eslint/no-underscore-dangle": ["error", {
+      "allowInArrayDestructuring": false,
+      "allowInObjectDestructuring": false
+    }],
+
     "eslint/no-unexpected-multiline": "error",
     "eslint/no-unmodified-loop-condition": "error",
     "eslint/no-unneeded-ternary": "error",
@@ -390,6 +406,10 @@
     "unicorn/prefer-add-event-listener": "error",
     "unicorn/require-module-specifiers": "error",
     "unicorn/require-post-message-target-origin": "error",
+
+    // Vitest
+
+    "vitest/no-commented-out-tests": "error",
 
     // Vue
     "vue/no-required-prop-with-default": "error",
@@ -453,6 +473,10 @@
     "jsdoc/require-returns-description": "error",
     "jsdoc/require-returns-type": "off", // TODO: probably not needed when types annotated correctly
 
+    // Oxc
+
+    "oxc/branches-sharing-code": "error",
+
     // TypeScript
 
     "typescript/ban-ts-comment": ["error", {
@@ -512,6 +536,10 @@
     "unicorn/prefer-type-error": "error",
     "unicorn/require-number-to-fixed-digits-argument": "error",
 
+    // Vitest
+
+    "vitest/no-conditional-in-test": "error",
+
     /**
      * Style rules
      */
@@ -526,6 +554,7 @@
     "eslint/curly": "error",
     "eslint/default-case-last": "error",
     "eslint/default-param-last": "error",
+    "eslint/func-name-matching": "error",
     "eslint/func-names": "error",
 
     "eslint/func-style": ["error", "declaration", {
@@ -694,13 +723,23 @@
     }],
 
     "vitest/consistent-vitest-vi": "error",
+    "vitest/max-expects": "off",
+    "vitest/max-nested-describe": "error",
+    "vitest/no-alias-methods": "error",
+    "vitest/no-duplicate-hooks": "error",
+    "vitest/no-hooks": "off",
+    "vitest/no-identical-title": "error",
     "vitest/no-import-node-test": "error",
     "vitest/no-importing-vitest-globals": "off", // Only useful when vitest globals mode is enabled; projects that import from vitest explicitly should keep it off
+    "vitest/no-interpolation-in-snapshots": "error",
+    "vitest/no-large-snapshots": "error",
+    "vitest/no-mocks-import": "error",
     "vitest/no-unneeded-async-expect-function": "error",
     "vitest/prefer-called-exactly-once-with": "error",
     "vitest/prefer-called-once": "off", // Conflicts with prefer-called-times
     "vitest/prefer-called-times": "error",
     "vitest/prefer-describe-function-title": "error",
+    "vitest/prefer-expect-assertions": "off",
     "vitest/prefer-expect-type-of": "off", // It works weirdly: https://vitest.dev/guide/testing-types.html#reading-errors
     "vitest/prefer-import-in-mock": "error",
     "vitest/prefer-importing-vitest-globals": "error",
@@ -708,6 +747,9 @@
     "vitest/prefer-to-be-falsy": "off", // less type safe that toBe(false)
     "vitest/prefer-to-be-object": "error",
     "vitest/prefer-to-be-truthy": "off", // less type safe that toBe(true)
+    "vitest/prefer-to-contain": "error",
+    "vitest/prefer-todo": "error",
+    "vitest/require-top-level-describe": "error",
 
     // Vue
     "vue/define-emits-declaration": "error",
@@ -722,9 +764,7 @@
     // ESLint
 
     "eslint/constructor-super": "error",
-    "eslint/getter-return": "error",
     "eslint/no-undef": "error",
-    "eslint/no-unreachable": "error",
     "eslint/no-useless-assignment": "error",
 
     // Import
@@ -734,7 +774,6 @@
 
     // Oxc
 
-    "oxc/branches-sharing-code": "error",
     "oxc/no-map-spread": "error",
 
     // Promise

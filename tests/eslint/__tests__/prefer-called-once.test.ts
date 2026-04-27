@@ -1,10 +1,11 @@
-import { vi, test, expect } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 
-test('foo', () => {
-  const mock = vi.fn<(arg: string) => void>();
+describe('prefer-called-once rule tests', () => {
+  it('foo', () => {
+    const mock = vi.fn<(arg: string) => void>();
 
-  mock('foo');
+    mock('foo');
 
-  expect(mock).toHaveBeenCalledTimes(1);
-  expect(mock).toHaveBeenCalledTimes(1);
+    expect(mock).toHaveBeenCalledTimes(1);
+  });
 });

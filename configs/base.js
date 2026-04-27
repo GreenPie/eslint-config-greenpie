@@ -25,6 +25,7 @@ export default defineConfig(
       'default-case': 'off',
       'default-param-last': 'off',
       'for-direction': 'off',
+      'func-name-matching': 'off',
       'func-names': 'off',
       'func-style': 'off',
       'getter-return': 'off',
@@ -128,6 +129,7 @@ export default defineConfig(
       'no-shadow-restricted-names': 'off',
       'no-shadow': 'off',
       'no-sparse-arrays': 'off',
+      'no-underscore-dangle': 'off',
       'no-template-curly-in-string': 'off',
       'no-ternary': 'off',
       'no-this-before-super': 'off',
@@ -210,7 +212,6 @@ export default defineConfig(
       'consistent-return': 'error',
       'consistent-this': 'error',
       'dot-notation': 'error',
-      'func-name-matching': 'error',
       'id-denylist': 'error',
       'id-match': 'error',
       'logical-assignment-operators': 'error',
@@ -218,15 +219,8 @@ export default defineConfig(
       'no-implied-eval': 'error',
       'no-invalid-this': 'error',
       'no-octal-escape': 'error',
-
       'no-restricted-properties': 'error',
       'no-restricted-syntax': 'error',
-
-      'no-underscore-dangle': ['error', {
-        allowInArrayDestructuring: false,
-        allowInObjectDestructuring: false
-      }],
-
       'one-var': ['error', 'never'],
       'prefer-arrow-callback': 'error',
       'prefer-named-capture-group': 'error',
