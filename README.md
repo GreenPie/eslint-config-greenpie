@@ -60,10 +60,15 @@ Run oxlint with the following command:
 oxlint
 ```
 
-> **Note:** The shared config has `reportUnusedDisableDirectives` enabled by default to prevent cluttering your project with unnecessary disable directives. If needed, you can override this in your local `.oxlintrc.jsonc`:
+> **Note:** The shared config has `reportUnusedDisableDirectives` enabled by default and does not honor `eslint-disable*` comments. Use `oxlint-disable*` comments for Oxlint suppressions. If you are still migrating from ESLint comments, you can override this in your local `.oxlintrc.jsonc`:
 >
 > ```jsonc
-> { "options": { "reportUnusedDisableDirectives": "off" } }
+> {
+>   "options": {
+>     "reportUnusedDisableDirectives": "off",
+>     "respectEslintDisableDirectives": true
+>   }
+> }
 > ```
 
 ### ESLint configuration
