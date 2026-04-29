@@ -24,6 +24,14 @@
 
   "overrides": [
     {
+      "files": ["**/*.js"],
+
+      "rules": {
+        "import/extensions": "off",
+        "import/no-relative-parent-imports": "off"
+      }
+    },
+    {
       "files": ["**/__tests__/*.test.ts"],
 
       "rules": {

@@ -1,7 +1,7 @@
 {
   "name": "eslint-config-greenpie",
-  "version": "15.9.0",
-  "description": "GreenPie's ESLint config file",
+  "version": "16.0.0-10",
+  "description": "GreenPie's ESLint and oxlint configs",
   "main": "index.js",
   "author": "Roman Nuritdinov (Ky6uk)",
   "license": "MIT",
@@ -49,6 +49,7 @@
     "eslint": "^10.2.1",
     "eslint-plugin-vue": "^10.9.0",
     "oxlint": "^1.62.0",
+    "oxlint-tsgolint": "^0.22.1",
     "typescript-eslint": "^8.59.1"
   }
 }

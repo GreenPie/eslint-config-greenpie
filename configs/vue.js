@@ -45,7 +45,6 @@ export default defineConfig(
 
       // Disable some rules from other configs
 
-      'consistent-return': 'off',
       'max-len': 'off',
       'no-useless-assignment': 'off',
       '@stylistic/indent': 'off',

@@ -2,9 +2,9 @@
   "$schema": "../node_modules/oxlint/configuration_schema.json",
 
   "plugins": [
+    "jsdoc",
     "eslint",
     "import",
-    "jsdoc",
     "oxc",
     "promise",
     "typescript",
@@ -24,6 +24,8 @@
   },
 
   "options": {
+    "typeAware": true,
+    "typeCheck": true,
     "reportUnusedDisableDirectives": "error",
     "respectEslintDisableDirectives": false
   },
@@ -140,18 +142,33 @@
 
     // TypeScript
 
+    "typescript/await-thenable": "error",
+    "typescript/no-array-delete": "error",
+    "typescript/no-base-to-string": "error",
     "typescript/no-duplicate-enum-values": "error",
+    "typescript/no-duplicate-type-constituents": "error",
     "typescript/no-extra-non-null-assertion": "error",
+    "typescript/no-floating-promises": "error",
+    "typescript/no-for-in-array": "error",
+    "typescript/no-implied-eval": "error",
+    "typescript/no-meaningless-void-operator": "error",
     "typescript/no-misused-new": "error",
+    "typescript/no-misused-spread": "error",
     "typescript/no-non-null-asserted-optional-chain": "error",
+    "typescript/no-redundant-type-constituents": "error",
     "typescript/no-this-alias": "error",
     "typescript/no-unnecessary-parameter-property-assignment": "error",
     "typescript/no-unsafe-declaration-merging": "error",
+    "typescript/no-unsafe-unary-minus": "error",
+    "typescript/no-useless-default-assignment": "error",
     "typescript/no-useless-empty-export": "error",
     "typescript/no-wrapper-object-types": "error",
     "typescript/prefer-as-const": "error",
+    "typescript/require-array-sort-compare": "error",
+    "typescript/restrict-template-expressions": "error",
     "typescript/prefer-namespace-keyword": "error",
     "typescript/triple-slash-reference": "error",
+    "typescript/unbound-method": "error",
 
     // Unicorn
 
@@ -215,6 +232,7 @@
     // Oxc
 
     "oxc/no-accumulating-spread": "error",
+    "oxc/no-map-spread": "error",
 
     // Unicorn
 
@@ -257,6 +275,7 @@
     "eslint/no-restricted-imports": "error",
     "eslint/no-sequences": "error",
     "eslint/no-undefined": "off", // undefined should be handled in TypeScript
+    "eslint/no-use-before-define": "error",
     "eslint/no-var": "error",
 
     "eslint/no-void": ["error", {
@@ -315,9 +334,11 @@
     "typescript/no-non-null-assertion": "error",
     "typescript/no-require-imports": "error",
     "typescript/no-restricted-types": "error",
-    "typescript/no-use-before-define": "error",
     "typescript/no-var-requires": "error",
+    "typescript/non-nullable-type-assertion-style": "error",
     "typescript/prefer-literal-enum-member": "error",
+    "typescript/promise-function-async": "error",
+    "typescript/use-unknown-in-catch-callback-variable": "error",
 
     // Unicorn
 
@@ -334,11 +355,11 @@
     "unicorn/prefer-module": "error",
     "unicorn/prefer-node-protocol": "error",
     "unicorn/prefer-number-properties": "error",
-    "vue/max-props": "off", // It's okay to have many props in components
-    "vue/no-import-compiler-macros": "error",
 
     // Vue
 
+    "vue/max-props": "off", // It's okay to have many props in components
+    "vue/no-import-compiler-macros": "error",
     "vue/no-multiple-slot-args": "error",
 
     // Vitest
@@ -383,6 +404,7 @@
     "oxc/approx-constant": "error",
     "oxc/misrefactored-assign-op": "error",
     "oxc/no-async-endpoint-handlers": "error",
+    "oxc/no-this-in-exported-function": "error",
 
     // Promise
 
@@ -392,9 +414,18 @@
 
     // TypeScript
 
+    "typescript/consistent-return": "error",
     "typescript/no-confusing-non-null-assertion": "error",
     "typescript/no-extraneous-class": "error",
+    "typescript/no-unnecessary-boolean-literal-compare": "off", // isBoolean === false is sometimes useful
+    "typescript/no-unnecessary-template-expression": "error",
+    "typescript/no-unnecessary-type-arguments": "error",
+    "typescript/no-unnecessary-type-assertion": "error",
     "typescript/no-unnecessary-type-constraint": "error",
+    "typescript/no-unnecessary-type-conversion": "error",
+    "typescript/no-unnecessary-type-parameters": "error",
+    "typescript/no-unsafe-enum-comparison": "error",
+    "typescript/no-unsafe-type-assertion": "error",
 
     // Unicorn
 
@@ -483,9 +514,31 @@
       "minimumDescriptionLength": 10
     }],
 
+    "typescript/ban-types": "error", // TODO: deprecated in @typescript-eslint
+    "typescript/no-confusing-void-expression": "error",
+    "typescript/no-deprecated": "error",
+    "typescript/no-misused-promises": "error",
+    "typescript/no-mixed-enums": "error",
+    "typescript/no-unsafe-argument": "error",
+    "typescript/no-unsafe-assignment": "error",
+    "typescript/no-unsafe-call": "error",
     "typescript/no-unsafe-function-type": "error",
+    "typescript/no-unsafe-member-access": "error",
+    "typescript/no-unsafe-return": "error",
+    "typescript/only-throw-error": "error",
     "typescript/prefer-enum-initializers": "error",
+    "typescript/prefer-includes": "error",
+    "typescript/prefer-nullish-coalescing": "error",
+    "typescript/prefer-promise-reject-errors": "error",
+    "typescript/prefer-readonly-parameter-types": "off", // potentially problematic https://github.com/typescript-eslint/typescript-eslint/issues/2079
     "typescript/prefer-ts-expect-error": "error", // TODO: deprecated in @typescript-eslint
+    "typescript/related-getter-setter-pairs": "error",
+    "typescript/require-await": "error",
+    "typescript/restrict-plus-operands": "error",
+    "typescript/return-await": "error",
+    "typescript/strict-boolean-expressions": "error",
+    "typescript/strict-void-return": "error",
+    "typescript/switch-exhaustiveness-check": "error",
 
     // Unicorn
 
@@ -509,7 +562,6 @@
     "unicorn/no-unnecessary-array-splice-count": "error",
     "unicorn/no-unnecessary-slice-end": "error",
     "unicorn/no-unreadable-iife": "error",
-    "unicorn/no-useless-collection-argument": "error",
     "unicorn/no-useless-promise-resolve-reject": "error",
     "unicorn/no-useless-switch-case": "error",
     "unicorn/no-useless-undefined": "error",
@@ -659,12 +711,21 @@
     "typescript/consistent-indexed-object-style": "error",
     "typescript/consistent-type-assertions": "error",
     "typescript/consistent-type-definitions": "error",
+    "typescript/consistent-type-exports": "error",
     "typescript/consistent-type-imports": "error",
+    "typescript/dot-notation": "error",
     "typescript/no-empty-interface": "error",
     "typescript/no-inferrable-types": "error",
+    "typescript/no-unnecessary-qualifier": "error",
     "typescript/parameter-properties": "error",
+    "typescript/prefer-find": "error",
     "typescript/prefer-for-of": "error",
     "typescript/prefer-function-type": "error",
+    "typescript/prefer-readonly": "error",
+    "typescript/prefer-reduce-type-parameter": "error",
+    "typescript/prefer-regexp-exec": "error",
+    "typescript/prefer-return-this-type": "error",
+    "typescript/prefer-string-starts-ends-with": "error",
     "typescript/unified-signatures": "error",
 
     // Unicorn
@@ -683,6 +744,7 @@
     "unicorn/no-nested-ternary": "error",
     "unicorn/no-null": "off", // null is good for TypeScript
     "unicorn/no-unreadable-array-destructuring": "error",
+    "unicorn/no-useless-collection-argument": "error",
     "unicorn/no-zero-fractions": "error",
     "unicorn/number-literal-case": "error",
     "unicorn/numeric-separators-style": "error",
@@ -754,7 +816,7 @@
     // Vue
     "vue/define-emits-declaration": "error",
     "vue/define-props-declaration": "error",
-    "vue/define-props-destructuring": "error",
+    "vue/define-props-destructuring": "off", // It requires destructuring, even when not needed
     "vue/require-typed-ref": "error",
 
     /**
@@ -774,11 +836,14 @@
 
     // Oxc
 
-    "oxc/no-map-spread": "error",
-
     // Promise
 
     "promise/no-return-in-finally": "error",
+
+    // TypeScript
+
+    "typescript/no-unnecessary-condition": "error",
+    "typescript/prefer-optional-chain": "error",
 
     // Unicorn
 
@@ -786,10 +851,16 @@
   },
 
   "overrides": [{
-    "files": ["*.vue"],
+    "files": ["**/*.vue"],
 
     "globals": {
-      "defineSlots": "readonly"
+      "defineEmits": "readonly",
+      "defineExpose": "readonly",
+      "defineModel": "readonly",
+      "defineOptions": "readonly",
+      "defineProps": "readonly",
+      "defineSlots": "readonly",
+      "withDefaults": "readonly"
     },
 
     "rules": {
