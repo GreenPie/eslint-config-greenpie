@@ -32,7 +32,7 @@ For linting, prefer using `npm run lint` which runs both linters in proper order
 After making any changes to the codebase, always run both commands to verify correctness:
 
 ```sh
-npm run lint:oxlint
+npm run lint:oxlint:agent
 npm run lint:eslint
 npm run test
 ```

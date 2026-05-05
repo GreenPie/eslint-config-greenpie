@@ -52,9 +52,17 @@ async function runOxlint(filePaths: string[]): Promise<Diagnostic[]> {
 
 function violationsOf(diagnostics: Diagnostic[], ruleId: string): Diagnostic[] {
   const parts = ruleId.split('/');
-  const codePattern = parts.length === 1 ? `eslint(${ruleId})` : `eslint-plugin-${parts[0]}(${parts[1]})`;
+  const codePatterns = [`eslint(${ruleId})`];
 
-  return diagnostics.filter(diag => diag.code === codePattern);
+  if (parts.length > 1) {
+    codePatterns.splice(0, 1, `${parts[0]}(${parts[1]})`, `eslint-plugin-${parts[0]}(${parts[1]})`);
+  }
+
+  if (ruleId.startsWith('typescript/')) {
+    codePatterns.push(`typescript-eslint(${parts[1]})`);
+  }
+
+  return diagnostics.filter(diag => codePatterns.includes(diag.code));
 }
 
 export {
