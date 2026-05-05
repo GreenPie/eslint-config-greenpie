@@ -60,6 +60,12 @@ Run oxlint with the following command:
 oxlint
 ```
 
+If you want Oxlint output in an agent-friendly format, use:
+
+```bash
+oxlint --format agent
+```
+
 > **Note:** The shared config has `reportUnusedDisableDirectives` enabled by default and does not honor `eslint-disable*` comments. Use `oxlint-disable*` comments for Oxlint suppressions. If you are still migrating from ESLint comments, you can override this in your local `.oxlintrc.jsonc`:
 >
 > ```jsonc

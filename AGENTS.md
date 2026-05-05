@@ -24,7 +24,7 @@ After making any changes to the codebase, always run both commands to verify cor
 
 ```sh
 npm run test:agent
-npm run lint:oxlint
+npm run lint:oxlint:agent
 npm run lint:eslint
 npm run test
 ```

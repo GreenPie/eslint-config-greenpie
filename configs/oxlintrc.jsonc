@@ -200,9 +200,15 @@
     "vitest/no-conditional-tests": "error",
     "vitest/no-disabled-tests": "error",
     "vitest/no-focused-tests": "error",
+    "vitest/no-standalone-expect": "error",
+    "vitest/no-test-return-statement": "error",
     "vitest/require-awaited-expect-poll": "error",
+    "vitest/require-hook": "error",
     "vitest/require-local-test-context-for-concurrent-snapshots": "error",
     "vitest/require-mock-type-parameters": "off", // It seems to be too strict and not very useful
+    "vitest/require-to-throw-message": "error",
+    "vitest/valid-describe-callback": "error",
+    "vitest/valid-expect-in-promise": "error",
     "vitest/warn-todo": "warn",
 
     // Vue
@@ -210,6 +216,7 @@
     "vue/no-arrow-functions-in-watch": "error",
     "vue/no-deprecated-data-object-declaration": "error",
     "vue/no-deprecated-delete-set": "error",
+    "vue/no-deprecated-model-definition": "error",
     "vue/no-deprecated-destroyed-lifecycle": "error",
     "vue/no-deprecated-events-api": "error",
     "vue/no-export-in-script-setup": "error",
@@ -217,6 +224,7 @@
     "vue/no-this-in-before-route-enter": "error",
     "vue/no-deprecated-vue-config-keycodes": "error",
     "vue/prefer-import-from-vue": "error",
+    "vue/return-in-computed-property": "off", // It seems to be too strict and not very useful
     "vue/valid-define-emits": "error",
     "vue/valid-define-props": "error",
 
@@ -233,6 +241,11 @@
 
     "oxc/no-accumulating-spread": "error",
     "oxc/no-map-spread": "error",
+
+    // Vitest
+
+    "vitest/no-restricted-matchers": "off", // Needs an explicit restricted matcher policy first
+    "vitest/no-restricted-vi-methods": "off", // Needs an explicit restricted vi method policy first
 
     // Unicorn
 
@@ -273,6 +286,7 @@
     }],
 
     "eslint/no-restricted-imports": "error",
+    "eslint/no-restricted-properties": "error",
     "eslint/no-sequences": "error",
     "eslint/no-undefined": "off", // undefined should be handled in TypeScript
     "eslint/no-use-before-define": "error",
@@ -487,6 +501,7 @@
     "eslint/no-warning-comments": "warn", // Just notify about TODO and FIXME comments
     "eslint/radix": "error",
     "eslint/require-await": "off", // @typescript-eslint already checks for this (promise-function-async / require-await)
+    "eslint/require-unicode-regexp": "error",
     "eslint/sort-vars": "error",
     "eslint/symbol-description": "error",
 
@@ -552,6 +567,7 @@
     "unicorn/no-immediate-mutation": "error",
     "unicorn/no-instanceof-array": "error",
     "unicorn/no-lonely-if": "error",
+    "unicorn/no-negated-condition": "off", // eslint/no-negated-condition is already enabled
     "unicorn/no-negation-in-equality-check": "error",
     "unicorn/no-new-buffer": "error",
     "unicorn/no-object-as-default-parameter": "error",
@@ -624,6 +640,7 @@
     }],
 
     "eslint/init-declarations": "error",
+    "eslint/logical-assignment-operators": "error",
     "eslint/max-params": "error",
     "eslint/max-statements": "off", // Doesn't look useful
     "eslint/new-cap": "error",
@@ -796,19 +813,36 @@
     "vitest/no-interpolation-in-snapshots": "error",
     "vitest/no-large-snapshots": "error",
     "vitest/no-mocks-import": "error",
+    "vitest/no-test-prefixes": "error",
     "vitest/no-unneeded-async-expect-function": "error",
     "vitest/prefer-called-exactly-once-with": "error",
     "vitest/prefer-called-once": "off", // Conflicts with prefer-called-times
     "vitest/prefer-called-times": "error",
+    "vitest/prefer-called-with": "error",
+    "vitest/prefer-comparison-matcher": "error",
     "vitest/prefer-describe-function-title": "error",
+    "vitest/prefer-each": "error",
+    "vitest/prefer-equality-matcher": "error",
     "vitest/prefer-expect-assertions": "off",
+    "vitest/prefer-expect-resolves": "error",
     "vitest/prefer-expect-type-of": "off", // It works weirdly: https://vitest.dev/guide/testing-types.html#reading-errors
+    "vitest/prefer-hooks-in-order": "error",
+    "vitest/prefer-hooks-on-top": "error",
     "vitest/prefer-import-in-mock": "error",
     "vitest/prefer-importing-vitest-globals": "error",
+    "vitest/prefer-lowercase-title": "error",
+    "vitest/prefer-mock-promise-shorthand": "error",
+    "vitest/prefer-mock-return-shorthand": "error",
+    "vitest/prefer-snapshot-hint": "error",
+    "vitest/prefer-spy-on": "error",
     "vitest/prefer-strict-boolean-matchers": "error",
+    "vitest/prefer-strict-equal": "error",
+    "vitest/prefer-to-be": "error",
     "vitest/prefer-to-be-falsy": "off", // less type safe that toBe(false)
     "vitest/prefer-to-be-object": "error",
     "vitest/prefer-to-be-truthy": "off", // less type safe that toBe(true)
+    "vitest/prefer-to-have-been-called-times": "error",
+    "vitest/prefer-to-have-length": "error",
     "vitest/prefer-to-contain": "error",
     "vitest/prefer-todo": "error",
     "vitest/require-top-level-describe": "error",
