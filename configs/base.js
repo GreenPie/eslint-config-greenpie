@@ -175,6 +175,7 @@ export default defineConfig(
       'prefer-object-has-own': 'off',
       'prefer-object-spread': 'off',
       'prefer-promise-reject-errors': 'off',
+      'prefer-regex-literals': 'off',
       'prefer-rest-params': 'off',
       'prefer-spread': 'off',
       'prefer-template': 'off',
@@ -225,7 +226,6 @@ export default defineConfig(
       'one-var': ['error', 'never'],
       'prefer-arrow-callback': 'error',
       'prefer-named-capture-group': 'error',
-      'prefer-regex-literals': 'error',
       strict: 'error'
     }
   }
