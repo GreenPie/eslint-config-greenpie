@@ -269,6 +269,7 @@
     "eslint/no-empty": "error",
     "eslint/no-empty-function": "error",
     "eslint/no-eq-null": "error",
+    "eslint/no-implicit-globals": "error",
     "eslint/no-param-reassign": "error",
     "eslint/no-plusplus": "error",
     "eslint/no-proto": "error",
@@ -518,6 +519,8 @@
     "jsdoc/require-returns": "off", // TypeScript doing this job
     "jsdoc/require-returns-description": "error",
     "jsdoc/require-returns-type": "off", // TODO: probably not needed when types annotated correctly
+    "jsdoc/require-throws-type": "error",
+    "jsdoc/require-yields-type": "error",
 
     // Oxc
 
@@ -668,6 +671,7 @@
     "eslint/no-ternary": "off", // Why not to use it in simple cases like "a ? b : c"
     "eslint/object-shorthand": "error",
     "eslint/operator-assignment": "error",
+    "eslint/prefer-arrow-callback": "error",
     "eslint/prefer-const": "error",
     "eslint/prefer-destructuring": "error",
     "eslint/prefer-exponentiation-operator": "error",
@@ -708,6 +712,10 @@
 
     "import/no-nodejs-modules": "off", // Node.js modules are useful in most cases
     "import/prefer-default-export": "off", // no-default-export is already enabled
+
+    // JSDoc
+
+    "jsdoc/require-throws-description": "error",
 
     // Promise
 

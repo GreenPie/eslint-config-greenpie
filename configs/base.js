@@ -87,6 +87,7 @@ export default defineConfig(
       'no-global-assign': 'off',
       'no-implicit-coercion': 'off',
       'no-implied-eval': 'off',
+      'no-implicit-globals': 'off',
       'no-import-assign': 'off',
       'no-inline-comments': 'off',
       'no-inner-declarations': 'off',
@@ -171,6 +172,7 @@ export default defineConfig(
       'no-with': 'off',
       'object-shorthand': 'off',
       'operator-assignment': 'off',
+      'prefer-arrow-callback': 'off',
       'prefer-const': 'off',
       'prefer-destructuring': 'off',
       'prefer-exponentiation-operator': 'off',
@@ -218,12 +220,10 @@ export default defineConfig(
       'consistent-this': 'error',
       'id-denylist': 'error',
       'id-match': 'error',
-      'no-implicit-globals': 'error',
       'no-invalid-this': 'error',
       'no-octal-escape': 'error',
       'no-restricted-syntax': 'error',
       'one-var': ['error', 'never'],
-      'prefer-arrow-callback': 'error',
       'prefer-named-capture-group': 'error',
       strict: 'error'
     }
