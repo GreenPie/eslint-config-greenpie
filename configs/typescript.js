@@ -222,7 +222,6 @@ export default defineConfig({
     'dot-notation': 'off',
     '@typescript-eslint/dot-notation': 'error',
 
-    'no-implied-eval': 'off',
     '@typescript-eslint/no-implied-eval': 'error',
 
     'no-invalid-this': 'off',

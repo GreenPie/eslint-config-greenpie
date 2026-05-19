@@ -590,6 +590,7 @@
       "max": 40
     }],
 
+    "eslint/id-match": "off", // No effect without explicit regex config
     "eslint/init-declarations": "error",
     "eslint/logical-assignment-operators": "error",
     "eslint/max-params": "error",
@@ -612,6 +613,7 @@
     "eslint/no-multi-str": "error",
     "eslint/no-nested-ternary": "error",
     "eslint/no-new-func": "error",
+    "eslint/no-implied-eval": "error",
     "eslint/no-return-assign": "error",
     "eslint/no-script-url": "error",
     "eslint/no-template-curly-in-string": "error",
@@ -647,6 +649,7 @@
     "import/exports-last": "error",
     "import/first": "error",
     "import/group-exports": "error",
+    "import/newline-after-import": "error",
     "import/no-anonymous-default-export": "error",
 
     "import/no-duplicates": ["error", {
@@ -762,6 +765,7 @@
     "vitest/no-mocks-import": "error",
     "vitest/no-test-prefixes": "error",
     "vitest/no-unneeded-async-expect-function": "error",
+    "vitest/padding-around-after-all-blocks": "error",
     "vitest/prefer-called-exactly-once-with": "error",
     "vitest/prefer-called-once": "off", // Conflicts with prefer-called-times
     "vitest/prefer-called-times": "error",
