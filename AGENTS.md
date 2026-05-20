@@ -15,8 +15,9 @@ This is a repository for ESLint/oxlint shared configurations.
 
 ## oxlint config files
 
-- `configs/oxlintrc.jsonc` — the **shared** config that is published and extended by end users of this package. It must only contain rules that apply universally. It includes `options.typeAware: true` to enable type-aware linting for all users. Never add project-local overrides here (e.g. ignoring rules for test helpers or fixture files).
-- `.oxlintrc.jsonc` — the **local** config used only when linting this repository itself. It extends `configs/oxlintrc.jsonc` and is the correct place for any project-specific overrides: ignoring fixture files, relaxing rules for test files, etc.
+- `configs/oxlintrc.jsonc` — the **shared base** config that is published and extended by end users of this package. It must only contain rules that apply universally. It includes `options.typeAware: true` to enable type-aware linting for all users and it is the public entry point consumers should extend.
+- `configs/oxlintrc.vitest.jsonc` — the **internal shared addon** for Vitest rules. It is kept as a separate published file so the Vitest policy stays isolated, but the base config pulls it in via `extends` to keep consumer setup at one `extends` entry.
+- `.oxlintrc.jsonc` — the **local** config used only when linting this repository itself. It extends `configs/oxlintrc.jsonc` and is the correct place for project-specific overrides: ignoring fixture files, relaxing rules for test files, etc.
 
 ## After each change
 
@@ -26,7 +27,6 @@ After making any changes to the codebase, always run both commands to verify cor
 npm run test:agent
 npm run lint:oxlint:agent
 npm run lint:eslint
-npm run test
 ```
 
 Both must pass before considering the change complete.

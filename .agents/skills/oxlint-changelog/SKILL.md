@@ -60,7 +60,8 @@ In repos that follow this project's structure, use this as the default mapping:
 | `typescript/*` | `configs/oxlintrc.jsonc`, `configs/typescript.js` |
 | `stylistic/*` | `configs/oxlintrc.jsonc`, `configs/stylistic.js` |
 | `vue/*` | `configs/oxlintrc.jsonc`, `configs/vue.js` |
-| `import/*`, `jsdoc/*`, `oxc/*`, `promise/*`, `unicorn/*`, `vitest/*` | usually `configs/oxlintrc.jsonc` only, unless repository-specific follow-up is clearly needed |
+| `import/*`, `jsdoc/*`, `oxc/*`, `promise/*`, `unicorn/*` | usually `configs/oxlintrc.jsonc` only, unless repository-specific follow-up is clearly needed |
+| `vitest/*` | `configs/oxlintrc.vitest.jsonc` first; check `configs/oxlintrc.jsonc` only if addon wiring changes |
 
 ## How to read Oxlint changelog entries
 

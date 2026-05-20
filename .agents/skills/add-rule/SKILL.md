@@ -18,16 +18,22 @@ Two scenarios:
 | `eslint/rule-name` | `configs/base.js` | `rule-name` |
 | `typescript/rule-name` | `configs/typescript.js` | `@typescript-eslint/rule-name` |
 | `stylistic/rule-name` | `configs/stylistic.js` | `@stylistic/rule-name` |
+| `vitest/rule-name` | `configs/oxlintrc.vitest.jsonc` | `vitest/rule-name` |
 | `vue/rule-name` | `configs/vue.js` | `vue/rule-name` |
 
 ## Scenario A: New oxlint rule (no ESLint equivalent)
 
-Add to `configs/oxlintrc.jsonc` in the correct **category section** and **plugin subsection**, alphabetically among sibling rules.
+Add to the relevant Oxlint config file:
+
+- `configs/oxlintrc.jsonc` for the general namespaces
+- `configs/oxlintrc.vitest.jsonc` for `vitest/*` rules inside the test-file override
+
+Keep entries alphabetized among sibling rules.
 
 ```sh
-npm run lint:oxlint
+npm run lint:oxlint:agent
 npm run lint:eslint
-npm run test
+npm run test:agent
 ```
 
 ## Scenario B: Migrating ESLint rule → oxlint
@@ -94,7 +100,7 @@ Add to `configs/oxlintrc.jsonc` with the oxlint-namespaced rule ID:
 "typescript/dot-notation": ["error", { "allowKeywords": true }],
 ```
 
-## oxlintrc.jsonc category sections
+## Base oxlintrc.jsonc category sections
 
 Rules in `configs/oxlintrc.jsonc` are grouped into comment-delimited sections. Place new rules in the matching category+plugin block:
 
@@ -110,12 +116,14 @@ Rules in `configs/oxlintrc.jsonc` are grouped into comment-delimited sections. P
 
 Check the rule's category in the [oxlint rules list](https://oxc.rs/docs/guide/usage/linter/rules.html).
 
+For `vitest/*`, update `configs/oxlintrc.vitest.jsonc` instead and keep the rule list alphabetized inside the existing test-file override.
+
 ## After every change
 
 ```sh
-npm run lint:oxlint
+npm run lint:oxlint:agent
 npm run lint:eslint
-npm run test
+npm run test:agent
 ```
 
 All must pass.

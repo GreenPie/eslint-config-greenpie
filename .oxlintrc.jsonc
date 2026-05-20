@@ -53,13 +53,6 @@
       "rules": {
         "eslint/max-lines": "off"
       }
-    },
-    {
-      "files": ["tests/vue/*.vue"],
-
-      "rules": {
-        "vitest/require-hook": "off"
-      }
     }
   ]
 }

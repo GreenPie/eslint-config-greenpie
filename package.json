@@ -20,7 +20,7 @@
     "lint:oxlint": "oxlint",
     "lint:oxlint:agent": "oxlint --format agent",
     "prepare": "husky",
-    "test:agent": "vitest run --reporter=json",
+    "test:agent": "vitest run --reporter=agent",
     "test": "vitest run",
     "update:all": "taze -I -l --peer"
   },
