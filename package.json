@@ -1,8 +1,9 @@
 {
   "name": "eslint-config-greenpie",
-  "version": "15.13.0",
-  "description": "GreenPie's ESLint config file",
+  "version": "16.0.0-16",
+  "description": "GreenPie's ESLint and oxlint configs",
   "main": "index.js",
+  "types": "index.d.ts",
   "author": "Roman Nuritdinov (Ky6uk)",
   "license": "MIT",
   "type": "module",
@@ -20,7 +21,7 @@
     "lint:oxlint": "oxlint",
     "lint:oxlint:agent": "oxlint --format agent",
     "prepare": "husky",
-    "test:agent": "vitest run --reporter=json",
+    "test:agent": "vitest run --reporter=agent",
     "test": "vitest run",
     "update:all": "taze -I -l --peer"
   },
@@ -50,6 +51,7 @@
     "eslint": "^10.4.0",
     "eslint-plugin-vue": "^10.9.1",
     "oxlint": "^1.66.0",
+    "oxlint-tsgolint": "^0.22.1",
     "typescript-eslint": "^8.59.4"
   }
 }

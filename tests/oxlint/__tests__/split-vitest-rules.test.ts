@@ -3,6 +3,8 @@ import { describe, expect, it } from 'vitest';
 import { runOxlint, violationsOf } from '../helper.js';
 
 const VALID_FIXTURE = path.join(import.meta.dirname, 'split-vitest-rules.valid.ts');
+const BASE_SCOPE_FIXTURE = path.join(import.meta.dirname, 'no-test-prefixes.invalid.ts');
+const NON_TEST_SCOPE_FIXTURE = path.join(import.meta.dirname, '../vitest-scope.fixture.ts');
 
 const cases = [
   {
@@ -98,6 +100,20 @@ const cases = [
     invalidFixture: 'valid-expect-in-promise.invalid.ts'
   }
 ] as const;
+
+describe('split vitest config scope', () => {
+  it('base config reports Vitest diagnostics for matching test fixtures', async () => {
+    const diagnostics = await runOxlint([BASE_SCOPE_FIXTURE]);
+
+    expect(violationsOf(diagnostics, 'vitest/no-test-prefixes').length).toBeGreaterThan(0);
+  });
+
+  it('base config keeps the internal Vitest addon scoped away from non-test files', async () => {
+    const diagnostics = await runOxlint([NON_TEST_SCOPE_FIXTURE]);
+
+    expect(violationsOf(diagnostics, 'vitest/no-test-prefixes')).toHaveLength(0);
+  });
+});
 
 describe.each(cases)('$ruleId', ({ ruleId, invalidFixture }) => {
   it('valid: shared fixture stays clean', async () => {

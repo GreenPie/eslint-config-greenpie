@@ -17,7 +17,7 @@ Then install additional dependencies depending on your use case:
 **For oxlint users:**
 
 ```bash
-npm install oxlint --save-dev
+npm install oxlint oxlint-tsgolint --save-dev
 ```
 
 **For ESLint users:**
@@ -51,6 +51,10 @@ If using oxlint, create a `.oxlintrc.jsonc` file in the root of your project wit
   ]
 }
 ```
+
+Vitest rules are included in the shared Oxlint config through the package's internal `configs/oxlintrc.vitest.jsonc` addon, so the consumer setup stays at a single `extends` entry.
+
+> **Note:** The internal Vitest addon currently applies to `**/*.test.ts` and `**/__tests__/**/*.ts`.
 
 ### Oxlint CLI
 
@@ -91,12 +95,6 @@ export default defineConfig(
 
 See more [examples](#configuration-examples) below.
 
-## Config (oxlint)
-
-Oxlint has one unified configuration for all supported languages (`.js`, `.ts`, `.vue`). You can granularly configure it in your local `.oxlintrc.jsonc` file.
-
-Related ESLint rules are disabled by default if supported by oxlint.
-
 ## Configs (ESLint)
 
 | Config    | Description                    |
@@ -105,6 +103,20 @@ Related ESLint rules are disabled by default if supported by oxlint.
 | `js`      | Includes JavaScript rules      |
 | `ts`      | Includes TypeScript rules      |
 | `vue`     | Includes rules for Vue.js      |
+
+## Type-aware linting (oxlint)
+
+Type-aware linting is enabled by default in this config via `options.typeAware: true`. This enables powerful type-checking rules like:
+
+- `no-floating-promises` — ensures promises are properly handled
+- `no-unsafe-*` — prevents unsafe type operations (`no-unsafe-argument`, `no-unsafe-assignment`, `no-unsafe-call`, `no-unsafe-member-access`, `no-unsafe-return`)
+- `await-thenable` — only await thenable values
+- `no-misused-promises` — prevents incorrect promise usage
+- And many more type-aware rules
+
+To use type-aware rules, install both `oxlint` and `oxlint-tsgolint`.
+
+Type-aware linting requires a `tsconfig.json` file in your project root. Oxlint will automatically discover and use it for type checking.
 
 ## Configuration examples
 
@@ -217,12 +229,12 @@ The `import/no-namespace` rule disallows `import * as` syntax. If you need to us
 
 ## Links
 
-* [Registry](https://www.npmjs.com/package/eslint-config-greenpie)
-* [Basic ESLint rules](https://eslint.org/docs/rules/)
-* [TypeScript rules](https://typescript-eslint.io/rules/)
-* [Stylistic rules](https://eslint.style/rules)
-* [Vue rules](https://eslint.vuejs.org/rules/)
-* [Oxlint documentation](https://oxc.rs/docs/guide/usage/linter.html)
+- [Registry](https://www.npmjs.com/package/eslint-config-greenpie)
+- [Basic ESLint rules](https://eslint.org/docs/rules/)
+- [TypeScript rules](https://typescript-eslint.io/rules/)
+- [Stylistic rules](https://eslint.style/rules)
+- [Vue rules](https://eslint.vuejs.org/rules/)
+- [Oxlint documentation](https://oxc.rs/docs/guide/usage/linter.html)
 
 ## Development
 

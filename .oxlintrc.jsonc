@@ -24,6 +24,14 @@
 
   "overrides": [
     {
+      "files": ["**/*.js"],
+
+      "rules": {
+        "import/extensions": "off",
+        "import/no-relative-parent-imports": "off"
+      }
+    },
+    {
       "files": ["**/__tests__/*.test.ts"],
 
       "rules": {
@@ -44,13 +52,6 @@
 
       "rules": {
         "eslint/max-lines": "off"
-      }
-    },
-    {
-      "files": ["tests/vue/*.vue"],
-
-      "rules": {
-        "vitest/require-hook": "off"
       }
     }
   ]

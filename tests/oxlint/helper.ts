@@ -24,6 +24,8 @@ const oxlintOutputSchema = v.pipe(
 type Diagnostic = v.InferOutput<typeof diagnosticSchema>;
 
 async function runOxlint(filePaths: string[]): Promise<Diagnostic[]> {
+  const absoluteFilePaths = filePaths.map(filePath => path.resolve(ROOT, filePath));
+
   const result = await execa(
     'oxlint',
     [
@@ -32,7 +34,7 @@ async function runOxlint(filePaths: string[]): Promise<Diagnostic[]> {
       '--no-ignore',
       '--format',
       'json',
-      ...filePaths
+      ...absoluteFilePaths
     ],
     {
       reject: false,
