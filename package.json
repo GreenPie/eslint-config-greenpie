@@ -3,6 +3,7 @@
   "version": "16.0.0-15",
   "description": "GreenPie's ESLint and oxlint configs",
   "main": "index.js",
+  "types": "index.d.ts",
   "author": "Roman Nuritdinov (Ky6uk)",
   "license": "MIT",
   "type": "module",
