@@ -191,19 +191,29 @@
     // Vue
 
     "vue/no-arrow-functions-in-watch": "error",
+    "vue/no-computed-properties-in-data": "error",
     "vue/no-deprecated-data-object-declaration": "error",
     "vue/no-deprecated-delete-set": "error",
-    "vue/no-deprecated-model-definition": "error",
     "vue/no-deprecated-destroyed-lifecycle": "error",
     "vue/no-deprecated-events-api": "error",
+    "vue/no-deprecated-model-definition": "error",
+    "vue/no-deprecated-props-default-this": "error",
+    "vue/no-deprecated-vue-config-keycodes": "error",
+    "vue/no-expose-after-await": "error",
     "vue/no-export-in-script-setup": "error",
     "vue/no-lifecycle-after-await": "error",
+    "vue/no-shared-component-data": "error",
     "vue/no-this-in-before-route-enter": "error",
-    "vue/no-deprecated-vue-config-keycodes": "error",
+    "vue/no-watch-after-await": "error",
     "vue/prefer-import-from-vue": "error",
+    "vue/require-render-return": "error",
+    "vue/require-slots-as-functions": "error",
     "vue/return-in-computed-property": "off", // It seems to be too strict and not very useful
+    "vue/return-in-emits-validator": "error",
     "vue/valid-define-emits": "error",
+    "vue/valid-define-options": "error",
     "vue/valid-define-props": "error",
+    "vue/valid-next-tick": "error",
 
     /**
      * Perf rules
@@ -744,6 +754,7 @@
     "unicorn/prefer-default-parameters": "error",
     "unicorn/prefer-dom-node-text-content": "error",
     "unicorn/prefer-global-this": "error",
+    "unicorn/import-style": "off", // Needs a project-specific import style policy first
     "unicorn/prefer-includes": "error",
     "unicorn/prefer-keyboard-event-key": "error",
     "unicorn/prefer-logical-operator-over-ternary": "error",

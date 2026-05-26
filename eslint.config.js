@@ -7,6 +7,8 @@ export default defineConfig(
     ignores: [
       'tests/oxlint/__tests__/*.valid.ts',
       'tests/oxlint/__tests__/*.invalid.ts',
+      'tests/oxlint/__tests__/*.valid.vue',
+      'tests/oxlint/__tests__/*.invalid.vue',
       'tests/oxlint/__tests__/valid-filename.ts',
       'tests/oxlint/__tests__/InvalidFilename.ts'
     ]
