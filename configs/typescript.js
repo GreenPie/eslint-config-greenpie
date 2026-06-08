@@ -46,6 +46,7 @@ export default defineConfig({
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/init-declarations': 'off',
     '@typescript-eslint/max-params': 'off',
+    '@typescript-eslint/method-signature-style': 'off',
     '@typescript-eslint/no-array-constructor': 'off',
     '@typescript-eslint/no-array-delete': 'off',
     '@typescript-eslint/no-base-to-string': 'off',
@@ -159,9 +160,6 @@ export default defineConfig({
         'method'
       ]
     }],
-
-    '@typescript-eslint/method-signature-style': 'error',
-
     '@typescript-eslint/naming-convention': ['error', {
       // Ignore destructured variables
       selector: 'variable',

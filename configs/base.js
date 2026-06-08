@@ -177,6 +177,7 @@ export default defineConfig(
       'prefer-const': 'off',
       'prefer-destructuring': 'off',
       'prefer-exponentiation-operator': 'off',
+      'prefer-named-capture-group': 'off',
       'prefer-numeric-literals': 'off',
       'prefer-object-has-own': 'off',
       'prefer-object-spread': 'off',
@@ -224,7 +225,6 @@ export default defineConfig(
       'no-octal-escape': 'error',
       'no-restricted-syntax': 'error',
       'one-var': ['error', 'never'],
-      'prefer-named-capture-group': 'error',
       strict: 'error'
     }
   }

@@ -8,6 +8,10 @@ const NON_TEST_SCOPE_FIXTURE = path.join(import.meta.dirname, '../vitest-scope.f
 
 const cases = [
   {
+    ruleId: 'vitest/consistent-test-it',
+    invalidFixture: 'consistent-test-it.invalid.ts'
+  },
+  {
     ruleId: 'vitest/no-standalone-expect',
     invalidFixture: 'no-standalone-expect.invalid.ts'
   },
