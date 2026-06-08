@@ -21,6 +21,7 @@ export default defineConfig(
     rules: {
       // Disabled in favor of oxlint rules
 
+      'vue/component-definition-name-casing': 'off',
       'vue/define-emits-declaration': 'off',
       'vue/define-props-declaration': 'off',
       'vue/define-props-destructuring': 'off',
@@ -39,12 +40,14 @@ export default defineConfig(
       'vue/no-import-compiler-macros': 'off',
       'vue/no-lifecycle-after-await': 'off',
       'vue/no-multiple-slot-args': 'off',
+      'vue/no-reserved-component-names': 'off',
       'vue/no-required-prop-with-default': 'off',
       'vue/no-shared-component-data': 'off',
       'vue/no-this-in-before-route-enter': 'off',
       'vue/no-watch-after-await': 'off',
       'vue/prefer-import-from-vue': 'off',
       'vue/require-default-export': 'off',
+      'vue/require-prop-type-constructor': 'off',
       'vue/require-render-return': 'off',
       'vue/require-slots-as-functions': 'off',
       'vue/require-typed-ref': 'off',
@@ -77,7 +80,6 @@ export default defineConfig(
       'vue/no-mutating-props': 'error',
       'vue/no-parsing-error': 'error',
       'vue/no-ref-as-operand': 'error',
-      'vue/no-reserved-component-names': 'error',
       'vue/no-reserved-keys': 'error',
       'vue/no-reserved-props': 'error',
       'vue/no-side-effects-in-computed-properties': 'error',
@@ -93,7 +95,6 @@ export default defineConfig(
       'vue/no-useless-template-attributes': 'error',
       'vue/no-v-text-v-html-on-component': 'error',
       'vue/require-component-is': 'error',
-      'vue/require-prop-type-constructor': 'error',
       'vue/require-v-for-key': 'error',
       'vue/require-valid-default-prop': 'error',
       'vue/use-v-on-exact': 'error',
@@ -139,8 +140,6 @@ export default defineConfig(
        */
 
       'vue/attribute-hyphenation': 'error',
-      'vue/component-definition-name-casing': 'error',
-
       'vue/first-attribute-linebreak': ['error', {
         singleline: 'beside',
         multiline: 'below'

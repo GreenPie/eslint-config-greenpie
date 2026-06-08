@@ -202,10 +202,12 @@
     "vue/no-expose-after-await": "error",
     "vue/no-export-in-script-setup": "error",
     "vue/no-lifecycle-after-await": "error",
+    "vue/no-reserved-component-names": "error",
     "vue/no-shared-component-data": "error",
     "vue/no-this-in-before-route-enter": "error",
     "vue/no-watch-after-await": "error",
     "vue/prefer-import-from-vue": "error",
+    "vue/require-prop-type-constructor": "error",
     "vue/require-render-return": "error",
     "vue/require-slots-as-functions": "error",
     "vue/return-in-computed-property": "off", // It seems to be too strict and not very useful
@@ -494,6 +496,7 @@
     "jsdoc/require-returns-description": "error",
     "jsdoc/require-returns-type": "off", // TODO: probably not needed when types annotated correctly
     "jsdoc/require-throws-type": "error",
+    "jsdoc/require-yields-description": "error",
     "jsdoc/require-yields-type": "error",
 
     // Oxc
@@ -647,6 +650,7 @@
     "eslint/prefer-const": "error",
     "eslint/prefer-destructuring": "error",
     "eslint/prefer-exponentiation-operator": "error",
+    "eslint/prefer-named-capture-group": "error",
     "eslint/prefer-numeric-literals": "error",
     "eslint/prefer-object-has-own": "error",
     "eslint/prefer-object-spread": "error",
@@ -713,6 +717,7 @@
     "typescript/consistent-type-exports": "error",
     "typescript/consistent-type-imports": "error",
     "typescript/dot-notation": "error",
+    "typescript/method-signature-style": "error",
     "typescript/no-empty-interface": "error",
     "typescript/no-inferrable-types": "error",
     "typescript/no-unnecessary-qualifier": "error",
@@ -778,6 +783,7 @@
     "unicorn/throw-new-error": "error",
 
     // Vue
+    "vue/component-definition-name-casing": "error",
     "vue/define-emits-declaration": "error",
     "vue/define-props-declaration": "error",
     "vue/define-props-destructuring": "off", // It requires destructuring, even when not needed

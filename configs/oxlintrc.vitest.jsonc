@@ -71,6 +71,7 @@
           "pattern": ".*\\.test\\.ts"
         }],
 
+        "vitest/consistent-test-it": "error",
         "vitest/consistent-vitest-vi": "error",
         "vitest/max-expects": "off",
         "vitest/max-nested-describe": "error",

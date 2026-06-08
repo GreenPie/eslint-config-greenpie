@@ -91,6 +91,7 @@ Inspect the relevant config files and classify the current state:
 
 This matters because the same changelog line can imply different follow-up:
 
+- **new oxlint rule in an already enabled repository plugin namespace and not configured yet** → likely `add`
 - **new oxlint implementation of a rule already enforced via ESLint** → likely `add` / `migrate`
 - **rename / replacement / deprecation** → likely `replace` or `remove`
 - **new option or behavior fix on a rule already configured** → likely `adjust` or `review-only`
@@ -120,6 +121,7 @@ Treat an entry as actionable only when there is a concrete repository change imp
 
 Good examples of actionable items:
 
+- a supported oxlint plugin gains a new rule and the repository does not configure it yet
 - a supported oxlint rule has just been implemented and the repository still enforces the equivalent ESLint rule
 - a supported rule was renamed or replaced and the repository currently uses the old name
 - a supported rule gained an option that the repository is already relying on or should now align with
@@ -185,9 +187,11 @@ If the user says "apply the obvious ones" or similar, use only the clearly actio
 
 - Do not suggest enabling an entire new plugin because one release note mentions it.
 - Do not treat changelog noise as mandatory work.
-- Do not recommend config edits for rules the repository does not use unless the changelog clearly adds a valuable supported rule and the user wants adoption work.
+- For this repository, when a changelog adds a new rule under an already enabled oxlint plugin namespace, treat it as `add` by default unless repository context shows an explicit local opt-out or conflict.
+- Do not recommend config edits for rules under unsupported plugins or for speculative plugin expansion.
 - If a rule is already handled by oxlint in the repository, a bug fix is usually `review-only`, not a config change.
 - If a rule is currently enforced only in ESLint-side config and Oxlint just gained support, that is a strong candidate for `migrate`.
+- If a rule is already enabled in oxlint, do not list it as actionable again; classify follow-up bug fixes or diagnostics changes as `review-only` unless a config adjustment is clearly needed.
 
 ## Worked examples
 
