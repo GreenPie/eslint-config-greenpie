@@ -43,6 +43,8 @@ describe(RULE_ID, () => {
 
 Use `runOxlint` + `violationsOf` from `tests/oxlint/helper.ts`. Fixture files live **next to the test** (not in a `fixtures/` subfolder).
 
+For Vue fixtures, prefer `<script setup lang="ts">` by default. Use Options API only when the rule specifically targets Options API component objects, `export default`, or legacy option keys.
+
 ```typescript
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
