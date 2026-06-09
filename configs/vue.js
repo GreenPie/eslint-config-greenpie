@@ -26,6 +26,7 @@ export default defineConfig(
       'vue/define-props-declaration': 'off',
       'vue/define-props-destructuring': 'off',
       'vue/max-props': 'off',
+      'vue/next-tick-style': 'off',
       'vue/no-arrow-functions-in-watch': 'off',
       'vue/no-computed-properties-in-data': 'off',
       'vue/no-deprecated-data-object-declaration': 'off',
@@ -41,13 +42,18 @@ export default defineConfig(
       'vue/no-lifecycle-after-await': 'off',
       'vue/no-multiple-slot-args': 'off',
       'vue/no-reserved-component-names': 'off',
+      'vue/no-reserved-keys': 'off',
+      'vue/no-reserved-props': 'off',
       'vue/no-required-prop-with-default': 'off',
       'vue/no-shared-component-data': 'off',
       'vue/no-this-in-before-route-enter': 'off',
       'vue/no-watch-after-await': 'off',
       'vue/prefer-import-from-vue': 'off',
+      'vue/prop-name-casing': 'off',
       'vue/require-default-export': 'off',
+      'vue/require-direct-export': 'off',
       'vue/require-prop-type-constructor': 'off',
+      'vue/require-prop-types': 'off',
       'vue/require-render-return': 'off',
       'vue/require-slots-as-functions': 'off',
       'vue/require-typed-ref': 'off',
@@ -80,8 +86,6 @@ export default defineConfig(
       'vue/no-mutating-props': 'error',
       'vue/no-parsing-error': 'error',
       'vue/no-ref-as-operand': 'error',
-      'vue/no-reserved-keys': 'error',
-      'vue/no-reserved-props': 'error',
       'vue/no-side-effects-in-computed-properties': 'error',
       'vue/no-template-key': 'error',
       'vue/no-textarea-mustache': 'error',
@@ -158,7 +162,6 @@ export default defineConfig(
       'vue/no-spaces-around-equal-signs-in-attribute': 'error',
       'vue/no-template-shadow': 'error',
       'vue/one-component-per-file': 'error',
-      'vue/prop-name-casing': 'error',
 
       /**
        * Conflicts with
@@ -169,7 +172,6 @@ export default defineConfig(
        */
       'vue/require-default-prop': 'off',
 
-      'vue/require-prop-types': 'error',
       'vue/singleline-html-element-content-newline': 'error',
 
       'vue/v-bind-style': ['error', 'shorthand', {
@@ -249,7 +251,6 @@ export default defineConfig(
 
       'vue/max-template-depth': 'off',
       'vue/new-line-between-multi-line-property': 'error',
-      'vue/next-tick-style': 'error',
       'vue/no-bare-strings-in-template': 'error',
       'vue/no-boolean-default': 'error',
       'vue/no-duplicate-attr-inheritance': 'error',
@@ -323,7 +324,6 @@ export default defineConfig(
       'vue/prefer-true-attribute-shorthand': 'error',
       'vue/prefer-use-template-ref': 'error',
       'vue/prefer-v-model': 'error',
-      'vue/require-direct-export': 'error',
       'vue/require-emit-validator': 'error',
       'vue/require-explicit-slots': 'off',
       'vue/require-expose': 'error',
