@@ -199,6 +199,7 @@
     "vue/no-deprecated-model-definition": "error",
     "vue/no-deprecated-props-default-this": "error",
     "vue/no-deprecated-vue-config-keycodes": "error",
+    "vue/no-dupe-keys": "error",
     "vue/no-expose-after-await": "error",
     "vue/no-export-in-script-setup": "error",
     "vue/no-lifecycle-after-await": "error",
@@ -206,6 +207,7 @@
     "vue/no-reserved-keys": "error",
     "vue/no-reserved-props": "error",
     "vue/no-shared-component-data": "error",
+    "vue/no-side-effects-in-computed-properties": "error",
     "vue/no-this-in-before-route-enter": "error",
     "vue/no-watch-after-await": "error",
     "vue/prefer-import-from-vue": "error",
@@ -428,6 +430,7 @@
 
     "unicorn/consistent-function-scoping": "error",
     "unicorn/no-accessor-recursion": "error",
+    "unicorn/no-array-fill-with-reference-type": "error",
     "unicorn/no-array-reverse": "error",
     "unicorn/no-array-sort": "error",
     "unicorn/no-instanceof-builtins": "error",
@@ -580,6 +583,7 @@
     "unicorn/prefer-prototype-methods": "error",
     "unicorn/prefer-query-selector": "error",
     "unicorn/prefer-regexp-test": "error",
+    "unicorn/prefer-single-call": "error",
     "unicorn/prefer-string-replace-all": "error",
     "unicorn/prefer-string-slice": "error",
     "unicorn/prefer-top-level-await": "error",
@@ -760,6 +764,7 @@
     "unicorn/prefer-classlist-toggle": "error",
     "unicorn/prefer-default-parameters": "error",
     "unicorn/prefer-dom-node-text-content": "error",
+    "unicorn/prefer-export-from": "error",
     "unicorn/prefer-global-this": "error",
     "unicorn/import-style": "off", // Needs a project-specific import style policy first
     "unicorn/prefer-includes": "error",
@@ -791,6 +796,12 @@
     "vue/define-props-destructuring": "off", // It requires destructuring, even when not needed
     "vue/next-tick-style": "error",
     "vue/prop-name-casing": "error",
+
+    // Still reports props typed as `T | undefined` without defaults:
+    // https://github.com/vuejs/eslint-plugin-vue/issues/2475
+    // Adding `= undefined` to satisfy it conflicts with unicorn/no-useless-undefined.
+    "vue/require-default-prop": "off",
+
     "vue/require-direct-export": "error",
     "vue/require-prop-types": "error",
     "vue/require-typed-ref": "error",
