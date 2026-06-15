@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-greenpie",
-  "version": "16.3.0",
+  "version": "16.4.0",
   "description": "GreenPie's ESLint and oxlint configs",
   "main": "index.js",
   "types": "index.d.ts",
