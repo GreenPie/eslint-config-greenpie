@@ -36,6 +36,7 @@ export default defineConfig(
       'vue/no-deprecated-model-definition': 'off',
       'vue/no-deprecated-props-default-this': 'off',
       'vue/no-deprecated-vue-config-keycodes': 'off',
+      'vue/no-dupe-keys': 'off',
       'vue/no-expose-after-await': 'off',
       'vue/no-export-in-script-setup': 'off',
       'vue/no-import-compiler-macros': 'off',
@@ -46,11 +47,22 @@ export default defineConfig(
       'vue/no-reserved-props': 'off',
       'vue/no-required-prop-with-default': 'off',
       'vue/no-shared-component-data': 'off',
+      'vue/no-side-effects-in-computed-properties': 'off',
       'vue/no-this-in-before-route-enter': 'off',
       'vue/no-watch-after-await': 'off',
       'vue/prefer-import-from-vue': 'off',
       'vue/prop-name-casing': 'off',
       'vue/require-default-export': 'off',
+
+      /*
+       * Kept disabled in oxlint because it still reports props typed
+       * as `T | undefined` without defaults:
+       * https://github.com/vuejs/eslint-plugin-vue/issues/2475
+       *
+       * Adding `= undefined` to satisfy it conflicts with unicorn/no-useless-undefined.
+       */
+      'vue/require-default-prop': 'off',
+
       'vue/require-direct-export': 'off',
       'vue/require-prop-type-constructor': 'off',
       'vue/require-prop-types': 'off',
@@ -80,13 +92,11 @@ export default defineConfig(
       'vue/multi-word-component-names': 'error',
       'vue/no-async-in-computed-properties': 'error',
       'vue/no-child-content': 'error',
-      'vue/no-dupe-keys': 'error',
       'vue/no-dupe-v-else-if': 'error',
       'vue/no-duplicate-attributes': 'error',
       'vue/no-mutating-props': 'error',
       'vue/no-parsing-error': 'error',
       'vue/no-ref-as-operand': 'error',
-      'vue/no-side-effects-in-computed-properties': 'error',
       'vue/no-template-key': 'error',
       'vue/no-textarea-mustache': 'error',
       'vue/no-unused-components': 'error',
@@ -162,15 +172,6 @@ export default defineConfig(
       'vue/no-spaces-around-equal-signs-in-attribute': 'error',
       'vue/no-template-shadow': 'error',
       'vue/one-component-per-file': 'error',
-
-      /**
-       * Conflicts with
-       * - `unicorn/no-useless-undefined`
-       * - `@typescript-eslint/no-useless-default-assignment`
-       *
-       * {@link https://github.com/vuejs/eslint-plugin-vue/issues/2475}
-       */
-      'vue/require-default-prop': 'off',
 
       'vue/singleline-html-element-content-newline': 'error',
 
