@@ -28,6 +28,7 @@ export default defineConfig(
       'vue/max-props': 'off',
       'vue/next-tick-style': 'off',
       'vue/no-arrow-functions-in-watch': 'off',
+      'vue/no-async-in-computed-properties': 'off',
       'vue/no-computed-properties-in-data': 'off',
       'vue/no-deprecated-data-object-declaration': 'off',
       'vue/no-deprecated-delete-set': 'off',
@@ -90,7 +91,6 @@ export default defineConfig(
        */
 
       'vue/multi-word-component-names': 'error',
-      'vue/no-async-in-computed-properties': 'error',
       'vue/no-child-content': 'error',
       'vue/no-dupe-v-else-if': 'error',
       'vue/no-duplicate-attributes': 'error',

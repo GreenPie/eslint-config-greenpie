@@ -191,6 +191,7 @@
     // Vue
 
     "vue/no-arrow-functions-in-watch": "error",
+    "vue/no-async-in-computed-properties": "error",
     "vue/no-computed-properties-in-data": "error",
     "vue/no-deprecated-data-object-declaration": "error",
     "vue/no-deprecated-delete-set": "error",
@@ -580,6 +581,7 @@
     "unicorn/prefer-math-min-max": "error",
     "unicorn/prefer-math-trunc": "error",
     "unicorn/prefer-native-coercion-functions": "error",
+    "unicorn/prefer-number-coercion": "error",
     "unicorn/prefer-prototype-methods": "error",
     "unicorn/prefer-query-selector": "error",
     "unicorn/prefer-regexp-test": "error",
@@ -748,6 +750,10 @@
     "unicorn/empty-brace-spaces": "error",
     "unicorn/error-message": "error",
     "unicorn/filename-case": "error",
+    "unicorn/max-nested-calls": ["error", {
+      "max": 1
+    }],
+
     "unicorn/no-array-method-this-argument": "error",
     "unicorn/no-await-expression-member": "error",
     "unicorn/no-console-spaces": "error",

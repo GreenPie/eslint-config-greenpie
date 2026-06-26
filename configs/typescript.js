@@ -91,6 +91,7 @@ export default defineConfig({
     '@typescript-eslint/no-unnecessary-template-expression': 'off',
     '@typescript-eslint/no-unnecessary-type-arguments': 'off',
     '@typescript-eslint/no-unnecessary-type-assertion': 'off',
+    '@typescript-eslint/no-unnecessary-type-constraint': 'off',
     '@typescript-eslint/no-unnecessary-type-conversion': 'off',
     '@typescript-eslint/no-unnecessary-type-parameters': 'off',
     '@typescript-eslint/no-unsafe-argument': 'off',
@@ -199,7 +200,6 @@ export default defineConfig({
 
     '@typescript-eslint/no-confusing-non-null-assertion': 'error',
     '@typescript-eslint/no-extraneous-class': 'error',
-    '@typescript-eslint/no-unnecessary-type-constraint': 'error',
     '@typescript-eslint/typedef': 'error',
 
     /*
