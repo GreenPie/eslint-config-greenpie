@@ -41,6 +41,13 @@
       }
     },
     {
+      "files": ["tests/oxlint/**/*.ts"],
+
+      "rules": {
+        "unicorn/max-nested-calls": "off"
+      }
+    },
+    {
       "files": ["tests/oxlint/helper.ts"],
 
       "rules": {
