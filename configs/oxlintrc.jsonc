@@ -750,7 +750,7 @@
     "unicorn/empty-brace-spaces": "error",
     "unicorn/error-message": "error",
     "unicorn/filename-case": "error",
-    "unicorn/max-nested-calls": "off", // Too strict for common call composition
+    "unicorn/max-nested-calls": "error",
 
     "unicorn/no-array-method-this-argument": "error",
     "unicorn/no-await-expression-member": "error",
