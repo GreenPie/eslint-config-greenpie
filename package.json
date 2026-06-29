@@ -7,7 +7,7 @@
   "author": "Roman Nuritdinov (Ky6uk)",
   "license": "MIT",
   "type": "module",
-  "packageManager": "npm@11.17.0",
+  "packageManager": "pnpm@11.9.0",
   "homepage": "https://github.com/GreenPie/eslint-config-greenpie",
   "repository": {
     "type": "git",

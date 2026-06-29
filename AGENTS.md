@@ -24,9 +24,9 @@ This is a repository for ESLint/oxlint shared configurations.
 After making any changes to the codebase, always run both commands to verify correctness:
 
 ```sh
-npm run test:agent
-npm run lint:oxlint:agent
-npm run lint:eslint
+pnpm run test:agent
+pnpm run lint:oxlint:agent
+pnpm run lint:eslint
 ```
 
 Both must pass before considering the change complete.
