@@ -9,6 +9,7 @@
     "jsdoc",
     "eslint",
     "import",
+    "node",
     "oxc",
     "promise",
     "typescript",
@@ -304,6 +305,13 @@
 
     "jsdoc/check-access": "error",
     "jsdoc/empty-tags": "error",
+
+    // Node
+
+    "node/handle-callback-err": ["error", "error"],
+    "node/no-new-require": "error",
+    "node/no-path-concat": "error",
+    "node/no-process-env": "error",
 
     // Oxc
 
@@ -701,6 +709,17 @@
     // JSDoc
 
     "jsdoc/require-throws-description": "error",
+
+    // Node
+
+    "node/callback-return": "error",
+    "node/global-require": "error",
+    "node/no-exports-assign": "error",
+    "node/no-mixed-requires": "error",
+
+    "node/no-sync": ["error", {
+      "allowAtRootLevel": true
+    }],
 
     // Promise
 
