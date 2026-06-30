@@ -6,6 +6,14 @@ const worker = {
   }
 };
 
+function infersTestTitleFromFunctionName() {
+  return 'function title';
+}
+
+function throwsOnCall() {
+  throw new Error('boom');
+}
+
 describe('shared split vitest rules fixture', () => {
   beforeAll(() => {
     vi.spyOn(Date, 'now').mockReturnValue(1);
@@ -42,5 +50,24 @@ describe('shared split vitest rules fixture', () => {
     expect(() => {
       throw new Error('boom');
     }).toThrow('boom');
+    expect(throwsOnCall).toThrow('boom');
+  });
+
+  it(infersTestTitleFromFunctionName, () => {
+    expect(infersTestTitleFromFunctionName()).toBe('function title');
+  });
+});
+
+function infersSuiteTitleFromFunctionName() {
+  return 'suite title';
+}
+
+function infersInlineTestTitleFromFunctionName() {
+  return 'inline title';
+}
+
+describe(infersSuiteTitleFromFunctionName, () => {
+  it(infersInlineTestTitleFromFunctionName, () => {
+    expect(true).toBe(true);
   });
 });

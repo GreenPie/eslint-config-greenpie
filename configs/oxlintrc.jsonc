@@ -9,6 +9,7 @@
     "jsdoc",
     "eslint",
     "import",
+    "node",
     "oxc",
     "promise",
     "typescript",
@@ -304,6 +305,13 @@
 
     "jsdoc/check-access": "error",
     "jsdoc/empty-tags": "error",
+
+    // Node
+
+    "node/handle-callback-err": ["error", "error"],
+    "node/no-new-require": "error",
+    "node/no-path-concat": "error",
+    "node/no-process-env": "error",
 
     // Oxc
 
@@ -702,6 +710,17 @@
 
     "jsdoc/require-throws-description": "error",
 
+    // Node
+
+    "node/callback-return": "error",
+    "node/global-require": "error",
+    "node/no-exports-assign": "error",
+    "node/no-mixed-requires": "error",
+
+    "node/no-sync": ["error", {
+      "allowAtRootLevel": true
+    }],
+
     // Promise
 
     "promise/avoid-new": "error",
@@ -750,7 +769,10 @@
     "unicorn/empty-brace-spaces": "error",
     "unicorn/error-message": "error",
     "unicorn/filename-case": "error",
-    "unicorn/max-nested-calls": "error",
+
+    "unicorn/max-nested-calls": ["error", {
+      "max": 5 // TODO: Can be reduced later. Problematic for tests/valibot/etc.
+    }],
 
     "unicorn/no-array-method-this-argument": "error",
     "unicorn/no-await-expression-member": "error",
@@ -855,8 +877,6 @@
     },
 
     "rules": {
-      "typescript/no-unused-vars": "off", // Handled by vue/no-unused-vars
-
       "unicorn/filename-case": ["error", {
         "case": "pascalCase"
       }]

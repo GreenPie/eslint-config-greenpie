@@ -2,6 +2,10 @@ function readValue(): string {
   return 'value';
 }
 
+function decode(value: string): string {
+  return value;
+}
+
 function parse(value: string): string {
   return value;
 }
@@ -18,4 +22,4 @@ function render(value: string): string {
   return value;
 }
 
-render(format(normalize(parse(readValue()))));
+render(format(normalize(parse(decode(readValue())))));

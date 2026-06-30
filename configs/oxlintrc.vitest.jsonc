@@ -25,6 +25,7 @@
           "it": "each"
         }],
 
+        "vitest/expect-expect": "error",
         "vitest/hoisted-apis-on-top": "error",
         "vitest/no-conditional-expect": "error",
         "vitest/no-conditional-tests": "error",
@@ -38,7 +39,18 @@
         "vitest/require-mock-type-parameters": "off", // It seems to be too strict and not very useful
         "vitest/require-to-throw-message": "error",
         "vitest/valid-describe-callback": "error",
+        "vitest/valid-expect": "error",
         "vitest/valid-expect-in-promise": "error",
+
+        /*
+         * TODO: Drop these options when valid-title accepts Vitest function titles.
+         * Vitest uses function.name as the test title when the title argument is a function.
+         */
+        "vitest/valid-title": ["error", {
+          "ignoreTypeOfDescribeName": true,
+          "ignoreTypeOfTestName": true
+        }],
+
         "vitest/warn-todo": "warn",
 
         /**

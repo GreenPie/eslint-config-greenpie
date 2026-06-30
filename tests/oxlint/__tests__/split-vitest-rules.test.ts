@@ -12,6 +12,10 @@ const cases = [
     invalidFixture: 'consistent-test-it.invalid.ts'
   },
   {
+    ruleId: 'vitest/expect-expect',
+    invalidFixture: 'expect-expect.invalid.ts'
+  },
+  {
     ruleId: 'vitest/no-standalone-expect',
     invalidFixture: 'no-standalone-expect.invalid.ts'
   },
@@ -98,6 +102,10 @@ const cases = [
   {
     ruleId: 'vitest/valid-describe-callback',
     invalidFixture: 'valid-describe-callback.invalid.ts'
+  },
+  {
+    ruleId: 'vitest/valid-expect',
+    invalidFixture: 'valid-expect.invalid.ts'
   },
   {
     ruleId: 'vitest/valid-expect-in-promise',
