@@ -750,7 +750,10 @@
     "unicorn/empty-brace-spaces": "error",
     "unicorn/error-message": "error",
     "unicorn/filename-case": "error",
-    "unicorn/max-nested-calls": "error",
+
+    "unicorn/max-nested-calls": ["error", {
+      "max": 5 // TODO: Can be reduced later. Problematic for tests/valibot/etc.
+    }],
 
     "unicorn/no-array-method-this-argument": "error",
     "unicorn/no-await-expression-member": "error",
@@ -855,8 +858,6 @@
     },
 
     "rules": {
-      "typescript/no-unused-vars": "off", // Handled by vue/no-unused-vars
-
       "unicorn/filename-case": ["error", {
         "case": "pascalCase"
       }]
