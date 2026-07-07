@@ -149,6 +149,7 @@ export default defineConfig(
       'no-unmodified-loop-condition': 'off',
       'no-unneeded-ternary': 'off',
       'no-unreachable': 'off',
+      'no-unreachable-loop': 'off',
       'no-unsafe-finally': 'off',
       'no-unsafe-negation': 'off',
       'no-unsafe-optional-chaining': 'off',
@@ -210,7 +211,6 @@ export default defineConfig(
        * {@link https://eslint.org/docs/rules/#possible-problems}
        */
 
-      'no-unreachable-loop': 'error',
       'require-atomic-updates': 'error',
 
       /**

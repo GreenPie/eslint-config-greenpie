@@ -442,6 +442,7 @@
     "unicorn/no-array-fill-with-reference-type": "error",
     "unicorn/no-array-reverse": "error",
     "unicorn/no-array-sort": "error",
+    "unicorn/no-confusing-array-with": "error",
     "unicorn/no-instanceof-builtins": "error",
     "unicorn/prefer-add-event-listener": "error",
     "unicorn/require-module-specifiers": "error",
@@ -768,6 +769,7 @@
     "unicorn/custom-error-definition": "error",
     "unicorn/empty-brace-spaces": "error",
     "unicorn/error-message": "error",
+    "unicorn/explicit-timer-delay": ["error", "always"],
     "unicorn/filename-case": "error",
 
     "unicorn/max-nested-calls": ["error", {
@@ -840,6 +842,7 @@
 
     "eslint/constructor-super": "error",
     "eslint/no-undef": "error",
+    "eslint/no-unreachable-loop": "error",
     "eslint/no-useless-assignment": "error",
 
     // Import
