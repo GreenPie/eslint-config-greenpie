@@ -99,6 +99,7 @@
         "vitest/no-test-prefixes": "error",
         "vitest/no-unneeded-async-expect-function": "error",
         "vitest/padding-around-after-all-blocks": "error",
+        "vitest/padding-around-test-blocks": "error",
         "vitest/prefer-called-exactly-once-with": "error",
         "vitest/prefer-called-once": "off", // Conflicts with prefer-called-times
         "vitest/prefer-called-times": "error",

@@ -30,6 +30,8 @@ Add to the relevant Oxlint config file:
 
 Keep entries alphabetized among sibling rules.
 
+Add conflicting rules as `"off"` with a comment naming the conflict.
+
 ```sh
 npm run lint:oxlint:agent
 npm run lint:eslint
