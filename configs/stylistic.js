@@ -59,6 +59,7 @@ export default defineConfig({
     '@stylistic/lines-between-class-members': 'off',
 
     '@stylistic/max-len': ['error', 120, {
+      ignoreStrings: true,
       ignoreUrls: true
     }],
 

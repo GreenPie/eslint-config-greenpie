@@ -374,7 +374,8 @@ export default defineConfig(
 
       'vue/max-len': ['error', 120, {
         ignoreHTMLAttributeValues: true,
-        ignoreComments: true
+        ignoreComments: true,
+        ignoreStrings: true
       }],
 
       'vue/multiline-ternary': ['error', 'never'],
