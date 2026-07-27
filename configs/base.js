@@ -32,6 +32,7 @@ export default defineConfig(
       'getter-return': 'off',
       'grouped-accessor-pairs': 'off',
       'guard-for-in': 'off',
+      'id-denylist': 'off',
       'id-match': 'off',
       'id-length': 'off',
       'init-declarations': 'off',
@@ -220,7 +221,6 @@ export default defineConfig(
        */
       camelcase: 'error',
       'consistent-this': 'error',
-      'id-denylist': 'error',
       'no-invalid-this': 'error',
       'no-octal-escape': 'error',
       'no-restricted-syntax': 'error',

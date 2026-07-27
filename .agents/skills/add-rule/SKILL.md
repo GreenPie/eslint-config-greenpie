@@ -33,9 +33,9 @@ Keep entries alphabetized among sibling rules.
 Add conflicting rules as `"off"` with a comment naming the conflict.
 
 ```sh
-npm run lint:oxlint:agent
-npm run lint:eslint
-npm run test:agent
+vp run lint:oxlint:agent
+vp run lint:eslint
+vp run test:agent
 ```
 
 ## Scenario B: Migrating ESLint rule → oxlint
@@ -123,9 +123,9 @@ For `vitest/*`, update `configs/oxlintrc.vitest.jsonc` instead and keep the rule
 ## After every change
 
 ```sh
-npm run lint:oxlint:agent
-npm run lint:eslint
-npm run test:agent
+vp run lint:oxlint:agent
+vp run lint:eslint
+vp run test:agent
 ```
 
 All must pass.
