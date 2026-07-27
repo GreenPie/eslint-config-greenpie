@@ -126,6 +126,7 @@
     "oxc/bad-array-method-on-arguments": "error",
     "oxc/bad-char-at-comparison": "error",
     "oxc/bad-comparison-sequence": "error",
+    "oxc/bad-match-all-arg": "error",
     "oxc/bad-min-max-func": "error",
     "oxc/bad-object-literal-comparison": "error",
     "oxc/bad-replace-all-arg": "error",
@@ -628,6 +629,7 @@
     }],
 
     "eslint/guard-for-in": "error",
+    "eslint/id-denylist": "error",
 
     "eslint/id-length": ["error", {
       "max": 40
@@ -715,6 +717,7 @@
     // Node
 
     "node/callback-return": "error",
+    "node/exports-style": "error",
     "node/global-require": "error",
     "node/no-exports-assign": "error",
     "node/no-mixed-requires": "error",

@@ -21,12 +21,12 @@ This is a repository for ESLint/oxlint shared configurations.
 
 ## After each change
 
-After making any changes to the codebase, always run both commands to verify correctness:
+After making any changes to the codebase, always run all three commands to verify correctness:
 
 ```sh
-pnpm run test:agent
-pnpm run lint:oxlint:agent
-pnpm run lint:eslint
+vp run test:agent
+vp run lint:oxlint:agent
+vp run lint:eslint
 ```
 
-Both must pass before considering the change complete.
+All three must pass before considering the change complete.
