@@ -493,6 +493,7 @@
     "eslint/no-throw-literal": "error",
     "eslint/no-useless-return": "error",
     "eslint/no-warning-comments": "warn", // Just notify about TODO and FIXME comments
+    "eslint/prefer-promise-reject-errors": "error",
     "eslint/radix": "error",
     "eslint/require-await": "off", // @typescript-eslint already checks for this (promise-function-async / require-await)
     "eslint/require-unicode-regexp": "error",
@@ -674,7 +675,6 @@
     "eslint/prefer-numeric-literals": "error",
     "eslint/prefer-object-has-own": "error",
     "eslint/prefer-object-spread": "error",
-    "eslint/prefer-promise-reject-errors": "error",
     "eslint/prefer-regex-literals": "error",
     "eslint/prefer-rest-params": "error",
     "eslint/prefer-spread": "error",
