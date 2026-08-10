@@ -7,7 +7,7 @@
   "author": "Roman Nuritdinov (Ky6uk)",
   "license": "MIT",
   "type": "module",
-  "packageManager": "pnpm@11.20.0",
+  "packageManager": "pnpm@11.21.0",
   "homepage": "https://github.com/GreenPie/eslint-config-greenpie",
   "repository": {
     "type": "git",
@@ -37,20 +37,20 @@
     "oxlint"
   ],
   "devDependencies": {
-    "@types/node": "^26.1.2",
+    "@types/node": "^26.2.0",
     "execa": "^10.0.1",
     "husky": "^9.1.7",
-    "oxlint": "^1.77.0",
-    "taze": "^19.17.1",
+    "oxlint": "^1.78.0",
+    "taze": "^19.17.2",
     "valibot": "1.4.2",
     "vitest": "^4.1.10",
-    "vue": "^3.5.40"
+    "vue": "^3.5.41"
   },
   "peerDependencies": {
     "@stylistic/eslint-plugin": "^5.10.0",
-    "eslint": "^10.8.0",
+    "eslint": "^10.8.1",
     "eslint-plugin-vue": "^10.10.0",
-    "oxlint": "^1.77.0",
+    "oxlint": "^1.78.0",
     "oxlint-tsgolint": "^7.0.2001",
     "typescript-eslint": "^8.66.0"
   }
