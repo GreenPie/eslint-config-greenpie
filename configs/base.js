@@ -175,6 +175,7 @@ export default defineConfig(
       'no-with': 'off',
       'object-shorthand': 'off',
       'operator-assignment': 'off',
+      'one-var': 'off',
       'prefer-arrow-callback': 'off',
       'prefer-const': 'off',
       'prefer-destructuring': 'off',
@@ -224,7 +225,6 @@ export default defineConfig(
       'no-invalid-this': 'error',
       'no-octal-escape': 'error',
       'no-restricted-syntax': 'error',
-      'one-var': ['error', 'never'],
       strict: 'error'
     }
   }

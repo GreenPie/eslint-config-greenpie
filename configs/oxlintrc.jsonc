@@ -667,6 +667,7 @@
     "eslint/no-ternary": "off", // Why not to use it in simple cases like "a ? b : c"
     "eslint/object-shorthand": "error",
     "eslint/operator-assignment": "error",
+    "eslint/one-var": ["error", "never"],
     "eslint/prefer-arrow-callback": "error",
     "eslint/prefer-const": "error",
     "eslint/prefer-destructuring": "error",
@@ -712,6 +713,7 @@
 
     // JSDoc
 
+    "jsdoc/no-blank-blocks": "error",
     "jsdoc/require-throws-description": "error",
 
     // Node
