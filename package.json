@@ -17,10 +17,12 @@
     "url": "https://github.com/GreenPie/eslint-config-greenpie/issues"
   },
   "scripts": {
+    "changeset": "changeset",
     "lint:eslint": "eslint",
     "lint:oxlint": "oxlint",
     "lint:oxlint:agent": "oxlint --format agent",
     "prepare": "husky",
+    "release": "changeset publish",
     "test:agent": "vitest run --reporter=agent",
     "test": "vitest run",
     "update:all": "taze -I -l --peer"
@@ -37,6 +39,7 @@
     "oxlint"
   ],
   "devDependencies": {
+    "@changesets/cli": "^2.31.1",
     "@types/node": "^26.2.0",
     "execa": "^10.0.1",
     "husky": "^9.1.7",
