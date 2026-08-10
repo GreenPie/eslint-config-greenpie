@@ -1,4 +1,6 @@
 /.eslintrc.json
+/.changeset
+/.github
 /.ncurc.yml
 /tsconfig.json
 /tests

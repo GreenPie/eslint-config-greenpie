@@ -9,7 +9,7 @@ This package provides ESLint's shared config that designed to be strict as hell.
 Install the base package with required dependencies:
 
 ```bash
-pnpm add eslint-config-greenpie eslint --save-dev
+vp add --save-dev eslint-config-greenpie eslint
 ```
 
 Then install additional dependencies depending on your use case:
@@ -17,25 +17,25 @@ Then install additional dependencies depending on your use case:
 **For oxlint users:**
 
 ```bash
-pnpm add oxlint oxlint-tsgolint --save-dev
+vp add --save-dev oxlint oxlint-tsgolint
 ```
 
 **For ESLint users:**
 
 ```bash
-pnpm add @stylistic/eslint-plugin --save-dev
+vp add --save-dev @stylistic/eslint-plugin
 ```
 
 **For TypeScript projects:**
 
 ```bash
-pnpm add typescript-eslint --save-dev
+vp add --save-dev typescript-eslint
 ```
 
 **For Vue.js projects:**
 
 ```bash
-pnpm add eslint-plugin-vue --save-dev
+vp add --save-dev eslint-plugin-vue
 ```
 
 ### Oxlint configuration
@@ -241,7 +241,7 @@ The `import/no-namespace` rule disallows `import * as` syntax. If you need to us
 ### Running tests
 
 ```bash
-pnpm run test
+vp run test
 ```
 
 Tests use [Vitest](https://vitest.dev/) and the [ESLint programmatic API](https://eslint.org/docs/developer-guide/nodejs-api) to lint code snippets directly against the configs defined in this repository.

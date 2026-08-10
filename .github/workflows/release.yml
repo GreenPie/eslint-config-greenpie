@@ -1,0 +1,45 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+  id-token: write
+  pull-requests: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup pnpm and install dependencies
+        uses: Perdolique/automations/.github/actions/setup-pnpm@v3
+        with:
+          cache: false
+          install-dependencies: true
+          registry-url: https://registry.npmjs.org
+
+      - name: Run tests
+        run: pnpm test:agent
+
+      - name: Run Oxlint
+        run: pnpm lint:oxlint:agent
+
+      - name: Run ESLint
+        run: pnpm lint:eslint
+
+      - name: Create release pull request or publish
+        uses: changesets/action@v1
+        with:
+          commit: "chore(release): version package"
+          commitMode: github-api
+          createGithubReleases: true
+          publish: pnpm release
+          title: "chore(release): version package"
