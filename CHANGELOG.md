@@ -1,5 +1,11 @@
 # eslint-config-greenpie
 
+## 17.7.0
+
+### Minor Changes
+
+- c28b80a: Update the published linting toolchain to Oxlint 1.79 and typescript-eslint 8.67.
+
 ## 17.6.0
 
 ### Minor Changes
