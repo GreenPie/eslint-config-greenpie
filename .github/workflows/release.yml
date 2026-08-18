@@ -36,10 +36,9 @@ jobs:
         run: pnpm lint:eslint
 
       - name: Create release pull request or publish
-        uses: changesets/action@v1
+        uses: changesets/action@v2
         with:
-          commit: "chore(release): version package"
-          commitMode: github-api
-          createGithubReleases: true
-          publish: pnpm release
-          title: "chore(release): version package"
+          commit-message: "chore(release): version package"
+          create-github-releases: true
+          pr-title: "chore(release): version package"
+          publish-script: pnpm release
