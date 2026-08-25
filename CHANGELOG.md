@@ -1,5 +1,15 @@
 # eslint-config-greenpie
 
+## 17.8.0
+
+### Minor Changes
+
+- 394ef28: Update pnpm, Changesets, Node.js types, ESLint, Oxlint, and typescript-eslint.
+
+### Patch Changes
+
+- 394ef28: Disable duplicate typescript-eslint enforcement for no-confusing-non-null-assertion in favor of Oxlint.
+
 ## 17.7.0
 
 ### Minor Changes
