@@ -50,6 +50,7 @@ export default defineConfig({
     '@typescript-eslint/no-array-constructor': 'off',
     '@typescript-eslint/no-array-delete': 'off',
     '@typescript-eslint/no-base-to-string': 'off',
+    '@typescript-eslint/no-confusing-non-null-assertion': 'off',
     '@typescript-eslint/no-confusing-void-expression': 'off',
     '@typescript-eslint/no-deprecated': 'off',
     '@typescript-eslint/no-dupe-class-members': 'off',
@@ -198,7 +199,6 @@ export default defineConfig({
 
     // TypeScript specific Rules
 
-    '@typescript-eslint/no-confusing-non-null-assertion': 'error',
     '@typescript-eslint/no-extraneous-class': 'error',
     '@typescript-eslint/typedef': 'error',
 
