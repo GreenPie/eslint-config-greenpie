@@ -1,5 +1,11 @@
 # eslint-config-greenpie
 
+## 17.9.0
+
+### Minor Changes
+
+- 924e7a8: Update Node.js, pnpm to version 12, Node.js types, Oxlint, typescript-eslint, and Vue.
+
 ## 17.8.0
 
 ### Minor Changes
