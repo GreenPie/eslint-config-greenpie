@@ -1,5 +1,11 @@
 # eslint-config-greenpie
 
+## 17.10.0
+
+### Minor Changes
+
+- 7b76685: Update linting dependencies, enable vue/no-shadow-native-events, and strengthen loop condition checks.
+
 ## 17.9.0
 
 ### Minor Changes
