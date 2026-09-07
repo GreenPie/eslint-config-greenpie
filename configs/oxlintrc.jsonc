@@ -394,7 +394,9 @@
     }],
 
     "eslint/no-unexpected-multiline": "error",
-    "eslint/no-unmodified-loop-condition": "error",
+    "eslint/no-unmodified-loop-condition": ["error", {
+      "checkConditionalExpressions": true
+    }],
     "eslint/no-unneeded-ternary": "error",
     "eslint/no-useless-concat": "error",
     "eslint/no-useless-constructor": "error",
