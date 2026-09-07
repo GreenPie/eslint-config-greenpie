@@ -275,6 +275,7 @@ export default defineConfig(
       'vue/no-restricted-v-on': 'off',
       'vue/no-root-v-if': 'off',
       'vue/no-setup-props-reactivity-loss': 'error',
+      'vue/no-shadow-native-events': 'error',
       'vue/no-static-inline-styles': 'error',
       'vue/no-template-target-blank': 'error',
       'vue/no-undef-components': 'error',
