@@ -11,6 +11,7 @@ export default defineConfig({
     parser: tsEslint.parser,
 
     parserOptions: {
+      extraFileExtensions: ['.vue'],
       projectService: true
     }
   },
