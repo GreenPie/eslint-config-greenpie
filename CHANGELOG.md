@@ -1,5 +1,11 @@
 # eslint-config-greenpie
 
+## 17.10.1
+
+### Patch Changes
+
+- 463deb8: Keep TypeScript project service file extensions stable when linting TypeScript and Vue files.
+
 ## 17.10.0
 
 ### Minor Changes
