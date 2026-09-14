@@ -193,6 +193,7 @@ export default defineConfig({
       format: ['camelCase'],
       leadingUnderscore: 'allow'
     }],
+    '@typescript-eslint/no-generated-empty-object-type': 'error',
 
     // Formatting Rules
 

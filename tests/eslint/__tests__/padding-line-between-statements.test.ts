@@ -5,7 +5,7 @@ import stylisticConfig from '../../../configs/stylistic.js';
 const RULE_ID = '@stylistic/padding-line-between-statements';
 
 const eslint = new ESLint({
-  overrideConfigFile: null,
+  overrideConfigFile: true,
   overrideConfig: stylisticConfig
 });
 

@@ -13,7 +13,7 @@ const configSchema = object({
 });
 
 const eslint = new ESLint({
-  overrideConfigFile: null,
+  overrideConfigFile: true,
   overrideConfig: defineConfig(
     ...configs.default,
     ...configs.vue
