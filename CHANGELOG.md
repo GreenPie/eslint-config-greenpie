@@ -1,5 +1,11 @@
 # eslint-config-greenpie
 
+## 17.11.0
+
+### Minor Changes
+
+- fae9e2c: Update the linting toolchain, test runtime, Node.js, and package manager, and enable @typescript-eslint/no-generated-empty-object-type.
+
 ## 17.10.1
 
 ### Patch Changes
