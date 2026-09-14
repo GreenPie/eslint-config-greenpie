@@ -5,7 +5,7 @@ import vueConfig from '../../../configs/vue.js';
 const RULE_ID = 'vue/no-shadow-native-events';
 
 const eslint = new ESLint({
-  overrideConfigFile: null,
+  overrideConfigFile: true,
   overrideConfig: [
     ...vueConfig,
     {

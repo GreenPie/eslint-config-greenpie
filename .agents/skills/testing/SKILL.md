@@ -19,7 +19,7 @@ import stylisticConfig from '../../../configs/stylistic.js'; // import real conf
 const RULE_ID = '@stylistic/some-rule';
 
 const eslint = new ESLint({
-  overrideConfigFile: null, // null = disable auto-discovery
+  overrideConfigFile: true, // true = disable config file lookup
   overrideConfig: stylisticConfig
 });
 

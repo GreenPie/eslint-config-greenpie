@@ -7,12 +7,12 @@ const STYLISTIC_RULE_ID = '@stylistic/max-len';
 const VUE_RULE_ID = 'vue/max-len';
 
 const stylisticEslint = new ESLint({
-  overrideConfigFile: null,
+  overrideConfigFile: true,
   overrideConfig: stylisticConfig
 });
 
 const vueEslint = new ESLint({
-  overrideConfigFile: null,
+  overrideConfigFile: true,
   overrideConfig: [
     ...vueConfig,
     {
