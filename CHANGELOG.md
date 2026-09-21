@@ -1,5 +1,11 @@
 # eslint-config-greenpie
 
+## 17.12.0
+
+### Minor Changes
+
+- 03b5516: Update Node.js, pnpm, ESLint, Oxlint, oxlint-tsgolint, typescript-eslint, Vitest, Vue, and Node.js types.
+
 ## 17.11.0
 
 ### Minor Changes
