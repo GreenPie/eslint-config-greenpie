@@ -201,6 +201,7 @@ export default defineConfig({
     // TypeScript specific Rules
 
     '@typescript-eslint/no-extraneous-class': 'error',
+    '@typescript-eslint/no-unsafe-enum-assignment': 'error',
     '@typescript-eslint/typedef': 'error',
 
     /*
