@@ -1,5 +1,13 @@
 # eslint-config-greenpie
 
+## 17.13.0
+
+### Minor Changes
+
+- fee7532: Update pnpm to 12.6.0, Node.js to 26.10.0, Taze to 21.2.0, Vitest to 5.0.2, eslint-plugin-vue to 10.11.1, typescript-eslint to 8.71.0, and Node.js types to 26.6.3.
+- fee7532: Enable no-unsafe-enum-assignment in the TypeScript ESLint config.
+- d9dc168: Update Oxlint to 1.86.0 and its type-aware backend to 7.0.2003. Move no-generated-empty-object-type from ESLint to Oxlint.
+
 ## 17.12.0
 
 ### Minor Changes
