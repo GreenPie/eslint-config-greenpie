@@ -532,6 +532,7 @@
     "typescript/ban-types": "error", // TODO: deprecated in @typescript-eslint
     "typescript/no-confusing-void-expression": "error",
     "typescript/no-deprecated": "error",
+    "typescript/no-generated-empty-object-type": "error",
     "typescript/no-misused-promises": "error",
     "typescript/no-mixed-enums": "error",
     "typescript/no-unsafe-argument": "error",

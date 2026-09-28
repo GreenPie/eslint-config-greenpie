@@ -65,6 +65,7 @@ export default defineConfig({
     '@typescript-eslint/no-extra-non-null-assertion': 'off',
     '@typescript-eslint/no-floating-promises': 'off',
     '@typescript-eslint/no-for-in-array': 'off',
+    '@typescript-eslint/no-generated-empty-object-type': 'off',
     '@typescript-eslint/no-implied-eval': 'off',
     '@typescript-eslint/no-import-type-side-effects': 'off',
     '@typescript-eslint/no-inferrable-types': 'off',
@@ -193,8 +194,6 @@ export default defineConfig({
       format: ['camelCase'],
       leadingUnderscore: 'allow'
     }],
-    '@typescript-eslint/no-generated-empty-object-type': 'error',
-
     // Formatting Rules
 
     // TODO: Not grouped yet below
@@ -202,6 +201,7 @@ export default defineConfig({
     // TypeScript specific Rules
 
     '@typescript-eslint/no-extraneous-class': 'error',
+    '@typescript-eslint/no-unsafe-enum-assignment': 'error',
     '@typescript-eslint/typedef': 'error',
 
     /*
