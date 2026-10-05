@@ -17,10 +17,10 @@ concurrency:
 jobs:
   release:
     name: Release
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     steps:
       - name: Setup pnpm and install dependencies
-        uses: Perdolique/automations/.github/actions/setup-pnpm@v3
+        uses: Perdolique/automations/.github/actions/setup-pnpm@v4
         with:
           cache: false
           install-dependencies: true
