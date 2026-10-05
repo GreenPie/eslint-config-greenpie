@@ -15,7 +15,8 @@ async function getViolations(code: string) {
   return result.messages.filter(message => message.ruleId === RULE_ID);
 }
 
-describe(RULE_ID, () => {
+// Type-aware linting needs time to start the project service during full test runs.
+describe(RULE_ID, { timeout: 10_000 }, () => {
   it('allows assigning an enum member', async () => {
     const violations = await getViolations(`
 enum Fruit { Apple }
