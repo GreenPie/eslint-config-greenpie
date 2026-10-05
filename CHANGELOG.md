@@ -1,5 +1,11 @@
 # eslint-config-greenpie
 
+## 17.14.0
+
+### Minor Changes
+
+- 5b5afa3: Update ESLint to 10.12.0, Oxlint to 1.87.0, and typescript-eslint to 8.71.1.
+
 ## 17.13.0
 
 ### Minor Changes
