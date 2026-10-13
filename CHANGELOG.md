@@ -1,5 +1,12 @@
 # eslint-config-greenpie
 
+## 17.15.0
+
+### Minor Changes
+
+- 6c2bff3: Update oxlint to 1.88.0 and typescript-eslint to 8.71.2.
+- 6c2bff3: Update oxlint-tsgolint to 7.0.2004 to fix type-aware diagnostics and restore line disable comments.
+
 ## 17.14.0
 
 ### Minor Changes
