@@ -6,37 +6,23 @@ This package provides ESLint's shared config that designed to be strict as hell.
 
 ## Usage
 
-Install the base package with required dependencies:
-
-```bash
-vp add --save-dev eslint-config-greenpie eslint
-```
-
-Then install additional dependencies depending on your use case:
+Install the package with the dependencies for your setup:
 
 **For oxlint users:**
 
 ```bash
-vp add --save-dev oxlint oxlint-tsgolint
+vp add --save-dev eslint-config-greenpie oxlint oxlint-tsgolint
 ```
+
+ESLint and its plugins are optional peer dependencies. You do not need them when using only the Oxlint config.
 
 **For ESLint users:**
 
 ```bash
-vp add --save-dev @stylistic/eslint-plugin
+vp add --save-dev eslint-config-greenpie eslint @stylistic/eslint-plugin typescript-eslint eslint-plugin-vue oxlint oxlint-tsgolint
 ```
 
-**For TypeScript projects:**
-
-```bash
-vp add --save-dev typescript-eslint
-```
-
-**For Vue.js projects:**
-
-```bash
-vp add --save-dev eslint-plugin-vue
-```
+The package entry point imports all ESLint configs, so all four ESLint packages are required even if you only use `configs.js`. Run Oxlint alongside ESLint: rules covered by Oxlint are disabled in the ESLint configs.
 
 ### Oxlint configuration
 
