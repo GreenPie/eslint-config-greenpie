@@ -1,5 +1,11 @@
 # eslint-config-greenpie
 
+## 17.16.1
+
+### Patch Changes
+
+- d17217e: Make ESLint peer dependencies optional so Oxlint-only projects do not install ESLint or its plugins. Keep these packages as development dependencies and document both installation setups.
+
 ## 17.16.0
 
 ### Minor Changes
