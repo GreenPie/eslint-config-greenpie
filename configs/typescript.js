@@ -101,6 +101,7 @@ export default defineConfig({
     '@typescript-eslint/no-unsafe-assignment': 'off',
     '@typescript-eslint/no-unsafe-call': 'off',
     '@typescript-eslint/no-unsafe-declaration-merging': 'off',
+    '@typescript-eslint/no-unsafe-enum-assignment': 'off',
     '@typescript-eslint/no-unsafe-enum-comparison': 'off',
     '@typescript-eslint/no-unsafe-function-type': 'off',
     '@typescript-eslint/no-unsafe-member-access': 'off',
@@ -201,7 +202,6 @@ export default defineConfig({
     // TypeScript specific Rules
 
     '@typescript-eslint/no-extraneous-class': 'error',
-    '@typescript-eslint/no-unsafe-enum-assignment': 'error',
     '@typescript-eslint/typedef': 'error',
 
     /*

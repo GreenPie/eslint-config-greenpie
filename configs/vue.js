@@ -92,6 +92,7 @@ export default defineConfig(
 
       'vue/multi-word-component-names': 'error',
       'vue/no-child-content': 'error',
+      'vue/no-content-outside-block': 'error',
       'vue/no-dupe-v-else-if': 'error',
       'vue/no-duplicate-attributes': 'error',
       'vue/no-mutating-props': 'error',
@@ -254,6 +255,7 @@ export default defineConfig(
       'vue/new-line-between-multi-line-property': 'error',
       'vue/no-bare-strings-in-template': 'error',
       'vue/no-boolean-default': 'error',
+      'vue/no-define-model-default': 'error',
       'vue/no-duplicate-attr-inheritance': 'error',
       'vue/no-duplicate-class-names': 'error',
       'vue/no-empty-component-block': 'error',
@@ -261,6 +263,10 @@ export default defineConfig(
       'vue/no-multiple-objects-in-class': 'error',
       'vue/no-negated-v-if-condition': 'error',
       'vue/no-potential-component-option-typo': 'error',
+
+      // Partly overlaps with Oxlint's vue/no-dupe-keys and also rejects props-derived bindings.
+      'vue/no-props-shadow': 'off',
+
       'vue/no-ref-object-reactivity-loss': 'error',
       'vue/no-restricted-block': 'error',
       'vue/no-restricted-call-after-await': 'error',
