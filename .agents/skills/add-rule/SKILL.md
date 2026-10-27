@@ -21,6 +21,14 @@ Two scenarios:
 | `vitest/rule-name` | `configs/oxlintrc.vitest.jsonc` | `vitest/rule-name` |
 | `vue/rule-name` | `configs/vue.js` | `vue/rule-name` |
 
+## New rules and disabled entries
+
+When implementing rule changes, add every new rule from the repository's supported linters and plugins to its config. Use a bare `off` value when the rule will stay disabled or the decision to enable it is still pending.
+
+- Place each entry in its normal category and plugin section, in alphabetical order among sibling rules. Use the "Disabled rules in favor of oxlint" section only when Oxlint handles the rule.
+- For every disabled rule, add a short comment that explains why it is disabled. A shared section comment is enough when it explains that rule's reason, such as "Disabled rules in favor of oxlint". Otherwise, put the reason next to the rule. Name any conflicting or overlapping rule when it is part of the reason.
+- Preserve existing explicit opt-outs. Rules from unsupported linters or plugins stay out of scope.
+
 ## Scenario A: New oxlint rule (no ESLint equivalent)
 
 Add to the relevant Oxlint config file:
@@ -29,8 +37,6 @@ Add to the relevant Oxlint config file:
 - `configs/oxlintrc.vitest.jsonc` for `vitest/*` rules inside the test-file override
 
 Keep entries alphabetized among sibling rules.
-
-Add conflicting rules as `"off"` with a comment naming the conflict.
 
 ```sh
 vp run lint:oxlint:agent

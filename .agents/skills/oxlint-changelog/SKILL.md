@@ -91,7 +91,7 @@ Inspect the relevant config files and classify the current state:
 
 This matters because the same changelog line can imply different follow-up:
 
-- **new oxlint rule in an already enabled repository plugin namespace and not configured yet** → likely `add`
+- **new oxlint rule in an already enabled repository plugin namespace and not configured yet** → likely `add`; propose an explicit `off` entry when it will not be enabled or the decision is pending
 - **new oxlint implementation of a rule already enforced via ESLint** → likely `add` / `migrate`
 - **rename / replacement / deprecation** → likely `replace` or `remove`
 - **new option or behavior fix on a rule already configured** → likely `adjust` or `review-only`
@@ -176,10 +176,10 @@ Keep the report specific. Name exact rules and files instead of saying "some Typ
 If the user explicitly asks to apply changes:
 
 1. Still produce the impact analysis first, even if briefly.
-2. Apply only the items that are clearly actionable.
-3. For rule add/migrate work, invoke the `add-rule` skill before editing rule config when that skill is available.
-4. Keep unsupported plugins out of scope.
-5. Do not silently implement `review-only` or `investigate` items as if they were approved facts.
+2. Apply clearly actionable changes. Also add each new rule from a supported plugin as a bare `off` entry when it will not be enabled or the decision is pending. Keep it in its normal category and plugin section, in alphabetical order. Add a short reason comment unless a shared section comment already explains why it is disabled.
+3. For rule additions, including disabled entries, and migrations, invoke the `add-rule` skill before editing rule config when that skill is available.
+4. Keep unsupported plugins out of scope and preserve existing explicit opt-outs.
+5. Keep unresolved `review-only` or `investigate` recommendations separate from approved changes. A disabled entry records a pending decision; it does not approve enabling the rule.
 
 If the user says "apply the obvious ones" or similar, use only the clearly actionable entries. If ambiguity remains, say which entries were intentionally left out and why.
 
