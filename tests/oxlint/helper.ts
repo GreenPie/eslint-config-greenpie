@@ -1,4 +1,4 @@
-import { execa } from 'execa';
+import { exec } from 'tinyexec';
 import path from 'node:path';
 import * as v from 'valibot';
 
@@ -26,7 +26,7 @@ type Diagnostic = v.InferOutput<typeof diagnosticSchema>;
 async function runOxlint(filePaths: string[]): Promise<Diagnostic[]> {
   const absoluteFilePaths = filePaths.map(filePath => path.resolve(ROOT, filePath));
 
-  const result = await execa(
+  const result = await exec(
     'oxlint',
     [
       '--config',
@@ -37,9 +37,10 @@ async function runOxlint(filePaths: string[]): Promise<Diagnostic[]> {
       ...absoluteFilePaths
     ],
     {
-      reject: false,
-      cwd: ROOT,
-      preferLocal: true
+      throwOnError: false,
+      nodeOptions: {
+        cwd: ROOT
+      }
     }
   );
 
