@@ -1,5 +1,11 @@
 # eslint-config-greenpie
 
+## 17.18.0
+
+### Minor Changes
+
+- 5bf46b5: Update the ESLint and Oxlint toolchain to ESLint 10.14.0 and Oxlint 1.91.0.
+
 ## 17.17.0
 
 ### Minor Changes
