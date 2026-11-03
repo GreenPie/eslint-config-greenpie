@@ -231,3 +231,11 @@ vp run test
 ```
 
 Tests use [Vitest](https://vitest.dev/) and the [ESLint programmatic API](https://eslint.org/docs/developer-guide/nodejs-api) to lint code snippets directly against the configs defined in this repository.
+
+To rerun only the tests that failed in the last run, use:
+
+```bash
+vp run test:agent --last-failed
+```
+
+This command reads the results cache. If no tests failed, it exits with code 1 and reports `No failed tests found`. Run the full suite with `vp run test:agent` before finishing a change.

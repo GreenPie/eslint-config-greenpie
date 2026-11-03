@@ -344,7 +344,6 @@
     "typescript/no-import-type-side-effects": "error",
     "typescript/no-invalid-void-type": "error",
     "typescript/no-namespace": "error",
-    "typescript/no-non-null-asserted-nullish-coalescing": "error",
     "typescript/no-non-null-assertion": "error",
     "typescript/no-require-imports": "error",
     "typescript/no-restricted-types": "error",
@@ -364,7 +363,6 @@
     "unicorn/no-length-as-slice-end": "error",
     "unicorn/no-magic-array-flat-depth": "error",
     "unicorn/no-process-exit": "error",
-    "unicorn/no-useless-error-capture-stack-trace": "error",
     "unicorn/prefer-modern-math-apis": "error",
     "unicorn/prefer-module": "error",
     "unicorn/prefer-node-protocol": "error",
@@ -429,6 +427,7 @@
     "typescript/consistent-return": "off", // TypeScript already infers the widened return contract, and in this codebase the rule mostly forces style-only workarounds such as explicit `return undefined` or callback signature noise.
     "typescript/no-confusing-non-null-assertion": "error",
     "typescript/no-extraneous-class": "error",
+    "typescript/no-non-null-asserted-nullish-coalescing": "error",
     "typescript/no-unnecessary-boolean-literal-compare": "off", // isBoolean === false is sometimes useful
     "typescript/no-unnecessary-template-expression": "error",
     "typescript/no-unnecessary-type-arguments": "error",
@@ -449,6 +448,7 @@
     "unicorn/no-array-sort": "error",
     "unicorn/no-confusing-array-with": "error",
     "unicorn/no-instanceof-builtins": "error",
+    "unicorn/no-useless-error-capture-stack-trace": "error",
     "unicorn/prefer-add-event-listener": "error",
     "unicorn/require-module-specifiers": "error",
     "unicorn/require-post-message-target-origin": "error",
