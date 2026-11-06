@@ -1,5 +1,11 @@
 # eslint-config-greenpie
 
+## 17.19.0
+
+### Minor Changes
+
+- 0f16d0e: Update Oxlint to 1.92.0 and oxlint-tsgolint to 7.0.2006. Refresh Vue to 3.5.45, pnpm to 12.18.0, and the dependency lockfile.
+
 ## 17.18.0
 
 ### Minor Changes
