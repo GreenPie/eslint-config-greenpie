@@ -1,5 +1,11 @@
 # eslint-config-greenpie
 
+## 17.20.0
+
+### Minor Changes
+
+- e4c8e8d: Update oxlint to 1.93.0, typescript-eslint to 8.72.2, and eslint-plugin-vue to 10.12.1.
+
 ## 17.19.0
 
 ### Minor Changes
