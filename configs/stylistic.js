@@ -14,10 +14,6 @@ export default defineConfig({
    * {@link https://eslint.style/rules}
    */
   rules: {
-    '@stylistic/array-bracket-newline': ['error', 'consistent'],
-    '@stylistic/array-bracket-spacing': 'error',
-    '@stylistic/array-element-newline': ['error', 'consistent'],
-
     '@stylistic/arrow-parens': ['error', 'as-needed', {
       requireForBlockBody: true
     }],
@@ -32,13 +28,16 @@ export default defineConfig({
     '@stylistic/curly-newline': 'error',
     '@stylistic/dot-location': ['error', 'property'],
     '@stylistic/eol-last': 'error',
-    '@stylistic/function-call-argument-newline': ['error', 'consistent'],
     '@stylistic/function-call-spacing': 'error',
-    '@stylistic/function-paren-newline': ['error', 'consistent'],
     '@stylistic/generator-star-spacing': 'error',
     '@stylistic/implicit-arrow-linebreak': 'error',
     '@stylistic/indent': ['error', 2],
     '@stylistic/indent-binary-ops': ['error', 2],
+
+    // JSX formatting is outside this shared config's policy.
+    '@stylistic/jsx-shorthand-boolean': 'off',
+    '@stylistic/jsx-shorthand-fragment': 'off',
+
     '@stylistic/key-spacing': 'error',
     '@stylistic/keyword-spacing': 'error',
     '@stylistic/line-comment-position': 'error',
@@ -57,6 +56,55 @@ export default defineConfig({
 
     // TODO: Lack of configuration. Can it be replaced by `padding-line-between-statements`?
     '@stylistic/lines-between-class-members': 'off',
+
+    '@stylistic/list-style': ['error', {
+      empty: 'never',
+
+      multiLine: {
+        minItems: 1
+      },
+
+      overrides: {
+        '{}': {
+          singleLine: {
+            spacing: 'always'
+          }
+        },
+
+        // Conditions are not lists; space-in-parens handles their spacing.
+        IfStatement: 'off',
+
+        ObjectExpression: {
+          singleLine: {
+            maxItems: 1
+          }
+        },
+
+        ExportNamedDeclaration: {
+          singleLine: {
+            maxItems: 0
+          }
+        },
+
+        TSInterfaceBody: {
+          singleLine: {
+            maxItems: 0
+          }
+        },
+
+        TSEnumBody: {
+          singleLine: {
+            maxItems: 0
+          }
+        },
+
+        TSTypeLiteral: {
+          singleLine: {
+            maxItems: 1
+          }
+        }
+      }
+    }],
 
     '@stylistic/max-len': ['error', 120, {
       ignoreStrings: true,
@@ -98,41 +146,6 @@ export default defineConfig({
     '@stylistic/no-whitespace-before-property': 'error',
     '@stylistic/nonblock-statement-body-position': 'error',
 
-    '@stylistic/object-curly-newline': ['error', {
-      /*
-       * ObjectExpression
-       * ObjectPattern
-       * ImportDeclaration
-       * ExportDeclaration
-       * TSTypeLiteral
-       * TSInterfaceBody
-       * TSEnumBody
-       */
-
-      ObjectExpression: {
-        consistent: true,
-        multiline: true,
-        minProperties: 2
-      },
-
-      ExportDeclaration: {
-        multiline: true,
-        minProperties: 1
-      },
-
-      TSInterfaceBody: {
-        multiline: true,
-        minProperties: 1
-      },
-
-      TSEnumBody: {
-        multiline: true,
-        minProperties: 1
-      }
-    }],
-
-    '@stylistic/object-curly-spacing': ['error', 'always'],
-    '@stylistic/object-property-newline': 'error',
     '@stylistic/one-var-declaration-per-line': 'error',
     '@stylistic/operator-linebreak': 'error',
     '@stylistic/padded-blocks': ['error', 'never'],

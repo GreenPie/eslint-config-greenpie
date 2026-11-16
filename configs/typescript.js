@@ -202,6 +202,7 @@ export default defineConfig({
     // TypeScript specific Rules
 
     '@typescript-eslint/no-extraneous-class': 'error',
+    '@typescript-eslint/no-unsafe-class-instance-assignment': 'error',
     '@typescript-eslint/typedef': 'error',
 
     /*
