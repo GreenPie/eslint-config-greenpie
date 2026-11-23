@@ -90,19 +90,13 @@ See more [examples](#configuration-examples) below.
 | `ts`      | Includes TypeScript rules      |
 | `vue`     | Includes rules for Vue.js      |
 
-## Type-aware linting (oxlint)
+## Type-aware linting
 
-Type-aware linting is enabled by default in this config via `options.typeAware: true`. This enables powerful type-checking rules like:
+The shared Oxlint config enables `options.typeAware` by default. Rules such as `no-floating-promises`, `await-thenable`, and `no-unsafe-assignment` use TypeScript's type information. Install `oxlint-tsgolint` alongside `oxlint` and keep your TypeScript files in a `tsconfig.json` project Oxlint can discover.
 
-- `no-floating-promises` — ensures promises are properly handled
-- `no-unsafe-*` — prevents unsafe type operations (`no-unsafe-argument`, `no-unsafe-assignment`, `no-unsafe-call`, `no-unsafe-member-access`, `no-unsafe-return`)
-- `await-thenable` — only await thenable values
-- `no-misused-promises` — prevents incorrect promise usage
-- And many more type-aware rules
+Use ESLint's `configs.vue` alongside Oxlint to get these checks in `.vue` scripts. Oxlint runs syntax-based rules on those scripts, while ESLint runs the type-aware rules through typescript-eslint.
 
-To use type-aware rules, install both `oxlint` and `oxlint-tsgolint`.
-
-Type-aware linting requires a `tsconfig.json` file in your project root. Oxlint will automatically discover and use it for type checking.
+See [technical debt](DEBT.md#vue-type-aware-linting) for the plan to move these rules to Oxlint.
 
 ## Configuration examples
 
