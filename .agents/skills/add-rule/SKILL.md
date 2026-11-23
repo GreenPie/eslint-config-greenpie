@@ -5,7 +5,7 @@ description: Workflow for adding new linting rules or migrating existing ESLint/
 
 # Adding / Migrating Linting Rules
 
-oxlint is the primary linter. When a rule exists in both oxlint and ESLint, **oxlint wins** — the ESLint counterpart must be disabled.
+Oxlint is the primary linter. When moving a rule from ESLint to Oxlint, keep ESLint active for file types where Oxlint misses violations.
 
 Two scenarios:
 - **A** — New oxlint-only rule (no ESLint equivalent)
@@ -46,11 +46,20 @@ vp run test:agent
 
 ## Scenario B: Migrating ESLint rule → oxlint
 
-### Step 1 — Disable in ESLint config
+### Step 1 — Check coverage and update ESLint
 
-Find the rule in the appropriate ESLint config file (see mapping above).
+With the intended rule settings, check that the minimum supported Oxlint version reports a known violation for each affected file type. For a type-aware TypeScript rule, check a `.ts` file and a `.vue` file with `<script setup lang="ts">`.
 
-Move it to the `Off in favor of oxlint` / `Disabled rules in favor of oxlint` section (**alphabetical order**), set value to `'off'`. Drop any options — the disabled entry is always a bare `'off'`.
+If Oxlint covers every affected file type, move the ESLint entry to the `Off in favor of oxlint` or `Disabled rules in favor of oxlint` section in alphabetical order. Use a bare `'off'`.
+
+If Oxlint covers the affected TypeScript files but misses a type-aware rule in Vue, use the Vue override in [configs/typescript.js](../../../configs/typescript.js).
+
+- For `error` with default options, replace the standalone ESLint entry with its rule ID in `oxlintTypeAwareRules`. The list sets the shared `'off'` and enables the rule in Vue.
+- For custom severity or options, use a shared `'off'` and keep the original settings in the Vue override.
+
+Verify that `configs.vue` reports the violation. [Vue fallback tracking](../../../DEBT.md#vue-type-aware-linting)
+
+For other coverage gaps, scope the ESLint `'off'` to the file types Oxlint covers.
 
 ```js
 // configs/base.js — before (somewhere in active rules):
@@ -60,42 +69,36 @@ eqeqeq: ['error', 'always', { null: 'ignore' }],
 eqeqeq: 'off',
 ```
 
-```js
-// configs/typescript.js — before:
-'@typescript-eslint/dot-notation': ['error', { allowKeywords: true }],
-
-// after (in "Disabled rules in favor of oxlint" section, alphabetically):
-'@typescript-eslint/dot-notation': 'off',
-```
-
 ### Extension rules (typescript-eslint pattern)
 
 Some `@typescript-eslint/` rules are **extension rules** — they extend a base ESLint rule of the same name. In this case `configs/typescript.js` contains a suppressor line that disables the base rule in favor of the TS version:
 
 ```js
 // configs/typescript.js — extension rule pattern:
-'dot-notation': 'off',                            // suppresses base eslint rule
-'@typescript-eslint/dot-notation': 'error',       // uses TS-aware version instead
+'no-empty-function': 'off',
+'@typescript-eslint/no-empty-function': 'error',
 ```
 
-When migrating such a rule to oxlint, you must:
+Use these steps when Oxlint covers both rules for all affected file types.
 
-1. **Disable the base rule in `configs/base.js`** (move to "Off in favor of oxlint", alphabetically)
-2. **Remove the suppressor line** (`'base-rule-name': 'off'`) from `configs/typescript.js` — it served no purpose other than to suppress the base rule in favor of the TS extension rule, which is now also disabled
-3. **Add `@typescript-eslint/rule-name: 'off'`** to the "Disabled rules in favor of oxlint" section in `configs/typescript.js` as usual
+1. Move the base rule to the "Off in favor of oxlint" section in `configs/base.js` and set it to `'off'`.
+2. Remove the base rule's `'off'` entry from `configs/typescript.js`.
+3. Move the TypeScript rule to the "Disabled rules in favor of oxlint" section in `configs/typescript.js` and set it to `'off'`.
 
 ```js
 // configs/base.js — after:
-'dot-notation': 'off',  // in "Off in favor of oxlint" section
+'no-empty-function': 'off',
 
 // configs/typescript.js — after:
-'@typescript-eslint/dot-notation': 'off',  // in "Disabled rules in favor of oxlint" section
-// The 'dot-notation': 'off' suppressor line is REMOVED entirely
+'@typescript-eslint/no-empty-function': 'off',
 ```
+
+For partial coverage, keep the base rule suppressed wherever its ESLint extension stays active.
 
 ### Step 2 — Add to oxlintrc.jsonc
 
-Add to `configs/oxlintrc.jsonc` with the oxlint-namespaced rule ID:
+Add the namespaced rule ID to `configs/oxlintrc.jsonc`. The minimum supported Oxlint version must accept the rule ID and options.
+
 - Correct **category section** (see below) and **plugin subsection**
 - **Alphabetical order** among sibling rules of the same plugin
 - Migrate any configuration options (check [oxlint docs](https://oxc.rs/docs/guide/usage/linter/rules.html) — option names may differ)
@@ -103,9 +106,6 @@ Add to `configs/oxlintrc.jsonc` with the oxlint-namespaced rule ID:
 ```jsonc
 // Migrated eslint/eqeqeq with options:
 "eslint/eqeqeq": ["error", "always", { "null": "ignore" }],
-
-// Migrated typescript/dot-notation with options:
-"typescript/dot-notation": ["error", { "allowKeywords": true }],
 ```
 
 ## Base oxlintrc.jsonc category sections

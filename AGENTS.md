@@ -11,7 +11,7 @@ This is a repository for ESLint/oxlint shared configurations.
   - `vue`: Vue-specific rules.
   - `oxlint`: oxlint rules
 
-- oxlint is main linter. If rules exist in other configs and oxlint, oxlint rules will be used and original rules will be disabled.
+- For rule changes and migrations, follow the [add-rule skill](.agents/skills/add-rule/SKILL.md).
 
 ## oxlint config files
 
